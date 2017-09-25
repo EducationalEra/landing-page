@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "ed-era-landing",
+    "staging": "ed-era-landing-staging"
+  }
+}

@@ -6,6 +6,13 @@
 
 <script>
   export default {
-    layout: 'edera'
+    head () {
+      return {
+        title: `EdEra Books`,
+        meta: [
+          { hid: 'description', name: 'description', content: 'EdEra books - interactive library' }
+        ]
+      }
+    }
   }
 </script>

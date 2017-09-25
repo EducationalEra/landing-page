@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "ed-era-landing",
+    "default": "edera-landing",
     "staging": "edera-staging"
   }
 }

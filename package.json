@@ -5,10 +5,11 @@
   "author": "Olga Filipova <chudaol@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "NODE_ENV=staging nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "NODE_ENV=production nuxt generate",
+    "generate_staging": "NODE_ENV=staging nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "NODE_ENV=production jest"
@@ -20,12 +21,14 @@
     }
   },
   "dependencies": {
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.0.0-rc11",
+    "promise-polyfill": "^6.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-jest": "^21.0.2",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.7",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
@@ -37,6 +40,9 @@
     "firebase": "^4.4.0",
     "firebase-tools": "^3.12.0",
     "jest": "^21.1.0",
-    "jest-vue-preprocessor": "^1.1.0"
+    "jest-vue-preprocessor": "^1.1.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue-style-loader": "^3.0.3"
   }
 }

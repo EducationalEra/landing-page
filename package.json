@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0-rc11",
-    "promise-polyfill": "^6.0.2"
+    "promise-polyfill": "^6.0.2",
+    "vue-i18n": "^7.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

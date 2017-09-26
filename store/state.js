@@ -1,4 +1,4 @@
 export default {
   locales: ['en', 'ua'],
-  locale: 'en'
+  locale: 'ua'
 }

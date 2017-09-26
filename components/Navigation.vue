@@ -1,8 +1,32 @@
 <template>
   <div>
-    <nuxt-link to="/">{{ $t('links.home') }}</nuxt-link>&nbsp;
-    <nuxt-link to="/products">{{ $t('links.products') }}</nuxt-link>&nbsp;
-    <nuxt-link to="/courses">{{ $t('links.courses') }}</nuxt-link>&nbsp;
-    <nuxt-link to="/books">{{ $t('links.books') }}</nuxt-link>&nbsp;
+    <nav-link v-for="link in links" :to="link.path" :text="link.text"/>
   </div>
 </template>
+<script>
+  import NavLink from '~/components/common/NavLink'
+
+  export default {
+    data () {
+      return {
+        links: [{
+          path: '/',
+          text: this.$t('links.home')
+        }, {
+          path: '/products',
+          text: this.$t('links.products')
+        }, {
+          path: '/courses',
+          text: this.$t('links.courses')
+        }, {
+          path: '/books',
+          text: this.$t('links.books')
+        }
+        ]
+      }
+    },
+    components: {
+      NavLink
+    }
+  }
+</script>

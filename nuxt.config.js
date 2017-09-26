@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Landing Page for EdEra' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      { rel: 'stylesheet', type: 'stylesheet', lang: 'scss', href: '~/assets/styles/main.scss' }
     ]
   },
   /*

@@ -5,6 +5,9 @@
 <style scoped lang="scss">
   .nav-link {
     color: orange;
+    &::after {
+      content: " ";
+    }
   }
 </style>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-link v-for="link in links" :to="link.path" :text="link.text"/>
+    <nav-link v-for="link in links" :key="link.text" :to="link.path" :text="link.text"/>
   </div>
 </template>
 <script>

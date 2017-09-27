@@ -42,8 +42,11 @@
     "firebase-tools": "^3.12.0",
     "jest": "^21.1.0",
     "jest-vue-preprocessor": "^1.1.0",
+    "lodash": "^4.17.4",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
-    "vue-style-loader": "^3.0.3"
+    "vue": "^2.4.4",
+    "vue-style-loader": "^3.0.3",
+    "vuexfire": "^2.3.0"
   }
 }

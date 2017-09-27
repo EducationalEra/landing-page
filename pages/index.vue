@@ -14,8 +14,6 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import firebaseApp from '~/firebaseApp'
-console.log(firebaseApp)
 export default {
   components: {
     Logo

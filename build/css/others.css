@@ -238,11 +238,11 @@ html {
   background-image: url("../img/main-blog.jpg"); }
 
 .talents-banner {
-  background: linear-gradient(141deg, #0f7ab8 0%, #1f73db 51%, #2cb5e8 75%);
-  background: -webkit-linear-gradient(141deg, #0f7ab8 0%, #1f73db 51%, #2cb5e8 75%);
-  background: -moz-linear-gradient(141deg, #0f7ab8 0%, #1f73db 51%, #2cb5e8 75%);
-  background: -ms-linear-gradient(141deg, #0f7ab8 0%, #1f73db 51%, #2cb5e8 75%);
-  background: -o-linear-gradient(141deg, #0f7ab8 0%, #1f73db 51%, #2cb5e8 75%);
+  background: linear-gradient(141deg, #ff6a00 0%, #db5c1f 51%, #e8d12c 75%);
+  background: -webkit-linear-gradient(141deg, #ff6a00 0%, #db5c1f 51%, #e8d12c 75%);
+  background: -moz-linear-gradient(141deg, #ff6a00 0%, #db5c1f 51%, #e8d12c 75%);
+  background: -ms-linear-gradient(141deg, #ff6a00 0%, #db5c1f 51%, #e8d12c 75%);
+  background: -o-linear-gradient(141deg, #ff6a00 0%, #db5c1f 51%, #e8d12c 75%);
   padding: 0 !important; }
 
 .virtual {

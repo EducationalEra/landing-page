@@ -5,5 +5,13 @@
     "courses": "Курси",
     "books": "Бібліотека",
     "blog": "Блог"
+  },
+  "products": {
+    "titles": {
+      "books": "Бібліотека",
+      "courses": "Курси",
+      "projects": "Спец Проекти",
+      "articles": "Блог"
+    }
   }
 }

@@ -16,7 +16,7 @@
           path: '/products',
           text: this.$t('links.products')
         }, {
-          path: '/courses',
+          path: '/products#courses',
           text: this.$t('links.courses')
         }, {
           path: '/books',

@@ -17,13 +17,16 @@ export default {
     return state.books
   },
   filteredBooks (state) {
-
+    return genericSearch(state.books, state.searchTerm, state.tags)
   },
   allProjects (state) {
     return state.projects
   },
   filteredProjects (state) {
-
+    return genericSearch(state.projects, state.searchTerm, state.tags)
+  },
+  filteredArticles (state) {
+    return genericSearch(state.articles, state.searchTerm, state.tags)
   },
   searchProducts: (state, getters) => (searchTerm, filters) => {
     return {

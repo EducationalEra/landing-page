@@ -1,0 +1,87 @@
+include ../includes/cases-head.jade
+doctype html
+html
+  +head
+  body
+    include ../includes/gtm.jade
+    include ../includes/header.jade
+    .library.section.heading.header_cases(style="background-image: url(../img/25/i/7.jpg)")
+      .container.cases_25
+        a(href='/modules')
+          i.fa.fa-angle-left 
+          | До всіх модулів
+        h1
+          span.exo Шкільний урок волонтерства
+          p.text Ми часто чуємо слово «волонтер», але рідко замислюємося, що саме воно означає. То що ж таке волонтерство? І хто такий волонтер? У цьому занятті ви дізнаєтеся про різновиди волонтерства, як долучитися до таких ініціатив або організувати їх самотужки
+          small EdEra, ILID та UVS
+        //article.about.hyphenate
+
+    //- СПІЛЬНОКОШТ
+    a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+      .banner_25
+        img.left_img(src="../img/25/left_banner.png" alt="")
+        p Підтримайте <span>EdEra</span>
+        img.right_img(src="../img/25/right_banner.png" alt="")
+
+    // Programs
+    section.bookshelf
+      .container.cases_material 
+        h2
+          | Матеріали заняття
+        .book.about
+          a(href='https://drive.google.com/open?id=1ZyQB6gYoj9GDKFDU0mJI-QJWJkAQpQZL')
+            figure
+              img.cases(alt='', src='../img/25/scenario.png')
+              figcaption
+                h3
+                  | Сценарій «ШУВ»
+                  small
+                    | 90 хв
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1RstjfcNcCltBRqbW3WvgYgc7g3t7myGF')
+            figure
+              img.cases(alt='', src='../img/25/picture.png')
+              figcaption
+                h3
+                  | Презентація
+                  small
+                    | PDF
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1rWyZVrLSht-ELc4TrPvfs76wBgmPT_ui')
+            figure
+              img.cases(alt='', src='../img/25/notebook.png')
+              figcaption
+                h3
+                  |  Додаток
+
+    section.materials_features.archive
+      .container.cases_btn
+        .description_block
+          p.lead
+            | Щоб провести заняття у себе в школі вчителю потрібно завантажити архів з файлами та ознайомитись з додатковими матеріалами. 
+        
+        article  
+          a.button.button--big(href='https://drive.google.com/open?id=1m76rWrFcT63-4cKM9tbPpFDkbsfIQLk1')
+            | Завантажити матеріали
+            sup 
+              i.fa.fa-floppy-o
+
+    #partners.section
+      .container
+        p.h2
+          | Організації-розробники
+        ul.partners_list
+          li
+            a(href='https://www.ed-era.com', target='_blank', title='EdEra')
+              img(src='../img/25/1/edera_logo.png', alt='EdEra')
+          li
+            a(href='https://ilid.org.ua/', target='_blank', title='ILID Ukraine')
+              img(src='../img/25/1/ILID_logo.png', alt='EdEra')
+          li
+            a(href='https://volunteer.country/registration', target='_blank', title='UVS')
+              img(src='../img/25/1/UVS_logo.png', alt='UVS')
+
+    include ../includes/footer.jade
+    include ../includes/scripts.jade

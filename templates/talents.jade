@@ -1,0 +1,114 @@
+//
+	 Created by artem on 05-03-2018.
+include includes/head-talent.jade
+doctype html
+html
+	+head
+	body
+		include includes/gtm.jade
+		include includes/header.jade
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.edera-talent.section.heading
+			.container
+				h1
+					span.exo EDERA TALENTS
+					small Шукаємо професіоналів у команду EdEra
+		
+		//- СПІЛЬНОКОШТ
+		section.section.talents-banner#books
+			.container
+				h2.section_title 
+					a.button.w(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+						strong Підтримайте EdEra на Спільнокошті
+
+		section.materials_features#talents
+			.container
+				.description_block
+					p.lead
+						b EdEra 
+						| – студія онлайн-освіти, що створює онлайн-курси, інтерактивні підручники, освітні спецпроекти та моделі інтеграції сучасних освітніх рішень у традиційний навчальний процес.
+						br
+					p.lead
+						| Зараз нашій команді дуже потрібні ініціативні та ідейні люди. Можливо,&nbsp;це ти?
+					
+				article
+						a(href='/img/talents/EdEra_Pres.pdf')
+							img(src='/img/talents/EdEra-presentation.jpg')
+							p.introduction
+								| Переглянути презентацію 
+								sup
+									i.fa.fa-external-link
+			
+			#courses.section.four
+				.container
+					.mon-card
+						//-ins.special Communication manager
+						.figure
+							img(src='/img/talents/assistant.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaAssistant') Перейти до анкети
+						h3.course_title Асистент CEO EdEra Іллі Філіпова
+						p
+							| Помічник, який допоможе Іллі все встигати. Який буде навчатися, розвиватися, знайомитися з цікавими людьми. Робити круту освіту разом!
+						
+					.mon-card
+						.figure
+							img(src='/img/talents/editor.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaEditor') Перейти до анкети
+						h3.course_title Редактор
+						p
+							| Редагувати суфлери лекцій, презентації, додаткові матеріали, інфографіки, а також статті на освітньому блозі. Занурюватися в кожну тему, щоб робити свою роботу якісно, а українську освіту — кращою.
+
+					.mon-card
+						.figure
+							img(src='/img/talents/graphic designer.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaDesigner01') Перейти до анкети
+						h3.course_title Графічний дизайнер (Entry level)
+						p
+							| Створювати візуалізації для освітнього контенту: навчальних відео, інфографік, презентацій. Готові взяти людину без досвіду та навчати за нашою менторською програмою. Разом доводити людям, що освіта — це стильно!
+
+
+				.container
+					.mon-card
+						.figure
+							img(src='/img/talents/illustrator.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaIllustrator') Перейти до анкети
+						h3.course_title Ілюстратор
+						p
+							| Створювати унікальні ілюстрації до навчальних відео, інтерактивних завдань тощо. Навчатися та розвиватися у напрямі дизайну за нашою менторською програмою. Створювати найкращі (та найкрасивіші) освітні продукти.
+
+					.mon-card
+						.figure
+							img(src='/img/talents/cameraman.png', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaCameraman') Перейти до анкети
+						h3.course_title Оператор / Режисер монтажу
+						p
+							| Продумувати сценарії навчальних відео, знімати їх та монтувати. Освітні відео для нас — це мистецтво. Тому ми надаємо простір для творчості й підтримку нашої креативної команди.
+
+					.mon-card
+						.figure
+							img(src='/img/talents/motion-designer.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaMotion') Перейти до анкети
+						h3.course_title Моушн-дизайнер
+						p
+							| Придумувати візуалізації для навчальних відео, анімувати їх. Тісно співпрацювати з дизайнерами, ілюстраторами, операторами. Створювати круті та живі освітні відео.
+								
+
+					//-.mon-card
+						.figure
+							img(src='/img/talents/Motion.jpg', alt='Motion Designer')
+							a.button.goto_course(href='http://bit.ly/ederaMotion') Перейти до анкети
+						h3.course_title Моушн-дизайнер
+						p
+							| Зробити освітні продукти «живими», захопливими та зрозумілими, із яскравими анімаційними та графічними елементами.
+
+					//-.mon-card
+						.figure
+							img(src='/img/talents/Cameraman.jpg', alt='')
+							a.button.goto_course(href='http://bit.ly/ederaCameraman') Перейти до анкети
+						h3.course_title Оператор / Режисер монтажу
+						p
+							| Продумати сценарій, обрати найкращі кадри й композицію. Прокомунікувати з експертом так, щоб онлайн-курс закохував не менше, ніж нетфліксівський серіал.
+
+		include includes/footer.jade
+		include includes/scripts.jade

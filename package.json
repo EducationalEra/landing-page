@@ -1,52 +1,27 @@
 {
-  "name": "edera-landing",
-  "version": "1.0.0",
-  "description": "Landing Page for EdEra",
-  "author": "Olga Filipova <chudaol@gmail.com>",
-  "private": true,
   "scripts": {
-    "dev": "NODE_ENV=staging nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "NODE_ENV=production nuxt generate",
-    "generate_staging": "NODE_ENV=staging nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "test": "NODE_ENV=production jest"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
-    }
-  },
-  "dependencies": {
-    "nuxt": "^1.0.0-rc11",
-    "promise-polyfill": "^6.0.2",
-    "vue-i18n": "^7.3.0"
+    "build": "gulp",
+    "dev": "gulp serve",
+    "start": "http-server ."
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^21.0.2",
-    "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "firebase": "^4.4.0",
-    "firebase-tools": "^3.12.0",
-    "jest": "^21.1.0",
-    "jest-vue-preprocessor": "^1.1.0",
-    "lodash": "^4.17.4",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "vue": "^2.4.4",
-    "vue-style-loader": "^3.0.3",
-    "vuexfire": "^2.3.0"
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-watch": "^4.3.11",
+    "hapi": "^16.5.0",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-cache-bust": "^1.4.0",
+    "http-server": "^0.11.1"
   }
 }

@@ -1,0 +1,115 @@
+#{$all-button-inputs},
+button {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: darken($action-color, 15%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+
+
+//
+.button {
+  @include inline-block;
+  text-decoration: none;
+  padding: 10px 15px 8px;
+  line-height: 1;
+  border: 1px solid $blue;
+  color: $blue;
+  border-radius: 0px;
+  font-size: 14px;
+ 
+  &:hover {
+    background-color: $blue ;
+    color: white ;
+  }
+
+  &.soon {
+    background-color: $blue;
+    color: white !important;
+    font-weight: bold !important;
+    letter-spacing: 0.02em;
+  }
+
+  &--big {
+    padding: 0 40px;
+    height: 50px;
+    line-height: 46px;
+    font-weight: bold;
+
+    sup {
+      position: relative;
+      font-size: 110%;
+      top: -5px;
+    }
+
+    &+.button {
+      margin-left: 20px;
+    }
+  }
+
+  &.w {
+    color: white;
+    border: 1px solid white;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: black;
+    }
+  }
+
+
+  // play
+
+  &.play {
+    display: block;
+    width: 250px;
+    color: white;
+    border-color: white;
+    margin: 4em auto 0;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+
+    @include transform(scale(1));
+    @include transition(all .1s ease-in-out);
+
+    &:hover {
+      background: transparent;
+      color: inherit;
+      @include transform(scale(1.05));
+    }
+  }
+
+  // foundation
+    &.foundation:hover {
+    background-color: #EDB330;
+    border: 1px solid #EDB330;
+    color: white;
+  }
+}

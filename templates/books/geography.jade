@@ -1,0 +1,40 @@
+//
+   Created by olga on 17-08-2015.
+include ../includes/head.jade
+doctype html
+html
+   +head(locals.titles.books.geography.title, locals.titles.books.geography.description, locals.titles.books.geography.image, locals.titles.books.geography.url)
+   body
+      include ../includes/gtm.jade
+      include ../includes/header.jade
+      .library.section.heading
+         .container
+            include ../includes/book_h1.jade
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/geo.jpg')
+            .book__caption
+               article
+                  h2
+                     | Географія: Загальна географія
+                  p
+                     | У цьому інтерактивному підручнику ми будемо вивчати «Загальну географію» та відкривати для себе базові, але ж неймовірно корисні географічні знання. Навчайтесь із задоволенням!
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 120
+                     .td 70
+                     .td 80
+                     .td 85%
+               .actions
+                  a.button.button--big(href='http://geography.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_like.jade
+      include ../includes/footer.jade
+      include ../includes/scripts.jade

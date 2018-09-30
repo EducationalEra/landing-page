@@ -1,0 +1,42 @@
+//
+   Created by artem on 29-11-2016.
+include ../includes/head.jade
+doctype html
+html
+   +head(locals.titles.books.anticorr.title, locals.titles.books.anticorr.description, locals.titles.books.anticorr.image, locals.titles.books.anticorr.url)
+   body
+      include ../includes/gtm.jade
+      include ../includes/header.jade
+      .library.section.heading
+         .container
+            include ../includes/book_h1.jade
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/anticorruption-lesson.jpg')
+            .book__caption
+               article
+                  h2
+                     | Актикорупційний урок
+                  p
+                     | Короткий навчальний посібник «Антикорупційний урок» є збіркою матеріалів, які можуть бути корисні вчителям для проведення відповідного уроку у старших класах середньої школи до Міжнародного дня боротьби з корупцією. Цей день відзначається 9 грудня у всьому світі, згідно з рішенням Генеральної Асамблеї ООН.
+
+                  p 
+                     | Антикорупційний урок підготовлено програмою розвитку ООН в Україні та проектом EdEra. Для проведення уроку створено сценарій, додаткові відеоматеріали та презентації. Якщо вас цікавить опис усіх матеріалів, перейдіть за посиланням: 
+                     a(href='https://ed-era.com/anticorr/', target='_blank')
+                        | ed-era.com/anticorr
+               
+               .actions
+                  a.button.button--big(href='http://anticorruption-lesson.ed-era.com/', target='_blank')
+                     | Читати онлайн
+                     sup ❐
+                  a.button.button--big(href='../../anticorr-materials/anticorruption-book.pdf', target='_blank')
+                     | Завантажити 
+                     sup
+                        i.fa.fa-file-pdf-o
+                     //sup
+                        i.fa.fa-floppy-o
+
+      include ../includes/book_like.jade
+      include ../includes/footer.jade
+      include ../includes/scripts.jade

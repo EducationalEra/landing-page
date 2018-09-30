@@ -1,0 +1,40 @@
+//
+   Created by olga on 17-08-2015.
+include ../includes/head.jade
+doctype html
+html
+   +head(locals.titles.books.physics.title, locals.titles.books.physics.description, locals.titles.books.physics.image, locals.titles.books.physics.url)
+   body
+      include ../includes/gtm.jade
+      include ../includes/header.jade
+      .library.section.heading
+         .container
+            include ../includes/book_h1.jade
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/phys.jpg')
+            .book__caption
+               article
+                  h2
+                     | Фізика: Класична механіка
+                  p
+                     | Детальний і структурований опис явищ класичної механіки. Вивчайте разом з нами фундаментальні закони, які лягають в основу всіх інших розділів науки про природу та навколишній світ.
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 130
+                     .td 100
+                     .td 100
+                     .td 84%
+               .actions
+                  a.button.button--big(href='http://physics.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_like.jade
+      include ../includes/footer.jade
+      include ../includes/scripts.jade

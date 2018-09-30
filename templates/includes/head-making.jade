@@ -1,0 +1,43 @@
+mixin head(title, description, image, url)
+   - title = title || 'Онлайн-посібник «Вступ у мейкерство»'
+   - description = description || 'Практичний інтерактивний онлайн-довідник з основ електроніки, проектування та інженерії від проекту EdEra та майстерні Гараж Хаб.'
+   - image = image || 'https://www.ed-era.com/img/bg_making.jpg'
+   - url = url || 'https://www.ed-era.com/making/'
+   meta(charset='utf-8')
+   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+   title #{title}
+   meta(name='viewport', content='width=740')
+   link(rel='shortcut icon', href='/favicon.png')
+   //VK
+   meta(name='title', content= title)
+   meta(name='description', content= description)
+   link(rel='image_src' href= image)
+   //Google
+   meta(property='place:location:latitude' content='50.4629475')
+   meta(property='place:location:longitude' content='30.5139948')
+   meta(property='business:contact_data:street_address' content='street Frolivska')
+   meta(property='business:contact_data:locality' content='Kyiv')
+   meta(property='business:contact_data:country_name' content='Ukraine')
+   meta(property='business:contact_data:email' content='info@ed-era.com')
+   //Google+
+   meta(itemprop='name' content= title)
+   meta(itemprop='description' content= description)
+   meta(itemprop='image' content= image)
+   //Twitter
+   meta(name='twitter:card' content='summary_large_image')
+   meta(name='twitter:site' content='@info_edera')
+   meta(name='twitter:title' content= title)
+   meta(name='twitter:description' content= description)
+   meta(name='twitter:image' content= image)
+   //Facebook
+   //meta(property='og:url' content= url)
+   meta(property='og:title' content= title)
+   meta(property='og:description' content= description)
+   meta(property='og:image' content= image)
+   meta(property='og:site_name' content='EdEra')
+
+   link(rel='stylesheet', href='/css/application.css')
+   script(src='/js/vendor/modernizr-2.6.2.min.js')
+   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+   link(rel='stylesheet', href='/css/vendor/magnific-popup.css')
+   link(rel='stylesheet', href='/css/vendor/slick.css')

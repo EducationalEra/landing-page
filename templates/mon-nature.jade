@@ -1,0 +1,246 @@
+//
+	 Created by artem on 05-02-2017.
+include includes/head-mon-nature.jade
+doctype html
+html
+	+head
+	body
+		include includes/gtm.jade
+		include includes/header.jade
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.mon-nature.section.heading
+			.container
+				h1
+					span.exo Публічне обговорення проектів програм інтегрованого курсу «Природничі науки» для 10-11 класів
+					small Міністерство освіти і науки України та проект EdEra
+		section.project_features
+			.container
+				.lead_block
+					p.lead
+						| З 2018-2019 навчального року Державний стандарт середньої освіти і типові навчальні плани передбачають можливіть вибору школами інтегрованого курсу «Природничі науки» для 10-11 класів, які навчаються за суспільно-гуманітарним профілем. Робочі групи розробили 4 різних проекти програм.
+						br
+					p.lead		
+						| Оскільки це абсолютно новий тип інтегрованої навчальної програми, який раніше не реалізовувався в школах, Міністерство освіти і науки разом з EdEra ініціювало додаткове публічне обговорення, щоб ознайомити громадськість з новими підходами та врахувати конструктивні коментарі.
+					p.lead
+						i Всі пропозиції, що були отримані раніше під час обговорення програм на сайті МОН, будуть враховані під час обговорення на платформі EdEra.
+
+				article
+					ul.features_list
+						li
+							| Природничі науки – інтегрований курс, що об'єднує фізику, хімію, біологію, географію, астрономію та екологію
+						li
+							| Проекти програм розроблені для шкіл (класів), які навчаються за суспільно-гуманітарним профілем
+						li
+							| Інтегрований курс зможуть обирати учні 10-11 класів, які не планують складати ЗНО з природничих предметів
+						li
+							| Мета курсу – дати цілісне наукове бачення світу, розвивати допитливість та вміти застосовувувати наукові знання в повсякденному житті
+						li
+							| Модератори обговорення: автори програм та незалежний експерт, методист Інституту післядипломної педагогічної освіти
+
+					//- p.lead
+						| Міністерство освіти і науки України спільно з платформою EdEra закликають взяти участь в оновленні програм для 5-9 класів! Єдина умова – дотримання простих 
+						a(href="../img/books/mon59/mon-rules.pdf" target="_blank") правил. 
+						| Під час першої сесії робочі групи з вчителів-практиків, науковців та представників МОН обговорили пропозиції дописувачів і представляють суспільству проекти оновлених програм та 
+						a(href="https://docs.google.com/document/d/1M1gH2j_lcZxBIBLqNyQAFKD5LbgERdKG_YGm1ughhzc/edit" target="_blank") стислий опис 
+						| можливих ключових змін. У зведених таблицях пропозицій ви можете побачити, що вже враховано, а що – ні, і чому. Графік проекту – 
+						a(href="#anchor-timeline")
+							|тут. 
+							sup 
+								i.fa.fa-calendar
+						|  Оновлюємо школу разом!
+				//-article
+					ul.features_list
+						li
+							| Оберіть програму
+						li
+							| Проаналізуйте обрану програму
+						li
+							| Конструктивно прокоментуйте
+						li
+							| Голосуйте за найкращі коментарі
+						li
+							| Станьте ініціатором якісних змін    
+
+		// Programs
+		section.bookshelf-mon-nature
+			.container
+				h2 Оновлені програми
+				.book.about
+					a(href="../img/books/mon-nature/project1.pdf" target="_blank")
+						figure
+							img(alt='', src='../img/books/mon-nature/1.jpeg')
+							figcaption
+								h3
+									| Проект 1
+									small
+										| Дьоміна І. О., Задоянний В. А. та інші
+				.book.about
+					a(href="../img/books/mon-nature/project2.pdf" target="_blank")
+						figure
+							img(alt='', src='../img/books/mon-nature/2.jpeg')
+							figcaption
+								h3
+									| Проект 2
+									small
+										| Засєкіна Т. М., Буняк М. М. та інші
+				.book.about
+					a(href="../img/books/mon-nature/project3.pdf" target="_blank")
+						figure
+							img(alt='', src='../img/books/mon-nature/3.jpeg')
+							figcaption
+								h3
+									| Проект 3
+									small
+										| Шабанов Д. А. та Козленко О. Г.
+				.book.about
+					a(href="../img/books/mon-nature/project4.pdf" target="_blank")
+						figure
+							img(alt='', src='../img/books/mon-nature/4.jpeg')
+							figcaption
+								h3
+									| Проект 4
+									small
+										| Ільченко В. Р., Булава Л. М. та інші
+
+		section
+			.container.program-analysis 
+				h2 Аналіз пропозицій
+				ul
+					li
+						a(href="../img/books/mon-nature/analysis-project1.pdf" target="_blank")
+							|Проект 1 Дьоміна І. О. та інші 
+							sup
+								i.fa.fa-external-link
+					li
+						a(href="../img/books/mon-nature/analysis-project2.pdf" target="_blank")
+							|Проект 2 Засєкіна Т. М. та інші 
+							sup
+								i.fa.fa-external-link
+					li
+						a(href="../img/books/mon-nature/analysis-project3.pdf" target="_blank")
+							|Проект 3 Шабанов Д. А. та Козленко О. Г. 
+							sup
+								i.fa.fa-external-link
+					li  
+						a(href="../img/books/mon-nature/analysis-project4.pdf" target="_blank")
+							|Проект 4 Ільченко В. Р. та інші 
+							sup
+								i.fa.fa-external-link
+
+		//-	section#cd-timeline.cd-container
+			.cd-timeline-block
+				.cd-timeline-img.cd-picture
+					img(src='../img/books/mon59/svg/moderators.svg', alt='Конкурс модераторів')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Конкурс модераторів
+					p
+						| Перед тим, як програми будуть опубліковані для публічного обговорення, ми повинні сформувати команди модераторів та робочі групи. Якщо ви бажаєте бути модератором обговорень та співкерівником робочих груп у проекті оновлення програм, будь ласка, заповніть анкету за посиланням: 
+						a(href='https://edera1.typeform.com/to/P2kgsi' target="_blank") https://edera1.typeform.com/to/P2kgsi
+					span.cd-date до 5 лютого
+				// cd-timeline-content
+			// cd-timeline-block
+			.cd-timeline-block
+				.cd-timeline-img.cd-picture
+					img(src='../img/books/mon59/svg/comments1.svg', alt='Обговорення')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Перша сесія онлайн обговорення
+					p
+						| Чинні навчальні програми розміщуються на платформі EdEra для загального обговорення, де всі бажаючі, авторизувавшись, зможуть висловити свої пропозиції щодо їх модернізації.
+					span.cd-date з 13 по 24 лютого
+				// cd-timeline-content
+			// cd-timeline-block
+			.cd-timeline-block
+				.cd-timeline-img.cd-location
+					img(src='../img/books/mon59/svg/work1.svg', alt='Обробка коментарів')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Обробка коментарів
+					p
+						| Робочі групи спільно з модераторами доопрацьовуватимуть програми
+					span.cd-date з 28 лютого по 12 березня
+				// cd-timeline-content
+			// cd-timeline-block
+			.cd-timeline-block
+				.cd-timeline-img.cd-picture
+					img(src='../img/books/mon59/svg/comments2.svg', alt='Обговорення')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Друга сесія онлайн обговорення оновлених програм
+					span.cd-date 22 березня по 2 квітня
+				// cd-timeline-content
+			// cd-timeline-block
+			.cd-timeline-block
+				.cd-timeline-img.cd-location
+					img(src='../img/books/mon59/svg/work2.svg', alt='Обробка коментарів')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Обробка коментарів
+					p 
+						| Робочі групи спільно з модераторами доопрацьовуватимуть програми
+					span.cd-date 3 квітня по 17 квітня
+				// cd-timeline-content
+			// cd-timeline-block
+			.cd-timeline-block
+				.cd-timeline-img.cd-movie
+					img(src='../img/books/mon59/svg/mon.svg', alt='МОН')
+				// cd-timeline-img
+				.cd-timeline-content
+					h2 Доопрацьовані програми будуть представлені на засіданні колегії МОН
+					span.cd-date На початку травня 2017
+				// cd-timeline-content
+			// cd-timeline-block
+			// cd-timeline
+		
+		section.mon-news
+			.container
+				h2.section_title
+					span Слідкуйте за новинами і анонсами
+				ul.social
+					li
+						i.fa.fa-globe
+						a.social-link(href='http://www.mon.gov.ua/' title='Сайт МОН' target='_blank') Сайт МОН
+					li
+						i.fa.fa-facebook-square
+						a.social-link(href='https://www.facebook.com/EdEraUa/' title='facebook EdEra' target='_blank') EdEra
+					//-li
+						i.fa.fa-facebook-square
+						a.social-link(href='https://www.facebook.com/MONmolodsport/' title='facebook Міністерство освіти і науки' target='_blank') МОН
+		
+		section.support_us
+			.container
+				p
+					| Розповсюджуйте, будь ласка, інформацію про проект, щоб долучити якомога більше спеціалістів до обговорень:
+				.likely.likely-big
+					.facebook Поділитись
+					.gplus Плюсанути
+					.twitter(data-via='info_edera') Твітнути
+		//-section.foundation
+			.container
+				p.label
+					| За підтримки міжнародного фонду «Відродження»
+				img.logo(alt='', src='../img/books/mon_new/IRF_logo.png')
+		//-section.subscription
+			.container
+				p Програми оновлюються і доповнюються новим матеріалом. Заповніть емейл форму, щоби бути у курсі:
+				#mc_embed_signup
+					form#mc-embedded-subscribe-form.validate(action='//ed-era.us11.list-manage.com/subscribe/post?u=8866dd2b60d24631dfb05130e&amp;id=30bbf66b23', method='post', name='mc-embedded-subscribe-form', novalidate='', target='_blank')
+						#mc_embed_signup_scroll
+								.mc-field-group
+									label(for='mce-EMAIL')
+											input#mce-EMAIL.required.email(name='EMAIL', type='email', value='')
+											button#mc-embedded-subscribe.button(name='subscribe', type='submit')
+												| Слідкувати за новинами
+					#mce-responses.row
+						#mce-error-response.response(style='display:none')
+						#mce-success-response.response(style='display:none')
+					// real people should not fill this in and expect good things - do not remove this or risk form bot signups
+					div(style='position: absolute; left: -5000px;')
+						input(name='b_f0d231561f25f732145baed3d_ba0b4591d2', tabindex='-1', type='text', value='')
+					script(src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', type='text/javascript')
+					script.
+						(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+		include includes/footer.jade
+		include includes/scripts.jade

@@ -1,0 +1,299 @@
+// HEADER
+@import "neat/grid/media";
+@import "base/base";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+#page_header {
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  height: 70px;
+  z-index: 60;
+  -webkit-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.07);
+  -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.07);
+  -ms-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.07);
+  -o-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.07);
+  box-shadow:         0px 1px 4px 0px rgba(0,0,0,0.07);
+
+  .container {
+    position: relative;
+  }
+
+  .logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 48px;
+    background-size: 48px 40px;
+    background-image: url("../img/edera_logo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 10px;
+    text-indent: -999px;
+    overflow: hidden;
+    background-position: left top;
+    @include transform(scale(.85));
+    @include transition(transform .1s ease-in-out);
+
+    &:hover {
+      @include transform(scale(.9));
+      background-position: left bottom;        
+    }
+
+    @include media($mobile) {
+      left: 10px;
+    }
+
+    @include media($tablet) {
+      left: 30px;
+    }
+
+    @include media($desktop) {
+      left: 10px;
+    }
+
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-indent: -999px;
+      font-size: 0;
+    }
+  }
+}
+
+
+.toggle_menu {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  border-radius: 0;
+  text-align: center;
+  line-height: 34px;
+  color: $blue;
+  font-size: 26px;
+  cursor: pointer;
+
+  background-image: url("../img/hamburger.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+    
+
+  @include media($mobile) {
+    display: block;
+    right: 10px;
+  }
+  @include media($tablet) {
+    display: block;
+    right: 30px;
+  }
+  @include media($desktop) {
+    display: none;
+  }
+}
+
+
+#main_navigation {
+  position:absolute;
+
+  @include media($mobile) {
+    top: 50px;
+    left: 0;
+    right: 0;
+    display: none;
+
+    ul {
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      height: auto;
+
+      li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        width: 100%;
+      }
+    }
+
+    .sign_in_up {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @include media($tablet) {
+    left: 0px;
+    right: 0px;
+    top:50px;
+    display: none;
+
+    ul {
+      position: relative;
+      // top: 50px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      height: auto;
+
+      li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        width: 100%;
+      }
+    }
+
+    .sign_in_up {
+      position: relative;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @include media($desktop) {
+    left: 80px;
+    right: 10px;
+    top:5px;
+
+    display: block !important;
+
+    height: 60px;
+    line-height: 60px;
+
+    ul {
+
+      li {
+        @include inline-block;
+
+        &+li {
+          margin-left: 15px;
+        }
+
+        &.inactive {
+          pointer-events: none;
+
+          a {
+            color: rgba(0,0,0,.4) !important;
+          }
+        }
+      }
+    }
+
+    .sign_in_up {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      li {
+        @include inline-block;
+
+        &+li {
+          margin-left: 15px;
+        }
+      }
+
+      &:before {
+        // display: block;
+        display: none;
+        content: " ";
+        width: 1px;
+        height: 20px;
+        top: 50%;
+        margin-top: -18px;
+        left: -20px;
+        background-color: #ccc;
+        position: absolute;
+      }
+
+      .button {
+        color: $blue;
+        box-shadow: none;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+
+      .register {
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+
+
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      letter-spacing: normal;
+      list-style-position: outside;
+      // @include inline-block;
+
+      // &+li {
+      //   margin-left: 15px;
+      // }
+
+      &.inactive {
+        pointer-events: none;
+
+        a {
+          opacity: .4;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 0.015em;
+    position: relative;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

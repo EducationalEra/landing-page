@@ -1,0 +1,16 @@
+NOTE: do not edit HTML files, they will be overriden the next time you compile.
+ All template assets are in the templates directory.
+
+to install all dependencies, run command
+ > sh install.sh
+
+to build a project run
+ > npm run build
+
+to run project
+ > npm start
+ now open your browser in http://0.0.0.0:8080/
+
+to watch files in runtime open the console in other tab and run
+  > node_modules/gulp/bin/gulp.js watch
+now all jade and less files are being watched and compiled in realtime

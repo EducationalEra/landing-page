@@ -1,0 +1,81 @@
+//
+	Created by olga on 03-02-2015.
+include mixins.jade
+include includes/head.jade
+doctype html
+html
+	+head
+	body
+		include includes/gtm.jade
+		include includes/header.jade
+		// ПЕРШИЙ ЕКРАН
+		.courses.section.heading
+			.container
+				h1
+					|  Онлайн-курси
+
+		//- СПІЛЬНОКОШТ
+		a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+			.banner_25
+				img.left_img(src="../img/25/left_banner.png" alt="")
+				p Підтримайте <span>EdEra</span>
+				img.right_img(src="../img/25/right_banner.png" alt="")
+
+
+		// КУРСИ
+		#courses.section.four
+			.container   
+				h2 Всі курси
+			.container
+				// Онлайн-курс для вчителів початкової школи
+				+course(locals.courses.nus)
+				// ДНК Лідерів
+				+course(locals.courses.leader_dna)
+				// Колошкільне дитинознавство
+				+course(locals.courses.royz)
+				// Домедична допомога
+				+course(locals.courses.med)
+				// Онлайн-курс «Автостопом по біології»
+				+course(locals.courses.biology_zno)
+				// Людина та держава. Правила гри
+				+course(locals.courses.law)
+				// Європейський механізм захисту прав людини. Частина 2
+				+course(locals.courses.hrights2)
+				// Робота вчителя початкових класів із дітьми з особливими освітніми потребами
+				+course(locals.courses.inclusion_teacher)
+				// Недискримінаційний підхід у навчанні
+				+course(locals.courses.non_discrimination)
+				// Європейський механізм захисту прав людини. Частина 1
+				+course(locals.courses.hrights1)
+				//- English verb tences
+				//-+course(locals.courses.english2)
+				// Як писати про економіку без помилок?
+				+course(locals.courses.economics)
+				// Експорт, ринки ЄС та інтернаціоналізація бізнесу II
+				+course(locals.courses.smartExport)
+				//- 3D
+				//-+course(locals.courses.essentialsModel)
+				// Лайфхаки з української мови
+				+course(locals.courses.ukr_lifehacks)
+				// Лайфхаки з української літератури
+				+course(locals.courses.lit_lifehacks)
+				// Експорт, ринки ЄС та інтернаціоналізація бізнесу
+				+course(locals.courses.export)
+				// Українська мова
+				+course(locals.courses.ukr1)
+				// Історія
+				+course(locals.courses.history1)
+				// Математика
+				+course(locals.courses.math1)
+				// Фізика
+				+course(locals.courses.physics1)
+				// Англійська мова
+				+course(locals.courses.english1)
+				// Біологія
+				+course(locals.courses.biology1)
+				// Географія
+				+course(locals.courses.geography1)
+
+		include includes/footer.jade
+		include includes/scripts.jade
+

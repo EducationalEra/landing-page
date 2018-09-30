@@ -1,0 +1,479 @@
+{
+  "url": "https://www.ed-era.com/",
+  "courses": {
+    "demo": {
+      "className": "demo",
+      "imgUrl": "/img/courses/demo.jpg",
+      "altText": "Демо-курс EdEra",
+      "href": "https://courses.ed-era.com/courses/EdEra/DEMO1/2015_D1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Демокурс",
+      "courseSubtitle": "",
+      "courseDesc": "Ознайомчі матеріали з усіх курсів проекту EdEra. Цей розділ також дозволить вам ознайомитись з механікою навчального процесу на платформі.",
+      "access": true,
+      "free": false
+    },
+    "nus": {
+      "className": "",
+      "imgUrl": "/img/courses/nus-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:MON-EDERA-OSVITORIA+ST101+st101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Онлайн-курс для вчителів початкової школи",
+      "courseSubtitle": "",
+      "courseDesc": "Один із обов’язкових етапів підвищення кваліфікації вчителів, які набиратимуть перший клас у 2018 році. Зокрема, ви ознайомитесь із новим Державним стандартом початкової освіти та методиками компетентністного навчання.",
+      "access": true,
+      "free": false
+    },
+    "modules": {
+      "className": "",
+      "imgUrl": "/img/modules-cover.jpg",
+      "altText": "",
+      "href": "./modules/",
+      "hrefText": "Перейти до проекту",
+      "courseTitle": "Навчальні модулі для формування громадянської компетентності",
+      "courseSubtitle": "",
+      "courseDesc": "Пропонуємо 14 ідей для шкільних занять, які допоможуть сформувати практичні навички в учнів. Адаптовуйте навчальні матеріали на власний розсуд. Використовуйте їх у межах уроків чи позаурочних заходів. Експериментувати — просто!",
+      "access": true,
+      "free": false
+    },
+    "leader_dna": {
+      "className": "",
+      "imgUrl": "/img/courses/leader-dna-cover.jpg",
+      "altText": "",
+      "href": "http://leader.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "ДНК Лідерів",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс, що надихне тебе на розвиток власного потенціалу. У коротких відео курсу спікери поділяться історіями успіхів та невдач, а інтерактивні завдання допоможуть опанувати чотири лідерські навички.",
+      "access": true,
+      "free": false
+    },
+    "non_discrimination": {
+      "className": "",
+      "imgUrl": "/img/courses/non-discrimination-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-Studena+Inc+1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Недискримінаційний підхід у навчанні",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс знайомить із недискримінаційним і толерантним викладанням. Ви дізнаєтеся, як зробити школу дружньою для кожної дитини та створити в класі атмосферу взаємоповаги й підтримки.",
+      "access": true,
+      "free": false
+    },
+    "inclusion_teacher": {
+      "className": "",
+      "imgUrl": "/img/courses/inclusion-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Inc+1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Робота вчителя початкових класів із дітьми з особливими освітніми потребами",
+      "courseSubtitle": "",
+      "courseDesc": "Усі школи України навчають дітей з особливими освітніми потребами. За допомогою цього курсу вчителі початкових класів можуть опанувати теоретичні і практичні знання для роботи в інклюзивному класі.",
+      "access": true,
+      "free": false
+    },
+    "med": {
+      "className": "",
+      "imgUrl": "/img/courses/med.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Med+1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Домедична допомога",
+      "courseSubtitle": "",
+      "courseDesc": "Безпека для дитини – один із головних принципів НУШ. Для того, щоб організувати безпечне шкільне середовище, вчительство має володіти певними навичками. Одна з них – навичка домедичної допомоги.",
+      "access": true,
+      "free": false
+    },
+    "biology_zno": {
+      "className": "",
+      "imgUrl": "/img/courses/biology-zno/biology-zno.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-Osvitoria+BIO+1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Автостопом по біології",
+      "courseSubtitle": "",
+      "courseDesc": "Пройдемося «автостопом» по складним темам біології. Підготуємомя до ЗНО та впевнимося, що наука – це цікаво. В курсі розглянемо такі теми як ознаки живого, цитологія, генетика, ботаніка та фізіологія людини.",
+      "access": true,
+      "free": false
+    },
+    "royz": {
+      "className": "",
+      "imgUrl": "/img/royz/royz-project.jpg",
+      "altText": "",
+      "href": "https://ed-era.com/children-ua/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Колошкільне дитинознавство",
+      "courseSubtitle": "",
+      "courseDesc": "Спецпроект з дитячим і сімейним психологом Світланою Ройз. Курс складається з 7 блоків — з іграми, практиками адаптації до школи (садочку), трансформації тривоги, агресії, секретами повернення концентрації уваги, «направлення» активності на перерві та «входження» в урок.",
+      "access": true,
+      "free": false
+    },
+    "hrights_live": {
+      "className": "",
+      "imgUrl": "/img/courses/hrights-live.jpg",
+      "altText": "",
+      "href": "http://bit.ly/hrights-live",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Інтерактивний журнал",
+      "courseSubtitle": "",
+      "courseDesc": "Практика ЄСПЛ динамічно розвивається, постійно змінюється й національне правозастосування та законодавство. Тому ми пропонуємо вам унікальний «живий» відео журнал.",
+      "access": true,
+      "free": false
+    },
+    "english2": {
+      "className": "",
+      "imgUrl": "/img/courses/english2-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/E202/e202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Англійська мова: Часові форми",
+      "courseSubtitle": "",
+      "courseDesc": "Послідовний «огляд» найчастіше вживаних часових форм дієслова, особливостей їх вживання, утворення та взаємодії.",
+      "access": true,
+      "free": false
+    },
+    "smartExport": {
+      "className": "",
+      "imgUrl": "/img/courses/smartExport/export.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra+ib103+IB103/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Smart exporter: електронні ресурси, регулювання та вимоги для експорту до ЄС",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для спеціалістів з експорту й торгівлі в ЄС. Зокрема, розглядаються онлайн-інструменти, які дають доступ до аналітичної, регуляторної та маркетингової інформації. Доповнює курс «Експорт, ринки ЄС та інтернаціоналізація бізнесу».",
+      "access": true,
+      "free": false
+    },
+    "essentialsModel": {
+      "className": "",
+      "imgUrl": "/img/courses/essentialModel/3dcover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/model101/Model101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи 3D-моделювання",
+      "courseSubtitle": "",
+      "courseDesc": "Упродовж курсу ви познайомитеся з основними концепціями 3D-моделювання й перейдете від базових форм до складних моделей. Курс підходить як для початківців, так і досвідчених 3D-художників, що хочуть структурувати знання та розширити професійний арсенал.",
+      "access": true,
+      "free": false
+    },
+    "hrights1": {
+      "className": "",
+      "imgUrl": "/img/courses/hr-course/hr-course.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra+HR101+hr101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Європейський механізм захисту прав людини",
+      "courseSubtitle": "",
+      "courseDesc": "Курс знайомить із темою захисту прав людини крізь призму основних положень Конвенції про захист прав людини та основоположних свобод (Конвенції) та практики Європейського суду з прав людини (ЄСПЛ). Для широкого кола слухачів.",
+      "access": true,
+      "free": false
+    },
+    "hrights2": {
+      "className": "",
+      "imgUrl": "/img/courses/hr-course/hr2-course.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra+HR201+hr201/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Європейський механізм захисту прав людини. Частина 2",
+      "courseSubtitle": "",
+      "courseDesc": "Продовження курсу «Європейський механізм захисту прав людини». Для тих, хто прагне поглибити отримані знання й навчитися аналізувати практику Суду відповідно до статей Конвенції.",
+      "access": true,
+      "free": false
+    },
+    "law": {
+      "className": "",
+      "imgUrl": "/img/courses/law/cover-course.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Людина та держава. Правила гри",
+      "courseSubtitle": "",
+      "courseDesc": "Базовий курс із права, упродовж якого розглядається концепція прав людини та механізми їх захисту, система міжнародного правосуддя, діяльність міжнародних організацій.",
+      "access": true,
+      "free": false
+    },
+    "economics": {
+      "className": "",
+      "imgUrl": "/img/courses/economics/economic-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:VOXU-KSE-EdEra+SEJ101+2017/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Як писати про економіку без помилок",
+      "courseSubtitle": "",
+      "courseDesc": "Курс, присвячений економічній журналістиці. Ви дізнаєтеся як функціонує економіка, як працювати з даними та аналізувати корпоративні фінанси. Курс відкритий для журналістів та всіх, хто цікавиться економікою.",
+      "access": true,
+      "free": false
+    },
+    "ukr_lifehacks": {
+      "className": "",
+      "imgUrl": "/img/courses/lifehacks/cover-lifehacks-promo.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Лайфхаки з української мови",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для підготовки до ЗНО у формі корисних порад (лайфхаків). Ви опануєте базові теоретичні знання з української мови та виробите навички успішної мовленнєвої комунікації.",
+      "access": true,
+      "free": false
+    },
+    "lit_lifehacks": {
+      "className": "",
+      "imgUrl": "/img/courses/lifehacks/ukr-lit-promo.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+201/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Лайфхаки з української літератури",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для підготовки до ЗНО у формі корисних порад (лайфхаків). Допоможе простежити історію розвитку мистецтва слова, опанувати базові теоретико-літературні поняття, виробити навички аналізу художніх творів.",
+      "access": true,
+      "free": false
+    },
+    "export": {
+      "className": "",
+      "imgUrl": "/img/courses/export/export-promo.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/ib102/IB102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Експорт, ринки ЄС та інтернаціоналізація бізнесу",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс, присвячений налагодженню системного експорту. Розроблений на базі матеріалів Комерційної служби США, кращих українських та міжнародних практик. Доповнює курс «Smart Exporter: електронні ресурси, регулювання та вимоги для експорту до ЄС».",
+      "access": true,
+      "free": false
+    },
+    "ukr1": {
+      "className": "",
+      "imgUrl": "/img/courses/ukr/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/u102/U102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Українська мова. Від фонетики до морфології",
+      "courseSubtitle": "",
+      "courseDesc": "Перший курс з української мови та літератури, де розглядаються основні розділи мовознавства: фонетика, лексикологія, орфографія. Половина курсу присвячена морфології — важливому компоненту вивчення будь-якої мови.",
+      "access": true,
+      "free": false
+    },
+    "history1": {
+      "className": "",
+      "imgUrl": "/img/courses/history/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/hi102/Hi102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Історія України. Зародження української нації",
+      "courseSubtitle": "",
+      "courseDesc": "Перший курс з історії України, під час якого відстежується етногенез українців. Ми пройдемо шлях від неандертальців і кочівників до Речі Посполитої та уній, щоб довести прямий зв’язок між Київською Руссю й сучасною Україною.",
+      "access": true,
+      "free": false
+    },
+    "math1": {
+      "className": "",
+      "imgUrl": "/img/courses/maths/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/m102/M102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Математика. Арифметика, рівняння та нерівності",
+      "courseSubtitle": "",
+      "courseDesc": "Перший курс з математики. Знайомимося з арифметикою, числами, рівняннями, розглядаємо базові поняття, від дробів до логарифма. Більше половини курсу присвячено методам розв’язання рівнянь та нерівностей.",
+      "access": true,
+      "free": false
+    },
+    "physics1": {
+      "className": "",
+      "imgUrl": "/img/courses/physics/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/p102/P102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Фізика. Механіка",
+      "courseSubtitle": "",
+      "courseDesc": "Курс для фізиків-початківців, адже механіка дозволяє зрозуміти інші теми, від магнетизму до квантової фізики. У курсі вдало поєднана теоретична й практична частина: ви отримаєте основні навички, зрозумієте методи фізичного мислення й навчитеся застосовувати набуті знання на практиці.",
+      "access": true,
+      "free": false
+    },
+    "english1": {
+      "className": "",
+      "imgUrl": "/img/courses/eng/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/e102/E102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Англійська мова. Морфологія",
+      "courseSubtitle": "",
+      "courseDesc": "Перший курс з англійської мови, присвячений частинам мови: як і коли вони використовуються, яку роль виконують у реченнях. Підходить учням, абітурієнтам, студентам і всім, хто хоче підтягнути граматику.",
+      "access": true,
+      "free": false
+    },
+    "biology1": {
+      "className": "",
+      "imgUrl": "/img/courses/biology/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/b102/B102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Біологія. Ботаніка",
+      "courseSubtitle": "",
+      "courseDesc": "Перший курс біології, що включає матеріали з ботаніки й базову інформацію, необхідну для розуміння біологічних процесів. Спочатку ви опануєте анатомію та фізіологію рослин, а потім дізнаєтеся про різноманіття рослинного світу.",
+      "access": true,
+      "free": false
+    },
+    "geography1": {
+      "className": "",
+      "imgUrl": "/img/courses/geography/1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/g102/G102/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Географія. Загальна географія",
+      "courseSubtitle": "",
+      "courseDesc": "Ви дізнаєтеся історію найвизначніших географічних відкриттів, навчитеся користуватися планами й картами та розв’язувати географічні задачі. Курс особливо актуальний для учнів 6-11 класів та абітурієнтів.",
+      "access": true,
+      "free": false
+    },
+    "ukr2": {
+      "className": "",
+      "imgUrl": "/img/courses/ukr/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/U202/u202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Українська мова II",
+      "courseSubtitle": "",
+      "courseDesc": "Другий курс з української мови присвячений вивченню синтаксису, пунктуації та стилістики. Опановуйте мистецтво розуміння та написання творів за всіма правилами.",
+      "access": false,
+      "free": false
+    },
+    "history2": {
+      "className": "",
+      "imgUrl": "/img/courses/history/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/H202/h202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Історія України ІІ",
+      "courseSubtitle": "",
+      "courseDesc": "Другий курс з історії України розповість Вам про  національно-визвольні змагання українського народу XVII-XVIII ст. Дізнайтесь про українські землі у складі імперій.",
+      "access": false,
+      "free": false
+    },
+    "math2": {
+      "className": "",
+      "imgUrl": "/img/courses/maths/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/M202/m202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Математика II",
+      "courseSubtitle": "",
+      "courseDesc": "Другий курс з математики. Функція, її похідна та інтеграл, тригонометрія й основи комбінаторики. Дайте раду цим, на перший погляд, страшним словам – і більше ніколи не будете наляканими.",
+      "access": false,
+      "free": false
+    },
+    "physics2": {
+      "className": "",
+      "imgUrl": "/img/courses/physics/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/P202/p202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Фізика II",
+      "courseSubtitle": "",
+      "courseDesc": "Другий курс з фізики надасть вам інструмент для аналізу мільярду мільярдів частинок за допомогою молекулярно-кінетичної теорії. З чого «зібрано» наш всесвіт? Отримайте відповідь на це запитання.",
+      "access": false,
+      "free": false
+    },
+    "biology2": {
+      "className": "",
+      "imgUrl": "/img/courses/biology/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/B202/b202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Біологія II",
+      "courseSubtitle": "",
+      "courseDesc": "Вивчайте усе про тваринний світ від найпримітивніших до найбільш високоорганізованих істот, поступово відтворюючи картину історичного розвитку живого світу у другому курсі з біології.",
+      "access": false,
+      "free": false
+    },
+    "geography2": {
+      "className": "",
+      "imgUrl": "/img/courses/geography/2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/EdEra/G202/g202/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Географія II",
+      "courseSubtitle": "",
+      "courseDesc": "Другий курс з географії. Поверхня нашої планети складається з суші та води — сформуйте уявлення про природу материків та океанів Землі.",
+      "access": false,
+      "free": false
+    }
+  },
+  "titles": {
+    "general": {
+      "url": "https://www.ed-era.com/",
+      "title": "EdEra – інтерактивна онлайн-освіта",
+      "description": "Educational Era – проект, який створює онлайн-курси та освітній контент широкого спектра з використанням IT. Мета – якісна, цікава і доступна українська освіта."
+    },
+    "fablab": {
+      "url": "https://www.ed-era.com/fablab",
+      "title": "EdEra – інтерактивна онлайн-освіта",
+      "description": "Educational Era – проект, який створює онлайн-курси та освітній контент широкого спектра з використанням IT. Мета – якісна, цікава і доступна українська освіта."
+    },
+    "books": {
+      "url": "https://www.ed-era.com/books",
+      "title": "EdEra Books – інтерактивна освітня бібліотека ",
+      "description": "Авторська інтерактивна освітня література, ілюстрації, візуалізації, автоматичний тестер та повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   ",
+      "image": "https://www.ed-era.com/img/share/bg_books.jpg",
+      "law": {
+        "url": "https://www.ed-era.com/books/law",
+        "title": "EdEra Book - Правознавство: Основи вчення про державу та право  ",
+        "image": "https://www.ed-era.com/img/share/small/law.jpg",
+        "description": "Інтерактивний підручник «Правознавство: Основи вчення про державу та право»"
+      },
+      "english2": {
+        "url": "https://www.ed-era.com/books/english2",
+        "title": "EdEra Book - Англійська мова: Часові форми  ",
+        "image": "https://www.ed-era.com/img/share/small/english2.jpg",
+        "description": "Інтерактивний підручник «Англійська мова: Часові форми» Покроковий та детальний розгляд усіх найчастіше вживаних часових форм англійської мови"
+      },
+      "ukr": {
+        "url": "https://www.ed-era.com/books/ukrainian",
+        "title": "EdEra Book – Українська мова. Від фонетики та морфології  ",
+        "image": "https://www.ed-era.com/img/share/small/ukr.jpg",
+        "description": "Інтерактивний підручник «Українська мова. Від фонетики до морфології». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra! "
+      },
+      "physics": {
+        "url": "https://www.ed-era.com/books/physics",
+        "title": " EdEra Book – Фізика. Механіка  ",
+        "image": "https://www.ed-era.com/img/share/small/phys.jpg",
+        "description": "Інтерактивний підручник «Фізика. Механіка». Цікавий виклад матеріалу, візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra! "
+      },
+      "history": {
+        "url": "https://www.ed-era.com/books/history",
+        "title": " EdEra Book – Історія України. Зародження української нації  ",
+        "image": "https://www.ed-era.com/img/share/small/hist.jpg",
+        "description": "Інтерактивний підручник « Історія України. Зародження української нації». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
+      },
+      "english": {
+        "url": "https://www.ed-era.com/books/english",
+        "title": "   EdEra Book – Англійська мова. Морфологія  ",
+        "image": "https://www.ed-era.com/img/share/small/eng.jpg",
+        "description": "  Інтерактивний підручник « Англійська мова. Морфологія». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   "
+      },
+      "math": {
+        "url": "https://www.ed-era.com/books/maths",
+        "title": "EdEra Book – Математика. Арифметика, рівняння та нерівності  ",
+        "image": "https://www.ed-era.com/img/share/small/math.jpg",
+        "description": "Інтерактивний підручник «Математика. Арифметика, рівняння та нерівності». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   "
+      },
+      "geography": {
+        "url": "https://www.ed-era.com/books/geography",
+        "title": "EdEra Book – Географія. Загальна географія",
+        "image": "https://www.ed-era.com/img/share/small/geo.jpg",
+        "description": "Інтерактивний підручник «Географія. Загальна географія». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
+      },
+      "biology": {
+        "url": "https://www.ed-era.com/books/biology",
+        "title": "   EdEra Book – Біологія. Рослини, гриби та лишайники  ",
+        "image": "https://www.ed-era.com/img/share/small/biol.jpg",
+        "description": "Інтерактивний підручник «Біологія. Рослини, гриби та лишайники». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
+      },
+      "anticorr": {
+        "url": "https://www.ed-era.com/books/anticorr",
+        "title": "Антикорупційний урок (короткий навчальний посібник)",
+        "image": "https://www.ed-era.com/img/share/small/anticorruption-lesson.jpg",
+        "description": "Антикорупційний урок підготовлено програмою розвитку ООН в Україні та проектом EdEra. Для проведення уроку створено сценарій, додаткові відеоматеріали та презентації."
+      }
+    }
+  }
+}

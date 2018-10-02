@@ -1,0 +1,384 @@
+include ../includes/head-lzv-rights.jade
+doctype html
+html
+	+head
+	body
+
+
+		include ../includes/gtm.jade
+		include ../includes/header.jade
+		
+				
+		#recorddiv68552395.t-cover(bgimgfield='img', style="height:50vh; background-image:url('../img/lzv-rights/HEAD/1.jpg');")
+			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395', data-content-cover-height='50vh', data-content-cover-parallax='', style='height: 50vh; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/1.jpg");', src='')
+			.t-cover__filter(style='height:50vh;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+			.t270
+				.t-container
+					.t-cover__wrapper.t-valign_middle(style='height:50vh;')
+						.t270__wrapper
+							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ;') Дискримінація
+							.t270__separator
+		.t-container
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:135px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+				// T004
+				.t004
+					.t-container
+						.t-col.t-col_11
+							.t-text.t-text_md(field='text')
+								| Вам коли-небудь відмовляли в роботі через те, що ви занадто молодий або ж навпаки? Маєте забагато чи замало досвіду? Якщо так, ви вже стикалися з дискримінацією.
+								br
+								| Чи пов’язана вона зі стереотипами та упередженнями? Якою вона буває? На життєвих прикладах ми розглянемо випадки дискримінації та як вона втілюється в українському законодавстві.
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:90px;padding-bottom:0px; ;', data-record-type='4')
+				// T121
+				.t121
+					center
+						.t-width.t-width_12(style='height: 452.5px; width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/TuXg8lyYsEQ', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
+		.t-container.quiz_container_big
+			#quiz_application
+				br
+				div(v-if='!started')
+				div(v-else-if='progress')
+					.quiz_container.quiz
+						.quiz_progess
+							| Питання:
+							span  {{index + 1}} / {{quiz.length}}
+						.quiz_question
+							h3 {{quiz[index].title}}
+							div(v-if='quiz[index].description !== false')
+								p {{quiz[index].description}}
+							div(v-if='quiz[index].img !== false')
+								img(v-bind:src='quiz[index].img')
+						.quiz_answers(v-for='(answer, key) in quiz[index].answers')
+							.quiz_answer
+								div(v-if='quiz[index].type == 0')
+									button.quiz_radiobutton(v-if='answers[index] !== key', @click='choose(key)')
+									button.quiz_radiobutton.chose(v-else='')
+								div(v-else='')
+									button.checkbox(v-if='answers[index][key] !== true ', @click='choose(key)')
+									button.checkbox(v-else='', @click='choose(key)')
+										svg(width='16', height='11', viewBox='0 0 16 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+											path(d='M6.04309 10.943L0.0608365 5.33851C-0.0202788 5.26252 -0.0202788 5.14853 0.0608365 5.07254L1.78454 3.45769C1.86565 3.38169 1.98733 3.38169 2.06844 3.45769L6.18504 7.31433L13.9316 0.0569948C14.0127 -0.0189983 14.1343 -0.0189983 14.2155 0.0569948L15.9392 1.67185C16.0203 1.74784 16.0203 1.86183 15.9392 1.93782L6.327 10.943C6.24588 11.019 6.12421 11.019 6.04309 10.943Z', fill='#65B2E1')
+								.quiz_margin_left
+									p(v-if='!answer.image') {{answer.body}}
+									img(v-else='', v-bind:src='answer.image')
+									p.quiz_hint.true(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === true') {{answer.hint}}
+									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Відповісти
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Відповісти
+						.quiz_main_hint(v-else-if='submit === true')
+							button.quiz_button(@click='goNext()') Далі
+							div
+								p(v-if='check == true', v-html='quiz[index].true_hint')
+								p
+								p(v-if='check == false', v-html='quiz[index].false_hint')
+								p
+				div(v-else='')
+					.quiz_container.result
+						h5 Ваш результат
+						h5
+						h2 {{score}}/{{answers.length}}
+						p {{resultText[score].description}}
+						button.quiz_button(@click='restart()') Спробувати ще
+		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:60px; ;', data-record-type='106')
+			// T004
+			.t004
+				.t-container
+					.t-col.t-col_11
+						.t-text.t-text_md(field='text')
+							| Спецпроект реалізований в рамках проекту «Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink) за підтримки Агентства США з міжнародного розвитку (USAID).
+		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
+		script.
+			new Vue({
+			el: '#quiz_application',
+			data: function() {
+			return {
+			intro: {
+			title: '',
+			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
+			button: 'Почати',
+			background: false,
+			},
+			quiz: [{
+			type: 0,
+			title: 'Коли загальноприйняті правила та закони по-різному впливають на людей, створюють для одних менш сприятливі умови через вік, стать, расу та інші ознаки, це:',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [{
+			body: 'Утиск',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Пряма дискримінація ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Непряма дискримінація',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Просто так склалось ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			]
+			},
+			{
+			type: 0,
+			title: 'Яка зі вказаних ситуацій НЕ є дискримінацією?',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [{
+			body: 'Ви прийшли на співбесіду. Вас запитують про досвід роботи, освіту. А потім — чи збираєтеся ви одружуватись, чи є у вас діти, чи плануєте їх мати. ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'В університеті в одній групі навчаються хлопець і дівчина з Судану. Хлопець дуже подобається дівчині, тому вона пропонує йому зустрічатися. Хлопець відмовляється. ',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Охоронця в супермаркеті просять перевести працювати на склад, тому що дізналися про його ВІЛ-позитивний статус. ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Колега в офісі постійно розповідає, що жінки слабші та не такі розумні як чоловіки. А тому й заробляють менше ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			]
+			},
+			{
+			type: 0,
+			title: 'Щоб потрапити до приміщення відділення банку, потрібно подолати 8 сходинок, які не обладнані пандусом. Відповідно, люди з інвалідністю та представники інших маломобільних груп не можуть скористатися банківськими послугами в цьому відділенні. Це приклад:',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [{
+			body: 'прямої дискримінації',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'непрямої дискримінації ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'відмови в розумному пристосуванні ',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'пособництва в дискримінації',
+			hint: 'Неправильно',
+			correct: false
+			},
+			]
+			},
+			{
+			type: 0,
+			title: ' Непряма дискримінація може бути виправданою, якщо... ',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [{
+			body: 'Вона обґрунтовується правомірною метою. Способи досягнення цієї мети — незалежні та необхідні',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'її підтримує більшість населення країни/регіону ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'непряма дискримінація ніколи не може бути виправданою',
+			hint: 'Неправильно',
+			correct: false
+			}
+			]
+			},
+			{
+			type: 0,
+			title: 'Повноваження контролювати дотримання принципу недискримінації в усіх сферах суспільних відносин покладені законодавством на... ',
+			description: 'Відповідь на запитання радимо шукати в Законі України «Про засади запобігання та протидії дискримінації в Україні»',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [{
+			body: 'органи внутрішніх справ ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Уповноваженого Верховної Ради України з прав людини ',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Кабінет Міністрів України ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'обласні державні адміністрації',
+			hint: 'Неправильно',
+			correct: false
+			},
+			]
+			},
+			],
+			resultText: [{
+			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			},
+			{
+			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			},
+			{
+			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			},
+			{
+			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
+			},
+			{
+			description: 'Хороший результат!',
+			}, {
+			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			}
+			],
+			started: false,
+			chosen: 0,
+			answers: [],
+			submit: false,
+			progress: true,
+			check: false,
+			score: 0,
+			index: 0
+			}
+			},
+			computed: {
+			counter: function() {
+			if (this.quiz[this.index].type == 0) {
+			if (this.quiz[this.index].answers[this.answers[this.index]].correct == true) {
+			this.score++;
+			return true;
+			} else {
+			return false;
+			}
+			} else {
+			for (let i = 0; i < this.quiz[this.index].answers.length; i++) {
+			if (this.quiz[this.index].answers[i].correct != this.answers[this.index][i]) {
+			return false;
+			}
+			}
+			this.score++;
+			return true;
+			}
+			}
+			},
+			methods: {
+			startTest: function() {
+			this.started = true;
+			this.answers = Array(this.quiz.length)
+			for (let i = 0; i < this.quiz.length; i++) {
+			if (this.quiz[i].type == 1) {
+			this.answers[i] = Array(this.quiz[i].answers.length).fill(false);
+			}
+			}
+			},
+			restart: function() {
+			this.started = false;
+			this.chosen = 0;
+			this.answers = [];
+			this.submit = false;
+			this.progress = true;
+			this.check = false;
+			this.score = 0;
+			this.index = 0;
+			this.startTest();
+			},
+			choose: function(key) {
+			if (this.submit != 0) {
+			return false;
+			}
+			if (this.quiz[this.index].type === 0) {
+			Vue.set(this.answers, this.index, key)
+			this.chosen = 1;
+			} else {
+			if (this.answers[this.index][key] === false) {
+			Vue.set(this.answers[this.index], key, true);
+			this.chosen += 1;
+			} else {
+			Vue.set(this.answers[this.index], key, false);
+			this.chosen -= 1;
+			}
+			}
+			console.log(this.answers);
+			},
+			submitAnswer: function() {
+			this.submit = true;
+			this.chosen = 0;
+			this.check = this.counter
+			},
+			goNext: function() {
+			this.index++;
+			this.submit = false;
+			if (this.index === this.quiz.length) {
+			this.showResult()
+			}
+			},
+			showResult: function(answers) {
+			this.progress = false
+			},
+			},
+			mounted: function() {
+			console.log("dsdw");
+			this.startTest();
+			}
+			})
+
+
+
+		// ПАРТНЕРИ
+		#partners.section
+			p.h2 
+				| Партнери
+			.container
+				ul.partners_list
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo3.png', alt='')
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo2.png', alt='')
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo4.png', alt='')
+			br		
+			p.h2 
+				| Організації-розробники 
+			.container
+				ul.partners_list
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo_edera.png', alt='')
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo.png', alt='')
+
+		include ../includes/footer.jade
+		include ../includes/scripts.jade

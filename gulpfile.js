@@ -122,6 +122,9 @@ gulp.task('copy', ['sass', 'templates'], function () {
   gulp.src("isef/img/*")
       .pipe(gulp.dest("build/isef/img"));
 
+  gulp.src("public/lzv-rights/*.*")
+      .pipe(gulp.dest("build/lzv-rights"));
+      
   gulp.src("public/25/*.*")
       .pipe(gulp.dest("build/modules"));
 
@@ -133,7 +136,7 @@ gulp.task('copy', ['sass', 'templates'], function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['js/**/*.js', 'templates/**/*.jade', 'css/*.less', 'css/*.scss', 'css/**/*.scss'], ['copy']);
+  gulp.watch(['js/**/*.js', 'templates/**/*.jade', 'css/*.css', 'css/*.less', 'css/*.scss', 'css/**/*.scss'], ['copy']);
 });
 
 // Static Server + watching scss/html files

@@ -1,0 +1,405 @@
+include ../includes/head-lzv-rights.jade
+doctype html
+html
+	+head
+	body
+
+
+		include ../includes/gtm.jade
+		include ../includes/header.jade
+		
+				
+		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/5.jpg');")
+			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/5.jpg");', src='')
+			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+			.t270
+				.t-container
+					.t-cover__wrapper.t-valign_middle(style='height:300px;')
+						.t270__wrapper(style="max-width:700px")
+							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Спілкування з поліцією
+							.t270__separator
+		.t-container
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+				// T004
+				.t004
+					.t-container
+						.t-col.t-col_11
+							.t-text.t-text_md(field='text', style='')
+								| Давайте поговоримо про ситуації, які можуть трапитися з будь-ким: зокрема, і з ВІЛ-позитивними особами. Це зустрічі з поліцією.
+								У цьому відео ми разом з  
+								span  Андрієм Галаєм
+								|, координатором проектів Української Гельсінської спілки з прав людини, розберемося, коли і як працівники поліції можуть звертатись до людини, затримувати її, обшукувати. Чи є особливі гарантії прав людей, які живуть з ВІЛ? І нарешті, як захистити права, якщо вони порушені поліцією?
+								br
+								br
+								| Переглядайте відео та проходьте 
+								a(href="#test")тест
+								| . Буде цікаво!
+								
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
+				.t-section__container.t-container
+					.t-col.t-col_12
+						.t-section__topwrapper.t-align_center
+							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
+				// T121
+				.t121
+					center
+						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/Tp6PI8xIvH8', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+		.t-container
+		.t-container.quiz_container_big#test
+			.t-col.t-col_12
+				.t-section__topwrapper.t-align_center
+					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+			#quiz_application
+				br
+				div(v-if='!started')
+				div(v-else-if='progress')
+					.quiz_container.quiz
+						.quiz_progess
+							| Питання:
+							span  {{index + 1}} / {{quiz.length}}
+						.quiz_question
+							h3 {{quiz[index].title}}
+							div(v-if='quiz[index].description !== false')
+								p {{quiz[index].description}}
+							div(v-if='quiz[index].img !== false')
+								img(v-bind:src='quiz[index].img')
+						.quiz_answers(v-for='(answer, key) in quiz[index].answers')
+							.quiz_answer
+								div(v-if='quiz[index].type == 0')
+									button.quiz_radiobutton(v-if='answers[index] !== key', @click='choose(key)')
+									button.quiz_radiobutton.chose(v-else='')
+								div(v-else='')
+									button.checkbox(v-if='answers[index][key] !== true ', @click='choose(key)')
+									button.checkbox(v-else='', @click='choose(key)')
+										svg(width='16', height='11', viewBox='0 0 16 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+											path(d='M6.04309 10.943L0.0608365 5.33851C-0.0202788 5.26252 -0.0202788 5.14853 0.0608365 5.07254L1.78454 3.45769C1.86565 3.38169 1.98733 3.38169 2.06844 3.45769L6.18504 7.31433L13.9316 0.0569948C14.0127 -0.0189983 14.1343 -0.0189983 14.2155 0.0569948L15.9392 1.67185C16.0203 1.74784 16.0203 1.86183 15.9392 1.93782L6.327 10.943C6.24588 11.019 6.12421 11.019 6.04309 10.943Z', fill='#65B2E1')
+								.quiz_margin_left
+									p(v-if='!answer.image') {{answer.body}}
+									img(v-else='', v-bind:src='answer.image')
+									p.quiz_hint.true(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === true') {{answer.hint}}
+									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Відповісти 
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Відповісти 
+						.quiz_main_hint(v-else-if='submit === true')
+							button.quiz_button(@click='goNext()') Далі
+							div
+								p(v-if='check == true', v-html='quiz[index].true_hint')
+								p
+								p(v-if='check == false', v-html='quiz[index].false_hint')
+								p
+				div(v-else='')
+					.quiz_container.result
+						h5 Ваш результат
+						h5
+						h2 {{score}}/{{answers.length}}
+						p {{resultText[score].description}}
+						button.quiz_button(@click='restart()') Скласти ще
+		
+		
+		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
+		script.
+			new Vue({
+			el: '#quiz_application',
+			data: function () {
+			return {
+			intro:{
+			title: '',
+			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
+			button: 'Почати',
+			background: false,
+			},
+			quiz: [
+			{
+			type: 0,
+			title: 'Що варто робити, якщо поліцейський виявив у вас медичні препарати?',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [
+			{
+			body: 'Зробити вигляд, що ви не розумієте про що йде мова',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Вигадати правдоподібну причину на кшталт «це ліки для родича»',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Спокійно пояснити, навіщо вам препарати. За можливості — показати схему лікування',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Відмовитися пояснювати та вимагати викликати вашого лікаря',
+			hint: 'Неправильно',
+			correct: false
+			}
+			]
+			},
+			{
+			type: 0,
+			title: 'Що варто робити, якщо поліцейський виявив у вас медичні препарати?',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [
+			{
+			body: 'Вимагати дотримуватися прав людини',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Намагатися втекти або захищатися фізично',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Виконувати вказівки полійцейського, що б не трапилося',
+			hint: 'Неправильно',
+			correct: false
+			},
+			]
+			},
+			{
+			type: 0,
+			title: 'Вкажіть час, з якого вважається, що особа затримана поліцією:',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [
+			{
+			body: 'з часу, коли поліцейський обмежив особу в пересуванні',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'з часу, який скаже поліцейський',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'з часу поміщення до камери затриманих у поліції',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'з часу, що зазначений у протоколі про затримання',
+			hint: 'Неправильно',
+			correct: false
+			}
+			]
+			},
+			{
+			type: 0,
+			title: 'Зазначте додаткові права, якими НЕ володіє затримана ЛЖВ',
+			description: '',
+			img: false,
+			true_hint: '<span class="true"></span>',
+			false_hint: '<span class="false"></span>',
+			answers: [
+			{
+			body: 'Просити повідомити керівництво центру, де ЛЖВ проходить лікування, та громадську організацію, що опікується лікуванням ЛЖВ',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Вимагати утримання в медичній палаті ',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Вимагати продовження лікування на час затримання',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Нерозголошення діагнозу працівниками поліції іншим особам',
+			hint: 'Неправильно',
+			correct: false
+			}
+			]
+			}
+
+
+			],
+			resultText: [
+			{
+			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			},
+			{
+			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			},
+			{
+			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
+			},
+			{
+			description: 'Хороший результат!',
+			},{
+			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			}
+			],
+			started: false,
+			chosen: 0,
+			answers: [],
+			submit: false,
+			progress: true,
+			check: false,
+			score:0,
+			index: 0
+			}
+			},
+			computed: {
+			counter: function(){
+			if(this.quiz[this.index].type == 0){
+			if(this.quiz[this.index].answers[this.answers[this.index]].correct == true){
+			this.score++;
+			return true;
+			}else{
+			return false;
+			}
+			}else{
+			for (let i = 0; i < this.quiz[this.index].answers.length; i++) {
+			if(this.quiz[this.index].answers[i].correct != this.answers[this.index][i]){
+			return false;
+			}
+			}
+			this.score++;
+			return true;
+			}
+			}
+			},
+			methods: {
+			startTest: function () {
+			this.started = true;
+			this.answers = Array(this.quiz.length)
+			for (let i = 0; i < this.quiz.length; i++) {
+			if(this.quiz[i].type == 1){
+			this.answers[i] = Array(this.quiz[i].answers.length).fill(false);
+			}
+			}
+			},
+			restart: function(){
+			this.started = false;
+			this.chosen = 0;
+			this.answers = [];
+			this.submit = false;
+			this.progress = true;
+			this.check = false;
+			this.score = 0;
+			this.index = 0;
+			this.startTest();
+			},
+			choose: function(key){
+			if(this.submit != 0){
+			return false;
+			}
+			if(this.quiz[this.index].type === 0){
+			Vue.set(this.answers, this.index, key)
+			this.chosen = 1;
+			}else{
+			if(this.answers[this.index][key]===false){
+			Vue.set(this.answers[this.index], key, true);
+			this.chosen += 1;
+			}else{
+			Vue.set(this.answers[this.index], key, false);
+			this.chosen -= 1;
+			}
+			}
+			console.log(this.answers);
+			},
+			submitAnswer: function () {
+			this.submit = true;
+			this.chosen = 0;
+			this.check = this.counter
+			},
+			goNext: function () {
+			this.index++;
+			this.submit = false;
+			if (this.index === this.quiz.length) {
+			this.showResult()
+			}
+			},
+			showResult: function (answers) {
+			this.progress = false
+			},
+			},
+			mounted: function()
+			{
+			console.log("dsdw");
+			this.startTest();
+			}
+			})
+			
+		.t-container
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:10px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+				// T004
+				.t004
+					.t-container
+						.t-col.t-col_12
+							.t-section__topwrapper.t-align_center
+								.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Боротьба з ВІЛ
+						.t-col.t-col_11
+							.t-text.t-text_md(field='text', style='')
+								span Олег Димарецький
+								| — юрист, громадський активіст і правозахисник, директор благодійної організації «Волна». Він 17 років працює у ВІЛ-сервісних організаціях і в інтерв’ю розповість про життєві випадки порушення прав людей, які живуть з ВІЛ.
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:30px;padding-bottom:0px; ', data-record-type='4')
+				// T121
+				.t121
+					center
+						.t-width.t-width_12(style='height: 452.5px; width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/zUMJVr5GtaY', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
+
+		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:0px; ', data-record-type='106')
+			// T004
+			.t004
+				.t-container
+					.t-col.t-col_11
+						.t-text.t-text_md(field='text')
+							| Спецпроект реалізований в рамках проекту 
+							a(href="http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/")«Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink)
+							|  за підтримки Агентства США з міжнародного розвитку (USAID).
+
+
+		section.google_form
+			p 
+				| Заповніть, будь ласка, форму зворотного зв'язку:
+			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму				
+
+
+
+		// ПАРТНЕРИ
+		#partners.section
+			p.h2 
+				| Ініціатори проекту
+			.container
+				ul.partners_list.new
+					li
+						a(href='#', target='_blank', title='')
+							img(src='../img/lzv-rights/logo3.png', alt='')
+					li
+						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
+							img(src='../img/lzv-rights/logo4.png', alt='')
+					li
+						a(href='http://network.org.ua/', target='_blank', title='')
+							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
+			br		
+			p.h2 
+				| Організації-розробники 
+			.container
+				ul.partners_list
+					li
+						a(href='http://ed-era.com', target='_blank', title='')
+							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
+					li
+						a(href='https://helsinki.org.ua/', target='_blank', title='')
+							img(src='../img/lzv-rights/logo.png', alt='')
+		include ../includes/footer.jade
+		include ../includes/scripts.jade

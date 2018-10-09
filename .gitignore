@@ -65,3 +65,7 @@ typings/
 # IDE
 .idea
 
+# public and build directories
+
+public/
+build/

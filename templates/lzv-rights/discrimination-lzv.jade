@@ -9,44 +9,59 @@ html
 		include ../includes/header.jade
 		
 				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:50vh; background-image:url('../img/lzv-rights/HEAD/1.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395', data-content-cover-height='50vh', data-content-cover-parallax='', style='height: 50vh; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/1.jpg");', src='')
-			.t-cover__filter(style='height:50vh;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/1.jpg');")
+			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395', data-content-cover-height='50vh', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/1.jpg");', src='')
+			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
 			.t270
 				.t-container
-					.t-cover__wrapper.t-valign_middle(style='height:50vh;')
+					.t-cover__wrapper.t-valign_middle(style='height:300px;')
 						.t270__wrapper
 							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ;') Дискримінація
 							.t270__separator
 		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:135px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 0px;', data-record-type='106')
 				// T004
 				.t004
 					.t-container
 						.t-col.t-col_11
 							.t-text.t-text_md(field='text')
-								| Вам коли-небудь відмовляли в роботі через те, що ви занадто молодий або ж навпаки? Маєте забагато чи замало досвіду? Якщо так, ви вже стикалися з дискримінацією.
+								| Вам коли-небудь відмовляли в роботі через те, що ви занадто молодий, або ж навпаки, маєте забагато чи замало досвіду? Якщо так, ви вже стикалися з | дискримінацією.
+								<br>
+								| Чи пов’язана вона зі стереотипами та упередженнями? Якою вона буває? На життєвих прикладах ми разом з 
+								span Максимом Єлігулашвілі
+								| , координатором напрямку | неформальної освіти УГСПЛ, розглянемо випадки дискримінації та як вона втілюється в українському законодавстві.
 								br
-								| Чи пов’язана вона зі стереотипами та упередженнями? Якою вона буває? На життєвих прикладах ми розглянемо випадки дискримінації та як вона втілюється в українському законодавстві.
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:90px;padding-bottom:0px; ;', data-record-type='4')
+								br
+								| Переглядайте відео та проходьте 
+								a(href="#test")тест
+								| . Буде цікаво!
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ;', data-record-type='4')
+				.t-section__container.t-container
+					.t-col.t-col_12
+						.t-section__topwrapper.t-align_center
+							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
+
 				// T121
 				.t121
 					center
-						.t-width.t-width_12(style='height: 452.5px; width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/TuXg8lyYsEQ', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
-		.t-container.quiz_container_big
+						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/TuXg8lyYsEQ', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+		.t-container.quiz_container_big#test
+			.t-col.t-col_12
+				.t-section__topwrapper.t-align_center
+					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
 			#quiz_application
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
-					.quiz_container.quiz
 						.quiz_progess
 							| Питання:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
 							div(v-if='quiz[index].description !== false')
-								p {{quiz[index].description}}
+								p(v-html='quiz[index].description')
 							div(v-if='quiz[index].img !== false')
 								img(v-bind:src='quiz[index].img')
 						.quiz_answers(v-for='(answer, key) in quiz[index].answers')
@@ -82,13 +97,15 @@ html
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
 						button.quiz_button(@click='restart()') Спробувати ще
-		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:60px; ;', data-record-type='106')
+		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:50px;padding-bottom:5px; ;', data-record-type='106')
 			// T004
 			.t004
 				.t-container
 					.t-col.t-col_11
 						.t-text.t-text_md(field='text')
-							| Спецпроект реалізований в рамках проекту «Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink) за підтримки Агентства США з міжнародного розвитку (USAID).
+							| Спецпроект реалізований в рамках проекту 
+							a(href="http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/")«Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink)
+							|  за підтримки Агентства США з міжнародного розвитку (USAID).
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
 		script.
 			new Vue({
@@ -103,28 +120,28 @@ html
 			},
 			quiz: [{
 			type: 0,
-			title: 'Коли загальноприйняті правила та закони по-різному впливають на людей, створюють для одних менш сприятливі умови через вік, стать, расу та інші ознаки, це:',
+			title: 'Створення для одних людей менш сприятливих умов через вік, стать, расу та інші ознаки — це ',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'Утиск',
+			body: 'утиск',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Пряма дискримінація ',
+			body: 'пряма дискримінація ',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Непряма дискримінація',
+			body: 'непряма дискримінація',
 			hint: 'Правильно',
 			correct: true
 			},
 			{
-			body: 'Просто так склалось ',
+			body: 'просто так склалось ',
 			hint: 'Неправильно',
 			correct: false
 			},
@@ -138,22 +155,22 @@ html
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'Ви прийшли на співбесіду. Вас запитують про досвід роботи, освіту. А потім — чи збираєтеся ви одружуватись, чи є у вас діти, чи плануєте їх мати. ',
+			body: 'ви прийшли на співбесіду. Вас запитують про досвід роботи, освіту. А потім — чи збираєтеся ви одружуватись, чи є у вас діти, чи плануєте їх мати. ',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'В університеті в одній групі навчаються хлопець і дівчина з Судану. Хлопець дуже подобається дівчині, тому вона пропонує йому зустрічатися. Хлопець відмовляється. ',
+			body: 'в університеті в одній групі навчаються хлопець і дівчина з Судану. Хлопець дуже подобається дівчині, тому вона пропонує йому зустрічатися. Хлопець відмовляється. ',
 			hint: 'Правильно',
 			correct: true
 			},
 			{
-			body: 'Охоронця в супермаркеті просять перевести працювати на склад, тому що дізналися про його ВІЛ-позитивний статус. ',
+			body: 'охоронця в супермаркеті просять перевести працювати на склад, тому що дізналися про його ВІЛ-позитивний статус. ',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Колега в офісі постійно розповідає, що жінки слабші та не такі розумні як чоловіки. А тому й заробляють менше ',
+			body: 'колега в офісі постійно розповідає, що жінки слабші та не такі розумні як чоловіки. А тому й заробляють менше ',
 			hint: 'Неправильно',
 			correct: false
 			},
@@ -161,7 +178,7 @@ html
 			},
 			{
 			type: 0,
-			title: 'Щоб потрапити до приміщення відділення банку, потрібно подолати 8 сходинок, які не обладнані пандусом. Відповідно, люди з інвалідністю та представники інших маломобільних груп не можуть скористатися банківськими послугами в цьому відділенні. Це приклад:',
+			title: 'Щоб потрапити до відділення банку, потрібно подолати 8 сходинок, які не обладнані пандусом. Люди з інвалідністю та представники інших маломобільних груп не можуть скористатися банківськими послугами. Це приклад:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
@@ -196,7 +213,7 @@ html
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'Вона обґрунтовується правомірною метою. Способи досягнення цієї мети — незалежні та необхідні',
+			body: 'вона обґрунтовується правомірно',
 			hint: 'Правильно',
 			correct: true
 			},
@@ -215,7 +232,7 @@ html
 			{
 			type: 0,
 			title: 'Повноваження контролювати дотримання принципу недискримінації в усіх сферах суспільних відносин покладені законодавством на... ',
-			description: 'Відповідь на запитання радимо шукати в Законі України «Про засади запобігання та протидії дискримінації в Україні»',
+			description: 'Відповідь на запитання радимо шукати в Законі України <a target="_blank" href="http://zakon.rada.gov.ua/laws/show/5207-17">«Про засади запобігання та протидії дискримінації в Україні»</a>',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
@@ -225,12 +242,12 @@ html
 			correct: false
 			},
 			{
-			body: 'Уповноваженого Верховної Ради України з прав людини ',
+			body: 'уповноваженого Верховної Ради України з прав людини ',
 			hint: 'Правильно',
 			correct: true
 			},
 			{
-			body: 'Кабінет Міністрів України ',
+			body: 'кабінет Міністрів України ',
 			hint: 'Неправильно',
 			correct: false
 			},
@@ -352,32 +369,37 @@ html
 			})
 
 
+		section.google_form
+			p 
+				| Заповніть, будь ласка, форму зворотного зв'язку:
+			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму		
+
 
 		// ПАРТНЕРИ
 		#partners.section
 			p.h2 
-				| Партнери
+				| Ініціатори проекту
 			.container
-				ul.partners_list
+				ul.partners_list.new
 					li
 						a(href='#', target='_blank', title='')
 							img(src='../img/lzv-rights/logo3.png', alt='')
 					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo2.png', alt='')
-					li
-						a(href='#', target='_blank', title='')
+						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
 							img(src='../img/lzv-rights/logo4.png', alt='')
+					li
+						a(href='http://network.org.ua/', target='_blank', title='')
+							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
 			br		
 			p.h2 
 				| Організації-розробники 
 			.container
 				ul.partners_list
 					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo_edera.png', alt='')
+						a(href='http://ed-era.com', target='_blank', title='')
+							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
 					li
-						a(href='#', target='_blank', title='')
+						a(href='https://helsinki.org.ua/', target='_blank', title='')
 							img(src='../img/lzv-rights/logo.png', alt='')
 
 		include ../includes/footer.jade

@@ -9,38 +9,50 @@ html
 		include ../includes/header.jade
 		
 				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:50vh; background-image:url('../img/lzv-rights/HEAD/4.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='50vh', data-content-cover-parallax='', style='height: 50vh; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/4.jpg");', src='')
-			.t-cover__filter(style='height:60vh;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/3.jpg');")
+			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/3.jpg");', src='')
+			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
 			.t270
 				.t-container
-					.t-cover__wrapper.t-valign_middle(style='height:50vh;')
+					.t-cover__wrapper.t-valign_middle(style='height:300px;')
 						.t270__wrapper
 							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Сімейні права
 							.t270__separator
 		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:135px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
 				// T004
 				.t004
 					.t-container
 						.t-col.t-col_11
 							.t-text.t-text_md(field='text', style='')
 								| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+								br
+								br
+								| Переглядайте відео та проходьте 
+								a(href="#test")тест
+								| . Буде цікаво!
 								
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:90px;padding-bottom:0px; ', data-record-type='4')
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
+				.t-section__container.t-container
+					.t-col.t-col_12
+						.t-section__topwrapper.t-align_center
+							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
 				// T121
 				.t121
 					center
-						.t-width.t-width_12(style='height: 452.5px; width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/Tp6PI8xIvH8', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
+						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/Tp6PI8xIvH8', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 		.t-container
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:90px;padding-bottom:0px; ', data-record-type='4')
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
 				// T121
 				.t121
 					center
-						.t-width.t-width_12(style='height: 452.5px; width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/1HvWoJXE9Bk', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
-		.t-container.quiz_container_big
+						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
+							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/1HvWoJXE9Bk', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+		.t-container.quiz_container_big#test
+			.t-col.t-col_12
+				.t-section__topwrapper.t-align_center
+					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
 			#quiz_application
 				br
 				div(v-if='!started')
@@ -361,58 +373,67 @@ html
 			})
 			
 		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:20px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
+			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:10px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
 				// T004
 				.t004
 					.t-container
+						.t-col.t-col_12
+							.t-section__topwrapper.t-align_center
+								.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Життя з ВІЛ
 						.t-col.t-col_11
 							.t-text.t-text_md(field='text', style='')
-								br
-								br
-								| Олена Вдовенко живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:90px;padding-bottom:0px; ', data-record-type='4')
+								span Олена Вдовенко
+								| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:30px;padding-bottom:0px; ', data-record-type='4')
 				// T121
 				.t121
 					center
 						.t-width.t-width_12(style='height: 452.5px; width:900px;')
 							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/zUMJVr5GtaY', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
 
-		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:60px; ', data-record-type='106')
+		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:0px; ', data-record-type='106')
 			// T004
 			.t004
 				.t-container
 					.t-col.t-col_11
-						.t-text.t-text_md(field='text', style='')
-							| Спецпроект реалізований в рамках проекту «Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink) за підтримки Агентства США з міжнародного розвитку (USAID).
+						.t-text.t-text_md(field='text')
+							| Спецпроект реалізований в рамках проекту 
+							a(href="http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/")«Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink)
+							|  за підтримки Агентства США з міжнародного розвитку (USAID).
+
+
+		section.google_form
+			p 
+				| Заповніть, будь ласка, форму зворотного зв'язку:
+			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму			
+
 
 
 		// ПАРТНЕРИ
 		#partners.section
 			p.h2 
-				| Партнери
+				| Ініціатори проекту
 			.container
-				ul.partners_list
+				ul.partners_list.new
 					li
 						a(href='#', target='_blank', title='')
 							img(src='../img/lzv-rights/logo3.png', alt='')
 					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo2.png', alt='')
-					li
-						a(href='#', target='_blank', title='')
+						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
 							img(src='../img/lzv-rights/logo4.png', alt='')
+					li
+						a(href='http://network.org.ua/', target='_blank', title='')
+							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
 			br		
 			p.h2 
 				| Організації-розробники 
 			.container
 				ul.partners_list
 					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo_edera.png', alt='')
+						a(href='http://ed-era.com', target='_blank', title='')
+							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
 					li
-						a(href='#', target='_blank', title='')
+						a(href='https://helsinki.org.ua/', target='_blank', title='')
 							img(src='../img/lzv-rights/logo.png', alt='')
-
-
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

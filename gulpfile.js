@@ -112,7 +112,7 @@ gulp.task('copy', ['sass', 'templates'], function () {
       .pipe(gulp.dest("build/books"));
   gulp.src("templates/tos.html")
       .pipe(gulp.dest("build"));
-  gulp.src("templates/fundraising.html")
+  gulp.src("build/fundraising.html")
     .pipe(rename("index.html"))
     .pipe(gulp.dest("build/fundraising"));
   gulp.src("robots.txt")

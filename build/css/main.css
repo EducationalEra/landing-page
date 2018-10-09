@@ -2383,3 +2383,33 @@ blockquote p {
 
 .header_cases h1 {
   margin-top: 40px !important; }
+
+#fundraising_heading .button.orange {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px; }
+
+#fundraising_project .h2 {
+  text-transform: none;
+  color: orange;
+  font-weight: bold; }
+
+#fundraising_project .two_column {
+  display: flex; }
+  #fundraising_project .two_column .item {
+    width: 50%;
+    margin: auto; }
+
+#fundraising_project .button.orange {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 25px;
+  line-height: 22px; }

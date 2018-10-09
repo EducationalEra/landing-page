@@ -2538,3 +2538,43 @@ color: #FFA300;
 	margin-top: 40px!important;
 }
 
+#fundraising_heading {
+	.button.orange {
+		background-color: orange;
+		color: white;
+		border-color: orange;
+		text-transform: none;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+#fundraising_project {
+	.h2 {
+		text-transform: none;
+		color: orange;
+		font-weight: bold;
+	}
+	.section {
+		.container {
+		}
+	}
+	.two_column {
+		display: flex;
+		.item {
+			width: 50%;
+			margin: auto;
+		}
+	}
+	.button.orange {
+		background-color: orange;
+		color: white;
+		border-color: orange;
+		text-transform: none;
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 25px;
+		line-height: 22px;
+	}
+}

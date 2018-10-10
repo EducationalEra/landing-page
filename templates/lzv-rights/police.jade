@@ -9,14 +9,14 @@ html
 		include ../includes/header.jade
 		
 				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/3.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/3.jpg");', src='')
+		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/5.jpg');")
+			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/5.jpg");', src='')
 			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
 			.t270
 				.t-container
 					.t-cover__wrapper.t-valign_middle(style='height:300px;')
-						.t270__wrapper
-							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Сімейні права
+						.t270__wrapper(style="max-width:700px")
+							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Спілкування з поліцією
 							.t270__separator
 		.t-container
 			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
@@ -25,7 +25,10 @@ html
 					.t-container
 						.t-col.t-col_11
 							.t-text.t-text_md(field='text', style='')
-								| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+								| Давайте поговоримо про ситуації, які можуть трапитися з будь-ким: зокрема, і з ВІЛ-позитивними особами. Це зустрічі з поліцією.
+								У цьому відео ми разом з  
+								span  Андрієм Галаєм
+								|, координатором проектів Української Гельсінської спілки з прав людини, розберемося, коли і як працівники поліції можуть звертатись до людини, затримувати її, обшукувати. Чи є особливі гарантії прав людей, які живуть з ВІЛ? І нарешті, як захистити права, якщо вони порушені поліцією?
 								br
 								br
 								| Переглядайте відео та проходьте 
@@ -43,12 +46,6 @@ html
 						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
 							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/Tp6PI8xIvH8', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 		.t-container
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
-				// T121
-				.t121
-					center
-						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/1HvWoJXE9Bk', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 		.t-container.quiz_container_big#test
 			.t-col.t-col_12
 				.t-section__topwrapper.t-align_center
@@ -117,74 +114,54 @@ html
 			quiz: [
 			{
 			type: 0,
-			title: 'Якщо ви хочете зареєструвати шлюб, чи зобов’язана інша сторона надати інформацію про стан свого здоров’я?',
+			title: 'Що варто робити, якщо поліцейський виявив у вас медичні препарати?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
+			body: 'Зробити вигляд, що ви не розумієте про що йде мова',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Ні',
+			body: 'Вигадати правдоподібну причину на кшталт «це ліки для родича»',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Інформація про стан здоров’я надається добровільно',
+			body: 'Спокійно пояснити, навіщо вам препарати. За можливості — показати схему лікування',
 			hint: 'Правильно',
 			correct: true
+			},
+			{
+			body: 'Відмовитися пояснювати та вимагати викликати вашого лікаря',
+			hint: 'Неправильно',
+			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Чи  повнолітні діти мають право на отримання аліментів?',
+			title: 'Що варто робити, якщо поліцейський виявив у вас медичні препарати?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
+			body: 'Вимагати дотримуватися прав людини',
+			hint: 'Правильно',
+			correct: true
+			},
+			{
+			body: 'Намагатися втекти або захищатися фізично',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'Ні',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'Право на отримання аліментів від батьків мають тільки непрацездатні повнолітні діти',
-			hint: 'Правильно',
-			correct: true
-			}
-			]
-			},
-			{
-			type: 1,
-			title: 'Хто може укласти шлюбний контракт?',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: 'Особи, які подали заяву про реєстрацію шлюбу',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'Подружжя',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'Особи, які спільно проживають та мають спільних дітей',
+			body: 'Виконувати вказівки полійцейського, що б не трапилося',
 			hint: 'Неправильно',
 			correct: false
 			},
@@ -192,79 +169,68 @@ html
 			},
 			{
 			type: 0,
-			title: 'Які бувають форми домашнього насильства?',
+			title: 'Вкажіть час, з якого вважається, що особа затримана поліцією:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'фізичне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'сексуальне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'психологічне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'економічне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'соціальне',
+			body: 'з часу, коли поліцейський обмежив особу в пересуванні',
 			hint: 'Правильно',
 			correct: true
+			},
+			{
+			body: 'з часу, який скаже поліцейський',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'з часу поміщення до камери затриманих у поліції',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'з часу, що зазначений у протоколі про затримання',
+			hint: 'Неправильно',
+			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Яку державну допомогу НЕ може отримати особа, яка зазнала домашнього насильства?',
+			title: 'Зазначте додаткові права, якими НЕ володіє затримана ЛЖВ',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'безоплатну юридичну допомогу ',
+			body: 'Просити повідомити керівництво центру, де ЛЖВ проходить лікування, та громадську організацію, що опікується лікуванням ЛЖВ',
 			hint: 'Неправильно',
 			correct: false
 			},
 			{
-			body: 'психологічну допомогу',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'соціальні послуги',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'тимчасовий притулок у центрі соціально-психологічної допомоги, кризовому центрі',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'щомісячні виплати розміром 170 грн',
+			body: 'Вимагати утримання в медичній палаті ',
 			hint: 'Правильно',
 			correct: true
+			},
+			{
+			body: 'Вимагати продовження лікування на час затримання',
+			hint: 'Неправильно',
+			correct: false
+			},
+			{
+			body: 'Нерозголошення діагнозу працівниками поліції іншим особам',
+			hint: 'Неправильно',
+			correct: false
 			}
 			]
-			},
+			}
+
+
 			],
 			resultText: [
-			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
-			},
 			{
 			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
 			},
@@ -379,11 +345,11 @@ html
 					.t-container
 						.t-col.t-col_12
 							.t-section__topwrapper.t-align_center
-								.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Життя з ВІЛ
+								.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Боротьба з ВІЛ
 						.t-col.t-col_11
 							.t-text.t-text_md(field='text', style='')
-								span Олена Вдовенко
-								| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+								span Олег Димарецький
+								| — юрист, громадський активіст і правозахисник, директор благодійної організації «Волна». Він 17 років працює у ВІЛ-сервісних організаціях і в інтерв’ю розповість про життєві випадки порушення прав людей, які живуть з ВІЛ.
 			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:30px;padding-bottom:0px; ', data-record-type='4')
 				// T121
 				.t121
@@ -405,7 +371,7 @@ html
 		section.google_form
 			p 
 				| Заповніть, будь ласка, форму зворотного зв'язку:
-			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму			
+			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму				
 
 
 

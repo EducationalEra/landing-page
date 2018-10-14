@@ -211,17 +211,7 @@ html
         a(href="https://docs.google.com/forms/d/e/1FAIpQLSeARjSkqwR8SbnBfLN8ZPmK8RJDiX6IH8fNtmm3wy5iNPICZA/viewform?usp=sf_link", alt='Google Form')
           Заповнити форму
 
-    #partners.section
-      .container
-        p.h2
-          | Організації-розробники
-        ul.partners_list
-          li
-            a(href='https://www.ed-era.com', target='_blank', title='EdEra')
-              img(src='../img/25/1/edera_logo.png', alt='EdEra')
-          li
-            a(href='https://ilid.org.ua/', target='_blank', title='ILID Ukraine')
-              img(src='../img/25/1/ILID_logo.png', alt='EdEra')
+    include partners.jade
 
     include ../includes/footer.jade
     include ../includes/scripts.jade

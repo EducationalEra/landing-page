@@ -82,14 +82,11 @@ abbr {
     font-size: 40px;
     font-weight: 400;
     text-transform: none;
+    font-family: "Roboto", "Open Sans";
     @include media($desktop) {
       width: 60%;
     }
-    .exo {
-      font-family: "Roboto", "Open Sans";
-    }
     .text {
-      font-family: "Roboto", "Open Sans";
       font-size: 18px;
       padding: 24px 0 12px 0;
     }

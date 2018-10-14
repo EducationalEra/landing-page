@@ -398,7 +398,7 @@ div {
     font-size: 20px;
 }
 
-.partners_list li a img {
+.partners-list li a img {
     max-height: 85px!important;
 }
 
@@ -667,18 +667,18 @@ div {
     font-weight:600;
 }
 
-ul.partners_list.new{
+ul.partners-list.new{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-ul.partners_list.new li a img {
+ul.partners-list.new li a img {
     max-height: 100px;
 }
 
-ul.partners_list.new li {
+ul.partners-list.new li {
         width: 21%
     }
 

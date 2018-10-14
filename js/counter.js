@@ -26,7 +26,7 @@ var Countdown = {
     };
     
     var time_now = new Date()
-    var start_date = new Date(2018, 9, 15, 10, 0, 0, 0)
+    var start_date = new Date(2018, 9, 22, 10, 0, 0, 0)
 
   
     this.total_seconds = (start_date.getTime()-time_now.getTime()) / 1000;

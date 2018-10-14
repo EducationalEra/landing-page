@@ -5,25 +5,21 @@ html
   body
     include ../includes/gtm.jade
     include ../includes/header.jade
-    .library.section.heading.header_cases(style="background-image: url(../img/25/i/6.jpg)")
+    section.library.section.heading.header_cases(style="background-image: url(../img/25/i/6.jpg)")
       .container.cases_25
         a(href='/modules')
           i.fa.fa-angle-left 
           | До всіх модулів
         h1
           span.exo Демографічні процеси в суспільстві
-          p.text Кількість людей на планеті невпинно зростає — наразі нас уже близько 7,5 млрд.Однак чому ж з 1993 року кількість населення в Україні зменшується? Поговоримо про причини і наслідки демографічних процесів. А також — дізнаємося, до чого тут пенсії.
+        p.text Кількість людей на планеті невпинно зростає — наразі нас уже близько 7,5 млрд.Однак чому ж з 1993 року кількість населення в Україні зменшується? Поговоримо про причини і наслідки демографічних процесів. А також — дізнаємося, до чого тут пенсії.
           small EdEra та ILID
         //article.about.hyphenate
 
     //- СПІЛЬНОКОШТ
-    a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
-      .banner_25
-        img.left_img(src="../img/25/left_banner.png" alt="")
-        p Підтримайте <span>EdEra</span>
-        img.right_img(src="../img/25/right_banner.png" alt="")
+    include ../includes/banners/banner-25.jade
 
-
+    
     // Programs
     section.bookshelf
       .container.cases_material

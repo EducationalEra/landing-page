@@ -30,10 +30,10 @@ html
 								br
 								br
 								| У відео 
-								span  Тетяна Краснопольська
-								| (Центр громадського здоров’я МОЗ України) та 
-								span Олександр Павліченко
-								| (виконавчий директор УГСПЛ) розглянуть особливості медичних прав людей, які живуть з ВІЛ. Також вони згадають про лікарську таємницю та законодавство, що стосується збереження інформації про стан здоров’я.
+								span  Тетяна Краснопольська 
+								| (Центр громадського здоров’я Міністерства охорони здоров'я України) та 
+								span Олександр Павліченко 
+								| (виконавчий директор Української Гельсінської спілки з прав людини) розглядають особливості медичних прав людей, які живуть з ВІЛ. Також вони згадують про лікарську таємницю та законодавство, що стосується збереження інформації про стан здоров’я.
 								br
 								br
 								| Переглядайте відео та проходьте 
@@ -57,10 +57,12 @@ html
 					center
 						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
 							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/CJ0EFBSn9fI', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+		section.google_form
+			a(target='_blank', href="https://drive.google.com/file/d/1WmXaG2V4rO9xevPGjnSpYfN9v4ibWaR9/view?usp=sharing")Додаткові матеріали
 		.t-container.quiz_container_big#test
 			.t-col.t-col_12
 				.t-section__topwrapper.t-align_center
-					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0; margin-left: -40px;") Тест
 			#quiz_application
 				br
 				div(v-if='!started')
@@ -445,58 +447,8 @@ html
 			this.startTest();
 			}
 			})
-			
 
-
-		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:0px; ', data-record-type='106')
-			// T004
-			.t004
-				.t-container
-					.t-col.t-col_11
-						.t-text.t-text_md(field='text')
-							| Спецпроект реалізований в рамках проекту 
-							a(href="http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/")«Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink)
-							|  за підтримки Агентства США з міжнародного розвитку (USAID).
-
-
-		section.google_form
-			p 
-				| Заповніть, будь ласка, форму зворотного зв'язку:
-			a(target='_blank', href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму		
-
-
-
-		// ПАРТНЕРИ
-		#partners.section
-			p.h2 
-				| Ініціатори проекту
-			.container
-				ul.partners_list.new
-					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo3.png', alt='')
-					li
-						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
-							img(src='../img/lzv-rights/logo4.png', alt='')
-					li
-						a(href='http://network.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
-					li
-						a(href='http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/', target='_blank', title='')
-							img(src='../img/lzv-rights/HealthLink.png', alt='')
-			br		
-			p.h2 
-				| Організації-розробники 
-			.container
-				ul.partners_list
-					li
-						a(href='http://ed-era.com', target='_blank', title='')
-							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
-					li
-						a(href='https://helsinki.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/logo.png', alt='')
-
-
+		include ../includes/lzv-footer.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
 		

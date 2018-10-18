@@ -8,47 +8,40 @@ html
 		include ../includes/gtm.jade
 		include ../includes/header.jade
 		
-				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/4.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/4.jpg");', src='')
-			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/4.jpg');")
 			.t270
-				.t-container
-					.t-cover__wrapper.t-valign_middle(style='height:300px;')
-						.t270__wrapper
-							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Соціальні права
-							.t270__separator
-		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
-				// T004
-				.t004
-					.t-container
-						.t-col.t-col_11
-							.t-text.t-text_md(field='text', style='')
-								| Цікавить як держава допомагає людям, що живуть з ВІЛ? У відео 
-								span Олена Проценко
-								| , юристка Української Гельсінської спілки з прав людини, розповідає про  допомогу по безробіттю, соціальну допомогу малозабезпеченим родинам, спеціальні виплати для ВІЛ-позитивних дітей та їх батьків. Не залишаться поза увагою і права медичних працівників.
-								br
-								br
-								| Переглядайте відео та проходьте 
-								a(href="#test")тест
-								| . Буде цікаво!
-								
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
-				.t-section__container.t-container
-					.t-col.t-col_12
-						.t-section__topwrapper.t-align_center
-							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
-				// T121
-				.t121
-					center
-						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/_inu5J9sywk', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+				.t-valign_middle(style='height:300px;')
+					.t270__wrapper
+						div.h1-lzv Соціальні права
+		
+
+		section
+			.container
+				p.lzv-main
+					| Цікавить як держава допомагає людям, що живуть з ВІЛ? У відео 
+					span.lzv-bold Олена Проценко
+					| , юристка Української Гельсінської спілки з прав людини, розповідає про  допомогу по безробіттю, соціальну допомогу малозабезпеченим родинам, спеціальні виплати для ВІЛ-позитивних дітей та їх батьків. Не залишаться поза увагою і права медичних працівників.
+					br
+					br
+					| Переглядайте відео та проходьте 
+					a(href="#test") тест
+					| . Буде цікаво!
+					
+			.t-container
+				center
+					h2.h2-lzv Відеоматеріали
+
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/_inu5J9sywk', frameborder='0', allowfullscreen='')
+
+
 		.t-container.quiz_container_big#test
-			.t-col.t-col_12
-				.t-section__topwrapper.t-align_center
-					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+			center
+				h2.h2-lzv Тест
 			#quiz_application
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
@@ -146,30 +139,20 @@ html
 			]
 			},
 			{
-			type: 1,
+			type: 0,
 			title: ' Як визначити, що ваша родина — малозабезпечена і має право на допомогу від держави:',
-			description: 'Оберіть кілька правильних відповідей',
+			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'необхідно порахувати сукупний дохід на кожного члена родини і порівняти його з ',
+			body: 'необхідно порахувати сукупний дохід на кожного члена родини і порівняти його з прожитковим мінімумом',
 			hint: 'Правильно',
 			correct: true
 			},
 			{
-			body: 'прожитковим мінімумом',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'необхідно порахувати середню заробітну плату кожного члена родини за рік та ',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'порівняти з середньою заробітною платою в країні',
+			body: 'необхідно порахувати середню заробітну плату кожного члена родини за рік та порівняти з середньою заробітною платою в країні',
 			hint: 'Неправильно',
 			correct: false
 			}
@@ -387,26 +370,18 @@ html
 			this.startTest();
 			}
 			})
-			
-		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:10px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
-				// T004
-				.t004
-					.t-container
-						.t-col.t-col_12
-							.t-section__topwrapper.t-align_center
-								.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Життя з ВІЛ
-						.t-col.t-col_11
-							.t-text.t-text_md(field='text', style='')
-								span Віра Варига
-								|  — громадська активістка, членкиня правління благодійної організації «Позитивні жінки». Вона впродовж 16-ти років живе з ВІЛ, має коханого і двох здорових дітей. Зараз Віра допомагає жінкам відстоювати власні права, а також працює над тим, щоб спільнота ВІЛ-позитивних жінок у регіонах об’єднувалася та мобілізувалася. У відео вона поділиться власною історією.
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:30px;padding-bottom:0px; ', data-record-type='4')
-				// T121
-				.t121
-					center
-						.t-width.t-width_12(style='height: 452.5px; width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/L3Wx2iuKvLE', frameborder='0', allowfullscreen='', style='height: 452.5px; width:900px;')
 
+
+		.t-container
+			center
+				h2.h2-lzv Життя з ВІЛ
+		.container
+			p.lzv-main
+				span.lzv-bold Віра Варига
+				|  — громадська активістка, членкиня правління благодійної організації «Позитивні жінки». Вона впродовж 16-ти років живе з ВІЛ, має коханого і двох здорових дітей. Зараз Віра допомагає жінкам відстоювати власні права, а також працює над тим, щоб спільнота ВІЛ-позитивних жінок у регіонах об’єднувалася та мобілізувалася. У відео вона поділиться власною історією.
+			center
+				div.lzv-video
+					iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/L3Wx2iuKvLE', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 
 		include ../includes/lzv-footer.jade
 		include ../includes/footer.jade

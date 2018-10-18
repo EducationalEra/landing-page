@@ -13,25 +13,25 @@ html
 			.t270
 				.t-valign_middle(style='height:300px;')
 					.t270__wrapper
-						div.h1-lzv Захист прав
+						div.h1-lzv Protection of rights
 		
 
 		section
 			.container
 				p.lzv-main
-					|Час поговорити про способи захисту прав. 
-					span.lzv-bold Наталя Козаренко
-					|, координаторка громадських приймалень Української Гельсінської спілки з прав людини, дасть практичні поради, які допоможуть найбільш ефективно захистити власні права.
+					|From theory — to practice! It is time to talk about the ways to protect our rights. 
+					span.lzv-bold Natalia Kozarenko 
+					|, Public Reception Coordinator of the Ukrainian Helsinki Human Rights Union, will give you practical advice on how to help protect our rights in the most effective way. Remember that you have rights. If they are violated, do not be afraid to seek help!
 					br
 					br
-					| Переглядайте відео та проходьте 
-					a(href="#test") тест
-					| . Буде цікаво!
+					| Find it all out in the video and take the 
+					a(href="#test") test 
+					| to learn more.
 
 
 			.t-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.t-container
 				center
@@ -41,7 +41,7 @@ html
 								
 		.t-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
+				h2.h2-lzv Test
 			#quiz_application
 				br
 				br
@@ -49,7 +49,7 @@ html
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3(v-html='quiz[index].title')
@@ -74,10 +74,10 @@ html
 									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
-						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Відповісти 
-						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Відповісти 
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Answer 
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Answer
 						.quiz_main_hint(v-else-if='submit === true')
-							button.quiz_button(@click='goNext()') Далі
+							button.quiz_button(@click='goNext()') Continue
 							div
 								p(v-if='check == true', v-html='quiz[index].true_hint')
 								p
@@ -85,11 +85,11 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
+						button.quiz_button(@click='restart()') Try again
 		
 		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
@@ -100,143 +100,116 @@ html
 			return {
 			intro:{
 			title: '',
-			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
-			button: 'Почати',
+			description: "",
+			button: 'Start',
 			background: false,
 			},
 			quiz: [
 			{
 			type: 0,
-			title: 'Відповідно до Закону України <a target="_blank" href="http://zakon2.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80">«Про звернення громадян»</a>, чи стягується із заявника плата за розгляд звернень?',
+			title: 'Under the Law of Ukraine <a target="_blank" href="http://zakon2.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80">«On Appeal of Citizens»</a>, is the applicant charged the fee for reviewing appeals?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'стягується в будь-якому випадку',
-			hint: 'Неправильно',
+			body: 'charged in any case',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'стягується у виняткових випадках',
-			hint: 'Неправильно',
+			body: 'charged in exceptional cases',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'не стягується в жодному випадку',
-			hint: 'Правильно',
+			body: 'not charged in any case',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'стягується за розгляд звернень керівників юридичних осіб.',
-			hint: 'Неправильно',
+			body: 'charged for reviewing the appeals from the heads of legal entities.',
+			hint: 'False',
 			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Звернення, оформлене без дотримання вимог Закону України «Про звернення громадян»:',
+			title: 'Appeal executed without complying with the requirements of the Law of Ukraine «On Appeal of Citizens»:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'повертається з відповідним роз’ясненням',
-			hint: 'Правильно',
+			body: 'returned with an appropriate explanation',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'залишається без руху',
-			hint: 'Неправильно',
+			body: 'remains without change',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'може бути розглянуто за бажанням уповноваженої особия',
-			hint: 'Неправильно',
+			body: 'may be considered upon request of an authorized person',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'направляється вищестоящому органу, який вирішує, чи можна розглянути звернення',
-			hint: 'Неправильно',
+			body: 'sent to a higher authority, which decides whether the appeal can be reviewed',
+			hint: 'False',
 			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: ' Згідно із Законом України «Про звернення громадян», розгляду та вирішенню не підлягають такі звернення:',
+			title: ' Under the Law of Ukraine «On Appeal of Citizens», such appeals are not subject to review and resolution:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'анонімні',
-			hint: 'Правильно',
+			body: 'anonymous',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'колективні',
-			hint: 'Неправильно',
+			body: 'collective',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'індивідуальні',
-			hint: 'Неправильно',
+			body: 'individual',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'усні',
-			hint: 'Неправильно',
+			body: 'oral',
+			hint: 'False',
 			correct: false
 			}
 			]
 			},
-			{
-			type: 0,
-			title: ' Відповідно до Закону України «Про звернення громадян», звернення громадян до установ та організацій, які потребують додаткового вивчення, розглядаються:',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: '5 робочих діб',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: '30 днів з моменту отримання звернень',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: '15 календарних днів',
-			hint: 'Неправильно',
-			correct: false
-			}
-			]
-			}
-
-
 			],
 			resultText: [
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'Please, watch the video again and take the test. You can do it! If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			description: 'You can do better! Please, watch the video to improve your result. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
+			description: 'Not bad! To improve your result please, watch the video again and retake the test. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Хороший результат!',
-			},{
-			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			description: 'Good result! If you like the project, share it with your friends :) ',
+			}, {
+			description: 'Great job, keep it up! More interesting information still remains ahead. If you like the project, share it with your friends :)',
 			}
 			],
 			started: false,
@@ -332,6 +305,6 @@ html
 			})
 			
 
-		include ../includes/lzv-footer.jade
+		include ../includes/lzv-footer-eng.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

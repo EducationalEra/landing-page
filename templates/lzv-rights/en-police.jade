@@ -4,48 +4,54 @@ html
 	+head
 	body
 
+
 		include ../includes/gtm.jade
 		include ../includes/header.jade
-		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/3.jpg');")
+
+
+		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/5.jpg');")
 			.t270
 				.t-valign_middle(style='height:300px;')
 					.t270__wrapper
-						div.h1-lzv Сімейні права
+						div.h1-lzv Communication with the Police
+		
+
 		section
 			.container
 				p.lzv-main
-					| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+					| Let's talk about situations that can happen to anyone, particularly, to HIV-positive people — meeting the police. In this video, we together with 
+					span.lzv-bold  Andrii Halai 
+					| , the project coordinator of the Ukrainian Helsinki Human Rights Union, will figure out when and how police officers can turn to, detain and search a person. Are there special guarantees for HIV-positive people? And finally, how to protect the rights if they are violated by the police?
+
+
 					br
 					br
-					| Переглядайте навчальні матеріали та проходьте 
-					a(href="#test") тест
-					|. Буде цікаво!
+					| Find out in the video and take the 
+					a(href="#test") test 
+					| to learn more.
 
 			.t-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.t-container
 				center
 					div.lzv-video
-						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/2owtTGe3TZI', frameborder='0', allowfullscreen='')
-			.t-container
-				center
-					div.lzv-video
-						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/jSKE79F_ugk', frameborder='0', allowfullscreen='')
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/g1er_fC8zMI', frameborder='0', allowfullscreen='')
 
+		section.google_form
+			a(target='_blank', href="https://drive.google.com/file/d/15PlX4a4BiVXYMWOkstDTxIinfsCIgbGJ/view?usp=sharing") Additional materials
 
 		.t-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
+				h2.h2-lzv Test
 			#quiz_application
-				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -70,10 +76,10 @@ html
 									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
-						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Відповісти 
-						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Відповісти 
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Answer 
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Answer
 						.quiz_main_hint(v-else-if='submit === true')
-							button.quiz_button(@click='goNext()') Далі
+							button.quiz_button(@click='goNext()') Continue
 							div
 								p(v-if='check == true', v-html='quiz[index].true_hint')
 								p
@@ -81,11 +87,11 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
+						button.quiz_button(@click='restart()') Try again
 		
 		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
@@ -96,174 +102,142 @@ html
 			return {
 			intro:{
 			title: '',
-			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
-			button: 'Почати',
+			description: "",
+			button: 'Start',
 			background: false,
 			},
 			quiz: [
 			{
 			type: 0,
-			title: 'Якщо ви хочете зареєструвати шлюб, чи зобов’язана інша сторона надати інформацію про стан свого здоров’я?',
+			title: 'What would you do, if a police officer discovered your medicines?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
-			hint: 'Неправильно',
+			body: 'Pretend not to understand what is going on',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Ні',
-			hint: 'Неправильно',
+			body: 'Come up with some plausible reason like «it is the medicine of a family member»',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Інформація про стан здоров’я надається добровільно',
-			hint: 'Правильно',
+			body: 'Calmly explain why you need the medicine. If possible, show the treatment scheme',
+			hint: 'True',
 			correct: true
+			},
+			{
+			body: 'Refuse to explain and require calling your doctor',
+			hint: 'False',
+			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Чи  повнолітні діти мають право на отримання аліментів?',
+			title: 'How to act when a police officer treats you aggressively and by doing this, in your opinion, violates your rights?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
-			hint: 'Неправильно',
+			body: 'Require him/her to respect human rights',
+			hint: 'True',
+			correct: true
+			},
+			{
+			body: 'Try to escape or defend yourself physically',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Ні',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'Право на отримання аліментів від батьків мають тільки непрацездатні повнолітні діти',
-			hint: 'Правильно',
-			correct: true
-			}
-			]
-			},
-			{
-			type: 1,
-			title: 'Хто може укласти шлюбний контракт?',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: 'Особи, які подали заяву про реєстрацію шлюбу',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'Подружжя',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'Особи, які спільно проживають та мають спільних дітей',
-			hint: 'Неправильно',
+			body: 'Whatever happens, follow the police instructions',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			{
 			type: 0,
-			title: 'Які бувають форми домашнього насильства?',
+			title: 'Indicate the beginning of the time when a person is considered to be detained by the police',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'фізичне',
-			hint: 'Неправильно',
+			body: 'from the moment indicated by the police officer',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'сексуальне',
-			hint: 'Неправильно',
+			body: 'since being placed in a ward of detention',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'психологічне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'економічне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'соціальне',
-			hint: 'Правильно',
+			body: 'from the moment when the police officer limited a person"s freedom of movement',
+			hint: 'True',
 			correct: true
+			},
+			{
+			body: 'from the moment specified in the detention report',
+			hint: 'False',
+			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Яку державну допомогу НЕ може отримати особа, яка зазнала домашнього насильства?',
+			title: 'Which of the following rights are NOT granted to the detained HIV-positive people?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'безоплатну юридичну допомогу ',
-			hint: 'Неправильно',
+			body: 'The right to require to inform the medical centre where an HIV-positive person is receiving treatment and a public organization that cares for his/her treatment.',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'психологічну допомогу',
-			hint: 'Неправильно',
+			body: 'The right to require further treatment at the time of detention',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'соціальні послуги',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'тимчасовий притулок у центрі соціально-психологічної допомоги, кризовому центрі',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'щомісячні виплати розміром 170 грн',
-			hint: 'Правильно',
+			body: 'The right to demand retention in the medical ward ',
+			hint: 'True',
 			correct: true
+			},
+			{
+			body: 'The right to demand non-disclosure of the diagnosis by police officers to other persons',
+			hint: 'False',
+			correct: false
 			}
 			]
-			},
+			}
 			],
 			resultText: [
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'Please, watch the video again and take the test. You can do it! If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'You can do better! Please, watch the video to improve your result. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			description: 'Not bad! To improve your result please, watch the video again and retake the test. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
-			},
+			description: 'Good result! If you like the project, share it with your friends :) ',
+			}, 
 			{
-			description: 'Хороший результат!',
-			},{
-			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			description: 'Great job, keep it up! More interesting information still remains ahead. If you like the project, share it with your friends :)',
 			}
 			],
 			started: false,
@@ -357,19 +331,18 @@ html
 			this.startTest();
 			}
 			})
-			
+
 		.t-container
 			center
-				h2.h2-lzv Життя з ВІЛ
+				h2.h2-lzv FIGHTING WITH HIV
 		.container
 			p.lzv-main
-				span.lzv-bold Олена Вдовенко 
-				| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+				span.lzv-bold Oleh Dymaretskyi
+				| is a lawyer, a public and human rights activist. He is a director of the charitable organization «Volna» and has been working in HIV-service organizations for 17 years. In the interview, he will tell about real-life cases of human rights violations of HIV-positive people.
 			center
 				div.lzv-video
-					iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/PTgc8lR98Y4', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+					iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/x87GNglgA84', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 
-		include ../includes/lzv-footer.jade
+		include ../includes/lzv-footer-eng.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
-		

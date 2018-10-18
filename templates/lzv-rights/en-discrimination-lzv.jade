@@ -13,24 +13,24 @@ html
 			.t270
 				.t-valign_middle(style='height:300px;')
 					.t270__wrapper
-						div.h1-lzv Дискримінація
+						div.h1-lzv Discrimination
 		section
 			.container
 				p.lzv-main
-					| Вам коли-небудь відмовляли в роботі через те, що ви занадто молодий, або ж навпаки, маєте забагато чи замало досвіду? Якщо так, ви вже стикалися з дискримінацією.
+					| Have you ever been denied employment because you are too young or vice versa? If so, you have already encountered discrimination.
 					br
-					| Чи пов’язана вона зі стереотипами та упередженнями? Якою буває дискримінація? На життєвих прикладах ми разом з 
-					span.lzv-bold Максимом Єлігулашвілі
-					| , координатором напрямку неформальної освіти Української Гельсінської спілки з прав людини, розглядаємо випадки дискримінації та як вона втілюється в українському законодавстві.
+					| Is discrimination related to stereotypes and biases? What is it like? Analyzing the real-life examples, together with 
+					span.lzv-bold Maksym Ielihulashvili
+					| , the coordinator of non-formal education of the Ukrainian Helsinki Human Rights Union, we will explore discrimination cases as well as anti-discriminatory legislation in Ukrainian.
 					br
 					br
-					| Переглядайте відео та проходьте 
-					a(href="#test") тест
-					|. Буде цікаво!
+					| Watch the video and take a 
+					a(href="#test") test
+					|. to sum up the material.
 
 			.t-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.t-container
 				center
@@ -39,14 +39,14 @@ html
 
 		.t-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
+				h2.h2-lzv Test
 			#quiz_application
 				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -82,11 +82,11 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Спробувати ще
+						button.quiz_button(@click='restart()') Try again
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
 		script.
 			new Vue({
@@ -95,167 +95,168 @@ html
 			return {
 			intro: {
 			title: '',
-			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
-			button: 'Почати',
+			description: "",
+			button: 'Start',
 			background: false,
 			},
 			quiz: [{
 			type: 0,
-			title: 'Створення для одних людей менш сприятливих умов через вік, стать, расу та інші ознаки — це ',
+			title: 'Creating less favourable conditions due to age, gender, race, and other characteristics is:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'утиск',
-			hint: 'Неправильно',
+			body: 'Oppression',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'пряма дискримінація ',
-			hint: 'Неправильно',
+			body: 'Direct discrimination',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'непряма дискримінація',
-			hint: 'Правильно',
+			body: 'Indirect discrimination',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'просто так склалось ',
-			hint: 'Неправильно',
+			body: 'It is just the way things are',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			{
 			type: 0,
-			title: 'Яка зі вказаних ситуацій НЕ є дискримінацією?',
+			title: 'Which one of the following situations is NOT discriminatory?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'ви прийшли на співбесіду. Вас запитують про досвід роботи, освіту. А потім — чи збираєтеся ви одружуватись, чи є у вас діти, чи плануєте їх мати. ',
-			hint: 'Неправильно',
+			body: 'You came for an interview and are being asked about your work experience and education. You are then asked whether you are going to get married, whether have children, or whether you plan to have them. ',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'в університеті в одній групі навчаються хлопець і дівчина з Судану. Хлопець дуже подобається дівчині, тому вона пропонує йому зустрічатися. Хлопець відмовляється. ',
-			hint: 'Правильно',
+			body: 'A boy and girl from Sudan are studying in the same group at the university. The girl really likes the boy, so she proposes to date. The boy refuses.',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'охоронця в супермаркеті просять перевести працювати на склад, тому що дізналися про його ВІЛ-позитивний статус. ',
-			hint: 'Неправильно',
+			body: 'They ask to transfer the supermarket security officer to work at the warehouse because they have learned about his HIV positive status.',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'колега в офісі постійно розповідає, що жінки слабші та не такі розумні як чоловіки. А тому й заробляють менше ',
-			hint: 'Неправильно',
+			body: 'A colleague in the office is constantly saying that women are weaker and less intelligent than men. And that"s why they earn less.',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			{
 			type: 0,
-			title: 'Щоб потрапити до відділення банку, потрібно подолати 8 сходинок, які не обладнані пандусом. Люди з інвалідністю та представники інших маломобільних груп не можуть скористатися банківськими послугами. Це приклад:',
+			title: 'In order to get into the bank office, one must take 8 steps that are not equipped with a ramp. Thus, people with disabilities and other people with impaired mobility cannot use banking services in this department. This is an example of:',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'прямої дискримінації',
-			hint: 'Неправильно',
+			body: 'direct discrimination ',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'непрямої дискримінації ',
-			hint: 'Неправильно',
+			body: 'indirect discrimination ',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'відмови в розумному пристосуванні ',
-			hint: 'Правильно',
+			body: 'refusal in reasonable accommodation ',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'пособництва в дискримінації',
-			hint: 'Неправильно',
+			body: 'aiding in discrimination',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			{
 			type: 0,
-			title: ' Непряма дискримінація може бути виправданою, якщо... ',
+			title: 'Indirect discrimination may be justified, if it... ',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'вона обґрунтовується правомірно',
-			hint: 'Правильно',
+			body: 'has a legitimate purpose. The ways for achieving this goal are independent and necessary',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'її підтримує більшість населення країни/регіону ',
-			hint: 'Неправильно',
+			body: 'is supported by the majority of the population of the country/region ',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'непряма дискримінація ніколи не може бути виправданою',
-			hint: 'Неправильно',
+			body: 'indirect discrimination can never be justified',
+			hint: 'False',
 			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Повноваження контролювати дотримання принципу недискримінації в усіх сферах суспільних відносин покладені законодавством на... ',
-			description: 'Відповідь на запитання радимо шукати в Законі України <a target="_blank" href="http://zakon.rada.gov.ua/laws/show/5207-17">«Про засади запобігання та протидії дискримінації в Україні»</a>',
+			title: 'The authority to monitor the compliance with the principle of non-discrimination in all spheres of social relations is prescribed by law to... ',
+			description: 'Use the Law of Ukraine <a target="_blank" href="http://zakon.rada.gov.ua/laws/show/5207-17">«On Principles of Prevention and Counteraction of Discrimination in Ukraine»</a> to find the correct answer',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [{
-			body: 'органи внутрішніх справ ',
-			hint: 'Неправильно',
+			body: 'the Ministry of Internal Affairs ',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'уповноваженого Верховної Ради України з прав людини ',
-			hint: 'Правильно',
+			body: 'the Ombudsman of Ukraine',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'кабінет Міністрів України ',
-			hint: 'Неправильно',
+			body: 'the Cabinet of Ministers of Ukraine',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'обласні державні адміністрації',
-			hint: 'Неправильно',
+			body: 'oblast state administrations',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			],
-			resultText: [{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			resultText: [
+			{
+			description: 'Please, watch the video again and take the test. You can do it! If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'Please, watch the video again and take the test. You can do it! If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			description: 'You can do better! Please, watch the video to improve your result. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
+			description: 'Not bad! To improve your result please, watch the video again and retake the test. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Хороший результат!',
+			description: 'Good result! If you like the project, share it with your friends :) ',
 			}, {
-			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			description: 'Great job, keep it up! More interesting information still remains ahead. If you like the project, share it with your friends :)',
 			}
 			],
 			started: false,
@@ -351,6 +352,6 @@ html
 
 
 
-		include ../includes/lzv-footer.jade
+		include ../includes/lzv-footer-eng.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

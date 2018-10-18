@@ -14,16 +14,18 @@ html
 		section
 			.container
 				p.lzv-main
-					| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+					| HIV positive people are more likely to face violations of their rights in family relationships. Moreover, they are more likely to become victims of domestic violence. What rights does everyone have in family relationships? How to protect oneself against violence? 
+					span.lzv-bold  Natalia Kozarenko 
+					| , Public Reception Coordinator of the Ukrainian Helsinki Human Rights Union, will tell you about this and more.
 					br
 					br
-					| Переглядайте навчальні матеріали та проходьте 
-					a(href="#test") тест
-					|. Буде цікаво!
+					| Find it all out in the video and take the 
+					a(href="#test") test 
+					|. to sum the information up.
 
 			.t-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.t-container
 				center
@@ -37,7 +39,7 @@ html
 
 		.t-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
+				h2.h2-lzv Test
 			#quiz_application
 				br
 				br
@@ -45,7 +47,7 @@ html
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -81,11 +83,11 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
+						button.quiz_button(@click='restart()') Try again
 		
 		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
@@ -96,174 +98,171 @@ html
 			return {
 			intro:{
 			title: '',
-			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
-			button: 'Почати',
+			description: "",
+			button: 'Start',
 			background: false,
 			},
 			quiz: [
 			{
 			type: 0,
-			title: 'Якщо ви хочете зареєструвати шлюб, чи зобов’язана інша сторона надати інформацію про стан свого здоров’я?',
+			title: 'If you want to register a marriage, is the other party obliged to provide information about his/her health status?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
-			hint: 'Неправильно',
+			body: 'Yes',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Ні',
-			hint: 'Неправильно',
+			body: 'No',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Інформація про стан здоров’я надається добровільно',
-			hint: 'Правильно',
+			body: 'Information on the health status is provided voluntarily',
+			hint: 'True',
 			correct: true
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Чи  повнолітні діти мають право на отримання аліментів?',
+			title: 'Are adult children entitled to alimony?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Так',
-			hint: 'Неправильно',
+			body: 'Yes',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Ні',
-			hint: 'Неправильно',
+			body: 'No',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'Право на отримання аліментів від батьків мають тільки непрацездатні повнолітні діти',
-			hint: 'Правильно',
+			body: 'Only disabled adult children are entitled to alimony from parents',
+			hint: 'True',
 			correct: true
 			}
 			]
 			},
 			{
 			type: 1,
-			title: 'Хто може укласти шлюбний контракт?',
+			title: 'Who can conclude a marriage contract?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'Особи, які подали заяву про реєстрацію шлюбу',
-			hint: 'Правильно',
+			body: 'Individuals who have applied for marriage registration',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'Подружжя',
-			hint: 'Правильно',
+			body: 'Married couple',
+			hint: 'True',
 			correct: true
 			},
 			{
-			body: 'Особи, які спільно проживають та мають спільних дітей',
-			hint: 'Неправильно',
+			body: 'Persons who live together and have common children.',
+			hint: 'False',
 			correct: false
 			},
 			]
 			},
 			{
 			type: 0,
-			title: 'Які бувають форми домашнього насильства?',
+			title: 'Which of the following is NOT the forms of domestic violence?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'фізичне',
-			hint: 'Неправильно',
+			body: 'physical',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'сексуальне',
-			hint: 'Неправильно',
+			body: 'sexual',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'психологічне',
-			hint: 'Неправильно',
+			body: 'psychological',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'економічне',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'соціальне',
-			hint: 'Правильно',
+			body: 'social',
+			hint: 'True',
 			correct: true
+			},
+			{
+			body: 'economic',
+			hint: 'False',
+			correct: false
 			}
 			]
 			},
 			{
 			type: 0,
-			title: 'Яку державну допомогу НЕ може отримати особа, яка зазнала домашнього насильства?',
+			title: 'What kind of state benefit a person who has been subjected to domestic violence CANNOT receive?',
 			description: '',
 			img: false,
 			true_hint: '<span class="true"></span>',
 			false_hint: '<span class="false"></span>',
 			answers: [
 			{
-			body: 'безоплатну юридичну допомогу ',
-			hint: 'Неправильно',
+			body: 'free legal aid',
+			hint: 'False',
 			correct: false
 			},
 			{
-			body: 'психологічну допомогу',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'соціальні послуги',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'тимчасовий притулок у центрі соціально-психологічної допомоги, кризовому центрі',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'щомісячні виплати розміром 170 грн',
-			hint: 'Правильно',
+			body: 'monthly payments amounting to 170 UAH',
+			hint: 'True',
 			correct: true
+			},
+			{
+			body: 'psychological assistance',
+			hint: 'False',
+			correct: false
+			},
+			{
+			body: 'social services',
+			hint: 'False',
+			correct: false
+			},
+			{
+			body: 'temporary shelter in the centre for social and psychological support, crisis  ',
+			hint: 'False',
+			correct: false
 			}
 			]
 			},
 			],
 			resultText: [
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'Please, watch the video again and take the test. You can do it! If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
+			description: 'You can do better! Please, watch the video to improve your result. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
+			description: 'Not bad! To improve your result please, watch the video again and retake the test. If you like the project, share it with your friends :)',
 			},
 			{
-			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
-			},
-			{
-			description: 'Хороший результат!',
-			},{
-			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
+			description: 'Good result! If you like the project, share it with your friends :) ',
+			}, {
+			description: 'Great job, keep it up! More interesting information still remains ahead. If you like the project, share it with your friends :)',
 			}
 			],
 			started: false,
@@ -360,16 +359,15 @@ html
 			
 		.t-container
 			center
-				h2.h2-lzv Життя з ВІЛ
+				h2.h2-lzv LIVING WITH HIV
 		.container
 			p.lzv-main
-				span.lzv-bold Олена Вдовенко 
-				| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+				span.lzv-bold Olena Vdovenko
+				| has been living with HIV for over 20 years. In the interview, she talks about her personal experience and challenges that women living with HIV face.
 			center
 				div.lzv-video
 					iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/PTgc8lR98Y4', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
 
-		include ../includes/lzv-footer.jade
+		include ../includes/lzv-footer-eng.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
-		

@@ -8,11 +8,10 @@ html
 		include ../includes/gtm.jade
 		include ../includes/header.jade
 		
-				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/6.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/6.jpg");', src='')
-			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+
+		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/6.jpg');")
 			.t270
+<<<<<<< HEAD
 				.t-container
 					.t-cover__wrapper.t-valign_middle(style='height:300px;')
 						.t270__wrapper
@@ -33,23 +32,41 @@ html
 								| Переглядайте відео та проходьте 
 								a(href="#test")тест
 								| . Буде цікаво!
+=======
+				.t-valign_middle(style='height:300px;')
+					.t270__wrapper
+						div.h1-lzv Захист прав
+		
+
+		section
+			.container
+				p.lzv-main
+					|Час поговорити про способи захисту прав. 
+					span.lzv-bold Наталя Козаренко
+					|, координаторка громадських приймалень Української Гельсінської спілки з прав людини, дасть практичні поради, які допоможуть найбільш ефективно захистити власні права.
+					br
+					br
+					| Переглядайте відео та проходьте 
+					a(href="#test") тест
+					| . Буде цікаво!
+
+
+			.t-container
+				center
+					h2.h2-lzv Відеоматеріали
+
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/62unx9CphW4', frameborder='0', allowfullscreen='')
+
+>>>>>>> c65dfd7... add english version and review Serhii styles
 								
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
-				.t-section__container.t-container
-					.t-col.t-col_12
-						.t-section__topwrapper.t-align_center
-							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
-				// T121
-				.t121
-					center
-						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/62unx9CphW4', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
-		.t-container
 		.t-container.quiz_container_big#test
-			.t-col.t-col_12
-				.t-section__topwrapper.t-align_center
-					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+			center
+				h2.h2-lzv Тест
 			#quiz_application
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
@@ -195,8 +212,8 @@ html
 			correct: false
 			},
 			{
-			body: 'з часу, що зазначений у протоколі про затримання',
-			hint: 'усні',
+			body: 'усні',
+			hint: 'Неправильно',
 			correct: false
 			}
 			]

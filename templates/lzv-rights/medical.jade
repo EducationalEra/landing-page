@@ -9,11 +9,9 @@ html
 		include ../includes/header.jade
 		
 		
-
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/2.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/2.jpg");', src='')
-			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/2.jpg');")
 			.t270
+<<<<<<< HEAD
 				.t-container
 					.t-cover__wrapper.t-valign_middle(style='height:300px;')
 						.t270__wrapper
@@ -61,7 +59,52 @@ html
 			.t-col.t-col_12
 				.t-section__topwrapper.t-align_center
 					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+=======
+				.t-valign_middle(style='height:300px;')
+					.t270__wrapper
+						div.h1-lzv Медичні права
+		
+
+		section
+			.container
+				p.lzv-main
+					| Сьогодні знати про свій статус (неважливо, позитивний чи негативний) — означає «Бути в тренді! Бути свідомим та сучасним!». Кожен має право на здоров’я. Однак як ним скористатися та що це, зрештою, означає?
+					br
+					br
+					| У відео 
+					span.lzv-bold  Тетяна Краснопольська 
+					| (Центр громадського здоров’я Міністерства охорони здоров'я України) та 
+					span.lzv-bold Олександр Павліченко 
+					| (виконавчий директор Української Гельсінської спілки з прав людини) розглядають особливості медичних прав людей, які живуть з ВІЛ. Також вони згадують про лікарську таємницю та законодавство, що стосується збереження інформації про стан здоров’я.
+					br
+					br
+					| Переглядайте відео та проходьте 
+					a(href="#test") тест
+					| . Буде цікаво!
+
+			.t-container
+				center
+					h2.h2-lzv Відеоматеріали
+
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/nhrkce5U9lE', frameborder='0', allowfullscreen='')
+
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/CJ0EFBSn9fI', frameborder='0', allowfullscreen='')
+
+		section.google_form
+			a(target='_blank', href="https://drive.google.com/file/d/1WmXaG2V4rO9xevPGjnSpYfN9v4ibWaR9/view?usp=sharing") Додаткові матеріали
+		
+		.t-container.quiz_container_big#test
+			center
+				h2.h2-lzv Тест
+>>>>>>> c65dfd7... add english version and review Serhii styles
 			#quiz_application
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')

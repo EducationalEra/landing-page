@@ -4,15 +4,11 @@ html
 	+head
 	body
 
-
 		include ../includes/gtm.jade
 		include ../includes/header.jade
-		
-				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/3.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/3.jpg");', src='')
-			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
+		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/HEAD/3.jpg');")
 			.t270
+<<<<<<< HEAD
 				.t-container
 					.t-cover__wrapper.t-valign_middle(style='height:300px;')
 						.t270__wrapper
@@ -49,11 +45,40 @@ html
 					center
 						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
 							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/2owtTGe3TZI', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+=======
+				.t-valign_middle(style='height:300px;')
+					.t270__wrapper
+						div.h1-lzv Сімейні права
+		section
+			.container
+				p.lzv-main
+					| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+					br
+					br
+					| Переглядайте навчальні матеріали та проходьте 
+					a(href="#test") тест
+					|. Буде цікаво!
+
+			.t-container
+				center
+					h2.h2-lzv Відеоматеріали
+
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/2owtTGe3TZI', frameborder='0', allowfullscreen='')
+			.t-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/jSKE79F_ugk', frameborder='0', allowfullscreen='')
+
+
+>>>>>>> c65dfd7... add english version and review Serhii styles
 		.t-container.quiz_container_big#test
-			.t-col.t-col_12
-				.t-section__topwrapper.t-align_center
-					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
+			center
+				h2.h2-lzv Тест
 			#quiz_application
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
@@ -373,6 +398,7 @@ html
 			})
 			
 		.t-container
+<<<<<<< HEAD
 			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:10px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
 				// T004
 				.t004
@@ -439,6 +465,17 @@ html
 						a(href='https://helsinki.org.ua/', target='_blank', title='')
 							img(src='../img/lzv-rights/logo.png', alt='')
 
+=======
+			center
+				h2.h2-lzv Життя з ВІЛ
+		.container
+			p.lzv-main
+				span.lzv-bold Олена Вдовенко 
+				| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+			center
+				div.lzv-video
+					iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/PTgc8lR98Y4', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+>>>>>>> c65dfd7... add english version and review Serhii styles
 
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

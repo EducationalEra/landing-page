@@ -4,49 +4,49 @@ html
 	+head
 	body
 
-
 		include ../includes/gtm.jade
 		include ../includes/header.jade
 
-		.lzv-cover.police-image
+		.lzv-cover.family-image
 				.lzv-heading-container
 					.lzv-heading
-						.h1-lzv Спілкування з поліцією
-
+						.h1-lzv Family rights
 		section
 			.container
 				p.lzv-main
-					| Давайте поговоримо про ситуації, які можуть трапитися з будь-ким: зокрема, і з ВІЛ-позитивними особами. Це зустрічі з поліцією. У цьому відео ми разом з  
-					span.lzv-bold  Андрієм Галаєм
-					|, координатором проектів Української Гельсінської спілки з прав людини, розберемося, коли і як працівники поліції можуть звертатись до людини, затримувати її, обшукувати. Чи є особливі гарантії прав людей, які живуть з ВІЛ? І нарешті, як захистити права, якщо вони порушені поліцією?
+					| HIV positive people are more likely to face violations of their rights in family relationships. Moreover, they are more likely to become victims of domestic violence. What rights does everyone have in family relationships? How to protect oneself against violence? 
+					span.lzv-bold  Natalia Kozarenko
+					|, Public Reception Coordinator of the Ukrainian Helsinki Human Rights Union, will tell you about this and more.
 					br
 					br
-					| Переглядайте відео та проходьте 
-					a(href="#test") тест
-					| . Буде цікаво!
+					| Find it all out in the video and take the 
+					a(href="#test") test
+					|. to sum the information up.
 
 			.lzv-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.lzv-container
 				center
 					.lzv-video
-						iframe(src='https://www.youtube.com/embed/g1er_fC8zMI', width='100%', height='100%', frameborder='0', allowfullscreen='')
-
-		section.google_form
-			a(target='_blank', href="https://drive.google.com/file/d/15PlX4a4BiVXYMWOkstDTxIinfsCIgbGJ/view?usp=sharing") Додаткові матеріали
+						iframe(src='https://www.youtube.com/embed/2owtTGe3TZI', width='100%', height='100%', frameborder='0', allowfullscreen='')
+			.lzv-container
+				center
+					.lzv-video
+						iframe(src='https://www.youtube.com/embed/jSKE79F_ugk', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
 		.lzv-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
-			#police-quiz
+				h2.h2-lzv Test
+			#en-family-rights-quiz
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -82,26 +82,27 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
-
+						button.quiz_button(@click='restart()') Try again
+		
+		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
-		script(src='/js/lzv/police.js')
-
+		script(src='/js/lzv/en-family-rights.js')
+			
 		.lzv-container
 			center
-				h2.h2-lzv Боротьба з ВІЛ
+				h2.h2-lzv LIVING WITH HIV
 		.container
 			p.lzv-main
-				span.lzv-bold Олег Димарецький
-				|  — юрист, громадський активіст і правозахисник, директор благодійної організації «Волна». Олег впродовж 17 років працює у ВІЛ-сервісних організаціях і в інтерв'ю розповідає про життєві випадки порушення прав людей, які живуть з ВІЛ.
+				span.lzv-bold Olena Vdovenko
+				| has been living with HIV for over 20 years. In the interview, she talks about her personal experience and challenges that women living with HIV face.
 			center
-				.lzv-video
-					iframe(src='https://www.youtube.com/embed/x87GNglgA84', width='100%', height='100%', frameborder='0', allowfullscreen='')
+				div.lzv-video
+					iframe(src='https://www.youtube.com/embed/PTgc8lR98Y4', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
-		include ../includes/lzv-footer.jade
+		include ../includes/lzv-footer-eng.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

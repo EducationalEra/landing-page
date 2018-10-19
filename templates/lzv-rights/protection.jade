@@ -8,48 +8,40 @@ html
 		include ../includes/gtm.jade
 		include ../includes/header.jade
 		
-				
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/HEAD/6.jpg');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395',  data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url("../img/lzv-rights/HEAD/6.jpg");', src='')
-			.t-cover__filter(style='height:300px;background-color:#000;filter:alpha(opacity:40);KHTMLOpacity:0.4;MozOpacity:0.4;opacity:0.4;')
-			.t270
-				.t-container
-					.t-cover__wrapper.t-valign_middle(style='height:300px;')
-						.t270__wrapper
-							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ') Захист прав
-							.t270__separator
-		.t-container
-			#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:0px; margin:0 20px;', data-record-type='106')
-				// T004
-				.t004
-					.t-container
-						.t-col.t-col_11
-							.t-text.t-text_md(field='text', style='')
-								|Від теорії — до практики! Час поговорити про способи захисту прав. 
-								span  Наталя Козаренко
-								|, координаторка громадських приймалень УГСПЛ, дасть практичні поради, які допоможуть найбільш ефективно захистити власні права.
-								br
-								br
-								| Переглядайте відео та проходьте 
-								a(href="#test")тест
-								| . Буде цікаво!
+		.lzv-cover.protection-image
+				.lzv-heading-container
+					.lzv-heading
+						.h1-lzv Захист прав
+		
+
+		section
+			.container
+				p.lzv-main
+					|Час поговорити про способи захисту прав. 
+					span.lzv-bold Наталя Козаренко
+					|, координаторка громадських приймалень Української Гельсінської спілки з прав людини, дасть практичні поради, які допоможуть найбільш ефективно захистити власні права.
+					br
+					br
+					| Переглядайте відео та проходьте 
+					a(href="#test") тест
+					| . Буде цікаво!
+
+
+			.lzv-container
+				center
+					h2.h2-lzv Відеоматеріали
+
+			.lzv-container
+				center
+					div.lzv-video
+						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/62unx9CphW4', frameborder='0', allowfullscreen='')
+
 								
-			#rec68551264.r.t-rec.t-rec_pt_90.t-rec_pb_0.r_showed.r_anim(style='padding-top:40px;padding-bottom:0px; ', data-record-type='4')
-				.t-section__container.t-container
-					.t-col.t-col_12
-						.t-section__topwrapper.t-align_center
-							.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:0 0 20px 0") Відеоматеріали
-				// T121
-				.t121
-					center
-						.t-width.t-width_12(style='height: 452.5px; max-width:900px;')
-							iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/62unx9CphW4', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
-		.t-container
-		.t-container.quiz_container_big#test
-			.t-col.t-col_12
-				.t-section__topwrapper.t-align_center
-					.t-section__title.t-title.t-title_xs(field='btitle' style="font-size:36px; padding:40px 0 20px 0") Тест
-			#quiz_application
+		.lzv-container.quiz_container_big#test
+			center
+				h2.h2-lzv Тест
+			#protection-quiz
+				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
@@ -99,294 +91,9 @@ html
 		
 		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
-		script.
-			new Vue({
-			el: '#quiz_application',
-			data: function () {
-			return {
-			intro:{
-			title: '',
-			description: "Ви можете скласт цей тест, щоб краще запам'ятати матеріал.",
-			button: 'Почати',
-			background: false,
-			},
-			quiz: [
-			{
-			type: 0,
-			title: 'Відповідно до Закону України <a target="_blank" href="http://zakon2.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80">«Про звернення громадян»</a>, чи стягується із заявника плата за розгляд звернень?',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: 'стягується в будь-якому випадку',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'стягується у виняткових випадках',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'не стягується в жодному випадку',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'стягується за розгляд звернень керівників юридичних осіб.',
-			hint: 'Неправильно',
-			correct: false
-			}
-			]
-			},
-			{
-			type: 0,
-			title: 'Звернення, оформлене без дотримання вимог Закону України «Про звернення громадян»:',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: 'повертається з відповідним роз’ясненням',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'залишається без руху',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'може бути розглянуто за бажанням уповноваженої особия',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'направляється вищестоящому органу, який вирішує, чи можна розглянути звернення',
-			hint: 'Неправильно',
-			correct: false
-			}
-			]
-			},
-			{
-			type: 0,
-			title: ' Згідно із Законом України «Про звернення громадян», розгляду та вирішенню не підлягають такі звернення:',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: 'анонімні',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: 'колективні',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'індивідуальні',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: 'з часу, що зазначений у протоколі про затримання',
-			hint: 'усні',
-			correct: false
-			}
-			]
-			},
-			{
-			type: 0,
-			title: ' Відповідно до Закону України «Про звернення громадян», звернення громадян до установ та організацій, які потребують додаткового вивчення, розглядаються:',
-			description: '',
-			img: false,
-			true_hint: '<span class="true"></span>',
-			false_hint: '<span class="false"></span>',
-			answers: [
-			{
-			body: '5 робочих діб',
-			hint: 'Неправильно',
-			correct: false
-			},
-			{
-			body: '30 днів з моменту отримання звернень',
-			hint: 'Правильно',
-			correct: true
-			},
-			{
-			body: '15 календарних днів',
-			hint: 'Неправильно',
-			correct: false
-			}
-			]
-			}
-
-
-			],
-			resultText: [
-			{
-			description: 'Радимо переглянути відео і ще раз пройти тест. Все вдасться!',
-			},
-			{
-			description: 'Ви можете краще! Перегляньте відео, щоб покращити свій результат.',
-			},
-			{
-			description: 'Непоганий результат. Радимо переглянути відео ще раз, щоб попрацювати над помилками.',
-			},
-			{
-			description: 'Хороший результат!',
-			},{
-			description: 'Чудова робота, так тримати! Попереду — ще більше цікавої інформації.',
-			}
-			],
-			started: false,
-			chosen: 0,
-			answers: [],
-			submit: false,
-			progress: true,
-			check: false,
-			score:0,
-			index: 0
-			}
-			},
-			computed: {
-			counter: function(){
-			if(this.quiz[this.index].type == 0){
-			if(this.quiz[this.index].answers[this.answers[this.index]].correct == true){
-			this.score++;
-			return true;
-			}else{
-			return false;
-			}
-			}else{
-			for (let i = 0; i < this.quiz[this.index].answers.length; i++) {
-			if(this.quiz[this.index].answers[i].correct != this.answers[this.index][i]){
-			return false;
-			}
-			}
-			this.score++;
-			return true;
-			}
-			}
-			},
-			methods: {
-			startTest: function () {
-			this.started = true;
-			this.answers = Array(this.quiz.length)
-			for (let i = 0; i < this.quiz.length; i++) {
-			if(this.quiz[i].type == 1){
-			this.answers[i] = Array(this.quiz[i].answers.length).fill(false);
-			}
-			}
-			},
-			restart: function(){
-			this.started = false;
-			this.chosen = 0;
-			this.answers = [];
-			this.submit = false;
-			this.progress = true;
-			this.check = false;
-			this.score = 0;
-			this.index = 0;
-			this.startTest();
-			},
-			choose: function(key){
-			if(this.submit != 0){
-			return false;
-			}
-			if(this.quiz[this.index].type === 0){
-			Vue.set(this.answers, this.index, key)
-			this.chosen = 1;
-			}else{
-			if(this.answers[this.index][key]===false){
-			Vue.set(this.answers[this.index], key, true);
-			this.chosen += 1;
-			}else{
-			Vue.set(this.answers[this.index], key, false);
-			this.chosen -= 1;
-			}
-			}
-			console.log(this.answers);
-			},
-			submitAnswer: function () {
-			this.submit = true;
-			this.chosen = 0;
-			this.check = this.counter
-			},
-			goNext: function () {
-			this.index++;
-			this.submit = false;
-			if (this.index === this.quiz.length) {
-			this.showResult()
-			}
-			},
-			showResult: function (answers) {
-			this.progress = false
-			},
-			},
-			mounted: function()
-			{
-			console.log("dsdw");
-			this.startTest();
-			}
-			})
+		script(src='/js/lzv/protection.js')
 			
-		
-		#rec68554931.r.t-rec.t-rec_pt_60.t-rec_pb_60.r_anim.r_showed(style='padding-top:60px;padding-bottom:0px; ', data-record-type='106')
-			// T004
-			.t004
-				.t-container
-					.t-col.t-col_11
-						.t-text.t-text_md(field='text')
-							| Спецпроект реалізований в рамках проекту 
-							a(href="http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/")«Прискорення заходів з подолання ВІЛ-інфекції в Україні» (HealthLink)
-							|  за підтримки Агентства США з міжнародного розвитку (USAID).
 
-
-		section.google_form
-			p 
-				| Заповніть, будь ласка, форму зворотнього зв'язку:
-			a(href="https://www.google.com/url?q=https://docs.google.com/forms/d/1uah4zChsqV5Z0gJL-nt5BSsWG5QM5wNGLRv4nijIZaE/edit&sa=D&ust=1538828304757000&usg=AFQjCNFaOQP_LZZLSoV2RArq4eRhbGYKTQ")Заповнити форму		
-
-
-
-		// ПАРТНЕРИ
-		#partners.section
-			p.h2 
-				| Ініціатори проекту
-			.container
-				ul.partners_list.new
-					li
-						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo3.png', alt='')
-					li
-						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
-							img(src='../img/lzv-rights/logo4.png', alt='')
-					li
-						a(href='http://network.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
-					li
-						a(href='http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/', target='_blank', title='')
-							img(src='../img/lzv-rights/HealthLink.png', alt='')
-			br		
-			p.h2 
-				| Організації-розробники 
-			.container
-				ul.partners_list
-					li
-						a(href='http://ed-era.com', target='_blank', title='')
-							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
-					li
-						a(href='https://helsinki.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/logo.png', alt='')
-
-
+		include ../includes/lzv-footer.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
-		

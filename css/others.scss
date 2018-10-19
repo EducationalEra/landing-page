@@ -1689,3 +1689,87 @@ p.section_news {
 		line-height: 22px;
 	}
 }
+
+.lzv-cover {
+	width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+	&.header-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/Header.png');
+	}
+	&.discrimination-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/1.jpg');
+	}
+	&.medical-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/2.jpg');
+	}
+	&.family-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/3.jpg');
+	}
+	&.social-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/4.jpg');
+	}
+	&.police-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/5.jpg');
+	}
+	&.protection-image {
+		height: 300px;
+		background-image: url('/img/lzv-rights/HEAD/6.jpg');
+	}
+	.lzv-heading-container {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		margin-top: 60px;
+		max-width: 1200px !important;
+		width: 100%;
+		height: 300px;
+		.lzv-heading {
+			position: relative;
+			left: 20px;
+			top: 50%;
+			max-width: 520px;
+			transform: translateY(-50%);
+			text-align: left;
+		}
+	}
+}
+
+.lzv-container {
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-top: 60px;
+    max-width: 1200px!important;
+    width: 100%;
+	.lzv-items {
+		display: flex;
+		padding: 20px 20px;
+		.lzv-image {
+			opacity: 0.5;
+		}
+		.lzv-item {
+			flex: 1 0 0;
+			margin: 20px 20px;
+		}
+	}
+	&.lzv-grey-container {
+		background-color: #fafafa;
+	}
+}
+
+.lzv-video {
+    height: 452.5px;
+    max-width:900px;
+}

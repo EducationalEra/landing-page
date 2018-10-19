@@ -1,27 +1,21 @@
+
 include ../includes/head-lzv-rights.jade
 doctype html
 html
 	+head
 	body
-
-
 		include ../includes/gtm.jade
 		include ../includes/header.jade
-		#recorddiv68552395.t-cover(bgimgfield='img', style="height:300px; background-image:url('../img/lzv-rights/Header.png');")
-			#coverCarry68552395.t-cover__carrier.loaded(data-content-cover-id='68552395', data-content-cover-bg='../img/lzv-rights/Header.png', data-content-cover-height='300px', data-content-cover-parallax='', style='height: 300px; background-attachment: scroll; background-image: url(../img/lzv-rights/Header.png);', src='')
-			.t270
-				.t-container
-					.t-cover__wrapper.t-valign_middle(style='height:300px;')
-						.t270__wrapper
-							.t270__title.t-title.t-title_xxs(field='title', style='background-color:#BF3B41; ;') Знай свої права!
-							.t270__separator
-							.t270__descr.t-descr.t-descr_xs(field='descr', style='; ;')
-								div(style='font-size:20px;color:#ffffff;', data-customstyle='yes')
-									br
+		
+		.lzv-cover.header-image
+				.lzv-heading-container
+					.lzv-heading
+						.h1-lzv Знай свої права!
+		
 		#rec68553062.r.t-rec.t-rec_pt_135.t-rec_pb_0.r_showed.r_anim(style='padding-top:70px;padding-bottom:25px; ;', data-record-type='106')
 			// T004
 			.t004
-				.t-container
+				.lzv-container
 					.wrap
 						p.big
 							| До запуску спецпроекту
@@ -109,31 +103,31 @@ html
 				ul.partners_list.new
 					li
 						a(href='#', target='_blank', title='')
-							img(src='../img/lzv-rights/logo3.png', alt='')
+							img(src='/img/lzv-rights/logo3.png', alt='')
 					li
 						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='')
-							img(src='../img/lzv-rights/logo4.png', alt='')
+							img(src='/img/lzv-rights/logo4.png', alt='')
 					li
 						a(href='http://network.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/LOG_100_LIFE.png', alt='')
+							img(src='/img/lzv-rights/LOG_100_LIFE.png', alt='')
 					li
 						a(href='http://network.org.ua/ru/2018/06/06/v-ukrayini-rozpochato-masshtabnyj-proekt-z-podolannya-vil-snidu-healthlink/', target='_blank', title='')
-							img(src='../img/lzv-rights/HealthLink.png', alt='')
-			br		
+							img(src='/img/lzv-rights/HealthLink.png', alt='')
+			br
 			p.h2 
 				| Організації-розробники 
 			.container
 				ul.partners_list
 					li
 						a(href='http://ed-era.com', target='_blank', title='')
-							img(src='../img/lzv-rights/logo_edera.png', alt='edera')
+							img(src='/img/lzv-rights/logo_edera.png', alt='edera')
 					li
 						a(href='https://helsinki.org.ua/', target='_blank', title='')
-							img(src='../img/lzv-rights/logo.png', alt='')
+							img(src='/img/lzv-rights/logo.png', alt='')
 
 
 
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js')
-		script(src='../../js/counter.js')
+		script(src='/js/counter.js')

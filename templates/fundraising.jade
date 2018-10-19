@@ -14,26 +14,31 @@ html
                 h1
                     strong Fundraising
                 h2
-                    a.button.orange(target='_blank', href='https://secure.wayforpay.com/payment/sa7a8489c4741')
+                    a.button.orange.wfp(href='#')
                         span I want to help!
         
         #fundraising_project.section
             .container
-                p.h2 Support EdEra on creating a Software Development online course based on a book
+                p.h2
+                    a.wfp.orange(href='#') Support EdEra&nbsp;
+                    | on creating a Software Development online course based on&nbsp;
+                    a.orange(target='_blank' href='http://a.co/d/aPREIrN') a book
                 .two_column
                     .item
                         p
-                        | We are in the process of creating a course based on this book.
+                        | We are in the process of creating a course based on&nbsp;
+                        a.orange(target='_blank' href='http://a.co/d/aPREIrN') this book.
                         p
-                        | This course will explain the process of software creation starting from the idea and finishing with the software running in production.
+                        | This course will explain the process of creation of software starting from the idea and finishing with the software running in production.
                         p
                         | This will be a funny course based on real experience of real software engineers.
                         p
-                        a.button.orange(target='_blank', href='https://secure.wayforpay.com/payment/sa7a8489c4741') I want to help!
+                        a.button.orange.wfp(href='#') I want to help!
                     .item
                         p
-                        a(href='http://a.co/d/aPREIrN')
+                        a(target='_blank' href='http://a.co/d/aPREIrN')
                             img(src='/img/it_book_cover.png', alt='Book Cover')
 
         include includes/footer.jade
         include includes/scripts.jade
+        include includes/wfp-script.jade

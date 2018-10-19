@@ -6,11 +6,12 @@ html
 
 		include ../includes/gtm.jade
 		include ../includes/header.jade
-		.t-cover(style="height:300px; background-image:url('../img/lzv-rights/Header.png');")
-			.t270
-				.t-valign_middle(style='height:300px;')
-					.t270__wrapper
-						div.h1-lzv Знай свої права!
+
+		.lzv-cover.header-image
+				.lzv-heading-container
+					.lzv-heading
+						.h1-lzv Знай свої права!
+						
 		section
 			.container
 				p.lzv-main
@@ -22,57 +23,57 @@ html
 					| Авторами контенту — експерти 
 					span.lzv-bold Української Гельсінської спілки з прав людини.
 
-			.t-container
+			.lzv-container
 				center
-					div.lzv-video
-						iframe#youtubeiframe68551264(width='100%', height='100%', src='https://www.youtube.com/embed/wAWT8Gw610g', frameborder='0', allowfullscreen='', style='height: 452.5px; max-width:900px;')
+					.lzv-video
+						iframe(src='https://www.youtube.com/embed/wAWT8Gw610g', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
-			.t-container
+			.lzv-container
 				center
 					h2.h2-lzv Чим корисний спецпроект?
-			.t-container		
-					.t-col_4
-						center
-							img.t-img(src='../img/lzv-rights/icon/document.png')
-							p.icon-descr Допоможе розібратись з основними правами ВІЛ-позитивних осіб
-					.t-col_4
-						center
-							img.t-img(src='../img/lzv-rights/icon/monitoring.png')
-							p.icon-descr Навчить розрізняти ключові порушення прав
-					.t-col_4
-						center
-							img.t-img(src='../img/lzv-rights/icon/management.png')
-							p.icon-descr Розкриє діючі механізми захисту прав ЛЖВ
+	
+			.lzv-container
+				.lzv-items
+					center.lzv-item
+						img.lzv-image(src='/img/lzv-rights/icon/document.png')
+						p.icon-descr Допоможе розібратись з основними правами ВІЛ-позитивних осіб
+					center.lzv-item
+						img.lzv-image(src='/img/lzv-rights/icon/monitoring.png')
+						p.icon-descr Навчить розрізняти ключові порушення прав
+					center.lzv-item
+						img.lzv-image(src='/img/lzv-rights/icon/management.png')
+						p.icon-descr Розкриє діючі механізми захисту прав ЛЖВ
 
-		section(style='background-color: #fafafa;')
-			.t-container
+		section
+			.lzv-container
 				center
 					h2.h2-lzv Навчальні матеріали
-			.t-container		
-					.t-col_4
+			.lzv-container
+				.lzv-items
+					.lzv-item
 						a(href='discrimination-lzv' target="_blank")
-							img(src='../img/lzv-rights/CARD/1.jpg')
+							img(src='/img/lzv-rights/CARD/1.jpg')
 							p.card-descr Дискримінація
-					.t-col_4
+					.lzv-item
 						a(href='./medical' target="_blank")
-							img(src='../img/lzv-rights/CARD/2.jpg')
+							img(src='/img/lzv-rights/CARD/2.jpg')
 							p.card-descr Медичні права
-					.t-col_4
+					.lzv-item
 						a(href='./family-rights' target="_blank")
-							img(src='../img/lzv-rights/CARD/3.jpg')
+							img(src='/img/lzv-rights/CARD/3.jpg')
 							p.card-descr Сімейні права
-					.separator
-					.t-col_4
+				.lzv-items
+					.lzv-item
 						a(href='./social' target="_blank")
-							img(src='../img/lzv-rights/CARD/4.jpg')
+							img(src='/img/lzv-rights/CARD/4.jpg')
 							p.card-descr Соціальні права
-					.t-col_4
+					.lzv-item
 						a(href='./police' target="_blank")
-							img(src='../img/lzv-rights/CARD/5.jpg')
+							img(src='/img/lzv-rights/CARD/5.jpg')
 							p.card-descr Спілкування з поліцією
-					.t-col_4
+					.lzv-item
 						a(href='./protection' target="_blank")
-							img(src='../img/lzv-rights/CARD/6.jpg')
+							img(src='/img/lzv-rights/CARD/6.jpg')
 							p.card-descr Захист прав
 
 		include ../includes/lzv-footer.jade

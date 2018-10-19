@@ -25,19 +25,6 @@
       "access": true,
       "free": false
     },
-    "prosvit": {
-      "className": "",
-      "imgUrl": "/img/courses/Prosvit.jpg",
-      "altText": "",
-      "href": "https://courses.ed-era.com/courses/course-v1:EDERA-PROSVITCENTER+SM101+sm101/about",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Управління школою. Практикум",
-      "courseSubtitle": "",
-      "courseDesc": "Мета курсу — допомогти адміністраціям шкіл та керівникам відділів освіти налагодити ефективні процеси управління у школах. Ви отримаєте дієві інструменти трансформації школи та побудови організаційної культури, сфокусованої на розвитку кожного учня.",
-      "access": true,
-      "free": false
-    },
-
     "modules": {
       "className": "",
       "imgUrl": "/img/modules-cover.jpg",

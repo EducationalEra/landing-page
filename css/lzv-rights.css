@@ -1,78 +1,9 @@
-.t-cover {
-    height: 700px;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    background-attachment: fixed;
-    overflow: hidden;
-}
-
-.t270, .t-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    margin-top: 60px;
-    max-width: 1200px!important;
-    width: 100%;
-}
-
-.t-cover .t-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.t-align_center {
-    text-align: center;
-}
-
-.t-valign_middle {
-    vertical-align: middle;
-}
-
-.t270__wrapper {
-    position: relative;
-    left: 20px;
-    right: 20px;
-    max-width: 520px;
-    text-align: left;
-    top: 70px
-}
-
-.t-col_4 {
-    display: inline-block;
-    margin: 0 20px;
-    max-width: 355px;
-}
-.t-col_4 > img {
-    padding-bottom: 66%;
-}
-
 .lzv-video {
     height: 452.5px;
     max-width:900px;
 }
 
-
-.t-img {
-    margin-bottom: 20px;
-    width: 100px;
-    height: auto;
-    max-width: 100%;
-    opacity: 0.5;
-}
-
-div.h1-lzv {
+.h1-lzv {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 600;
     color: #fff!important;
@@ -96,13 +27,13 @@ p.lzv-main {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
     font-size: 20px;
-    line-height: 1.55;")
+    line-height: 1.55;"
 }
 
 p.card-descr {
     margin-top: 10px;
     font-size:20px;
-    font-weight: 600;'
+    font-weight: 600;
 }
 
 p.icon-descr {
@@ -113,62 +44,8 @@ p.icon-descr {
     font-weight: 600;
 }
 
-.separator {
-    display: block;
-    margin-bottom: 60px;
-}
-
 section.google_form > a {
     font-weight: 700;
-}
-
-@media screen and (max-width: 1200px){
-.t-col_4 {
-    max-width: 300px;
-}
-}
-
-
-@media screen and (max-width: 960px){
-.t490__col {
-    margin-bottom: 45px;
-}
-.t-container.quiz_container_big{
-    padding: 0 20px;
-}
-
-.t-col {
-    float: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.t-col, .t-container.flexx, .t-container_flex {
-    display: block;
-}
-
-  .t-col_4 {
-    width: 100%;
-    max-width: 100%;
-}
-
-.t490__col {
-    margin-bottom: 45px;
-}
-
-
-
-.t692__col {
-    margin-bottom: 70px;
-}
-
-
-.t-container {
-    max-width: 800px;
-
-}
 }
 
 .t-heading {
@@ -415,7 +292,7 @@ section.google_form > a {
     width: 100%;
 }
 @media screen and (min-width: 900px){
-    .t-container.quiz_container_big{
+    .lzv-container.quiz_container_big{
         max-width: 900px!important;
     }
 }

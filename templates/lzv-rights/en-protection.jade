@@ -88,6 +88,13 @@ html
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
 		script(src='/js/lzv/en-protection.js')
 
-		include ../includes/lzv-footer-eng.jade
+
+		include ./en-lzv-footer.jade
+
+		section.mon-alarm.mon-main
+			.container
+				a.button.button--big(href='./protection' target="_blank")
+					| Українська версія
+
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

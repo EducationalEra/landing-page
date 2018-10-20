@@ -101,7 +101,13 @@ html
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
 		script(src='/js/lzv/medical.js')
 
-		include ../includes/lzv-footer.jade
+
+		include ./lzv-footer.jade
+
+		section.mon-alarm.mon-main
+			.container
+				a.button.button--big(href='./en-medical' target="_blank")
+					| English version
+
 		include ../includes/footer.jade
 		include ../includes/scripts.jade
-		

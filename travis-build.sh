@@ -20,7 +20,7 @@ EOT
 done < redirects.txt
 
 # Copy non index.html files to their designated folder.
-find build -name "*.html" | grep -v "index.html" | while read i; do mkdir -p "${i/.html/}"; cp "$i" "${i/.html/}/index.html";done
+find build -name "*.html" | grep -v "/index.html" | while read i; do mkdir -p "${i/.html/}"; cp "$i" "${i/.html/}/index.html";done
 
 # Zip content.
 find build -type f -name "*.html" -exec gzip -n -9 {} \;

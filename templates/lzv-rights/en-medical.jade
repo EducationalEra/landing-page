@@ -7,45 +7,57 @@ html
 		include ../includes/gtm.jade
 		include ../includes/header.jade
 		
-		.lzv-cover.family-image
+		.lzv-cover.medical-image
 				.lzv-heading-container
 					.lzv-heading
-						.h1-lzv Сімейні права
+						.h1-lzv Medical rights
+		
 		section
 			.container
 				p.lzv-main
-					| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+					| Today, knowing your HIV status (whether it is positive or negative) means being trendy! Being conscious and up-to-date! Everyone has the right to health. However, how can it be used and what does it mean at all?
 					br
 					br
-					| Переглядайте навчальні матеріали та проходьте 
-					a(href="#test") тест
-					|. Буде цікаво!
+					| In the video
+					span.lzv-bold  Tetiana Krasnopolska 
+					|  (Public Health Center of Ukraine of the Ministry of Health of Ukraine) and 
+					span.lzv-bold Oleksandr Pavlichenko
+					|  (Executive Director of the Ukrainian Helsinki Human Rights Union, will discuss the peculiarities of medical rights of HIV-positive people. The experts will also mention doctor-patient confidentiality rule and the legislation that concerns the preservation of information on the health status.
+					br
+					br
+					| Do not hesitate to watch the videos and take the 
+					a(href="#test") test
+					|. Stay tuned! 
 
 			.lzv-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.lzv-container
 				center
 					.lzv-video
-						iframe(src='https://www.youtube.com/embed/2owtTGe3TZI', width='100%', height='100%', frameborder='0', allowfullscreen='')
+						iframe(src='https://www.youtube.com/embed/nhrkce5U9lE', width='100%', height='100%', frameborder='0', allowfullscreen='')
+
 			.lzv-container
 				center
 					.lzv-video
-						iframe(src='https://www.youtube.com/embed/jSKE79F_ugk', width='100%', height='100%', frameborder='0', allowfullscreen='')
+						iframe(src='https://www.youtube.com/embed/CJ0EFBSn9fI', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
-
+		section.google_form
+			a(target='_blank', href="https://drive.google.com/file/d/1WmXaG2V4rO9xevPGjnSpYfN9v4ibWaR9/view?usp=sharing") ADDITIONAL MATERIALS
+		
+		
 		.lzv-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
-			#family-rights-quiz
+				h2.h2-lzv TESTS
+			#en-medical-quiz
 				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -70,10 +82,10 @@ html
 									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
 									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
-						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Відповісти 
-						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Відповісти 
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Answer 
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Answer
 						.quiz_main_hint(v-else-if='submit === true')
-							button.quiz_button(@click='goNext()') Далі
+							button.quiz_button(@click='goNext()') Continue
 							div
 								p(v-if='check == true', v-html='quiz[index].true_hint')
 								p
@@ -81,33 +93,23 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
+						button.quiz_button(@click='restart()') Try again
 		
-		
+	
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
-		script(src='/js/lzv/family-rights.js')
-			
-		.lzv-container
-			center
-				h2.h2-lzv Життя з ВІЛ
-		.container
-			p.lzv-main
-				span.lzv-bold Олена Вдовенко 
-				| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
-			center
-				div.lzv-video
-					iframe(src='https://www.youtube.com/embed/PTgc8lR98Y4', width='100%', height='100%', frameborder='0', allowfullscreen='')
+		script(src='/js/lzv/en-medical.js')
 
-		include ./lzv-footer.jade
+
+		include ./en-lzv-footer.jade
 
 		section.mon-alarm.mon-main
 			.container
-				a.button.button--big(href='./en-family-rights' target="_blank")
-					| English version
+				a.button.button--big(href='./medical'  target="_blank")
+					| Українська версія
 
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

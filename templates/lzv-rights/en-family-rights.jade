@@ -6,24 +6,26 @@ html
 
 		include ../includes/gtm.jade
 		include ../includes/header.jade
-		
+
 		.lzv-cover.family-image
 				.lzv-heading-container
 					.lzv-heading
-						.h1-lzv Сімейні права
+						.h1-lzv Family rights
 		section
 			.container
 				p.lzv-main
-					| Люди, які живуть з ВІЛ, частіше стикаються з порушеннями прав у сімейних правовідносинах. Більше того, вони частіше стають жертвами домашнього насильства. Які права в сфері сімейних правовідносин має кожен та кожна, як захиститися від насильства різного виду — дізнайтеся у відео.
+					| HIV positive people are more likely to face violations of their rights in family relationships. Moreover, they are more likely to become victims of domestic violence. What rights does everyone have in family relationships? How to protect oneself against violence? 
+					span.lzv-bold  Natalia Kozarenko
+					|, Public Reception Coordinator of the Ukrainian Helsinki Human Rights Union, will tell you about this and more.
 					br
 					br
-					| Переглядайте навчальні матеріали та проходьте 
-					a(href="#test") тест
-					|. Буде цікаво!
+					| Find it all out in the video and take the 
+					a(href="#test") test 
+					| to sum the information up.
 
 			.lzv-container
 				center
-					h2.h2-lzv Відеоматеріали
+					h2.h2-lzv VIDEO MATERIALS
 
 			.lzv-container
 				center
@@ -34,18 +36,17 @@ html
 					.lzv-video
 						iframe(src='https://www.youtube.com/embed/jSKE79F_ugk', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
-
 		.lzv-container.quiz_container_big#test
 			center
-				h2.h2-lzv Тест
-			#family-rights-quiz
+				h2.h2-lzv Test
+			#en-family-rights-quiz
 				br
 				br
 				div(v-if='!started')
 				div(v-else-if='progress')
 					.quiz_container.quiz
 						.quiz_progess
-							| Питання:
+							| Question:
 							span  {{index + 1}} / {{quiz.length}}
 						.quiz_question
 							h3 {{quiz[index].title}}
@@ -81,33 +82,33 @@ html
 								p
 				div(v-else='')
 					.quiz_container.result
-						h5 Ваш результат
+						h5 Result
 						h5
 						h2 {{score}}/{{answers.length}}
 						p {{resultText[score].description}}
-						button.quiz_button(@click='restart()') Скласти ще
+						button.quiz_button(@click='restart()') Try again
 		
 		
 		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
-		script(src='/js/lzv/family-rights.js')
+		script(src='/js/lzv/en-family-rights.js')
 			
 		.lzv-container
 			center
-				h2.h2-lzv Життя з ВІЛ
+				h2.h2-lzv LIVING WITH HIV
 		.container
 			p.lzv-main
-				span.lzv-bold Олена Вдовенко 
-				| живе з ВІЛ більше 20 років. У інтерв’ю вона розповідає про особистий досвід та виклики, з якими стикаються жінки, що живуть з ВІЛ.
+				span.lzv-bold Olena Vdovenko 
+				| has been living with HIV for over 20 years. In the interview, she talks about her personal experience and challenges that women living with HIV face.
 			center
 				div.lzv-video
 					iframe(src='https://www.youtube.com/embed/PTgc8lR98Y4', width='100%', height='100%', frameborder='0', allowfullscreen='')
 
-		include ./lzv-footer.jade
+		include ./en-lzv-footer.jade
 
 		section.mon-alarm.mon-main
 			.container
-				a.button.button--big(href='./en-family-rights' target="_blank")
-					| English version
+				a.button.button--big(href='./family-rights' target="_blank")
+					| Українська версія
 
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

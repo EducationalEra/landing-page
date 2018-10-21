@@ -19,6 +19,16 @@ cat << EOT > build$from/index.html
 EOT
 done < redirects.txt
 
+# Create an error.html page.
+cat << EOT > build/error.html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Refresh" content="0;url=https://www.ed-era.com/">
+</head>
+</html>
+EOT
+
 # Copy non index.html files to their designated folder.
 find build -name "*.html" | grep -v "/index.html" | while read i; do mkdir -p "${i/.html/}"; cp "$i" "${i/.html/}/index.html";done
 

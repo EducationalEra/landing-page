@@ -44,6 +44,10 @@ gulp.task('copy', ['sass', 'templates'], function () {
       .pipe(gulp.dest("build/css"));
   gulp.src("img/**/*.*")
       .pipe(gulp.dest("build/img"));
+  gulp.src("img/edera_sig.png")
+    .pipe(gulp.dest("build"));
+  gulp.src("img/favicon.png")
+    .pipe(gulp.dest("build"));
   gulp.src("anticorr-materials/*.*")
       .pipe(gulp.dest("build/anticorr-materials"));
   gulp.src("unicef/*.*")

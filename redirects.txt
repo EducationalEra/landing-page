@@ -1,3 +1,4 @@
+/factcheck/ https://courses.ed-era.com/courses/course-v1:VOXU-EdEra+FactCheck101+2018/about
 /ukr-lifehacks/ https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+101/about
 /sej-nomistakes/ https://courses.ed-era.com/courses/course-v1:VOXU-KSE-EdEra+SEJ101+2017/about
 /lit-lifehacks/ https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+201/about

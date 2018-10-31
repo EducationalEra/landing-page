@@ -37,6 +37,30 @@
       "access": true,
       "free": false
     },
+    "factcheck": {
+      "className": "",
+      "imgUrl": "/img/courses/factchek-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:VOXU-EdEra+FactCheck101+2018/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Фактчек: довіряй-перевіряй",
+      "courseSubtitle": "",
+      "courseDesc": "Втомилися від інтернет-фейків, маніпуляцій ЗМІ та брехні політиків? Хочете навчитися відрізняти брехню від правди? Практичні поради, реальні приклади та корисні інструменти у першому українському онлайн-курсі з фактчекінгу!",
+      "access": true,
+      "free": false
+    },
+    "stop_trafficking": {
+      "className": "",
+      "imgUrl": "/img/courses/stop_trafficking_cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra_OSCE+ST101+ST101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Протидія торгівлі людьми в Україні",
+      "courseSubtitle": "",
+      "courseDesc": "Курс містить концептуальні положення щодо попередження та протидії торгівлі людьми в Україні та методологічні засади здійснення превентивної роботи у закладах загальної середньої освіти",
+      "access": true,
+      "free": false
+    },
     "modules": {
       "className": "",
       "imgUrl": "/img/modules-cover.jpg",

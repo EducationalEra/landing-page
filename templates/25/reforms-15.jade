@@ -1,0 +1,85 @@
+include ../includes/cases-head.jade
+doctype html
+html
+    +head
+    body
+        include ../includes/gtm.jade
+        include ../includes/header.jade
+        .library.section.heading.header_cases(style="background-image: url(/img/25/i/15.jpg)")
+            .container.cases_25
+                a(href='/modules')
+                    i.fa.fa-angle-left
+                    | До всіх модулів
+                h1
+                    span.exo In reforms we trust
+                    p.text ЗМІ та соціальні мережі звідусіль кричать про реформи. Як працює виборча система в Україні? Що варто знати про її переваги та недоліки майбутнім виборцям? Заняття допоможе розібратися в ході та викликах виборчої реформи в Україні та дозволить учням спробувати себе у ролі експертів-реформаторів.
+                    small EdEra та ВУР
+
+        //- СПІЛЬНОКОШТ
+        a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/" target="_blank" title="EdEra на Спільнокошті")
+            .banner_25
+                img.left_img(src="/img/25/left_banner.png" alt="")
+                p Підтримайте <span>EdEra</span>
+                img.right_img(src="/img/25/right_banner.png" alt="")
+
+
+
+        // Programs
+        section.bookshelf
+            .container.cases_material
+                h2
+                    | Матеріали заняття
+                .book.about
+                    a(href='https://drive.google.com/open?id=101ir8F6UDQ4i29vtAENOxDXGw5cRtfC4' target='_blank')
+                        figure
+                            img.cases(src='/img/25/scenario.png')
+                            figcaption
+                                h3
+                                    | Сценарій «In reforms we trust»
+                                    small
+                                        | 45 хв
+
+                .book.about
+                    a(href='https://drive.google.com/open?id=1r8RrzeHvt9yfDnvTj3Vp1xT4M6CjqM0f' target='_blank')
+                        figure
+                            img.cases(src='/img/25/picture.png')
+                            figcaption
+                                h3
+                                    | Презентація
+                                    small
+                                        | PDF
+
+                .book.about
+                    a(href='https://drive.google.com/open?id=1Lxix4KRO1XD9fFpG4aEEoOzEmPk8GYVn' target='_blank')
+                        figure
+                            img.cases(src='/img/25/archive.png')
+                            figcaption
+                                h3
+                                    | Бюлетень
+
+        section.materials_features.archive
+            .container.cases_btn
+                .description_block
+                    p.lead
+                        | Щоб провести заняття у себе в школі вчителю потрібно завантажити архів з файлами та ознайомитись з додатковими матеріалами.
+
+                article
+                    a.button.button--big(href='https://drive.google.com/open?id=1bG6VX-IGwvFE3niR5GA7NmAJjMBJY2wd' target='_blank')
+                        | Завантажити матеріали 
+                        sup
+                            i.fa.fa-floppy-o
+
+        #partners.section
+            .container
+                p.h2
+                    | Організації-розробники
+                ul.partners_list
+                    li
+                        a(href='https://www.ed-era.com' target='_blank' title='EdEra')
+                            img(src='/img/25/1/edera_logo.png' alt='EdEra')
+                    li
+                        a(href='https://cedem.org.ua/what-we-do/vidkrytyj-universytet-reform/' target='_blank' title='Відкритий Університет Реформ')
+                            img(src='/img/25/1/VUR_logo.jpg' alt='Відкритий Університет Реформ')
+
+        include ../includes/footer.jade
+        include ../includes/scripts.jade

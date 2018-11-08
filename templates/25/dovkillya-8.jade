@@ -5,67 +5,56 @@ html
   body
     include ../includes/gtm.jade
     include ../includes/header.jade
-    .library.section.heading.header_cases(style="background-image: url(../img/25/covers/_8.jpg)")
-      .container
+    .library.section.heading.header_cases(style="background-image: url(/img/25/i/14.jpg)")
+      .container.cases_25
+        a(href='/modules')
+          i.fa.fa-angle-left 
+          | До всіх модулів
         h1
           span.exo Довкілля і здоров'я людини
-          p.text 
+          p.text Як на наше здоров’я впливає місцевість, де ми живемо? Чому надлишок чи відсутність певних хімічних елементів у ґрунті, воді, повітрі можуть шкодити чи, навпаки, допомагати людині? Чи залежить наше здоров’я від клімату рідного краю?
           small EdEra та ILID
         //article.about.hyphenate
 
     //- СПІЛЬНОКОШТ
-    section.section.talents-banner#books
-      .container
-        h2.section_title 
-          a.button.w(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
-            strong Підтримайте EdEra на Спільнокошті
-
-    section.materials_features(style='padding: 20px 0!important;')
-      .container
-        ol.arrows
-          li
-            a(href='./index.html') До всіх модулів
-          li
-            a(href='#') Довкілля і здоров'я людини
-
-    section.materials_features
-      .container
-        .description_block
-          p.lead
-            | Як на наше здоров’я впливає місцевість, де ми живемо? Чому надлишок чи відсутність певних хімічних елементів у ґрунті, воді, повітрі можуть шкодити чи, навпаки, допомагати людині? Чи залежить наше здоров’я від клімату рідного краю?
-            br
-          p.lead
-            | І – нарешті – як, знаючи все це, убезпечити своє здоров’я  від можливого шкідливого впливу навколишнього середовища та як треба поводитися у повсякденні, щоб повсякденної поведінки для профілактики природних захворювань.
-          
-        article
-            a.popup-youtube(href='https://drive.google.com/open?id=1ea3mYNqczNN2g-v_ITI-_V-8w5iqZ7Vs')
-              img(src='../img/25/archive.png')
-              p.introduction Завантажити матеріали для уроку
+    a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+      .banner_25
+        img.left_img(src="/img/25/left_banner.png" alt="")
+        p Підтримайте <span>EdEra</span>
+        img.right_img(src="/img/25/right_banner.png" alt="")
 
     // Programs
     section.bookshelf
-      .container
+      .container.cases_material
         h2
-          | Матеріали заняття
+          | Матеріали заняття 
         .book.about
-          a(href='https://drive.google.com/open?id=11nQ1bpT794aSVuo1sGNwPt1oGBNGYkIH')
+          a(href='https://drive.google.com/open?id=1Ri0IBtGOG0ghBvltsWESRP_E7R-0bh2V')
             figure
-              img.cases(alt='', src='../img/25/scenario.png')
+              img.cases(alt='', src='/img/25/scenario.png')
               figcaption
                 h3
-                  | Сценарій «Демографічні процеси в суспільстві»
+                  | Сценарій
                   small
-                    | 45 хв
+                    | 90 хв
 
         .book.about
-          a(href='https://drive.google.com/open?id=1M5aGPNDV7SiX9W70Qlluwl92--BSgAXU')
+          a(href='https://drive.google.com/open?id=1bOdHiserkwhJvoTjYArrwSQwsZRM8Qv5')
             figure
-              img.cases(alt='', src='../img/25/picture.png')
+              img.cases(alt='', src='/img/25/picture.png')
               figcaption
                 h3
-                | Презентація
-                small
-                  | PDF
+                  | Презентація
+                  small
+                    | PDF
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1ibFzi1nV6De0OMjisyw056YgOSWjVjy_')
+            figure
+              img.cases(alt='', src='/img/25/notebook.png')
+              figcaption
+                h3
+                  |  Аркуш учня
 
     section.materials_features.archive
       .container
@@ -74,7 +63,7 @@ html
             | Щоб провести заняття у себе в школі вчителю потрібно завантажити архів з файлами та ознайомитись з додатковими матеріалами. 
         
         article  
-          a.button.button--big(href='https://drive.google.com/open?id=1ea3mYNqczNN2g-v_ITI-_V-8w5iqZ7Vs')
+          a.button.button--big(href='https://drive.google.com/drive/u/0/folders/1ea3mYNqczNN2g-v_ITI-_V-8w5iqZ7Vs')
             | Завантажити матеріали
             sup 
               i.fa.fa-floppy-o
@@ -86,10 +75,10 @@ html
         ul.partners_list
           li
             a(href='https://www.ed-era.com', target='_blank', title='EdEra')
-              img(src='../img/25/1/edera_logo.png', alt='EdEra')
+              img(src='/img/25/1/edera_logo.png', alt='EdEra')
           li
             a(href='https://ilid.org.ua/', target='_blank', title='ILID Ukraine')
-              img(src='../img/25/1/ILID_logo.png', alt='EdEra')
+              img(src='/img/25/1/ILID_logo.png', alt='EdEra')
 
     include ../includes/footer.jade
     include ../includes/scripts.jade

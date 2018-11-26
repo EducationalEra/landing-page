@@ -1,0 +1,160 @@
+//
+	 Created by artem on 25-11-2018.
+
+include ../includes/head-anticorruption-lesson.jade
+doctype html
+html
+	+head
+	body
+		include ../includes/gtm.jade
+		include ../includes/header.jade
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.antucorruption-lesson.section.heading
+			.container
+				h1
+					span.exo Антикорупційний урок 
+					small проект EdEra та Програма Розвитку ООН в Україні
+				h2 За підтримки Міністерства закордонних справ Данії
+
+		section.project_features
+			.container
+				.lead_block
+					p.lead
+						| Шановні вчителі, директори шкіл та учні! 9 грудня відзначається міжнародний день боротьби з корупцією. Програма розвитку ООН в Україні та проект EdEra підготували антикорупційний урок, який можна провести у вашій школі.
+						br
+					p.lead
+						| На цій сторінці ви знайдете необхідні матеріали: сценарій уроку, презентацію та відео, які допоможуть зробити цей урок яскравим та ефективним для учнів. Приєднуйтеся до інціціативи та приємного навчання!
+
+				article
+					ul
+						li
+							| Сценарії уроків
+						li
+							| Усі необхідні матеріали для уроку
+						li
+							| Додаткові навчальні матеріали
+						li
+							| Вчителям, учням, батькам
+
+		#courses.section.four
+			.container
+				h2 Уроки
+				.container
+					//
+					.course_card
+						.figure
+							img(src='/img/courses/nus-cover.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson1', target='_blank') Перейти до уроку
+						h3.course_title Юні детективи
+						p
+							| Один із обов’язкових етапів підвищення кваліфікації вчителів, які набиратимуть перший клас у 2018 році. Зокрема, ви ознайомитесь із новим Державним стандартом початкової освіти та методиками компетентністного навчання.
+						p.access.granted Відкрито доступ
+					// 
+					.course_card
+						.figure
+							img(src='/img/courses/factchek-cover.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson2', target='_blank') Перейти до уроку
+						h3.course_title Що таке корупція?
+						p
+							| Втомилися від інтернет-фейків, маніпуляцій ЗМІ та брехні політиків? Хочете навчитися відрізняти брехню від правди?
+						p.access.granted Відкрито доступ
+					// 
+					.course_card
+						.figure
+							img(src='/img/courses/factchek-cover.jpg', alt='')
+						h3.course_title Фактчек: довіряй-перевіряй
+						p
+							| Втомилися від інтернет-фейків, маніпуляцій ЗМІ та брехні політиків? Хочете навчитися відрізняти брехню від правди? Практичні поради, реальні приклади та корисні інструменти у першому українському онлайн-курсі з фактчекінгу!
+						p.access.granted Скоро
+					// 
+					.course_card
+						.figure
+							img(src='/img/courses/factchek-cover.jpg', alt='')
+						h3.course_title Фактчек: довіряй-перевіряй
+						p
+							| Втомилися від інтернет-фейків, маніпуляцій ЗМІ та брехні політиків? Хочете навчитися відрізняти брехню від правди? Практичні поради, реальні приклади та корисні інструменти у першому українському онлайн-курсі з фактчекінгу!
+						p.access.granted Скоро
+
+
+		//-section.anticorr-feedback
+			.container
+				h2.section_title
+					span  Відгук про урок та конкурс презентацій
+				.feedback
+					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі (кнопка зліва). Візьміть участь у конкурсі соціальних презентацій від Вашої школи (кнопка справа).
+			.container
+				.feedback
+					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
+						| Відгук про урок 
+					a.button.button--big(href='https://edera1.typeform.com/to/OpMFxY', target='_blank')
+						| Участь у конкурсі
+
+		section.anticorruption-book 
+			.container
+				.book-image
+					img(src='../img/books/anticorruption-lesson.jpg')
+				.book-description  
+					p Короткий навчальний посібник «Антикорупційний урок» є збіркою матеріалів, які можуть бути корисні вчителям для проведення відповідного уроку у старших класах середньої школи до Міжнародного дня боротьби з корупцією. Цей день відзначається 9 грудня у всьому світі, згідно з рішенням Генеральної Асамблеї ООН.
+					.actions
+						a.button.button--big(href='http://anticorruption-lesson.ed-era.com/', target='_blank')
+							| Читати онлайн 
+							sup ❐
+						a.button.button--big(href='../anticorr-materials/anticorruption-book.pdf', download='anticorr.pdf')
+							| Завантажити 
+							sup
+								i.fa.fa-file-pdf-o
+
+		section.anticorr-feedback
+			.container
+				h2.section_title
+					span  Відгук про проведення антикорупційного уроку
+				.feedback
+					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі
+			.container
+				.feedback
+					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
+						| Залишити відгук про урок 
+					//-a.button.button--big(href='https://edera1.typeform.com/to/z8hqYG', target='_blank')
+						| Залишити відгук про урок 
+
+		section.anticorr-news 
+			.container
+				ul.undp-social
+					li
+						i.fa.fa-globe
+						a.social-link(href='http://www.ua.undp.org/' title='Сайт ПРООН', target='_blank') Сайт ПРООН
+					li
+						i.fa.fa-facebook-square
+						a.social-link(href='https://www.facebook.com/EdEraUa/' title='facebook EdEra', target='_blank') EdEra
+					li
+						i.fa.fa-facebook-square
+						a.social-link(href='https://www.facebook.com/UNDPUkraine/' title='facebook Міністерство освіти і науки', target='_blank') ПРООН
+
+		#partners.section
+			p.h2
+				| Партнери проекту
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp')
+							img(src='/img/anticorr/partners/EdCamp-logo.png', alt='EdCamp')
+					li
+						a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
+							img(src='/img/anticorr/partners/ProSvit-logo.png', alt='Про.Світ')
+					li
+						a(href='https://www.facebook.com/Ed2Change/', target='_blank', title='Лабораторія Освітніх Змін')
+							img(src='/img/anticorr/partners/LOZ-logo.png', alt='Лабораторія Освітніх Змін')
+					li
+						a(href='http://osvitoria.org/', target='_blank', title='Громадська Спілка «ОСВІТОРІЯ»')
+							img(src='/img/anticorr/partners/Osvitoria-logo.png', alt='Громадська Спілка «ОСВІТОРІЯ»')
+					li
+						a(href='http://teachforukraine.org', target='_blank', title='Навчай для України')
+							img(src='/img/anticorr/partners/TeachforUkraine-logo.png', alt='Навчай для України')
+
+		section.materials_features.archive
+			.container
+				p.additional Думки, висновки чи рекомендації належать авторам уроку і не обов'язково відображають погляди Міністерства закордонних справ Данії, Програми розвитку ООН чи інших агентств ООН.
+
+		include ../includes/footer.jade
+		include ../includes/scripts.jade

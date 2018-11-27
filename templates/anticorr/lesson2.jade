@@ -1,5 +1,5 @@
 //
-	 Created by artem on 25-11-2018.
+	 Created by artem on 25-11-2017.
 
 include ../includes/head-anticorruption-lesson.jade
 doctype html
@@ -10,21 +10,21 @@ html
 		include ../includes/header.jade
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 
-		.antucorruption-lesson.section.heading
-			.container
+		.library.section.heading.header_cases(style="background-image: url(/img/anticorr/lesson2.jpg)")
+			.container.cases_25
+				a(href='/anticorr')
+					i.fa.fa-angle-left 
+					| Антикорупційний урок
 				h1
-					span.exo Антикорупційний урок 
-					small проект EdEra та Програма Розвитку ООН в Україні
-				h2 За підтримки Міністерства закордонних справ Данії
+					span.exo Юні Що таке корупція?
+					p.text EdEra та Програма Розвитку ООН в Україні за підтримки Міністерства закордонних справ Данії
 
 		section.project_features
 			.container
 				.lead_block
 					p.lead
-						| Шановні вчителі, директори шкіл та учні! 9 грудня відзначається міжнародний день боротьби з корупцією. Програма розвитку ООН в Україні та проект EdEra підготували серію антикорупційних уроків, які можна провести у вашій школі.
+						| Студентські роки не лише надважливий етап у житті, а й перший на якому особа свідомо вирішує діяти корупційно. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте діяєві поради, як захиститися від корупції у ВНЗ.
 						br
-					p.lead
-						| На цій сторінці ви знайдете посилання на конкретні уроки, а також усе необхідне для глибшого вивчення теми корупції в Україні та світі. Приєднуйтеся до ініціативи та приємного навчання!
 
 				article
 					ul
@@ -39,6 +39,47 @@ html
 						li
 							| Робочі аркуші
 
+		section.materials_features.archive
+			.container
+				.description_block
+					p.lead
+						| Для проведення уроку у себе в школі вчителю потрібно завантажити файли за посиланням. 
+				
+				article  
+					a.button.button--big(href='https://drive.google.com/drive/u/0/folders/1jWHrhjDNwTjXSY755yi5MFFhlIWkRIH5', target="_blank")
+						| Завантажити матеріали
+						sup 
+							i.fa.fa-floppy-o
+
+		section.bookshelf
+			.container.cases_material
+				h2 
+				.book.about
+					a(href='https://drive.google.com/open?id=1nzF-iO4zKuaogy9orLXr9O2-RU0uOrW3')
+						figure
+							img.cases(alt='', src='/img/25/scenario.png')
+							figcaption
+								h3
+									| Сценарій уроку
+
+				.book.about
+					a(href='https://drive.google.com/open?id=1JK1fvUI4CIEqtTKHCXV9CHSbTqNUa1Rn')
+						figure
+							img.cases(alt='', src='/img/25/picture.png')
+							figcaption
+								h3
+									| Презентація
+									small#anchor-timeline PDF
+
+				.book.about
+					a(href='https://drive.google.com/open?id=1NLVpnpJiwCxQatBcFQ2TXhnggBiIPIs3')
+						figure
+							img.cases(alt='', src='/img/25/notebook.png')
+							figcaption
+								h3
+									| Робочий аркуш
+									small#anchor-timeline PDF
+
 		#courses.section.four
 			.container
 				h2 Уроки
@@ -52,26 +93,6 @@ html
 						p
 							| Мабуть, кожному з нас хоч раз хотілося б спробувати себе у ролі детектива. Завдяки цьому уроку у вас нарешті буде така можливість! Ви дізнаєтесь про антикорупційні інструменти та спробуєте провести власне розслідування!
 						p.access.granted Відкрито доступ
-					// 
-					.course_card
-						.figure
-							img(src='/img/courses/factchek-cover.jpg', alt='')
-							a.button.goto_course(href='/anticorr/lesson2', target='_blank') Перейти до уроку
-						h3.course_title Що таке корупція?
-						p
-							| Студентські роки не лише надважливий етап у житті, а й перший на якому особа свідомо вирішує діяти корупційно. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте діяєві поради, як захиститися від корупції у ВНЗ.
-						p.access.granted Відкрито доступ
-					// 
-					.course_card
-						.figure
-							img(src='/img/courses/factchek-cover.jpg', alt='')
-						p.access.granted Скоро
-					// 
-					.course_card
-						.figure
-							img(src='/img/courses/factchek-cover.jpg', alt='')
-						p.access.granted Скоро
-
 
 		//-section.anticorr-feedback
 			.container

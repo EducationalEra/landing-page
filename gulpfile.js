@@ -111,9 +111,6 @@ gulp.task('copy', ['sass', 'templates'], function () {
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/making"))
       .pipe(browserSync.stream());
-  gulp.src("public/anticorruption-lesson.html")
-      .pipe(rename("index.html"))
-      .pipe(gulp.dest("build/anticorr"));
   gulp.src("public/books.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/books"));
@@ -128,12 +125,12 @@ gulp.task('copy', ['sass', 'templates'], function () {
       .pipe(gulp.dest("build/isef"));
   gulp.src("isef/img/*")
       .pipe(gulp.dest("build/isef/img"));
-
   gulp.src("public/lzv-rights/*.*")
-      .pipe(gulp.dest("build/lzv-rights"));
-      
+      .pipe(gulp.dest("build/lzv-rights"));      
   gulp.src("public/25/*.*")
       .pipe(gulp.dest("build/modules"));
+  gulp.src("public/anticorr/*.*")
+      .pipe(gulp.dest("build/anticorr"));
 
   _.each(books, function (book) {
     gulp.src("public/books/" + book + ".html")

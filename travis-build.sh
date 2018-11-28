@@ -3,9 +3,13 @@
 npm install
 npm run build
 
+env="www.ed-era.com"
+if [ "$1" == "preproduction" ]; then
+    env="stage.ed-era.com"
+fi
+
 # Generate the redirects.
-while read i
-do
+while read i; do
 from=`echo $i | awk '{print $1}'`
 to=`echo $i | awk '{print $2}'`
 mkdir -p build/$from
@@ -24,7 +28,7 @@ cat << EOT > build/error.html
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Refresh" content="0;url=https://www.ed-era.com/">
+<meta http-equiv="Refresh" content="0;url=https://$env/">
 </head>
 </html>
 EOT
@@ -40,4 +44,3 @@ find build -type f -name "*.json" -exec gzip -n -9 {} \;
 
 # Remove the extension.
 find build -name '*.gz' -type f | while read NAME ; do mv "${NAME}" "${NAME%.gz}" ; done
-

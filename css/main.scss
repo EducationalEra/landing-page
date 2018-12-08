@@ -67,11 +67,11 @@ abbr {
 	}
 
 	&.mun{
-		background-image: url("../img/cases/mun_bg.jpg");
+		background-image: url("../../img/cases/mun_bg.jpg");
 	}
 
 	&.lesson1{
-		background-image: url("../../img/unicef/sdg_bg.jpg");	
+		background-image: url("../img/unicef/sdg_bg.jpg");
 	}
 
 	&.edera-talent{
@@ -90,6 +90,11 @@ abbr {
 	&.fablab {
 		//background-color: rgb(46, 47, 50);
 		background-image: url("../img/bg_making.jpg");
+	}
+
+	&.anticorruption-game {
+		background-image: url("../img/bg_anticorr_game.jpg");
+		min-height: 900px;
 	}
 
 	h1 {

@@ -129,8 +129,13 @@ gulp.task('copy', ['sass', 'templates'], function () {
       .pipe(gulp.dest("build/lzv-rights"));      
   gulp.src("public/25/*.*")
       .pipe(gulp.dest("build/modules"));
-  gulp.src("public/anticorr/*.*")
+  gulp.src("public/anticorr/**/*")
       .pipe(gulp.dest("build/anticorr"));
+
+  // FONT FOR ANTICORR GAME
+    gulp.src("css/**/r-redstar_8.*")
+        .pipe(cachebust({type: 'timestamp'}))
+        .pipe(gulp.dest("build/css"));
 
   _.each(books, function (book) {
     gulp.src("public/books/" + book + ".html")

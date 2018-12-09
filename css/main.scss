@@ -81,6 +81,16 @@ abbr {
 	&.antucorruption-lesson {
 		//background-color: rgb(46, 47, 50);
 		background-image: url("../img/anticorr.jpg");
+		& > .container > h1 > span {
+			color: black;
+		}
+		& > .container > h1 > small {
+			color: black;
+		}
+		& > .container > h2 {
+			color: black;
+		}
+
 	}
 
 	&.blended {
@@ -2484,6 +2494,21 @@ color: #FFA300;
 }
 .cases_25{
 	text-align: left;
+	& > .nav-return {
+		color: black;
+		& > i {
+		color: black;
+		}
+	}
+	& > .nav-return:hover {
+		color: black;
+		& > i:hover {
+			color: black;
+		}
+		}
+	& > h1.anticorr {
+		color: black!important;
+	}
 }
 .cases_25 i{
     font-size: 32px;

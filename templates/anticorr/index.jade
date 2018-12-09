@@ -43,7 +43,6 @@ html
 			.container
 				h2 Уроки
 				.container
-					//
 					.course_card
 						.figure
 							img(src='/img/anticorr/lesson1.jpg', alt='')
@@ -52,44 +51,68 @@ html
 						p
 							| Мабуть, кожному з нас хоч раз хотілося б спробувати себе у ролі детектива. Завдяки цьому уроку у вас нарешті буде така можливість! Ви дізнаєтесь про антикорупційні інструменти та спробуєте провести власне розслідування!
 						p.access.granted Відкрито доступ
-					// 
+
 					.course_card
 						.figure
 							img(src='/img/anticorr/lesson2.jpg', alt='')
 							a.button.goto_course(href='/anticorr/lesson2', target='_blank') Перейти до уроку
 						h3.course_title Що таке корупція?
 						p
-							| Студентські роки не лише надважливий етап у житті, а й перший на якому особа свідомо вирішує діяти корупційно. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте діяєві поради, як захиститися від корупції у ВНЗ.
+							| Практика неможлива без теорії. Тому в цьому уроці ми зібрали інформацію про природу та шкоду корупції. А ще — створили декілька кейсів для кращого опанування матеріалу.
 						p.access.granted Відкрито доступ
 
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson3.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson3', target='_blank') Перейти до уроку
+						h3.course_title Освітній процес 
+						p
+							| Студентські роки — надважливий етап. Саме в університеті ми часто стикаємося з корупцією вперше. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте дієві поради, щоб захиститися від корупції у ВНЗ.
+						p.access.granted Відкрито доступ
+					// 
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson4.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson4', target='_blank') Перейти до уроку
+						h3.course_title Викриття 
+						p
+							| Мета діяльності будь-якого антикорупціонера — реальне покарання для корупціонерів. Проте це неможливо без викриття, тобто висвітлення факту корупції правоохоронним органам чи громадськості. У цьому уроці ви дізнаєтесь про викривачів та їхню діяльність.
+						p.access.granted Відкрито доступ
 
-		//-section.anticorr-feedback
+		section#new-course
 			.container
-				h2.section_title
-					span  Відгук про урок та конкурс презентацій
-				.feedback
-					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі (кнопка зліва). Візьміть участь у конкурсі соціальних презентацій від Вашої школи (кнопка справа).
-			.container
-				.feedback
-					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
-						| Відгук про урок 
-					a.button.button--big(href='https://edera1.typeform.com/to/OpMFxY', target='_blank')
-						| Участь у конкурсі
-
-		section.anticorruption-book 
-			.container
-				.book-image
-					img(src='/img/books/anticorruption-lesson.jpg')
-				.book-description  
-					p Короткий навчальний посібник «Антикорупційний урок» є збіркою матеріалів, які можуть бути корисні вчителям для проведення відповідного уроку у старших класах середньої школи до Міжнародного дня боротьби з корупцією. Цей день відзначається 9 грудня у всьому світі, згідно з рішенням Генеральної Асамблеї ООН.
-					.actions
-						a.button.button--big(href='http://anticorruption-lesson.ed-era.com/', target='_blank')
-							| Читати онлайн 
+				h2 Гра
+				.new-course-wrapper
+					.new-course-cover
+						figure.flash
+							a(href='/anticorr/game/')
+								img(src="/img/anticorr/game.jpg")
+					.new-course-description
+						p.description Ми в студії онлайн-освіти EdEra переконані, що навчання може бути цікавим та корисним водночас. Тому цьогоріч ми, за підтримки Програми розвитку ООН в Україні, розробили гру до міжнародного дня боротьби з корупцією. 
+						br
+						a.button(href="/anticorr/game/")
+							| Грати 
 							sup ❐
-						a.button.button--big(href='https://drive.google.com/open?id=1zwhXpjAGKnqwQr9Im3qDgIoWFijX4HIe', target='_blank')
-							| Завантажити 
-							sup
-								i.fa.fa-file-pdf-o
+
+		section.bookshelf
+			.container.cases_material
+				h2
+					| Звернення
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=01wF9he8Iss')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Результати уроків
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=i9eWqi39bo0')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Звернення Янтомаса Хімстри 
 
 		section.anticorr-feedback
 			.container
@@ -101,8 +124,27 @@ html
 				.feedback
 					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
 						| Залишити відгук про урок 
-					//-a.button.button--big(href='https://edera1.typeform.com/to/z8hqYG', target='_blank')
-						| Залишити відгук про урок 
+
+
+
+		section.bookshelf
+			.container.cases_material
+				h2 Соціальні ролики
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=HFqmLqgzA3I')
+						figure
+							img.cases(alt='', src='/img/anticorr/Burshtyn.jpg')
+							figcaption
+								h3
+									| Бурштинова лихоманка
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=8xGfByjmvFs')
+						figure
+							img.cases(alt='', src='/img/anticorr/Jack.jpg')
+							figcaption
+								h3
+									| Будинок Джека
 
 		section.anticorr-news 
 			.container
@@ -140,7 +182,10 @@ html
 
 		section.materials_features.archive
 			.container
-				p.additional Думки, висновки чи рекомендації належать авторам уроку і не обов'язково відображають погляди Міністерства закордонних справ Данії, Програми розвитку ООН чи інших агентств ООН.
+				p.additional Ця ініціатива впроваджується в рамках проекту «Прозорість і доброчесність публічного сектору», який виконується Програмою розвитку ООН в Україні та фінансується Міністерством закордонних справ Данії протягом 2015-2018 рр.
+
+				p.additional  Думки, висловлені у цих публікаціях, належать авторам і не обов’язково відображають погляди Міністерства закордонних справ Данії, Програми розвитку Організації Об’єднаних Націй чи інших агенцій ООН.
+
 
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

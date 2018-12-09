@@ -48,7 +48,7 @@ gulp.task('copy', ['sass', 'templates'], function () {
     .pipe(gulp.dest("build"));
   gulp.src("img/favicon.png")
     .pipe(gulp.dest("build"));
-  gulp.src("anticorr-materials/*.*")
+  gulp.src("anticorr-materials/**/*")
       .pipe(gulp.dest("build/anticorr-materials"));
   gulp.src("unicef/*.*")
       .pipe(gulp.dest("build/unicef"));

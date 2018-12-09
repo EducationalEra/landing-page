@@ -1,0 +1,19 @@
+//
+   Created by Danil Vdovenko on 06-12-2018.
+
+include ../../includes/head.jade
+doctype html
+html
+    +head
+
+    body
+        include ../../includes/gtm.jade
+        include ../../includes/header.jade
+
+        .section.heading.anticorruption-game
+            .container
+                #anticorr-game
+
+    include ../../includes/footer.jade
+    include ../../includes/scripts.jade
+    script(src='/js/anticorr/game/build.js')

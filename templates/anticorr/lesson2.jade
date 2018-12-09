@@ -12,10 +12,10 @@ html
 
 		.library.section.heading.header_cases(style="background-image: url(/img/anticorr/cover_lesson2.jpg)")
 			.container.cases_25
-				a(href='/anticorr')
+				a.nav-return(href='/anticorr')
 					i.fa.fa-angle-left 
 					| Антикорупційний урок
-				h1
+				h1.anticorr
 					span.exo Що таке корупція?
 					p.text студія онлайн-освіти EdEra та Програма Розвитку ООН в Україні за підтримки Міністерства закордонних справ Данії
 
@@ -23,7 +23,7 @@ html
 			.container
 				.lead_block
 					p.lead
-						| Студентські роки не лише надважливий етап у житті, а й перший на якому особа свідомо вирішує діяти корупційно. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте діяєві поради, як захиститися від корупції у ВНЗ.
+						| Практика неможлива без теорії. Тому в цьому уроці ми зібрали інформацію про природу та шкоду корупції. А ще — створили декілька кейсів для кращого опанування матеріалу.
 						br
 
 				article
@@ -80,11 +80,27 @@ html
 									| Робочий аркуш
 									small#anchor-timeline PDF
 
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=i9eWqi39bo0')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Звернення Янтомаса Хімстри
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=LXoUbMLu0zU')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Смертність на дорогах
+
+
 		#courses.section.four
 			.container
 				h2 Уроки
 				.container
-					//
 					.course_card
 						.figure
 							img(src='/img/anticorr/lesson1.jpg', alt='')
@@ -94,18 +110,23 @@ html
 							| Мабуть, кожному з нас хоч раз хотілося б спробувати себе у ролі детектива. Завдяки цьому уроку у вас нарешті буде така можливість! Ви дізнаєтесь про антикорупційні інструменти та спробуєте провести власне розслідування!
 						p.access.granted Відкрито доступ
 
-		//-section.anticorr-feedback
-			.container
-				h2.section_title
-					span  Відгук про урок та конкурс презентацій
-				.feedback
-					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі (кнопка зліва). Візьміть участь у конкурсі соціальних презентацій від Вашої школи (кнопка справа).
-			.container
-				.feedback
-					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
-						| Відгук про урок 
-					a.button.button--big(href='https://edera1.typeform.com/to/OpMFxY', target='_blank')
-						| Участь у конкурсі
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson3.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson3', target='_blank') Перейти до уроку
+						h3.course_title Освітній процес 
+						p
+							| Студентські роки — надважливий етап. Саме в університеті ми часто стикаємося з корупцією вперше. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте дієві поради, щоб захиститися від корупції у ВНЗ.
+						p.access.granted Відкрито доступ
+
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson4.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson4', target='_blank') Перейти до уроку
+						h3.course_title Викриття 
+						p
+							| Мета діяльності будь-якого антикорупціонера — реальне покарання для корупціонерів. Проте це неможливо без викриття, тобто висвітлення факту корупції правоохоронним органам чи громадськості. У цьому уроці ви дізнаєтесь про викривачів та їхню діяльність.
+						p.access.granted Відкрито доступ
 
 		section.anticorruption-book 
 			.container
@@ -122,56 +143,6 @@ html
 							sup
 								i.fa.fa-file-pdf-o
 
-		section.anticorr-feedback
-			.container
-				h2.section_title
-					span  Відгук про проведення антикорупційного уроку
-				.feedback
-					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі
-			.container
-				.feedback
-					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
-						| Залишити відгук про урок 
-					//-a.button.button--big(href='https://edera1.typeform.com/to/z8hqYG', target='_blank')
-						| Залишити відгук про урок 
-
-		section.anticorr-news 
-			.container
-				ul.undp-social
-					li
-						i.fa.fa-globe
-						a.social-link(href='http://www.ua.undp.org/' title='Сайт ПРООН', target='_blank') Сайт ПРООН
-					li
-						i.fa.fa-facebook-square
-						a.social-link(href='https://www.facebook.com/EdEraUa/' title='facebook EdEra', target='_blank') EdEra
-					li
-						i.fa.fa-facebook-square
-						a.social-link(href='https://www.facebook.com/UNDPUkraine/' title='facebook Міністерство освіти і науки', target='_blank') ПРООН
-
-		#partners.section
-			p.h2
-				| Партнери проекту
-			.container
-				ul.partners_list
-					li
-						a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp')
-							img(src='/img/anticorr/partners/EdCamp-logo.png', alt='EdCamp')
-					li
-						a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
-							img(src='/img/anticorr/partners/ProSvit-logo.png', alt='Про.Світ')
-					li
-						a(href='https://www.facebook.com/Ed2Change/', target='_blank', title='Лабораторія Освітніх Змін')
-							img(src='/img/anticorr/partners/LOZ-logo.png', alt='Лабораторія Освітніх Змін')
-					li
-						a(href='http://osvitoria.org/', target='_blank', title='Громадська Спілка «ОСВІТОРІЯ»')
-							img(src='/img/anticorr/partners/Osvitoria-logo.png', alt='Громадська Спілка «ОСВІТОРІЯ»')
-					li
-						a(href='http://teachforukraine.org', target='_blank', title='Навчай для України')
-							img(src='/img/anticorr/partners/TeachforUkraine-logo.png', alt='Навчай для України')
-
-		section.materials_features.archive
-			.container
-				p.additional Думки, висновки чи рекомендації належать авторам уроку і не обов'язково відображають погляди Міністерства закордонних справ Данії, Програми розвитку ООН чи інших агентств ООН.
-
+		include ./anticorr-footer.jade
 		include ../includes/footer.jade
 		include ../includes/scripts.jade

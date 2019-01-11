@@ -27,4 +27,5 @@
 /energy-basics/ https://courses.ed-era.com/courses/course-v1:VOXU-EdEra-DiXi+ENER101+2019/about
 /school-management/ https://courses.ed-era.com/courses/course-v1:EDERA-PROSVITCENTER+SM101+sm101/about
 /effective-communication/ https://courses.ed-era.com/courses/course-v1:EDERA-SMARTOSVITA+EC101+EC101/about
+/budget-basics/ https://courses.ed-era.com/courses/course-v1:EDERA-IRF+BP101+bp101/about
 # EOF - do not leave any line (even empty) after this line!!!

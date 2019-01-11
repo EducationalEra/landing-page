@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "effective_communication": {
+      "className": "",
+      "imgUrl": "/img/courses/effective_communication_cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA-SMARTOSVITA+EC101+EC101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ефективні комунікації для освітніх управлінців",
+      "courseSubtitle": "",
+      "courseDesc": "Мета курсу — сформувати розуміння ролі та місця стратегічних комунікацій у системі управління та нівелювати стереотипи щодо побудови комунікацій. На вас чекають ключові техніки та інструменти, що зроблять ефективними ваші комунікації та взаємодію з медіа і журналістами.",
+      "access": true,
+      "free": false
+    },
     "stop_trafficking": {
       "className": "",
       "imgUrl": "/img/courses/stop_trafficking_cover.jpg",

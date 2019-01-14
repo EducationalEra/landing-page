@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "ehealth": {
+      "className": "",
+      "imgUrl": "/img/courses/ehealth-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:ULEAD_EGA_eHealth_EdEra+EHealth101+2018/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи реформи охорони здоров’я з допомогою eHealth",
+      "courseSubtitle": "",
+      "courseDesc": "Навчальний модуль ознайомить вас із основами реформи системи охорони здоров’я, зокрема її переходом на нову модель фінансування та на нову електронну систему. Пояснить, як побудована електронна система охорони здоров’я, та чому варто приєднатися до неї.",
+      "access": true,
+      "free": false
+    },
     "prosvit": {
       "className": "",
       "imgUrl": "/img/courses/prosvit-cover.jpg",

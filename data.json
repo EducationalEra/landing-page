@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "energy": {
+      "className": "",
+      "imgUrl": "/img/courses/energy-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:VOXU-EdEra-DiXi+ENER101+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Прозора енергетика",
+      "courseSubtitle": "",
+      "courseDesc": "Ви дізнаєтесь що таке «енергетика», з чого вона складається і як вона пов’язана з іншими секторами економіки. Ви дізнаєтесь про законодавчі рамки в яких працюють різні енергетичні ринки та поговоримо про перспективи реформ у даній сфері.",
+      "access": true,
+      "free": false
+    },
     "ehealth": {
       "className": "",
       "imgUrl": "/img/courses/ehealth-cover.jpg",

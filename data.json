@@ -13,6 +13,42 @@
       "access": true,
       "free": false
     },
+    "inclusion_par": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_par.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Par+1/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Участь батьків у організації інклюзивного навчання",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі лекторки розповідають про те, як і коли батькам потрібно звертатись по допомогу до спеціалістів, як відбуватиметься інклюзивне навчання їхньої дитини, як оцінюватимуть її особливі освітні потреби, а також як спілкуватися зі шкільною адміністрацією і вчителями.",
+      "access": true,
+      "free": false
+    },
+    "math_simple": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_math.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA-OSVITORIA+Math101+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Математика. Просто",
+      "courseSubtitle": "",
+      "courseDesc": "Все ще думаєш, що математика – це складно і не для тебе? А якщо ми скажемо, що математика – це просто? Ми розробили онлайн-курс, щоб кожен міг не лише зацікавитись цією наукою, але й успішно скласти ЗНО.",
+      "access": true,
+      "free": false
+    },
+    "soc_ent": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_soc_ent.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra-PLEDDG+SE+2018/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Соціальне підприємництво та конкурентоспроможність",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі ви дізнаєтеся, що таке соціальне підприємництво, його основні відмінності від традиційних видів бізнесу та конкурентні переваги соціальних підприємств. Також ви ознайомитеся з різними типами соціальних підприємств, їхніми формами та бізнес-моделями.",
+      "access": true,
+      "free": false
+    },
     "nus": {
       "className": "",
       "imgUrl": "/img/courses/nus-cover.jpg",

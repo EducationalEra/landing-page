@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "znohistory": {
+      "className": "",
+      "imgUrl": "/img/courses/history_cover.jpg",
+      "altText": "",
+      "href": "http://znohistory.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Історія України в історіях",
+      "courseSubtitle": "",
+      "courseDesc": "Ми розробили цей спецпроект, щоб кожен міг вивчити історію України та підготуватися до ЗНО. Лайфхаки, відео, подкасти, тексти та тести. Безкоштовно. Без реєстрації та смс.",
+      "access": true,
+      "free": false
+    },
     "inclusion_par": {
       "className": "",
       "imgUrl": "/img/courses/cover_par.jpg",

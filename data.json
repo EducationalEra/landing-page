@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "hre": {
+      "className": "",
+      "imgUrl": "/img/courses/hre-cover.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_OSCE+HRE101+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Права людини в освітньому просторі",
+      "courseSubtitle": "",
+      "courseDesc": "Розуміння прав людини – одна з передумов до їхньої поваги, забезпечення та захисту. Курс допоможе з’ясувати, що таке права людини та яку роль вони відіграють у житті кожного та кожної, насамперед – в освітньому просторі.",
+      "access": true,
+      "free": false
+    },
     "inclusion_par": {
       "className": "",
       "imgUrl": "/img/courses/cover_par.jpg",

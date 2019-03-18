@@ -32,4 +32,5 @@
 /web/ https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about
 /soc_ent/ https://courses.ed-era.com/courses/course-v1:EdEra-PLEDDG+SE+2018/about
 /math101/ https://courses.ed-era.com/courses/course-v1:EDERA-OSVITORIA+Math101+2019/about
+/hre/ https://courses.ed-era.com/courses/course-v1:EDERA_OSCE+HRE101+2019/about
 # EOF - do not leave any line (even empty) after this line!!!

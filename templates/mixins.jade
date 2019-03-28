@@ -1,22 +1,23 @@
 //
    Created by olga on 09-02-2015.
 mixin course(courseJson)
-   .course_card(class!=courseJson.className)
-      if courseJson.free == true
-         ins.free
-            | Новинка
-      .figure
-         img(src=courseJson.imgUrl, alt=courseJson.altText)
+   .col-sm-6.col-md-4.col-lg-3
+      .course_card(class!=courseJson.className)
+         if courseJson.free == true
+            ins.free
+               | Новинка
+         .figure
+            img(src=courseJson.imgUrl, alt=courseJson.altText)
+            if courseJson.access == true
+               a.button.goto_course(href=courseJson.href, target='_blank')= courseJson.hrefText
+         h3.course_title(class!=courseJson.className) #{courseJson.courseTitle}
+         if courseJson.courseSubtitle != ""
+            h4.course_part_title #{courseJson.courseSubtitle}
+         p
+            | #{courseJson.courseDesc}
          if courseJson.access == true
-            a.button.goto_course(href=courseJson.href, target='_blank')= courseJson.hrefText
-      h3.course_title(class!=courseJson.className) #{courseJson.courseTitle}
-      if courseJson.courseSubtitle != ""
-         h4.course_part_title #{courseJson.courseSubtitle}
-      p
-         | #{courseJson.courseDesc}
-      if courseJson.access == true
-         p.access.granted
-            | Відкрито доступ
-      else
-         p.access.soon
-            | Незабаром
+            p.access.granted
+               | Відкрито доступ
+         else
+            p.access.soon
+               | Незабаром

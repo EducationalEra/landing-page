@@ -1,33 +1,31 @@
-#page_header
- .container
-   h1.logo
-     a.logo_link(href='/', title='EdEra')
-       | EdEra — студія онлайн-освіти. Якісно. Безкоштовно. Без обмежень
-   .toggle_menu
-    | 
-   #main_navigation
-     ul.main_links
-       li
-         a(href='/courses/', title='Курси') Курси
-       li
-          a(href="/books/", title="Книги", class="new") Бібліотека
-       li
-         a(href='http://blog.ed-era.com/', target="_blank" title='Новини', class="new") Блог
-       li
-         a(href='http://zno.ed-era.com/', title='ЗНО платформа') ЗНО платформа
-       li
-         a(href='/about/', title='Про нас') Про нас
-       li
-         a(href='/talents', title='Вакансії') Вакансії
-       //-li
-         a(href='/partnership/', title='Співробітництво') Співробітництво
-     ul.sign_in_up.not_logged_in
-       li
-         a(href='https://courses.ed-era.com/login') Увійти
-       li
-         a.button(href='https://courses.ed-era.com/register') Зареєструватися
-     ul.sign_in_up.logged_in.hidden
-       li
-         a(href='https://courses.ed-era.com/dashboard') Мої Курси
-       li
-         a.button(href='https://courses.ed-era.com/logout') Вийти
+.container
+  .row
+    .col-12
+      #page_header
+        h1.logo
+          a.logo_link(href='/', title='EdEra') EdEra — студія онлайн-освіти. Якісно. Безкоштовно. Без обмежень
+        .toggle_menu  
+        #main_navigation
+          ul.main_links
+            li
+              a(href='/courses/', title='Курси') Курси
+            li
+              a.new(href='/books/', title='Книги') Бібліотека
+            li
+              a.new(href='http://blog.ed-era.com/', target='_blank', title='Новини') Блог
+            li
+              a(href='http://zno.ed-era.com/', title='ЗНО платформа') ЗНО платформа
+            li
+              a(href='/about/', title='Про нас') Про нас
+            li
+              a(href='/talents', title='Вакансії') Вакансії
+          ul.sign_in_up.not_logged_in
+            li
+              a(href='https://courses.ed-era.com/login') Увійти
+            li
+              a.button(href='https://courses.ed-era.com/register') Зареєструватися
+          ul.sign_in_up.logged_in.hidden
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://courses.ed-era.com/dashboard') Мої Курси
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a.button(href='https://courses.ed-era.com/logout') Вийти

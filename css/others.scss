@@ -1214,9 +1214,11 @@ p.section_news {
 			&:nth-child(3n) {
 				@include omega;
 			}
+			width: auto!important;
 		}
 
 		@include media($desktop) {
+			width: auto!important;
 			@include span-columns(3 of 12);
 			height: 340px;
 

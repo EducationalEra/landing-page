@@ -2,98 +2,98 @@ include mixins.jade
 include includes/head.jade
 doctype html
 html
-	+head
-	body
-		include includes/gtm.jade
-		include includes/header.jade
-		//- ПЕРШИЙ ЕКРАН
-		.container
-		  .row
-		    .col-12
-		      #welcome.section
-		        .container
-		          .hello
-		            h1 Educational Era
-		            h2 Студія онлайн-освіти
++head
+body
+include includes/gtm.jade
+include includes/header.jade
+//- ПЕРШИЙ ЕКРАН
+.container
+  .row
+    .col-12
+      #welcome.section
+        .container
+          .hello
+            h1 Educational Era
+            h2 Студія онлайн-освіти
 
-        		//- СПІЛЬНОКОШТ
-		      a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
-		        .banner_25
-		          img.left_img(src='../img/25/left_banner.png', alt='')
-		          p
-		            | Підтримайте 
-		            span EdEra
-		          img.right_img(src='../img/25/right_banner.png', alt='')
+        //- СПІЛЬНОКОШТ
+      a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
+        .banner_25
+              img.left_img(src='../img/25/left_banner.png', alt='')
+          p
+            | Підтримайте 
+            span EdEra
+          img.right_img(src='../img/25/right_banner.png', alt='')
 
-			//-.container
-				ul.main_trends
-					li.trend
-						a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
-							b  Інтерактивний посібник-глосарій для вчителів початкових класів
-					li.trend
-						a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
-							b Онлайн-курс «Людина та держава. Правила гри»
-					li.trend
-						a(href="https://www.ed-era.com/making/", target="_blank", title="")
-							b Вступ у мейкерство
+//-.container
+ul.main_trends
+li.trend
+a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
+b  Інтерактивний посібник-глосарій для вчителів початкових класів
+li.trend
+a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
+b Онлайн-курс «Людина та держава. Правила гри»
+li.trend
+a(href="https://www.ed-era.com/making/", target="_blank", title="")
+b Вступ у мейкерство
 
 
-		#courses.section.four
-			.container
-				h2 Нові проекти
-			.container
-				.row.cards-row
-					// Онлайн-курс для вчителів початкової школи
-					+course(locals.courses.nus)
-					// Права людини в освітньому просторі
-					+course(locals.courses.hre)
-					// Соціальне підприємництво та конкурентоспроможність
-					+course(locals.courses.soc_ent)
-					// Математика. Просто
-					+course(locals.courses.math_simple)
-					// Історія України в історіях
-					+course(locals.courses.znohistory)
-					//- Основи реформи охорони здоров’я з допомогою eHealth
-					//-+course(locals.courses.ehealth)
-					// Фактчек: довіряй-перевіряй
-					+course(locals.courses.factcheck)
-					//- Навчальні модулі для формування громадянської компетентності
-					//-+course(locals.courses.modules)
-					// Ефективні комунікації для освітніх управлінців
-					//-+course(locals.courses.effective_communication)
-					// Прозора енергетика
-					+course(locals.courses.energy)
-					//- Управління школою. Практикум
-					//-+course(locals.courses.prosvit)
-					//- ДНК Лідерів
-					//-+course(locals.courses.leader_dna)
-					//- Інтерактивний журнал
-					//-+course(locals.courses.hrights_live)
-					//- Колошкільне дитинознавство
-					//-+course(locals.courses.royz)
-					//- Онлайн-курс «Автостопом по біології»
-					//- +course(locals.courses.biology_zno)
-					// Домедична допомога
-					+course(locals.courses.med)
-					//- Людина та держава. Правила гри
-					//-+course(locals.courses.law)
-					//- Недискримінаційний підхід у навчанні
-					//-+course(locals.courses.non_discrimination)
-					//- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
-					//- +course(locals.courses.inclusion_teacher)
-					//- Лайфхаки з української мови
-					//- +course(locals.courses.ukr_lifehacks)
-					//- Як писати про економіку без помилок?
-					//- +course(locals.courses.economics)
-					//- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
-					//-+course(locals.courses.smartExport)
+#courses.section.four
+.container
+h2 Нові проекти
+.container
+.row.cards-row
+// Онлайн-курс для вчителів початкової школи
++course(locals.courses.nus)
+// Права людини в освітньому просторі
++course(locals.courses.hre)
+// Соціальне підприємництво та конкурентоспроможність
++course(locals.courses.soc_ent)
+// Математика. Просто
++course(locals.courses.math_simple)
+// Історія України в історіях
++course(locals.courses.znohistory)
+//- Основи реформи охорони здоров’я з допомогою eHealth
+//-+course(locals.courses.ehealth)
+// Фактчек: довіряй-перевіряй
++course(locals.courses.factcheck)
+//- Навчальні модулі для формування громадянської компетентності
+//-+course(locals.courses.modules)
+// Ефективні комунікації для освітніх управлінців
+//-+course(locals.courses.effective_communication)
+// Прозора енергетика
++course(locals.courses.energy)
+//- Управління школою. Практикум
+//-+course(locals.courses.prosvit)
+//- ДНК Лідерів
+//-+course(locals.courses.leader_dna)
+//- Інтерактивний журнал
+//-+course(locals.courses.hrights_live)
+//- Колошкільне дитинознавство
+//-+course(locals.courses.royz)
+//- Онлайн-курс «Автостопом по біології»
+//- +course(locals.courses.biology_zno)
+// Домедична допомога
++course(locals.courses.med)
+//- Людина та держава. Правила гри
+//-+course(locals.courses.law)
+//- Недискримінаційний підхід у навчанні
+//-+course(locals.courses.non_discrimination)
+//- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
+//- +course(locals.courses.inclusion_teacher)
+//- Лайфхаки з української мови
+//- +course(locals.courses.ukr_lifehacks)
+//- Як писати про економіку без помилок?
+//- +course(locals.courses.economics)
+//- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
+//-+course(locals.courses.smartExport)
 
-			#wrapper-button.container
-				a.button(href="./courses/")
-					| До всіх курсів
+#wrapper-button.container
+a.button(href="./courses/")
+| До всіх курсів
 
-		//- БЛОГ
-		section#new-course
+//- БЛОГ
+section#new-course
     .container
       h2 Освітній блог
       .new-course-wrapper
@@ -119,8 +119,8 @@ html
                 br
                 a.button(href='http://blog.ed-era.com') Детальніше
 
-		//- СПЕЦПРОЕКТИ
-		#courses.section.four
+//- СПЕЦПРОЕКТИ
+#courses.section.four
     .container
       h2 Спецпроекти
     .container
@@ -234,83 +234,83 @@ html
               | Перед вами – оновлені навчальні програми для початкової школи, затверджені Наказом Міністерства і науки України. Для полегшення впровадження програм EdEra підготувала поради для вчителів, методичні рекомендації та інші навчальні матеріали. Все – у вільному доступі. Продуктивного навчання!
 
 
-		//- ІНТЕРАКТИВНІ ПІДРУЧНИКИ
-		.row
-		    .col-12
-		      section#books.section.blog
-		        .container
-		          h2.section_title
-		            span EdEra Books
-		            small.section_subtitle Сервіс інтерактивної освітньої літератури
-		            br
-		            a.button.w(href='./books/', title='')
-		              strong Перейти до бібліотеки
+//- ІНТЕРАКТИВНІ ПІДРУЧНИКИ
+.row
+    .col-12
+      section#books.section.blog
+        .container
+          h2.section_title
+            span EdEra Books
+            small.section_subtitle Сервіс інтерактивної освітньої літератури
+            br
+            a.button.w(href='./books/', title='')
+              strong Перейти до бібліотеки
 
-		//- КЛАСИЧНА ОНЛАЙН-ОСВІТА
-		//- section.section#education
-			.container
-				p.h2 Класична онлайн-освіта
-				.colwrap
-					.ed__header.courses.b-card--col
-						h3 Онлайн-курси
-						a.back(href='/courses/')
-							img(src='../img/courses-main.jpg')
-						//a.button(href='/courses/')
-							|До курсів
-						p.description.b-card__description
-							| Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
-						ul.benefits-list.b-card__list
-							li.benefits
-								i.fa.fa-film
-								| Інтерактивні лекції
-							li.benefits
-								i.fa.fa-line-chart
-								| Завдання та прогрес
-							li.benefits
-								i.fa.fa-reply-all
-								| Форум та зворотній зв’язок
-							li.benefits
-								i.fa.fa-clock-o
-								| Доступ 24/7
-						a.button(href='/courses/')
-							|Обрати курс	
+//- КЛАСИЧНА ОНЛАЙН-ОСВІТА
+//- section.section#education
+.container
+p.h2 Класична онлайн-освіта
+.colwrap
+.ed__header.courses.b-card--col
+h3 Онлайн-курси
+a.back(href='/courses/')
+img(src='../img/courses-main.jpg')
+//a.button(href='/courses/')
+|До курсів
+p.description.b-card__description
+| Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
+ul.benefits-list.b-card__list
+li.benefits
+i.fa.fa-film
+| Інтерактивні лекції
+li.benefits
+i.fa.fa-line-chart
+| Завдання та прогрес
+li.benefits
+i.fa.fa-reply-all
+| Форум та зворотній зв’язок
+li.benefits
+i.fa.fa-clock-o
+| Доступ 24/7
+a.button(href='/courses/')
+|Обрати курс
 
-					.ed__header.b-card--col
-						h3 Інтерактивні підручники
-						a.back(href='/books/')
-							img(src='../img/library-main.jpg')
-						//a.button(href='/books/')
-							|У бібліотеку
-						p.description.b-card__description
-							| Cоціальний проект інтерактивної освітньої літератури EdEra Books.
-						ul.benefits-list.b-card__list
-							li.benefits
-								i.fa.fa-bars
-								| Зручна навігація
-							li.benefits
-								i.fa.fa-pencil-square-o
-								| Вбудовані відео та тести
-							li.benefits
-								i.fa.fa-tablet
-								| Адаптивність та різні режими
-							li.benefits
-								i.fa.fa-comments
-								| Коментування кожної сторінки
-						a.button(href='/books/')
-								|У бібліотеку
-		
-		//- АНТИКОРУПЦІЙНИЙ УРОК
-		//- section.section.anticorr-project
-			.container
-				h2.section_title 
-					span Антикорупційний урок
-					small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
-					br
-					a.button.w(href="/anticorr/", title="") 
-						strong детальніше
-		
-		// ПАРТНЕРИ
-		.row
+.ed__header.b-card--col
+h3 Інтерактивні підручники
+a.back(href='/books/')
+img(src='../img/library-main.jpg')
+//a.button(href='/books/')
+|У бібліотеку
+p.description.b-card__description
+| Cоціальний проект інтерактивної освітньої літератури EdEra Books.
+ul.benefits-list.b-card__list
+li.benefits
+i.fa.fa-bars
+| Зручна навігація
+li.benefits
+i.fa.fa-pencil-square-o
+| Вбудовані відео та тести
+li.benefits
+i.fa.fa-tablet
+| Адаптивність та різні режими
+li.benefits
+i.fa.fa-comments
+| Коментування кожної сторінки
+a.button(href='/books/')
+|У бібліотеку
+
+//- АНТИКОРУПЦІЙНИЙ УРОК
+//- section.section.anticorr-project
+.container
+h2.section_title 
+span Антикорупційний урок
+small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
+br
+a.button.w(href="/anticorr/", title="") 
+strong детальніше
+
+// ПАРТНЕРИ
+.row
     .col-12
       // ПАРТНЕРИ
       #partners.section
@@ -350,5 +350,5 @@ html
                   img(src='img/partners/logo_KSE.png', alt='KSE Kyiv')
 
 
-		include includes/footer.jade
-		include includes/scripts.jade
+include includes/footer.jade
+include includes/scripts.jade

@@ -19,74 +19,74 @@ include includes/header.jade
         //- СПІЛЬНОКОШТ
       a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
         .banner_25
-              img.left_img(src='../img/25/left_banner.png', alt='')
-          p
+            img.left_img(src='../img/25/left_banner.png', alt='')
+            p
             | Підтримайте 
             span EdEra
-          img.right_img(src='../img/25/right_banner.png', alt='')
+            img.right_img(src='../img/25/right_banner.png', alt='')
 
 //-.container
-ul.main_trends
-li.trend
-a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
-b  Інтерактивний посібник-глосарій для вчителів початкових класів
-li.trend
-a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
-b Онлайн-курс «Людина та держава. Правила гри»
-li.trend
-a(href="https://www.ed-era.com/making/", target="_blank", title="")
-b Вступ у мейкерство
+  ul.main_trends
+  li.trend
+  a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
+  b  Інтерактивний посібник-глосарій для вчителів початкових класів
+  li.trend
+  a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
+  b Онлайн-курс «Людина та держава. Правила гри»
+  li.trend
+  a(href="https://www.ed-era.com/making/", target="_blank", title="")
+  b Вступ у мейкерство
 
 
 #courses.section.four
 .container
-h2 Нові проекти
-.container
-.row.cards-row
-// Онлайн-курс для вчителів початкової школи
-+course(locals.courses.nus)
-// Права людини в освітньому просторі
-+course(locals.courses.hre)
-// Соціальне підприємництво та конкурентоспроможність
-+course(locals.courses.soc_ent)
-// Математика. Просто
-+course(locals.courses.math_simple)
-// Історія України в історіях
-+course(locals.courses.znohistory)
-//- Основи реформи охорони здоров’я з допомогою eHealth
-//-+course(locals.courses.ehealth)
-// Фактчек: довіряй-перевіряй
-+course(locals.courses.factcheck)
-//- Навчальні модулі для формування громадянської компетентності
-//-+course(locals.courses.modules)
-// Ефективні комунікації для освітніх управлінців
-//-+course(locals.courses.effective_communication)
-// Прозора енергетика
-+course(locals.courses.energy)
-//- Управління школою. Практикум
-//-+course(locals.courses.prosvit)
-//- ДНК Лідерів
-//-+course(locals.courses.leader_dna)
-//- Інтерактивний журнал
-//-+course(locals.courses.hrights_live)
-//- Колошкільне дитинознавство
-//-+course(locals.courses.royz)
-//- Онлайн-курс «Автостопом по біології»
-//- +course(locals.courses.biology_zno)
-// Домедична допомога
-+course(locals.courses.med)
-//- Людина та держава. Правила гри
-//-+course(locals.courses.law)
-//- Недискримінаційний підхід у навчанні
-//-+course(locals.courses.non_discrimination)
-//- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
-//- +course(locals.courses.inclusion_teacher)
-//- Лайфхаки з української мови
-//- +course(locals.courses.ukr_lifehacks)
-//- Як писати про економіку без помилок?
-//- +course(locals.courses.economics)
-//- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
-//-+course(locals.courses.smartExport)
+  h2 Нові проекти
+  .container
+    .row.cards-row
+      // Онлайн-курс для вчителів початкової школи
+      +course(locals.courses.nus)
+      // Права людини в освітньому просторі
+      +course(locals.courses.hre)
+      // Соціальне підприємництво та конкурентоспроможність
+      +course(locals.courses.soc_ent)
+      // Математика. Просто
+      +course(locals.courses.math_simple)
+      // Історія України в історіях
+      +course(locals.courses.znohistory)
+      //- Основи реформи охорони здоров’я з допомогою eHealth
+      //-+course(locals.courses.ehealth)
+      // Фактчек: довіряй-перевіряй
+      +course(locals.courses.factcheck)
+      //- Навчальні модулі для формування громадянської компетентності
+      //-+course(locals.courses.modules)
+      // Ефективні комунікації для освітніх управлінців
+      //-+course(locals.courses.effective_communication)
+      // Прозора енергетика
+      +course(locals.courses.energy)
+      //- Управління школою. Практикум
+      //-+course(locals.courses.prosvit)
+      //- ДНК Лідерів
+      //-+course(locals.courses.leader_dna)
+      //- Інтерактивний журнал
+      //-+course(locals.courses.hrights_live)
+      //- Колошкільне дитинознавство
+      //-+course(locals.courses.royz)
+      //- Онлайн-курс «Автостопом по біології»
+      //- +course(locals.courses.biology_zno)
+      // Домедична допомога
+      +course(locals.courses.med)
+      //- Людина та держава. Правила гри
+      //-+course(locals.courses.law)
+      //- Недискримінаційний підхід у навчанні
+      //-+course(locals.courses.non_discrimination)
+      //- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
+      //- +course(locals.courses.inclusion_teacher)
+      //- Лайфхаки з української мови
+      //- +course(locals.courses.ukr_lifehacks)
+      //- Як писати про економіку без помилок?
+      //- +course(locals.courses.economics)
+      //- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
+      //-+course(locals.courses.smartExport)
 
 #wrapper-button.container
 a.button(href="./courses/")
@@ -235,7 +235,7 @@ section#new-course
 
 
 //- ІНТЕРАКТИВНІ ПІДРУЧНИКИ
-.row
+  .row
     .col-12
       section#books.section.blog
         .container
@@ -248,106 +248,106 @@ section#new-course
 
 //- КЛАСИЧНА ОНЛАЙН-ОСВІТА
 //- section.section#education
-.container
-p.h2 Класична онлайн-освіта
-.colwrap
-.ed__header.courses.b-card--col
-h3 Онлайн-курси
-a.back(href='/courses/')
-img(src='../img/courses-main.jpg')
-//a.button(href='/courses/')
-|До курсів
-p.description.b-card__description
-| Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
-ul.benefits-list.b-card__list
-li.benefits
-i.fa.fa-film
-| Інтерактивні лекції
-li.benefits
-i.fa.fa-line-chart
-| Завдання та прогрес
-li.benefits
-i.fa.fa-reply-all
-| Форум та зворотній зв’язок
-li.benefits
-i.fa.fa-clock-o
-| Доступ 24/7
-a.button(href='/courses/')
-|Обрати курс
+  .container
+  p.h2 Класична онлайн-освіта
+  .colwrap
+  .ed__header.courses.b-card--col
+  h3 Онлайн-курси
+  a.back(href='/courses/')
+  img(src='../img/courses-main.jpg')
+  //a.button(href='/courses/')
+  |До курсів
+  p.description.b-card__description
+  | Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
+  ul.benefits-list.b-card__list
+  li.benefits
+  i.fa.fa-film
+  | Інтерактивні лекції
+  li.benefits
+  i.fa.fa-line-chart
+  | Завдання та прогрес
+  li.benefits
+  i.fa.fa-reply-all
+  | Форум та зворотній зв’язок
+  li.benefits
+  i.fa.fa-clock-o
+  | Доступ 24/7
+  a.button(href='/courses/')
+  |Обрати курс
 
-.ed__header.b-card--col
-h3 Інтерактивні підручники
-a.back(href='/books/')
-img(src='../img/library-main.jpg')
-//a.button(href='/books/')
-|У бібліотеку
-p.description.b-card__description
-| Cоціальний проект інтерактивної освітньої літератури EdEra Books.
-ul.benefits-list.b-card__list
-li.benefits
-i.fa.fa-bars
-| Зручна навігація
-li.benefits
-i.fa.fa-pencil-square-o
-| Вбудовані відео та тести
-li.benefits
-i.fa.fa-tablet
-| Адаптивність та різні режими
-li.benefits
-i.fa.fa-comments
-| Коментування кожної сторінки
-a.button(href='/books/')
-|У бібліотеку
+  .ed__header.b-card--col
+  h3 Інтерактивні підручники
+  a.back(href='/books/')
+  img(src='../img/library-main.jpg')
+  //a.button(href='/books/')
+  |У бібліотеку
+  p.description.b-card__description
+  | Cоціальний проект інтерактивної освітньої літератури EdEra Books.
+  ul.benefits-list.b-card__list
+  li.benefits
+  i.fa.fa-bars
+  | Зручна навігація
+  li.benefits
+  i.fa.fa-pencil-square-o
+  | Вбудовані відео та тести
+  li.benefits
+  i.fa.fa-tablet
+  | Адаптивність та різні режими
+  li.benefits
+  i.fa.fa-comments
+  | Коментування кожної сторінки
+  a.button(href='/books/')
+  |У бібліотеку
 
 //- АНТИКОРУПЦІЙНИЙ УРОК
 //- section.section.anticorr-project
-.container
-h2.section_title 
-span Антикорупційний урок
-small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
-br
-a.button.w(href="/anticorr/", title="") 
-strong детальніше
+  .container
+  h2.section_title 
+  span Антикорупційний урок
+  small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
+  br
+  a.button.w(href="/anticorr/", title="") 
+  strong детальніше
 
 // ПАРТНЕРИ
 .row
-    .col-12
-      // ПАРТНЕРИ
-      #partners.section
-        p.h2 Наші партнери
-        .container
-          ul.partners_list
-            .row.mx-auto.cards-row
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.intel.com/education', target='_blank', title='Intel')
-                  img(src='img/partners/intel.png', alt='Intel')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
-                  img(src='img/partners/prosvit.png', alt='Про.Світ')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://mon.gov.ua/ua', target='_blank', title='МОН України')
-                  img(src='img/partners/mon.png', alt='МОН України')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://impacthub.odessa.ua/', target='_blank', title='Impact Hub Odess')
-                  img(src='img/partners/hub.png', alt='Impact Hub Odess')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://osvitoria.org/', target='_blank', title='Освіторія')
-                  img(src='img/partners/osvitoria.png', alt='Освіторія')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://voxukraine.org/uk/', target='_blank', title='VoxUkraine')
-                  img(src='img/partners/VoxUkraine.png', alt='VoxUkraine')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://studway.com.ua', target='_blank', title='Studway')
-                  img(src='img/partners/studway.png', alt='Studway')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://raccoongang.com/', target='_blank', title='Raccon Gang')
-                  img(src='img/partners/logo_raccon_gang.png', alt='Raccon Gang')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp Ukraine')
-                  img(src='img/partners/logo_EdCamp_Ukraine.png', alt='EdCamp Ukraine')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.kse.org.ua/', target='_blank', title='KSE Kyiv')
-                  img(src='img/partners/logo_KSE.png', alt='KSE Kyiv')
+  .col-12
+    // ПАРТНЕРИ
+    #partners.section
+      p.h2 Наші партнери
+      .container
+        ul.partners_list
+          .row.mx-auto.cards-row
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='http://www.intel.com/education', target='_blank', title='Intel')
+                img(src='img/partners/intel.png', alt='Intel')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
+                img(src='img/partners/prosvit.png', alt='Про.Світ')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://mon.gov.ua/ua', target='_blank', title='МОН України')
+                img(src='img/partners/mon.png', alt='МОН України')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://impacthub.odessa.ua/', target='_blank', title='Impact Hub Odess')
+                img(src='img/partners/hub.png', alt='Impact Hub Odess')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='http://osvitoria.org/', target='_blank', title='Освіторія')
+                img(src='img/partners/osvitoria.png', alt='Освіторія')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://voxukraine.org/uk/', target='_blank', title='VoxUkraine')
+                img(src='img/partners/VoxUkraine.png', alt='VoxUkraine')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='http://studway.com.ua', target='_blank', title='Studway')
+                img(src='img/partners/studway.png', alt='Studway')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://raccoongang.com/', target='_blank', title='Raccon Gang')
+                img(src='img/partners/logo_raccon_gang.png', alt='Raccon Gang')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp Ukraine')
+                img(src='img/partners/logo_EdCamp_Ukraine.png', alt='EdCamp Ukraine')
+            li.col-sm-3.col-md-3.col-lg-2.m-3
+              a(href='http://www.kse.org.ua/', target='_blank', title='KSE Kyiv')
+                img(src='img/partners/logo_KSE.png', alt='KSE Kyiv')
 
 
 include includes/footer.jade

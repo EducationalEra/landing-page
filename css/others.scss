@@ -238,7 +238,7 @@ a {
 		position: relative;
 		@include inline-block;
 		vertical-align: middle;
-		width: 13%;
+		width: 300px;
 		text-align: center;
 
 		@include media($tablet) {

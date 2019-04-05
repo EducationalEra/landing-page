@@ -1722,7 +1722,7 @@ p.section_news {
 	}
 }
 
-// CARDS' STYLES
+//CARDS' STYLES
 
 #team .mymy{
 	display: flex;
@@ -1800,7 +1800,7 @@ p.section_news {
 	margin-top: 8px;
 	text-align: left;
 }
-button{
+.button{
 	padding: 0.6rem;
 	outline: none;
 	border: none;
@@ -1811,7 +1811,7 @@ button{
 	cursor: pointer;
 	transition: 0.4s ease;
 }
-button:hover{
+.button:hover{
 	background: dodgerblue;
 	color: white;
 }

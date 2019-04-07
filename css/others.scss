@@ -1724,26 +1724,26 @@ p.section_news {
 
 //CARDS' STYLES
 
-#team .mymy{
+.mymy{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: orange;
 }
 	
-.card:hover{
+.member-card:hover{
 	transform: translateY(20px);
 }
 
-.card:hover::before{
+.member-card:hover::before{
 	opacity: 1;
 }
 
-.card:hover .info{
+.member-card:hover .info{
 	opacity: 1;
 	transform: translateY(0px);
 }
-.card:before{
+.member-card:before{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -1758,7 +1758,7 @@ p.section_news {
 	opacity: 0;
 }
 
-.card{
+.member-card{
 	width: 280px;
 	height: 380px;
 	border-radius: 15px;
@@ -1799,21 +1799,6 @@ p.section_news {
 	font-size: 15px;
 	margin-top: 8px;
 	text-align: left;
-}
-.button{
-	padding: 0.6rem;
-	outline: none;
-	border: none;
-	border-radius: 3px;
-	background: white;
-	color: black;
-	font-weight: bold;
-	cursor: pointer;
-	transition: 0.4s ease;
-}
-.button:hover{
-	background: dodgerblue;
-	color: white;
 }
 
 .job{

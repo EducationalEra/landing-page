@@ -1750,7 +1750,6 @@ p.section_news {
 	display: block;
 	width: 100%;
 	height: 100%;
-	border-radius: 15px;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 2;
 	transition: 0.5s;
@@ -1758,9 +1757,8 @@ p.section_news {
 }
 
 .member-card{
-	width: 280px;
-	height: 380px;
-	border-radius: 15px;
+	width: 240px;
+	height: 340px;
 	padding: 1.5rem;
 	background: white;
 	position: relative;
@@ -1776,7 +1774,6 @@ p.section_news {
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 15px;
 }
 
 .info{
@@ -1795,9 +1792,10 @@ p.section_news {
 }
 .job-descr{
 	letter-spacing: 1px;
-	font-size: 15px;
 	margin-top: 8px;
 	text-align: left;
+	font-size: 12px;
+    line-height: 1.3;
 }
 
 .job{

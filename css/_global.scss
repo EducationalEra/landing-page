@@ -6,6 +6,11 @@ html, body {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+
+.hide-horizontal-scrollbar{
+  overflow-x: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding: 0;

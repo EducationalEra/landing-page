@@ -23,176 +23,194 @@ html
 
 		section.project_features
 			.container
-				.lead_block   
-					p.lead
-						b
-						strong EdEra Books 
-						| — соціальний проект інтерактивної освітньої літератури. Розробляється командою молодих науковців, програмістів, дизайнерів та експертів. Онлайн-книги на EdEra складаються з ілюстрованих текстів з інтегрованими відео та тестами для перевірки здобутих знань. Дозволяють поєднати різні методи сприйняття інформації і підвищити ефективність навчання. І головне — безкоштовний доступ онлайн 24/7.
-				article
-					ul.features_list
-						li
-							| Якісний систематизований виклад
-						li
-							| Інтегровані відео та візуалізації
-						li
-							| Вбудовані тести та тренажери
-						li
-							| Адаптація до будь-якого пристрою
-						li
-							| Регуляція розміру кегля та «Нічний режим»
-						li
-							| Цілодобовий та повний онлайн-доступ
-						li
-							| Коментування кожної сторінки підручника   
-						li
-							b Безкоштовно
-				//figure.video_block
-					div
-						label(for='modal-1')
-							.modal-trigger
-								.video
-									iframe(allowfullscreen='', frameborder='0', height='315', src='//www.youtube.com/embed/pfk_G82h8yU?rel=0&showinfo=0', width='560')
+				.row 
+					.col-1
+					.col-6.col-sm-12
+						.lead_block   
+							p.lead
+								b
+								strong EdEra Books 
+								| — соціальний проект інтерактивної освітньої літератури. Розробляється командою молодих науковців, програмістів, дизайнерів та експертів. Онлайн-книги на EdEra складаються з ілюстрованих текстів з інтегрованими відео та тестами для перевірки здобутих знань. Дозволяють поєднати різні методи сприйняття інформації і підвищити ефективність навчання. І головне — безкоштовний доступ онлайн 24/7.
+					.col-4.col-sm-12
+						ul.features_list
+							li
+								| Якісний систематизований виклад
+							li
+								| Інтегровані відео та візуалізації
+							li
+								| Вбудовані тести та тренажери
+							li
+								| Адаптація до будь-якого пристрою
+							li
+								| Регуляція розміру кегля та «Нічний режим»
+							li
+								| Цілодобовий та повний онлайн-доступ
+							li
+								| Коментування кожної сторінки підручника   
+							li
+								b Безкоштовно
+					//figure.video_block
+						div
+							label(for='modal-1')
+								.modal-trigger
+									.video
+										iframe(allowfullscreen='', frameborder='0', height='315', src='//www.youtube.com/embed/pfk_G82h8yU?rel=0&showinfo=0', width='560')
 		
 		section.bookshelf
 			.container
-				.book.about
-					a(href='https://english2.ed-era.com/' target="_blank")
-						figure
-							img(alt='', src='../img/books/English2_cover.jpg')
-							figcaption
-								h3
-									| Interactive English Grammar
-									small
-										| Past Simple
+				.row
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='https://english2.ed-era.com/' target="_blank")
+								figure
+									img(alt='', src='../img/books/English2_cover.jpg')
+									figcaption
+										h3
+											| Interactive English Grammar
+											small
+												| Past Simple
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='https://edera.gitbooks.io/glossary' target="_blank")
+								figure
+									img(alt='', src='../img/books/teachers-course.jpg')
+									figcaption
+										h3
+											| Інтерактивний посібник-глосарій
+											small
+												| для вчителів початкових класів
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='https://edera.gitbooks.io/human-rights/' target="_blank")
+								figure
+									img(alt='', src='../img/books/human-rights.jpg')
+									figcaption
+										h3
+											| «Європейський механізм захисту прав людини»
+											small
+												| інтерактивний журнал
 
-				.book.about
-					a(href='https://edera.gitbooks.io/glossary' target="_blank")
-						figure
-							img(alt='', src='../img/books/teachers-course.jpg')
-							figcaption
-								h3
-									| Інтерактивний посібник-глосарій
-									small
-										| для вчителів початкових класів
-				
-				.book.about
-					a(href='https://edera.gitbooks.io/human-rights/' target="_blank")
-						figure
-							img(alt='', src='../img/books/human-rights.jpg')
-							figcaption
-								h3
-									| «Європейський механізм захисту прав людини»
-									small
-										| інтерактивний журнал
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='https://edera.gitbooks.io/lit-lifehacks/' target="_blank")
+								figure
+									img(alt='', src='../img/books/lit-lifehacks.png')
+									figcaption
+										h3
+											| Лайфхаки
+											small
+												| з української літератури
+					
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='https://ukr-lifehacks.ed-era.com/' target="_blank")
+								figure
+									img(alt='', src='../img/books/ukr-lifehacks.png')
+									figcaption
+										h3
+											| Лайфхаки
+											small
+												| з української мови
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/anticorruption-lesson')
+								figure
+									img(alt='', src='../img/books/anticorruption-lesson.jpg')
+									figcaption
+										h3
+											| Антикорупційний урок
+											small
+												| Короткий навчальний посібник
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/ukrainian')
+								figure
+									img(alt='', src='../img/books/ukr.jpg')
+									figcaption
+										h3
+											| Українська мова
+											small
+												| Від фонетики до морфології
+						//-.book.about
+							a(href='/books/english2')
+								figure
+									img(alt='', src='../img/books/english2.jpg')
+									figcaption
+										h3
+											| Англійська мова
+											small
+												| Часові форми
+						//-.book.about
+							a(href='/books/law')
+								figure
+									img(alt='', src='../img/books/law.jpg')
+									figcaption
+										h3
+											| Правознавство
+											small
+												| Основи вчення про державу та право
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/history')
+								figure
+									img(alt='', src='../img/books/hist.jpg')
+									figcaption
+										h3
+											| Історія України
+											small
+												| Зародження української нації
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/english')
+								figure
+									img(alt='', src='../img/books/eng.jpg')
+									figcaption
+										h3
+											| Англійська мова
+											small
+												| Морфологія
 
-				.book.about
-					a(href='https://edera.gitbooks.io/lit-lifehacks/' target="_blank")
-						figure
-							img(alt='', src='../img/books/lit-lifehacks.png')
-							figcaption
-								h3
-									| Лайфхаки
-									small
-										| з української літератури
-				.book.about
-					a(href='https://ukr-lifehacks.ed-era.com/' target="_blank")
-						figure
-							img(alt='', src='../img/books/ukr-lifehacks.png')
-							figcaption
-								h3
-									| Лайфхаки
-									small
-										| з української мови
-				.book.about
-					a(href='/books/anticorruption-lesson')
-						figure
-							img(alt='', src='../img/books/anticorruption-lesson.jpg')
-							figcaption
-								h3
-									| Антикорупційний урок
-									small
-										| Короткий навчальний посібник
-				.book.about
-					a(href='/books/ukrainian')
-						figure
-							img(alt='', src='../img/books/ukr.jpg')
-							figcaption
-								h3
-									| Українська мова
-									small
-										| Від фонетики до морфології
-				//-.book.about
-					a(href='/books/english2')
-						figure
-							img(alt='', src='../img/books/english2.jpg')
-							figcaption
-								h3
-									| Англійська мова
-									small
-										| Часові форми
-				//-.book.about
-					a(href='/books/law')
-						figure
-							img(alt='', src='../img/books/law.jpg')
-							figcaption
-								h3
-									| Правознавство
-									small
-										| Основи вчення про державу та право
-				.book.about
-					a(href='/books/history')
-						figure
-							img(alt='', src='../img/books/hist.jpg')
-							figcaption
-								h3
-									| Історія України
-									small
-										| Зародження української нації
-				.book.about
-					a(href='/books/english')
-						figure
-							img(alt='', src='../img/books/eng.jpg')
-							figcaption
-								h3
-									| Англійська мова
-									small
-										| Морфологія
-				.book.about
-					a(href='/books/maths')
-						figure
-							img(alt='', src='../img/books/math.jpg')
-							figcaption
-								h3
-									| Математика
-									small
-										| Арифметика, рівняння та нерівності
-				.book.about
-					a(href='/books/physics')
-						figure
-							img(alt='', src='../img/books/phys.jpg')
-							figcaption
-								h3
-									| Фізика
-									small
-										| Класична механіка
-				.book.about
-					a(href='/books/geography')
-						figure
-							img(alt='', src='../img/books/geo.jpg')
-							figcaption
-								h3
-									| Географія
-									small
-										| Загальна географія
-				.book.about
-					a(href='/books/biology')
-						figure
-							img(alt='', src='../img/books/biol.jpg')
-							figcaption
-								h3
-									| Біологія
-									small
-										| Рослини, гриби та лишайники
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/maths')
+								figure
+									img(alt='', src='../img/books/math.jpg')
+									figcaption
+										h3
+											| Математика
+											small
+												| Арифметика, рівняння та нерівності
+
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/physics')
+								figure
+									img(alt='', src='../img/books/phys.jpg')
+									figcaption
+										h3
+											| Фізика
+											small
+												| Класична механіка
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/geography')
+								figure
+									img(alt='', src='../img/books/geo.jpg')
+									figcaption
+										h3
+											| Географія
+											small
+												| Загальна географія
+					.col-sm-12.col-md-6.col-lg-4
+						.book.about
+							a(href='/books/biology')
+								figure
+									img(alt='', src='../img/books/biol.jpg')
+									figcaption
+										h3
+											| Біологія
+											small
+												| Рослини, гриби та лишайники
 		section.support_us
 			.container
 				p
@@ -208,7 +226,7 @@ html
 			#mc_embed_signup
 				form#mc-embedded-subscribe-form.validate(action='//ed-era.us11.list-manage.com/subscribe/post?u=8866dd2b60d24631dfb05130e&amp;id=30bbf66b23', method='post', name='mc-embedded-subscribe-form', novalidate='', target='_blank')
 					#mc_embed_signup_scroll
-						.mc-field-group
+						.mc-field-group.mx-4
 							label(for='mce-EMAIL')
 								input#mce-EMAIL.required.email(name='EMAIL', type='email', value='')
 								button#mc-embedded-subscribe.button(name='subscribe', type='submit')

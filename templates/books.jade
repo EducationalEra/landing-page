@@ -2,7 +2,7 @@ include includes/head.jade
 doctype html
 html
 	+head(locals.titles.books.title, locals.titles.books.description, locals.titles.books.image, locals.titles.books.url)
-	body
+	body.hide-horizontal-scrollbar
 		include includes/gtm.jade
 		include includes/header.jade
 		.library.section.heading
@@ -24,14 +24,14 @@ html
 		section.project_features
 			.container
 				.row 
-					.col-1
-					.col-6.col-sm-12
+					.col-lg-1.col-md-1.col-sm-1
+					.col-lg-6.col-md-6.col-sm-12
 						.lead_block   
 							p.lead
 								b
 								strong EdEra Books 
 								| — соціальний проект інтерактивної освітньої літератури. Розробляється командою молодих науковців, програмістів, дизайнерів та експертів. Онлайн-книги на EdEra складаються з ілюстрованих текстів з інтегрованими відео та тестами для перевірки здобутих знань. Дозволяють поєднати різні методи сприйняття інформації і підвищити ефективність навчання. І головне — безкоштовний доступ онлайн 24/7.
-					.col-4.col-sm-12
+					.col-lg-4.col-md-4.col-sm-12
 						ul.features_list
 							li
 								| Якісний систематизований виклад

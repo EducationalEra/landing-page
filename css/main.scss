@@ -241,23 +241,16 @@ article.about {
 .lead_block{
 	.lead {
 		@include media($mobile) {
-			// @include span-columns(8 of 10);
-			// @include shift(1 of 10);
-
 			font-size: 16px;
 			line-height: 24px;
 		}
 
 		@include media($tablet) {
-			@include span-columns(8);
-
 			font-size: 17px;
 			line-height: 28px;
 		}
 
 		@include media($desktop) {
-			@include span-columns(10);
-
 			font-size: 18px;
 			line-height: 30px;
 		}
@@ -330,21 +323,6 @@ figure.thumbnail {
 	.video_block, .lead_block {
 		margin: 0;
 		padding: 0;
-
-		@include media($mobile) {
-			// margin: 0;
-			@include row;
-		}
-
-		@include media($tablet) {
-			// margin: 1em 40px;
-			@include span-columns(4 of 8);
-		}
-
-		@include media($desktop) {
-			// margin: 1em 40px;
-			@include span-columns(6 of 10);
-		}
 	}
 
 	.video {

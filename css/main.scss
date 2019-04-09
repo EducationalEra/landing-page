@@ -857,15 +857,12 @@ figure.thumbnail {
 				}
 
 				@include media($mobile) {
-					@include span-columns(8);
 					@include row;
 
 					margin-bottom: 20px;
 				}
 
 				@include media($tablet) {
-					@include shift (1)
-					@include span-columns(5 of 12);
 					margin-right: 0;
 
 					figure {
@@ -880,8 +877,6 @@ figure.thumbnail {
 				}
 
 				@include media($desktop) {
-					@include span-columns(5 of 12);
-							max-height: 530px;
 					figure {
 						padding-bottom: 1em;
 					}

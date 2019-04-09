@@ -22,18 +22,18 @@ html
             .lead_block
               p.lead  
                 | Шановні читачі, перед вами оновлені навчальні програми для початкової школи, які затверджено  Наказом МОН після публічного обговорення на нашій платформі.  Щоб полегшити впровадження оновлених програм, EdEra спільно з МОН підготувала поради для вчителів, методичні рекомендації, збирає додаткові навчальні матеріали, які будуть розміщені у вільному доступі. Приємного та продуктивного навчання!
-            .col-lg-4.col-md-4.col-sm-12
-              ul.features_list
-                li
-                  | Оновлені програми для початкової школи
-                li
-                  | Поради експертів, додаткові навчальні матеріали
-                li
-                  | Відеозвернення письменників, внесених в програму літературного читання
-                li
-                  | Вільний доступ до всіх матеріалів
-                li
-                  | Вчителям, учням, батькам
+          .col-lg-4.col-md-4.col-sm-12
+            ul.features_list
+              li
+                | Оновлені програми для початкової школи
+              li
+                | Поради експертів, додаткові навчальні матеріали
+              li
+                | Відеозвернення письменників, внесених в програму літературного читання
+              li
+                | Вільний доступ до всіх матеріалів
+              li
+                | Вчителям, учням, батькам
     //-section.mon-news.mon-alarm
       .container
         h2.section_title
@@ -56,10 +56,10 @@ html
                       small Перейти до програми 
                         sup ❐
 
-        .col-sm-12.col-md-8.col-lg-8.video-block-wraper
+        .col-sm-12.col-md-8.col-lg-8.video-block-wraper#reading 
           .row
-            .col-6
-              .video-wraper#reading   
+            .col-5
+              .video-wraper  
                 .video-block
                   figure
                     figcaption 
@@ -67,7 +67,7 @@ html
                     a.popup-youtube(href='https://www.youtube.com/watch?v=jbEtxCKggJI')
                       img(alt='', src='../img/books/mon_recommend/stus.jpg')
 
-            .col-6
+            .col-5
               .video-block
                 figure
                   figcaption 
@@ -76,7 +76,7 @@ html
                     img(alt='', src='../img/books/mon_recommend/babkina.jpg')
 
           .row
-            .col-6
+            .col-5
               .video-block
                 figure
                   figcaption 
@@ -118,10 +118,11 @@ html
                   a.popup-youtube(href='https://www.youtube.com/watch?v=ZJrmdFb65vo')
                     img(alt='', src='../img/books/mon_recommend/vzdulska.jpg') 
 
-            .col-6
-              .video-block.controller
-                a.button.more-videos Більше
-                a.button.hide-videos Сховати
+            .col-5
+              .video-wraper  
+                .video-block.controller
+                  a.button.more-videos Більше
+                  a.button.hide-videos Сховати
 
               .video-block.optional
                 figure

@@ -312,48 +312,25 @@ figure.thumbnail {
 
 // PROJECT FEATURES
 .project_features {
-
-	article {
-		@include media($mobile) {
-			@include outer-container(8);
-			// padding: 20px 0 20px 10px;
-			@include row;
-			padding: 0 0 0 40px;
-		}
-
-		@include media($tablet) {
-			@include span-columns(4 of 8);
-			padding: 0 0 0 40px;
-		}
-
-		@include media($desktop) {
-			@include span-columns(4 of 10);
-			padding: 0 0 0 80px;
-		}
-
+	li {
 		display: block;
-		// margin: 0;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		list-style-type: none;
+		font-size: 16px;
+		margin-bottom: 10px;
 
-		li {
+		&:before {
 			display: block;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			list-style-type: none;
-			font-size: 16px;
-			margin-bottom: 10px;
-
-			&:before {
-				display: block;
-				content: "✓";
-				position: absolute;
-				/*width: 25px;
-				height: 25px;*/
-				left: -20px;
-			}
+			content: "✓";
+			position: absolute;
+			/*width: 25px;
+			height: 25px;*/
+			left: -20px;
 		}
 	}
-
+	
 	.video_block, .lead_block {
 		margin: 0;
 		padding: 0;

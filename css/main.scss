@@ -696,9 +696,6 @@ figure.thumbnail {
 
 
 .mon_subject {
-	@include outer-container(12);
-	@include row;
-
 	h3.mon_title {
 		font-weight: 400;
 		text-transform: uppercase;
@@ -706,28 +703,18 @@ figure.thumbnail {
 	}
 
 	.program {
-		@include inline-block;
 
 		@include media($mobile) {
-			@include span-columns(8);
-			@include row;
-
 			margin-bottom: 20px;
 		}
 
 		@include media($tablet) {
-			@include span-columns(6 of 12);
-			@include shift(3);
-
 			&:nth-child(2n) {
 				@include omega;
 			}
 		}
 
 		@include media($desktop) {
-			@include span-columns(4 of 12);
-					max-height: 530px;
-
 			&:nth-child(3n) {
 				@include omega;
 			}
@@ -740,7 +727,6 @@ figure.thumbnail {
 				margin: 0;
 
 				img {
-					@include span-columns(4 of 8);
 					width: 50%;
 				}
 
@@ -2499,4 +2485,8 @@ color: #FFA300;
 }
 .header_cases h1{
 	margin-top: 40px!important;
+}
+
+#reading .video-block p{
+	font-weight: 350;
 }

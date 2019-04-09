@@ -1197,12 +1197,12 @@ p.section_news {
 	}
 
 	.mon-card {
-			@include media($mobile) {
-			@include span-columns(10 of 12);
-			@include shift(1);
-			width: auto!important;
-		}
 
+		@include media($mobile) {
+		@include span-columns(10 of 12);
+		@include shift(1);
+		width: auto!important;
+	}		
 
 		@include media($tablet) {
 			@include span-columns(4 of 12);
@@ -1231,7 +1231,39 @@ p.section_news {
 		}
 	}
 
-	.course_card, .mon-card {
+	.job-card {
+		
+		@include media($mobile) {
+		@include span-columns(10 of 12);
+		@include shift(1);
+	}		
+
+		@include media($tablet) {
+			@include span-columns(4 of 12);
+			height: 340px;
+			
+			p {
+				font-size: 11px !important;
+			}
+			&:nth-child(3n) {
+				@include omega;
+			}
+		}
+
+		@include media($desktop) {
+			@include span-columns(3 of 12);
+			height: 340px;
+
+			&:first-child {
+				@include shift (1.5);
+			}
+			&:nth-child(3n) {
+				@include omega;
+			}
+		}
+	}
+
+	.course_card, .mon-card, .job-card {
 		margin-top:10px;
 		margin-bottom: 30px;
 		// float: left;

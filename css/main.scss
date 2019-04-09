@@ -845,8 +845,6 @@ figure.thumbnail {
 			@include span-columns(8 of 12);
 		}
 		.video-wraper {
-			@include outer-container(8);
-			@include row;
 
 			.video-block {
 				text-align: left;
@@ -857,8 +855,6 @@ figure.thumbnail {
 				}
 
 				@include media($mobile) {
-					@include row;
-
 					margin-bottom: 20px;
 				}
 

@@ -1168,7 +1168,7 @@ p.section_news {
 
 	.course_card {
 			@include media($mobile) {
-				height: 400px;
+				height: auto!important;
 				@include span-columns(10 of 12);
 				@include shift(1)
 		}
@@ -1203,6 +1203,7 @@ p.section_news {
 		@include span-columns(10 of 12);
 		@include shift(1);
 		width: auto!important;
+		height: auto!important;
 	}		
 
 		@include media($tablet) {

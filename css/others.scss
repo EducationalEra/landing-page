@@ -1168,8 +1168,9 @@ p.section_news {
 
 	.course_card {
 			@include media($mobile) {
-			@include span-columns(10 of 12);
-			@include shift(1)
+				height: 400px;
+				@include span-columns(10 of 12);
+				@include shift(1)
 		}
 
 

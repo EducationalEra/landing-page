@@ -152,8 +152,8 @@ a {
 .cards-row{
 
 	@include media($mobile) {
-		margin-left: 1vw;
-		margin-right: 1vw;
+		margin-left: 1vw!important;
+		margin-right: 1vw!important;
 	}
 
 	@include media($tablet) {
@@ -1189,7 +1189,7 @@ p.section_news {
 
 		@include media($tablet) {
 			@include span-columns(4 of 12);
-			height: 400px;
+			height: 400px!important;
 
 			&:nth-child(3n) {
 				@include omega;

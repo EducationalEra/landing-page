@@ -150,8 +150,21 @@ a {
 	width:auto!important;
 }
 .cards-row{
-	margin-left: 10vw;
-	margin-right: 10vw;
+
+	@include media($mobile) {
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+
+	@include media($tablet) {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	@include media($desktop) {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
 }
 .banner_25 p{
 	z-index: 10;
@@ -1176,7 +1189,7 @@ p.section_news {
 
 		@include media($tablet) {
 			@include span-columns(4 of 12);
-			height: 340px;
+			height: 400px;
 
 			&:nth-child(3n) {
 				@include omega;
@@ -1842,3 +1855,15 @@ p.section_news {
 	width: 68vw;
 }
 // END OF CARDS' STYLES
+
+
+// ZNO-BUTTON 
+
+.highlight {
+	background: url("../img/test-zno-button.png");
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+
+// END OF ZNO-BUTTON

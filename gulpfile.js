@@ -68,6 +68,9 @@ gulp.task('copy', ['sass', 'templates'], function () {
   gulp.src("public/mon.html")
       .pipe(rename("mon.html"))
       .pipe(gulp.dest("build"));
+  gulp.src("public/zno.html")
+      .pipe(rename("index.html"))
+      .pipe(gulp.dest("build/zno"));
   //gulp.src("public/mun.html")
   //    .pipe(rename("mun/index.html"))
   //    .pipe(gulp.dest("build"));

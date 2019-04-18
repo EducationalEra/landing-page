@@ -2499,16 +2499,13 @@ color: #FFA300;
 	text-decoration: none;
 	border-radius: 0px;
 	padding: 20px 30px;
-}
-
-.zno-a {
 	color: #EFA72D;
 	box-shadow: #F7C169 0 0px 0px 2px inset;
-}
 
-.zno-a:hover {
-	color: white;
-	box-shadow: #EFA72D 0 80px 0px 2px inset;
+	&:hover {
+		color: white;
+		box-shadow: #EFA72D 0 80px 0px 2px inset;
+	}
 }
 
 // END HEADER ZNO BUTTON

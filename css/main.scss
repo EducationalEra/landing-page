@@ -2488,22 +2488,21 @@ color: #FFA300;
 
 // HEADER ZNO BUTTON 
 .zno-a {
-	-webkit-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-webkit-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360)!;
 	-moz-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	-ms-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	-o-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	display: block;
-	margin: 20px auto;
 	max-width: 180px;
 	text-decoration: none;
 	border-radius: 0px;
-	padding: 20px 30px;
-	color: #EFA72D;
+	padding: 12px 15px;
+	color: #EFA72D!important;
 	box-shadow: #F7C169 0 0px 0px 2px inset;
 
 	&:hover {
-		color: white;
+		color: white!important;
 		box-shadow: #EFA72D 0 80px 0px 2px inset;
 	}
 }

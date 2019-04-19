@@ -4,7 +4,11 @@
 
 html, body {
   font-family: 'Open Sans', sans-serif !important;
-  min-width: 740px !important;
+}
+
+
+.hide-horizontal-scrollbar{
+  overflow-x: hidden;
 }
 
 .container {

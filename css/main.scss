@@ -7,6 +7,10 @@ abbr {
 	text-decoration: none;
 }
 
+#welcome .container{
+	padding: 0!important;
+	padding-left: 0!important;
+}
 
 .section.heading {
 	background-image: url("../img/bg_main.jpg");
@@ -237,23 +241,12 @@ article.about {
 .lead_block{
 	.lead {
 		@include media($mobile) {
-			// @include span-columns(8 of 10);
-			// @include shift(1 of 10);
-
-			font-size: 16px;
-			line-height: 24px;
 		}
 
 		@include media($tablet) {
-			@include span-columns(8);
-
-			font-size: 17px;
-			line-height: 28px;
 		}
 
 		@include media($desktop) {
-			@include span-columns(10);
-
 			font-size: 18px;
 			line-height: 30px;
 		}
@@ -308,66 +301,23 @@ figure.thumbnail {
 
 // PROJECT FEATURES
 .project_features {
-
-	article {
-		@include media($mobile) {
-			@include outer-container(8);
-			// padding: 20px 0 20px 10px;
-			@include row;
-			padding: 0 0 0 40px;
-		}
-
-		@include media($tablet) {
-			@include span-columns(4 of 8);
-			padding: 0 0 0 40px;
-		}
-
-		@include media($desktop) {
-			@include span-columns(4 of 10);
-			padding: 0 0 0 80px;
-		}
-
+	li {
 		display: block;
-		// margin: 0;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		list-style-type: none;
+		margin-bottom: 10px;
 
-		li {
-			display: block;
-			margin: 0;
-			padding: 0;
-			position: relative;
-			list-style-type: none;
-			font-size: 16px;
-			margin-bottom: 10px;
-
-			&:before {
-				display: block;
-				content: "✓";
-				position: absolute;
-				/*width: 25px;
-				height: 25px;*/
-				left: -20px;
-			}
+		&:before {
+			content: "✓";
+			padding-right: 30px;
 		}
 	}
 
 	.video_block, .lead_block {
 		margin: 0;
 		padding: 0;
-
-		@include media($mobile) {
-			// margin: 0;
-			@include row;
-		}
-
-		@include media($tablet) {
-			// margin: 1em 40px;
-			@include span-columns(4 of 8);
-		}
-
-		@include media($desktop) {
-			// margin: 1em 40px;
-			@include span-columns(6 of 10);
-		}
 	}
 
 	.video {
@@ -483,24 +433,16 @@ figure.thumbnail {
 		@include inline-block;
 
 		@include media($mobile) {
-			@include span-columns(8);
-			@include row;
-
 			margin-bottom: 20px;
 		}
 
 		@include media($tablet) {
-			@include span-columns(6 of 12);
-
 			&:nth-child(2n) {
 				@include omega;
 			}
 		}
 
 		@include media($desktop) {
-			@include span-columns(4 of 12);
-					max-height: 530px;
-
 			&:nth-child(3n) {
 				@include omega;
 			}
@@ -512,11 +454,6 @@ figure.thumbnail {
 				text-align: left;
 				padding: 1em 0;
 				margin: 0;
-
-				img {
-					@include span-columns(4 of 8);
-					width: 50%;
-				}
 
 				figcaption {
 				}
@@ -754,9 +691,6 @@ figure.thumbnail {
 
 
 .mon_subject {
-	@include outer-container(12);
-	@include row;
-
 	h3.mon_title {
 		font-weight: 400;
 		text-transform: uppercase;
@@ -764,28 +698,18 @@ figure.thumbnail {
 	}
 
 	.program {
-		@include inline-block;
 
 		@include media($mobile) {
-			@include span-columns(8);
-			@include row;
-
 			margin-bottom: 20px;
 		}
 
 		@include media($tablet) {
-			@include span-columns(6 of 12);
-			@include shift(3);
-
 			&:nth-child(2n) {
 				@include omega;
 			}
 		}
 
 		@include media($desktop) {
-			@include span-columns(4 of 12);
-					max-height: 530px;
-
 			&:nth-child(3n) {
 				@include omega;
 			}
@@ -798,7 +722,6 @@ figure.thumbnail {
 				margin: 0;
 
 				img {
-					@include span-columns(4 of 8);
 					width: 50%;
 				}
 
@@ -903,8 +826,6 @@ figure.thumbnail {
 			@include span-columns(8 of 12);
 		}
 		.video-wraper {
-			@include outer-container(8);
-			@include row;
 
 			.video-block {
 				text-align: left;
@@ -915,15 +836,10 @@ figure.thumbnail {
 				}
 
 				@include media($mobile) {
-					@include span-columns(8);
-					@include row;
-
 					margin-bottom: 20px;
 				}
 
 				@include media($tablet) {
-					@include shift (1)
-					@include span-columns(5 of 12);
 					margin-right: 0;
 
 					figure {
@@ -938,8 +854,6 @@ figure.thumbnail {
 				}
 
 				@include media($desktop) {
-					@include span-columns(5 of 12);
-							max-height: 530px;
 					figure {
 						padding-bottom: 1em;
 					}
@@ -2567,3 +2481,30 @@ color: #FFA300;
 .header_cases h1{
 	margin-top: 40px!important;
 }
+
+#reading .video-block p{
+	font-weight: 350;
+}
+
+// HEADER ZNO BUTTON 
+.zno-a {
+	-webkit-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 500ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 0px;
+	padding: 12px 15px;
+	color: #EFA72D!important;
+	box-shadow: #F7C169 0 0px 0px 2px inset;
+
+	&:hover {
+		color: white!important;
+		box-shadow: #EFA72D 0 80px 0px 2px inset;
+	}
+}
+
+// END HEADER ZNO BUTTON

@@ -6,7 +6,7 @@ mixin head(title, description, image, url)
    meta(charset='utf-8')
    meta(http-equiv='X-UA-Compatible', content='IE=edge')
    title #{title}
-   meta(name='viewport', content='width=device-width, initial-scale=1')
+   meta(name='viewport', content='width=device-width,initial-scale=1.0')
    include favicon
    //VK
    meta(name='title', content= title)
@@ -36,6 +36,7 @@ mixin head(title, description, image, url)
    meta(property='og:image' content= image)
    meta(property='og:site_name' content='EdEra')
 
+   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
    link(rel='stylesheet', href='/css/application.css')
    script(src='/js/vendor/modernizr-2.6.2.min.js')
    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')

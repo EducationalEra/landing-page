@@ -1,0 +1,48 @@
+include mixins.jade
+include includes/head.jade
+doctype html
+html
++head
+body.hide-horizontal-scrollbar
+include includes/gtm.jade
+include includes/header.jade
+//- ПЕРШИЙ ЕКРАН
+.container
+  .row
+    .col-12
+      #welcome.section
+        .container
+          .hello
+            h1 Educational Era
+            h2 Студія онлайн-освіти
+
+        //- СПІЛЬНОКОШТ
+      a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
+        .banner_25
+            img.left_img(src='../img/25/left_banner.png', alt='')
+            p
+              | Підтримай EdEra
+            img.right_img(src='../img/25/right_banner.png', alt='')
+
+  #courses.section.four
+    .container
+      h2 Готуйся до ЗНО
+    .container
+      .row.cards-row
+        // Історія України в історіях
+        +course(locals.courses.znohistory)
+        // Математика. Просто
+        +course(locals.courses.math_simple)
+        // Лайфхаки з української мови
+        +course(locals.courses.ukr_lifehacks)
+        // Лайфхаки з української літератури
+        +course(locals.courses.lit_lifehacks)
+        // Онлайн-курс «Автостопом по біології»
+        +course(locals.courses.biology_zno)
+
+    #wrapper-button.container
+      a.button(href="./courses/")
+        | До всіх курсів
+
+include includes/footer.jade
+include includes/scripts.jade

@@ -9,18 +9,21 @@ html
 		include includes/header.jade
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 
-		.edera-talent.section.heading
-			.container
-				h1
-					span.exo EDERA TALENTS
-					small Шукаємо професіоналів у команду EdEra
+		.container
+		.row
+			.col-12
+				.edera-talent.section.heading
+					.container
+						h1
+							span.exo EDERA TALENTS
+							small Шукаємо професіоналів у команду EdEra
 		
-		//- СПІЛЬНОКОШТ
-		section.section.talents-banner#books
-			.container
-				h2.section_title 
-					a.button.w(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
-						strong Підтримайте EdEra на Спільнокошті
+				//- СПІЛЬНОКОШТ
+				section.section.talents-banner#books
+					.container
+						h2.section_title 
+							a.button.w(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+								strong Підтримайте EdEra на Спільнокошті
 
 		section.materials_features#talents
 			.container
@@ -85,7 +88,7 @@ html
 						p
 							| Продумувати сценарії навчальних відео, знімати їх та монтувати. Освітні відео для нас — це мистецтво. Тому ми надаємо простір для творчості й підтримку нашої креативної команди.
 
-					.mon-card
+					.job-card
 						.figure
 							img(src='/img/talents/motion-designer.jpg', alt='')
 							a.button.goto_course(href='http://bit.ly/ederaMotion') Перейти до анкети

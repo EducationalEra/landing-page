@@ -132,31 +132,6 @@ $default-background-color: red;
 	
 }
 
-a {
-	text-decoration: none!important;
-}
-
-.new-course-wrapper .new-course-cover, .new-course-wrapper .new-course-description,  .new-course-wrapper .new-course-description .description{
-    width: auto!important; 
-}
-.container{
-	margin: 0;
-	padding: 0;
-	max-width: 100vw!important;
-	min-width: 100vw!important;
-}
-
-#courses .course_card{
-	width:auto!important;
-}
-.cards-row{
-	margin-left: 10vw;
-	margin-right: 10vw;
-}
-.banner_25 p{
-	z-index: 10;
-}
-
 .trend {
 	display: table-cell;
 	width: 30%;
@@ -1192,15 +1167,10 @@ p.section_news {
 		}
 	}
 
-	#courses .mon-card:first-child {
-	    margin-left: 0;
-	}
-
 	.mon-card {
 			@include media($mobile) {
 			@include span-columns(10 of 12);
 			@include shift(1);
-			width: auto!important;
 		}
 
 
@@ -1440,7 +1410,7 @@ p.section_news {
 			margin: 0 auto;
 			display: block;
 			position: absolute;
-			text-decoration: none!important;
+			text-decoration: none;
 			text-align: center;
 			position: relative;
 			top: 45%;

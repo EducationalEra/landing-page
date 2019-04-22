@@ -2,6 +2,7 @@ include includes/head.jade
 doctype html
 html
 	+head(locals.titles.books.title, locals.titles.books.description, locals.titles.books.image, locals.titles.books.url)
+	link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
 	body.hide-horizontal-scrollbar
 		include includes/gtm.jade
 		include includes/header.jade

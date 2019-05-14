@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "osn_web": {
+      "className": "",
+      "imgUrl": "/img/courses/osn_web_cover.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "ОСНОВИ ВЕБ-РОЗРОБКИ (HTML, CSS, JAVASCRIPT)",
+      "courseSubtitle": "",
+      "courseDesc": "У цьому курсі ви ознайомитеся з теоретичними та практичними аспектами фронтенд-розробки, навчитесь створювати власні веб-сайти та адаптувати їх під власні потреби.",
+      "access": true,
+      "free": false
+    },
     "znohistory": {
       "className": "",
       "imgUrl": "/img/courses/history_cover.jpg",

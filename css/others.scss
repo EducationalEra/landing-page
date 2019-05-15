@@ -1689,3 +1689,111 @@ p.section_news {
 		line-height: 22px;
 	}
 }
+
+
+// Social Buttons Styles
+
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$border-radius: 50%;
+$font-size: 25px;
+
+.effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: $basic-dark-color;
+  
+  &:nth-child(2) {
+    margin-top: 50px;
+  }
+  
+  &:nth-child(2n+1) {
+    background-color: $basic-dark-color;
+  }
+  
+  &:nth-child(2n) {
+    
+     a {
+      color: $basic-light-color;
+      border-color: $basic-light-color;
+    }
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.effect {
+  display: flex;
+  a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    color: $basic-light-color; 
+    border: 2px solid $basic-light-color; 
+    
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+    
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.effect.varrius {
+  
+  a {
+    transition: all 0.2s linear 0s;
+    
+    &:after {
+      content: "";
+      display: block;
+      width: 90%;
+      height: 90%;
+      top: -110%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      background-color: $basic-light-color;
+      border-radius: $border-radius;
+    }
+    
+    &:hover {
+      color: $basic-dark-color;
+      
+      &:after {
+        top: 5%;
+        transition: all 0.2s linear 0s;
+      }
+    }
+  }
+}
+// END of Social Buttons Styles
+

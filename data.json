@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "eu_agreement": {
+      "className": "",
+      "imgUrl": "/img/courses/eu-agreement_cover.jpg",
+      "altText": "Угода про асоціацію Україна-ЄС",
+      "href": "http://eu-agreement.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Угода про асоціацію Україна-ЄС",
+      "courseSubtitle": "",
+      "courseDesc": "Навчальний онлайн-спецпроект про Угоду про асоціацію між Україною та ЄС. 2000 сторінок Угоди в одному спецпроекті. Комплексно та інтерактивно.",
+      "access": true,
+      "free": false
+    },
     "znohistory": {
       "className": "",
       "imgUrl": "/img/courses/history_cover.jpg",

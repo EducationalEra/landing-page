@@ -7,6 +7,7 @@ html
 	body
 		include includes/gtm.jade
 		include includes/header.jade
+		link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 
 		.container
@@ -36,7 +37,7 @@ html
 						| Зараз нашій команді дуже потрібні ініціативні та ідейні люди. Можливо,&nbsp;це ти?
 					
 				article
-						a(href='/img/talents/EdEra_Pres.pdf')
+						a(href='/img/talents/EdEra_Pres.pdf', target="_blank")
 							img(src='/img/talents/EdEra-presentation.jpg')
 							p.introduction
 								| Переглянути презентацію 
@@ -91,7 +92,7 @@ html
 					.job-card
 						.figure
 							img(src='/img/talents/motion-designer.jpg', alt='')
-							a.button.goto_course(href='http://bit.ly/ederaMotion') Перейти до анкети
+							a.button.goto_course(href='http://bit.ly/ederaMotion', target="_blank") Перейти до анкети
 						h3.course_title Моушн-дизайнер
 						p
 							| Придумувати візуалізації для навчальних відео, анімувати їх. Тісно співпрацювати з дизайнерами, ілюстраторами, операторами. Створювати круті та живі освітні відео.

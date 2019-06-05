@@ -2,360 +2,360 @@ include mixins.jade
 include includes/head.jade
 doctype html
 html
-+head
-body.hide-horizontal-scrollbar
-include includes/gtm.jade
-include includes/header.jade
-link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
-//- ПЕРШИЙ ЕКРАН
-.container
-  .row
-    .col-12
-      #welcome.section
+  +head
+  body.hide-horizontal-scrollbar
+    include includes/gtm.jade
+    include includes/header.jade
+    link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
+    //- ПЕРШИЙ ЕКРАН
+    .container
+      .row
+        .col-12
+          #welcome.section
+            .container
+              .hello
+                h1 Educational Era
+                h2 Студія онлайн-освіти
+
+        //- СПІЛЬНОКОШТ
+          a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
+            .banner_25
+                img.left_img(src='../img/25/left_banner.png', alt='')
+                p
+                  | Підтримайте EdEra
+                img.right_img(src='../img/25/right_banner.png', alt='')
+
+      //-.container
+        ul.main_trends
+        li.trend
+        a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
+        b  Інтерактивний посібник-глосарій для вчителів початкових класів
+        li.trend
+        a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
+        b Онлайн-курс «Людина та держава. Правила гри»
+        li.trend
+        a(href="https://www.ed-era.com/making/", target="_blank", title="")
+        b Вступ у мейкерство
+
+      #courses.section.four
         .container
-          .hello
-            h1 Educational Era
-            h2 Студія онлайн-освіти
-
-    //- СПІЛЬНОКОШТ
-      a.banner_a(href='https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/', target='_blank', title='EdEra на Спільнокошті')
-        .banner_25
-            img.left_img(src='../img/25/left_banner.png', alt='')
-            p
-              | Підтримайте EdEra
-            img.right_img(src='../img/25/right_banner.png', alt='')
-
-  //-.container
-    ul.main_trends
-    li.trend
-    a(href="https://edera.gitbooks.io/glossary", target="_blank", title="")
-    b  Інтерактивний посібник-глосарій для вчителів початкових класів
-    li.trend
-    a(href="https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about", target="_blank", title="")
-    b Онлайн-курс «Людина та держава. Правила гри»
-    li.trend
-    a(href="https://www.ed-era.com/making/", target="_blank", title="")
-    b Вступ у мейкерство
-
-  #courses.section.four
-    .container
-      h2 Нові проекти
-    .container
-      .row.cards-row
-        // Онлайн-курс для вчителів початкової школи
-        +course(locals.courses.nus)
-        // Права людини в освітньому просторі
-        +course(locals.courses.hre)
-        // Історія України в історіях
-        +course(locals.courses.znohistory)
-        // Математика. Просто
-        +course(locals.courses.math_simple)
-        // ОСНОВИ ВЕБ-РОЗРОБКИ (HTML, CSS, JAVASCRIPT)
-        +course(locals.courses.osn_web)
-        // Соціальне підприємництво та конкурентоспроможність
-        +course(locals.courses.soc_ent)
-        //- Основи реформи охорони здоров’я з допомогою eHealth
-        //-+course(locals.courses.ehealth)
-        // Фактчек: довіряй-перевіряй
-        +course(locals.courses.factcheck)
-        //- Навчальні модулі для формування громадянської компетентності
-        //-+course(locals.courses.modules)
-        //-Ефективні комунікації для освітніх управлінців
-        //-+course(locals.courses.effective_communication)
-        // Угода про асоціацію Україна-ЄС
-        +course(locals.courses.eu_agreement)
-        //- Прозора енергетика
-        //-course(locals.courses.energy)
-        //- Управління школою. Практикум
-        //-+course(locals.courses.prosvit)
-        //- ДНК Лідерів
-        //-+course(locals.courses.leader_dna)
-        //- Інтерактивний журнал
-        //-+course(locals.courses.hrights_live)
-        //- Колошкільне дитинознавство
-        //-+course(locals.courses.royz)
-        //- Онлайн-курс «Автостопом по біології»
-        //- +course(locals.courses.biology_zno)
-        //- Домедична допомога
-        //- +course(locals.courses.med)
-        //- Людина та держава. Правила гри
-        //-+course(locals.courses.law)
-        //- Недискримінаційний підхід у навчанні
-        //-+course(locals.courses.non_discrimination)
-        //- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
-        //- +course(locals.courses.inclusion_teacher)
-        //- Лайфхаки з української мови
-        //- +course(locals.courses.ukr_lifehacks)
-        //- Як писати про економіку без помилок?
-        //- +course(locals.courses.economics)
-        //- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
-        //-+course(locals.courses.smartExport)
-
-    #wrapper-button.container
-      a.button(href="./courses/")
-        | До всіх курсів
-
-  //- БЛОГ
-  section#new-course
-    .container
-      h2 Освітній блог
-      .new-course-wrapper
+          h2 Нові проекти
         .container
           .row.cards-row
-            .col-sm-12.col-md-6.col-lg-6
-              .new-course-cover
-                figure.flash
-                  a(href='http://blog.ed-era.com')
-                    img(src='../img/blog.jpg')
-            .col-sm-12.col-md-6.col-lg-6
-              .new-course-description
-                .features
-                  ul
-                    li
-                      a.tooltip(href='http://blog.ed-era.com/tag/osvitni-trendi/') #Освітні тренди
-                    li
-                      a.tooltip(href='http://blog.ed-era.com/tag/oghliadi/') #Огляди
-                    li
-                      a.tooltip(href='http://blog.ed-era.com/tag/edera/') #EdEra
-                p.description
-                  | Кожного тижня ми розповідаємо про освітні тенденції та актуальні новини зі сфери, оглядаємо міжнародні конференції, наукові статті та західні онлайн-платформи, ділимося власним досвідом нашої студії та напрацюваннями R&D команди. Приєднуйтеся!
+            // Онлайн-курс для вчителів початкової школи
+            +course(locals.courses.nus)
+            // Права людини в освітньому просторі
+            +course(locals.courses.hre)
+            // Історія України в історіях
+            +course(locals.courses.znohistory)
+            // Математика. Просто
+            +course(locals.courses.math_simple)
+            // ОСНОВИ ВЕБ-РОЗРОБКИ (HTML, CSS, JAVASCRIPT)
+            +course(locals.courses.osn_web)
+            // Соціальне підприємництво та конкурентоспроможність
+            +course(locals.courses.soc_ent)
+            //- Основи реформи охорони здоров’я з допомогою eHealth
+            //-+course(locals.courses.ehealth)
+            // Фактчек: довіряй-перевіряй
+            +course(locals.courses.factcheck)
+            //- Навчальні модулі для формування громадянської компетентності
+            //-+course(locals.courses.modules)
+            //-Ефективні комунікації для освітніх управлінців
+            //-+course(locals.courses.effective_communication)
+            // Угода про асоціацію Україна-ЄС
+            +course(locals.courses.eu_agreement)
+            //- Прозора енергетика
+            //-course(locals.courses.energy)
+            //- Управління школою. Практикум
+            //-+course(locals.courses.prosvit)
+            //- ДНК Лідерів
+            //-+course(locals.courses.leader_dna)
+            //- Інтерактивний журнал
+            //-+course(locals.courses.hrights_live)
+            //- Колошкільне дитинознавство
+            //-+course(locals.courses.royz)
+            //- Онлайн-курс «Автостопом по біології»
+            //- +course(locals.courses.biology_zno)
+            //- Домедична допомога
+            //- +course(locals.courses.med)
+            //- Людина та держава. Правила гри
+            //-+course(locals.courses.law)
+            //- Недискримінаційний підхід у навчанні
+            //-+course(locals.courses.non_discrimination)
+            //- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
+            //- +course(locals.courses.inclusion_teacher)
+            //- Лайфхаки з української мови
+            //- +course(locals.courses.ukr_lifehacks)
+            //- Як писати про економіку без помилок?
+            //- +course(locals.courses.economics)
+            //- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
+            //-+course(locals.courses.smartExport)
+
+        #wrapper-button.container
+          a.button(href="./courses/")
+            | До всіх курсів
+
+      //- БЛОГ
+      section#new-course
+        .container
+          h2 Освітній блог
+          .new-course-wrapper
+            .container
+              .row.cards-row
+                .col-sm-12.col-md-6.col-lg-6
+                  .new-course-cover
+                    figure.flash
+                      a(href='http://blog.ed-era.com')
+                        img(src='../img/blog.jpg')
+                .col-sm-12.col-md-6.col-lg-6
+                  .new-course-description
+                    .features
+                      ul
+                        li
+                          a.tooltip(href='http://blog.ed-era.com/tag/osvitni-trendi/') #Освітні тренди
+                        li
+                          a.tooltip(href='http://blog.ed-era.com/tag/oghliadi/') #Огляди
+                        li
+                          a.tooltip(href='http://blog.ed-era.com/tag/edera/') #EdEra
+                    p.description
+                      | Кожного тижня ми розповідаємо про освітні тенденції та актуальні новини зі сфери, оглядаємо міжнародні конференції, наукові статті та західні онлайн-платформи, ділимося власним досвідом нашої студії та напрацюваннями R&D команди. Приєднуйтеся!
+                    br
+                    a.button(href='http://blog.ed-era.com') Детальніше
+
+      //- СПЕЦПРОЕКТИ
+      #courses.section.four
+        .container
+          h2 Спецпроекти
+        .container
+          .row.cards-row
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                .figure
+                  img(src='/img/courses/hrights-live.jpg', alt='')
+                  a.button.goto_course(href='http://bit.ly/hrights-live') На сторінку проекту
+                h3.course_title 
+                  | Інтерактивний журнал
+                p
+                  | Практика ЄСПЛ динамічно розвивається, постійно змінюється й національне правозастосування та законодавство. Тому ми пропонуємо вам унікальний «живий» відео журнал.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                .figure
+                  img(src='/img/lzv-rights/lzv-rights.png', alt='')
+                  a.button.goto_course(href='./lzv-rights/') На сторінку проекту
+                h3.course_title 
+                  | Знай свої права!
+                p
+                  | Права людей, які живуть з ВІЛ, регулярно порушуються. А який інструмент боротьби за свої права найефективніший? Знання! Дискримінація, медичні, соціальні та сімейні права. Спілкування з поліцією та захист прав. Про це та більше — дізнайтеся у спецпроекті.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special New
+                .figure
+                  img(src='/img/royz/royz-project.jpg', alt='')
+                  a.button.goto_course(href='https://www.ed-era.com/children-ua/') На сторінку проекту
+                h3.course_title 
+                  | Колошкільне дитинознавство
+                p
+                  | Спецпроект з дитячим і сімейним психологом Світланою Ройз. Курс складається з 7 блоків — з іграми, практиками адаптації до школи (садочку), трансформації тривоги, агресії, секретами повернення концентрації уваги, «направлення» активності на перерві та «входження» в урок.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special ILID
+                .figure
+                  img(src='/img/modules-cover.jpg', alt='')
+                  a.button.goto_course(href='./modules/') На сторінку проекту
+                h3.course_title 
+                  | Навчальні модулі для формування громадянської компетентності
+                p
+                  | Пропонуємо 14 ідей для шкільних занять, які допоможуть сформувати практичні навички в учнів. Адаптовуйте навчальні матеріали на власний розсуд. Використовуйте їх у межах уроків чи позаурочних заходів. Експериментувати — просто!
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special UNICEF
+                .figure
+                  img(src='/img/unicef/unicef.jpg', alt='')
+                  a.button.goto_course(href='./world2030/') На сторінку проекту
+                h3.course_title Найбільший урок у світі
+                p
+                  | У 2015 році світові лідери затвердили 17 глобальних цілей, мета яких — до 2030 року викорінити бідність, подолати нерівність і несправедливість, зупинити зміну клімату. Щоб досягнути цих цілей, кожна дитина повинна знаходитися в центрі формування порядку денного.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special УКУ
+                .figure
+                  img(src='/img/zno-platform-cover.jpg', alt='')
+                  a.button.goto_course(href='http://zno.ed-era.com/') На сторінку проекту
+                h3.course_title ЗНО платформа
+                p
+                  | Безкоштовний сервіс для самостійної підготовки майбутніх абітурієнтів. Тести, підказки та авторські рішення кожного завдання. Просто спробуйте!
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special New
+                .figure
+                  img(src='/img/english2_cover.jpg', alt='')
+                  a.button.goto_course(href='https://english2.ed-era.com/') На сторінку проекту
+                h3.course_title Interactive English Grammar: Past Simple
+                p
+                  | Спецпроект з англійської мови на прикладі Past Simple. Короткі динамічні відео, які поєднують індуктивну та дедуктивну методики викладання; теоретичні матеріали для вчителів, приклади тестів для учнів; додаткові інформаційні ресурси та обговорення 24/7.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special Garage hub та USAID
+                .figure
+                  img(src='/img/making-cover.jpg', alt='')
+                  a.button.goto_course(href='./making/') На сторінку проекту
+                h3.course_title Вступ у мейкерство
+                p
+                  | Поєднавши ресурси освітнього проекту EdEra та публічної майстерні Гараж Хаб, ми створили онлайн-довідник, у якому можна знайти як теоретичні основи, так і практичні поради для реалізації свого першого технічного проекту.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special МОН та Освіторія
+                .figure
+                  img(src='/img/novaukr.jpg', alt='')
+                  a.button.goto_course(href='https://edera.gitbooks.io/glossary/') На сторінку проекту
+                h3.course_title Інтерактивний посібник-глосарій для вчителів початкових класів
+                p
+                  | Інтерактивний посібник з невеличкими теоретичними відео та навчальними матеріалами. Глосарій буде корисним вчителям початкових класів задля швидкого доступу до важливої методичної інформації.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special ПРООН в Україні
+                .figure
+                  img(src='/img/anticorr-cover.jpg', alt='')
+                  a.button.goto_course(href='./anticorr/') На сторінку проекту
+                h3.course_title Антикорупційний урок
+                p
+                  | Ми підготували антикорупційний урок, який можна провести у вашій школі. На цій сторінці ви знайдете необхідні матеріали: сценарій уроку, презентацію та відео, які допоможуть зробити цей урок яскравим та ефективним для учнів.
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special МОН
+                .figure
+                  img(src='/img/books/mon59/video/ukr59.jpg', alt='')
+                  a.button.goto_course(href='./mon59') На сторінку проекту
+                h3.course_title Оновлення програм для базової загальної середньої освіти
+                p
+                  | Представляємо вам оновлені навчальні програми для основної школи, які затверджено Наказом МОН після публічного обговорення на нашій платформі. Наступний етап – розробка відеорекомендацій, які будуть розміщені у вільному доступі. Оновлюємо школу разом!
+            .col-sm-6.col-md-4.col-lg-3
+              .mon-card
+                ins.special МОН
+                .figure
+                  img(src='/img/books/mon/mon14.jpg', alt='')
+                  a.button.goto_course(href='./mon.html') На сторінку проекту
+                h3.course_title
+                  | Оновлені програми для початкової школи, поради вчителям, додаткові навчальні матеріали
+                p
+                  | Перед вами – оновлені навчальні програми для початкової школи, затверджені Наказом Міністерства і науки України. Для полегшення впровадження програм EdEra підготувала поради для вчителів, методичні рекомендації та інші навчальні матеріали. Все – у вільному доступі. Продуктивного навчання!
+
+
+      //- ІНТЕРАКТИВНІ ПІДРУЧНИКИ
+      .row
+        .col-12
+          section#books.section.blog
+            .container
+              h2.section_title
+                span EdEra Books
+                small.section_subtitle Сервіс інтерактивної освітньої літератури
                 br
-                a.button(href='http://blog.ed-era.com') Детальніше
+                a.button.w(href='./books/', title='')
+                  strong Перейти до бібліотеки
 
-  //- СПЕЦПРОЕКТИ
-  #courses.section.four
-    .container
-      h2 Спецпроекти
-    .container
-      .row.cards-row
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            .figure
-              img(src='/img/courses/hrights-live.jpg', alt='')
-              a.button.goto_course(href='http://bit.ly/hrights-live') На сторінку проекту
-            h3.course_title 
-              | Інтерактивний журнал
-            p
-              | Практика ЄСПЛ динамічно розвивається, постійно змінюється й національне правозастосування та законодавство. Тому ми пропонуємо вам унікальний «живий» відео журнал.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            .figure
-              img(src='/img/lzv-rights/lzv-rights.png', alt='')
-              a.button.goto_course(href='./lzv-rights/') На сторінку проекту
-            h3.course_title 
-              | Знай свої права!
-            p
-              | Права людей, які живуть з ВІЛ, регулярно порушуються. А який інструмент боротьби за свої права найефективніший? Знання! Дискримінація, медичні, соціальні та сімейні права. Спілкування з поліцією та захист прав. Про це та більше — дізнайтеся у спецпроекті.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special New
-            .figure
-              img(src='/img/royz/royz-project.jpg', alt='')
-              a.button.goto_course(href='https://www.ed-era.com/children-ua/') На сторінку проекту
-            h3.course_title 
-              | Колошкільне дитинознавство
-            p
-              | Спецпроект з дитячим і сімейним психологом Світланою Ройз. Курс складається з 7 блоків — з іграми, практиками адаптації до школи (садочку), трансформації тривоги, агресії, секретами повернення концентрації уваги, «направлення» активності на перерві та «входження» в урок.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special ILID
-            .figure
-              img(src='/img/modules-cover.jpg', alt='')
-              a.button.goto_course(href='./modules/') На сторінку проекту
-            h3.course_title 
-              | Навчальні модулі для формування громадянської компетентності
-            p
-              | Пропонуємо 14 ідей для шкільних занять, які допоможуть сформувати практичні навички в учнів. Адаптовуйте навчальні матеріали на власний розсуд. Використовуйте їх у межах уроків чи позаурочних заходів. Експериментувати — просто!
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special UNICEF
-            .figure
-              img(src='/img/unicef/unicef.jpg', alt='')
-              a.button.goto_course(href='./world2030/') На сторінку проекту
-            h3.course_title Найбільший урок у світі
-            p
-              | У 2015 році світові лідери затвердили 17 глобальних цілей, мета яких — до 2030 року викорінити бідність, подолати нерівність і несправедливість, зупинити зміну клімату. Щоб досягнути цих цілей, кожна дитина повинна знаходитися в центрі формування порядку денного.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special УКУ
-            .figure
-              img(src='/img/zno-platform-cover.jpg', alt='')
-              a.button.goto_course(href='http://zno.ed-era.com/') На сторінку проекту
-            h3.course_title ЗНО платформа
-            p
-              | Безкоштовний сервіс для самостійної підготовки майбутніх абітурієнтів. Тести, підказки та авторські рішення кожного завдання. Просто спробуйте!
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special New
-            .figure
-              img(src='/img/english2_cover.jpg', alt='')
-              a.button.goto_course(href='https://english2.ed-era.com/') На сторінку проекту
-            h3.course_title Interactive English Grammar: Past Simple
-            p
-              | Спецпроект з англійської мови на прикладі Past Simple. Короткі динамічні відео, які поєднують індуктивну та дедуктивну методики викладання; теоретичні матеріали для вчителів, приклади тестів для учнів; додаткові інформаційні ресурси та обговорення 24/7.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special Garage hub та USAID
-            .figure
-              img(src='/img/making-cover.jpg', alt='')
-              a.button.goto_course(href='./making/') На сторінку проекту
-            h3.course_title Вступ у мейкерство
-            p
-              | Поєднавши ресурси освітнього проекту EdEra та публічної майстерні Гараж Хаб, ми створили онлайн-довідник, у якому можна знайти як теоретичні основи, так і практичні поради для реалізації свого першого технічного проекту.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special МОН та Освіторія
-            .figure
-              img(src='/img/novaukr.jpg', alt='')
-              a.button.goto_course(href='https://edera.gitbooks.io/glossary/') На сторінку проекту
-            h3.course_title Інтерактивний посібник-глосарій для вчителів початкових класів
-            p
-              | Інтерактивний посібник з невеличкими теоретичними відео та навчальними матеріалами. Глосарій буде корисним вчителям початкових класів задля швидкого доступу до важливої методичної інформації.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special ПРООН в Україні
-            .figure
-              img(src='/img/anticorr-cover.jpg', alt='')
-              a.button.goto_course(href='./anticorr/') На сторінку проекту
-            h3.course_title Антикорупційний урок
-            p
-              | Ми підготували антикорупційний урок, який можна провести у вашій школі. На цій сторінці ви знайдете необхідні матеріали: сценарій уроку, презентацію та відео, які допоможуть зробити цей урок яскравим та ефективним для учнів.
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special МОН
-            .figure
-              img(src='/img/books/mon59/video/ukr59.jpg', alt='')
-              a.button.goto_course(href='./mon59') На сторінку проекту
-            h3.course_title Оновлення програм для базової загальної середньої освіти
-            p
-              | Представляємо вам оновлені навчальні програми для основної школи, які затверджено Наказом МОН після публічного обговорення на нашій платформі. Наступний етап – розробка відеорекомендацій, які будуть розміщені у вільному доступі. Оновлюємо школу разом!
-        .col-sm-6.col-md-4.col-lg-3
-          .mon-card
-            ins.special МОН
-            .figure
-              img(src='/img/books/mon/mon14.jpg', alt='')
-              a.button.goto_course(href='./mon.html') На сторінку проекту
-            h3.course_title
-              | Оновлені програми для початкової школи, поради вчителям, додаткові навчальні матеріали
-            p
-              | Перед вами – оновлені навчальні програми для початкової школи, затверджені Наказом Міністерства і науки України. Для полегшення впровадження програм EdEra підготувала поради для вчителів, методичні рекомендації та інші навчальні матеріали. Все – у вільному доступі. Продуктивного навчання!
-
-
-  //- ІНТЕРАКТИВНІ ПІДРУЧНИКИ
-  .row
-    .col-12
-      section#books.section.blog
+      //- КЛАСИЧНА ОНЛАЙН-ОСВІТА
+      //- section.section#education
         .container
-          h2.section_title
-            span EdEra Books
-            small.section_subtitle Сервіс інтерактивної освітньої літератури
-            br
-            a.button.w(href='./books/', title='')
-              strong Перейти до бібліотеки
+        p.h2 Класична онлайн-освіта
+        .colwrap
+        .ed__header.courses.b-card--col
+        h3 Онлайн-курси
+        a.back(href='/courses/')
+        img(src='../img/courses-main.jpg')
+        //a.button(href='/courses/')
+        |До курсів
+        p.description.b-card__description
+        | Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
+        ul.benefits-list.b-card__list
+        li.benefits
+        i.fa.fa-film
+        | Інтерактивні лекції
+        li.benefits
+        i.fa.fa-line-chart
+        | Завдання та прогрес
+        li.benefits
+        i.fa.fa-reply-all
+        | Форум та зворотній зв’язок
+        li.benefits
+        i.fa.fa-clock-o
+        | Доступ 24/7
+        a.button(href='/courses/')
+        |Обрати курс
 
-  //- КЛАСИЧНА ОНЛАЙН-ОСВІТА
-  //- section.section#education
-    .container
-    p.h2 Класична онлайн-освіта
-    .colwrap
-    .ed__header.courses.b-card--col
-    h3 Онлайн-курси
-    a.back(href='/courses/')
-    img(src='../img/courses-main.jpg')
-    //a.button(href='/courses/')
-    |До курсів
-    p.description.b-card__description
-    | Безкоштовні онлайн-курси, розроблені досвідченими викладачами та експертами.
-    ul.benefits-list.b-card__list
-    li.benefits
-    i.fa.fa-film
-    | Інтерактивні лекції
-    li.benefits
-    i.fa.fa-line-chart
-    | Завдання та прогрес
-    li.benefits
-    i.fa.fa-reply-all
-    | Форум та зворотній зв’язок
-    li.benefits
-    i.fa.fa-clock-o
-    | Доступ 24/7
-    a.button(href='/courses/')
-    |Обрати курс
+        .ed__header.b-card--col
+        h3 Інтерактивні підручники
+        a.back(href='/books/')
+        img(src='../img/library-main.jpg')
+        //a.button(href='/books/')
+        |У бібліотеку
+        p.description.b-card__description
+        | Cоціальний проект інтерактивної освітньої літератури EdEra Books.
+        ul.benefits-list.b-card__list
+        li.benefits
+        i.fa.fa-bars
+        | Зручна навігація
+        li.benefits
+        i.fa.fa-pencil-square-o
+        | Вбудовані відео та тести
+        li.benefits
+        i.fa.fa-tablet
+        | Адаптивність та різні режими
+        li.benefits
+        i.fa.fa-comments
+        | Коментування кожної сторінки
+        a.button(href='/books/')
+        |У бібліотеку
 
-    .ed__header.b-card--col
-    h3 Інтерактивні підручники
-    a.back(href='/books/')
-    img(src='../img/library-main.jpg')
-    //a.button(href='/books/')
-    |У бібліотеку
-    p.description.b-card__description
-    | Cоціальний проект інтерактивної освітньої літератури EdEra Books.
-    ul.benefits-list.b-card__list
-    li.benefits
-    i.fa.fa-bars
-    | Зручна навігація
-    li.benefits
-    i.fa.fa-pencil-square-o
-    | Вбудовані відео та тести
-    li.benefits
-    i.fa.fa-tablet
-    | Адаптивність та різні режими
-    li.benefits
-    i.fa.fa-comments
-    | Коментування кожної сторінки
-    a.button(href='/books/')
-    |У бібліотеку
+      //- АНТИКОРУПЦІЙНИЙ УРОК
+      //- section.section.anticorr-project
+        .container
+        h2.section_title 
+        span Антикорупційний урок
+        small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
+        br
+        a.button.w(href="/anticorr/", title="") 
+        strong детальніше
 
-  //- АНТИКОРУПЦІЙНИЙ УРОК
-  //- section.section.anticorr-project
-    .container
-    h2.section_title 
-    span Антикорупційний урок
-    small.section_subtitle проект EdEra та Програма Розвитку ООН в Україні
-    br
-    a.button.w(href="/anticorr/", title="") 
-    strong детальніше
-
-  // ПАРТНЕРИ
-  .row
-    .col-12
       // ПАРТНЕРИ
-      #partners.section
-        p.h2 Наші партнери
-        .container
-          ul.partners_list
-            .row.mx-auto.cards-row
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.intel.com/education', target='_blank', title='Intel')
-                  img(src='img/partners/intel.png', alt='Intel')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
-                  img(src='img/partners/prosvit.png', alt='Про.Світ')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://mon.gov.ua/ua', target='_blank', title='МОН України')
-                  img(src='img/partners/mon.png', alt='МОН України')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://impacthub.odessa.ua/', target='_blank', title='Impact Hub Odess')
-                  img(src='img/partners/hub.png', alt='Impact Hub Odess')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://osvitoria.org/', target='_blank', title='Освіторія')
-                  img(src='img/partners/osvitoria.png', alt='Освіторія')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://voxukraine.org/uk/', target='_blank', title='VoxUkraine')
-                  img(src='img/partners/VoxUkraine.png', alt='VoxUkraine')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://studway.com.ua', target='_blank', title='Studway')
-                  img(src='img/partners/studway.png', alt='Studway')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://raccoongang.com/', target='_blank', title='Raccon Gang')
-                  img(src='img/partners/logo_raccon_gang.png', alt='Raccon Gang')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp Ukraine')
-                  img(src='img/partners/logo_EdCamp_Ukraine.png', alt='EdCamp Ukraine')
-              li.col-sm-3.col-md-3.col-lg-2.m-3
-                a(href='http://www.kse.org.ua/', target='_blank', title='KSE Kyiv')
-                  img(src='img/partners/logo_KSE.png', alt='KSE Kyiv')
+      .row
+        .col-12
+          // ПАРТНЕРИ
+          #partners.section
+            p.h2 Наші партнери
+            .container
+              ul.partners_list
+                .row.mx-auto.cards-row
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='http://www.intel.com/education', target='_blank', title='Intel')
+                      img(src='img/partners/intel.png', alt='Intel')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
+                      img(src='img/partners/prosvit.png', alt='Про.Світ')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='https://mon.gov.ua/ua', target='_blank', title='МОН України')
+                      img(src='img/partners/mon.png', alt='МОН України')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='https://impacthub.odessa.ua/', target='_blank', title='Impact Hub Odess')
+                      img(src='img/partners/hub.png', alt='Impact Hub Odess')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='http://osvitoria.org/', target='_blank', title='Освіторія')
+                      img(src='img/partners/osvitoria.png', alt='Освіторія')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='https://voxukraine.org/uk/', target='_blank', title='VoxUkraine')
+                      img(src='img/partners/VoxUkraine.png', alt='VoxUkraine')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='http://studway.com.ua', target='_blank', title='Studway')
+                      img(src='img/partners/studway.png', alt='Studway')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='https://raccoongang.com/', target='_blank', title='Raccon Gang')
+                      img(src='img/partners/logo_raccon_gang.png', alt='Raccon Gang')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp Ukraine')
+                      img(src='img/partners/logo_EdCamp_Ukraine.png', alt='EdCamp Ukraine')
+                  li.col-sm-3.col-md-3.col-lg-2.m-3
+                    a(href='http://www.kse.org.ua/', target='_blank', title='KSE Kyiv')
+                      img(src='img/partners/logo_KSE.png', alt='KSE Kyiv')
 
 
-include includes/footer.jade
-include includes/scripts.jade
+    include includes/footer.jade
+    include includes/scripts.jade

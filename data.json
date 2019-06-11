@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "budget_basics": {
+      "className": "",
+      "imgUrl": "/img/courses/budget-basics-1.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA-IRF+BP101+bp101/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Бюджетний процес. Основи",
+      "courseSubtitle": "",
+      "courseDesc": "Ми розробили цей проект, щоб кожен міг дізнатися про основи бюджетного процесу, формування проекту державного бюджету, прийняття закону та внесення змін до нього.",
+      "access": true,
+      "free": false
+    },
     "eu_agreement": {
       "className": "",
       "imgUrl": "/img/courses/eu-agreement_cover.jpg",

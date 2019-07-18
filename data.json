@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "nonviolence": {
+      "className": "",
+      "imgUrl": "/img/courses/nonviolence-cover.jpg",
+      "altText": "",
+      "href": "http://nonviolence.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Дім (не)безпеки",
+      "courseSubtitle": "",
+      "courseDesc": "Кожного року більше 1 000 000 людей в Україні страждають від різних форм насильства у своїх родинах. Цей освітній проект навчить помічати насильство, розрізняти його види, розуміти причини та наслідки та допомагати жертвам.",
+      "access": true,
+      "free": false
+    },
     "osn_web": {
       "className": "",
       "imgUrl": "/img/courses/osn_web_cover.jpg",

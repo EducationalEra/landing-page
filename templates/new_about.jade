@@ -7,6 +7,7 @@ html
 	body.hide-horizontal-scrollbar
 		include includes/gtm.jade
 		include includes/header.jade
+		link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
 		// ПЕРШИЙ ЕКРАН
 		.about.section.heading
 			.container
@@ -50,121 +51,166 @@ html
 				.col-12
 					.mymy
 						.row 
+							center
+								h2 Команда
+								br
+								h3 Засновники
+								br
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera27.jpg', border='0')
+									.info
+										h1.name Ілля Філіпов
+										h2.job-descr Керівник, співзасновник									
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Edera30.jpg', border='0')
 									.info
 										h1.name Артем Ільчук
-										h2.job COO, co-founder
-										p.job-descr Артем організовує процеси в команді. 
+										h2.job-descr Операційний директор, співзасновник
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/filipova.jpg', border='0')
 									.info
 										h1.name Оля Філіпова
-										h2.job CTO, co-founder
-										p.job-descr
-											| Ольга контролює технічне і програмне забезпечення та процеси, завдяки яким це забезпечення існує та розвивається.
-											| Наразі вона поєднує пристрасть до розробки та любов до освіти в один продукт —  гнучку розумну платформу для навчання онлайн.
+										h2.job-descr Технічна директорка, співзасновниця
+			
+			center
+				br
+				h3 Адміністративний відділ 
+				br
+			.row.mx-5.px-5
+				.col-12
+					.mymy
+						.row 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='../img/team/new_photos/Diana.png', border='0')
-									.info
-										h1.name Діана Даюб
-										h2.job Partnerships manager
-										p.job-descr
-											| Діана займається розвитком українських та міжнародних партнерств. До EdEra працювала в Конгресі США. Закохана в людей і п’є фільтр-каву в хіпстерських кав'ярнях.
-							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
-								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera21.jpg', border='0')
 									.info
 										h1.name Сергій Плашенко
-										h2.job Head of finance, project manager
-										p.job-descr Сергій займається фінансами. 
+										p.job-descr Фінансовий менеджер 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera32.jpg', border='0')
 									.info
 										h1.name Інна Дзиндра
-										h2.job Project manager, Lawyer
-										p.job-descr
-											| Інна – менеджериня проектів. Менеджить усе, що потрапляє під руку. Любить людей, які горять тим, що роблять, а також подорожі і пригоди.
-											| У вільний час Інна фрілансить юристкою в EdEra і разом з Ігорем творить справедливість.
+										p.job-descr Проектна менеджерка, юристка 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Ihor.png', border='0')
 									.info
 										h1.name Ігор Конопка
-										h2.job Project manager, Lawyer
-										p.job-descr
-											| Ігор займається проектами у сфері громадянської та професійної освіти. Він вірить в людей, права людини та освіту як рушії змін. А ще — в право, тому разом з Інною опікується вирішенням юридичних питань EdEra.
+										p.job-descr Проектний менеджер, юрист
+				center
+					br
+					h3 Відділ партнерств
+					br
+			.row.mx-5.px-5
+				.col-12
+					.mymy
+						.row 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='../img/team/new_photos/Ira.png', border='0')
+									img.img(src='../img/team/new_photos/Diana.png', border='0')
 									.info
-										h1.name Іра Кротова
-										h2.job Assistant to CEO
-										p.job-descr
-											| Іра організовує час Іллі і допомагає вирішити операційні завдання. В минулому — засновниця проекту Локус, стажерка в Делойті та волонтерка.
+										h1.name Діана Даюб
+										p.job-descr Менеджерка з партнерств
+
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Vlad.png', border='0')
 									.info
 										h1.name Влад Єленчін
-										h2.job Project manager
-										p.job-descr
-											| Влад — креативний проектний менеджер, який горить освітою та обожнює людей. Особливо тих, які можуть прочитати його прізвище правильно з першого разу.
+										p.job-descr Менеджер з партнерств
+			center
+				br
+				h3 Менеджери проектів
+				br
+			.row.mx-5.px-5
+				.col-12
+					.mymy
+						.row 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='../img/team/new_photos/Leonid.png', alt='P1028732', border='0')
+									img.img(src='../img/team/new_photos/Edera32.jpg', border='0')
 									.info
-										h1.name Леонід Вербов
-										h2.job Project manager
-										p.job-descr
-											| Льоня веде та допомагає з організацією різних проектів: від економіки до математики. Випускник КПІ, баскетболіст, обожнює технічні науки та комп'ютерні ігри.
+										h1.name Інна Дзиндра
+										p.job-descr Проектна менеджерка, юристка 
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Ihor.png', border='0')
+									.info
+										h1.name Ігор Конопка
+										p.job-descr Проектний менеджер, юрист
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Edera23.jpg', border='0')
+									.info
+										h1.name Настя Паращук
+										p.job-descr Проектна менеджерка
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Yulia.png', border='0')
 									.info
 										h1.name Юля Лисенко
-										h2.job PM assistant \ Editor
-										p.job-descr
-											| Юля допомагає проектним менеджерам планувати і втілювати проекти в життя. Любить, коли все йде за планом.
-											| Співзасновниця онлайн-медіа Ачьонє?, більд-редакторка і журналістка.
+										p.job-descr Проектна менеджерка, редакторка
+
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Ira.png', border='0')
 									.info
-										h1.name Юля Цукор
-										h2.job Head of editors, motion designer
-										p.job-descr
-											| Разом із відділом редакторів Юля робить так, щоб все, що ви у нас дивитеся/читаєте/слухаєте, було простим і зрозумілим. А ще займається моушн-дизайном і вільно володіє угорською.
-							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
-								.member-card
-									img.img(src='../img/team/new_photos/Maria.png', border='0')
-									.info
-										h1.name Марія Горбач
-										h2.job Editor
-										p.job-descr
-											| Марійка вірить у силу освіти та культури й закохана в українську мову. Тому в EdEra вона перетворює складні й незрозумілі тексти на легкі й цікаві.
-											| Захоплюється художньою літературою та подорожами.
+										h1.name Іра Кротова
+										p.job-descr Проектна менеджерка
+			center
+				br
+				h3 Відділ редакторів
+				br
+			.row.mx-5.px-5
+				.col-12
+					.mymy
+						.row 
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Valeria.png', border='0')
 									.info
 										h1.name Валерія Залєвська
-										h2.job Editor
-										p.job-descr
-											| Редагує суфлери до наших відео і супровідні до них матеріали. Робить тексти зрозумілими і прибирає зайве, щоб зекономити ваш час.
-											| Співзасновниця онлайн-медіа Ачьонє?, журналістка.
+										p.job-descr Голова відділу редакторів
+							
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Maria.png', border='0')
+									.info
+										h1.name Марія Горбач
+										p.job-descr Редакторка
+
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Edera18.jpg', border='0')
+									.info
+										h1.name Юля Цукор
+										p.job-descr Моушн-дизайнерка, редакторка
+							
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Edera17.jpg', border='0')
+									.info
+										h1.name Ярослава Бухта
+										p.job-descr Методологиня
+							
+							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+								.member-card
+									img.img(src='../img/team/new_photos/Yulia.png', border='0')
+									.info
+										h1.name Юля Лисенко
+										p.job-descr Проектна менеджерка, редакторка
+
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Sasha.png', border='0')
 									.info
 										h1.name Саша Сірик
-										h2.job lead designer
 										p.job-descr
-											| Вважає, що дизайн може бути веселим. Любить меми, своїх дизайнерок та відповідає за гарний настрій команди.
+										
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Maya.png', border='0')
@@ -175,12 +221,10 @@ html
 											| Малює ілюстрації і не тільки. Обожнює мультфільми, ігри, комікси та вірить у те, що в Україні можна все це розвинути.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera20.jpg', border='0')
 									.info
 										h1.name Света Нгуєн
-										h2.job Designer
 										p.job-descr
-											| Відповідає за візуальну складову проектів. Вірить в те, що в хорошому дизайні мають бути три складові: етична, естетична та практична.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Nick.png', border='0')
@@ -199,7 +243,7 @@ html
 											| Вася дуже цінує системність та ідеї. Любить генерувати їх сам, підтримувати або критикувати в інших. Тому відповідає за те, щоб в основі наших продуктів були сильні ідеї, а їх прояв — системним.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera00.jpg', border='0')
 									.info
 										h1.name Володя Томащук
 										h2.job Motion designer
@@ -207,18 +251,17 @@ html
 											| Виконую багатоманітні таски, пов’язані із моушн-дизайном. Назва моєї посади - Motion designer.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera26.jpg', border='0')
 									.info
 										h1.name Макс Герасименко
-										h2.job Cameraman
-										p.job-descr Та, я точно продюсер ;)
+										p.job-descr
+
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera21.jpg', border='0')
 									.info
 										h1.name Паша Примаченко
-										h2.job Motion designer
-										p.job-descr Паша робить відоси :)
+										p.job-descr
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
 									img.img(src='../img/team/new_photos/Vanya.png', border='0')
@@ -242,7 +285,7 @@ html
 										p.job-descr
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='../img/team/mokhniuk.jpg', border='0')
+									img.img(src='../img/team/new_photos/Edera22.jpg', border='0')
 									.info
 										h1.name Олег Мохнюк
 										h2.job UI Engineer
@@ -257,7 +300,7 @@ html
 											| Розробник веб-додатків. У вільний час займається громадською діяльністю та обожнює показувати карточні фокуси.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera16.jpg', border='0')
 									.info
 										h1.name Таня Теслюченко
 										h2.job Head of communications
@@ -265,7 +308,7 @@ html
 											| Комунікує від EdEra та про EdEra. Стратегує, пише, лайкає, репостить та коментує. Вірить в #ОсвітнійРейв та силу стратегічних комунікацій.
 							.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
 								.member-card
-									img.img(src='https://bit.ly/2FQPExn', border='0')
+									img.img(src='../img/team/new_photos/Edera24.jpg', border='0')
 									.info
 										h1.name Настя Тимофеєва
 										h2.job Social Media & PR Manager

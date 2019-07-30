@@ -1598,7 +1598,7 @@ p.section_news {
 		margin: 0 auto;
 
 		p {
-			max-width: 65vw;
+			max-width: 64vw;
 		}
 
 		ul li {
@@ -1609,7 +1609,7 @@ p.section_news {
 	article {
 		border-bottom: 1px solid #eee;
 		padding-bottom: 50px;
-
+		max-width: 100vw!important;
 		&:last-child {
 			border-bottom: 0;
 		}

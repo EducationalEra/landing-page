@@ -1741,7 +1741,7 @@ $font-size: 25px;
     overflow: hidden;
     position: relative;
     color: $basic-light-color; 
-    border: 2px solid $basic-light-color; 
+    border: 2px solid $basic-light-color!important; 
     
     i {
       position: relative;
@@ -1786,7 +1786,7 @@ $font-size: 25px;
     }
     
     &:hover {
-      color: $basic-dark-color;
+      color: $basic-dark-color!important;
       
       &:after {
         top: 5%;

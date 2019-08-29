@@ -6,7 +6,7 @@
 
 #page_footer {
   width: 100vw;
-  background-color: #323232;
+  background-color: #212121;
   color: #fff;
   padding: 50px 0;
 
@@ -122,3 +122,137 @@
     display: none !important;
   }
 }
+
+
+
+// Social Buttons Styles
+
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$border-radius: 50%;
+$font-size: 25px;
+
+.effect {
+  width: 100%;
+  background-color: $basic-dark-color;
+  
+  &:nth-child(2n+1) {
+    background-color: $basic-dark-color;
+  }
+  
+  &:nth-child(2n) {
+    
+     a {
+      color: $basic-light-color;
+      border-color: $basic-light-color;
+    }
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.effect {
+  display: flex;
+  a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    color: $basic-light-color; 
+    border: 2px solid $basic-light-color!important; 
+    
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+    
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.effect.varrius {
+  
+  a {
+    transition: all 0.2s linear 0s;
+    
+    &:after {
+      content: "";
+      display: block;
+      width: 90%;
+      height: 90%;
+      top: -110%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      background-color: $basic-light-color;
+      border-radius: $border-radius;
+    }
+    
+    &:hover {
+      color: $basic-dark-color!important;
+      
+      &:after {
+        top: 5%;
+        transition: all 0.2s linear 0s;
+      }
+    }
+  }
+}
+
+.leftimg {
+  width: 94px;
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+
+#page_footer a {
+  color: #EFA72D;
+  text-decoration: none!important;
+}
+#page_footer li {
+  margin-bottom: 0.75em;
+}
+#page_footer a i {
+  color: white!important;
+}
+
+#page_footer a:hover i {
+  color: #212121!important;
+}
+#page_footer {
+  font-size:14px;
+}
+.effect {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.footer {
+  background-color: #212121;
+}
+// END of Social Buttons Styles

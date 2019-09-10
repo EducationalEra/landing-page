@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "verified": {
+      "className": "",
+      "imgUrl": "/img/courses/verified.jpg",
+      "altText": "",
+      "href": "https://verified.ed-era.com/ua",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Very Verified: онлайн-курс з медіаграмотності",
+      "courseSubtitle": "",
+      "courseDesc": "Зроби медіаграмотність стилем життя! Онлайн-курс пояснює, як орієнтуватися в інформації довкола та як розпізнавати дезінформацію та пропаганду. Курс доступний українською та англійською мовами.",
+      "access": true,
+      "free": false
+    },
     "nonviolence": {
       "className": "",
       "imgUrl": "/img/courses/nonviolence-cover.jpg",

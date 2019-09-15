@@ -62,9 +62,6 @@ gulp.task('copy', ['sass', 'templates'], function () {
   gulp.src("public/courses.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/courses"));
-  gulp.src("public/test_vybir_profesii_zhyttia.html")
-      .pipe(rename("index.html"))
-      .pipe(gulp.dest("build/test_vybir_profesii_zhyttia"));
   gulp.src("public/index.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build"));

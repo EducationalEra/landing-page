@@ -2,18 +2,19 @@ include mixins.jade
 include includes/head.jade
 doctype html
 html
-    +head
-    script(src='https://unpkg.com/vue')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
-    link(rel='stylesheet', href='http://blog.ed-era.com/assets/css/less_parts/mixin.less', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
-    link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/font-awesome.min.css?v=442b734af3')
-    link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/hl-styles/atom-one-dark.css?v=442b734af3')
-    link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/screen.css?v=442b734af3')
-    link(href='https://getbootstrap.com/docs/4.0/scss/_custom-forms.scss')
-    link(rel='stylesheet', href='./public/css/radiobutton.css', type='text/css')
-    link(rel='stylesheet', href='./public/css/main.css', type='text/css')
-    link(rel='stylesheet', href='./public/css/animate.css', type='text/css')
+    head
+        +head
+        script(src='https://unpkg.com/vue')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+        link(rel='stylesheet', href='http://blog.ed-era.com/assets/css/less_parts/mixin.less', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/font-awesome.min.css?v=442b734af3')
+        link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/hl-styles/atom-one-dark.css?v=442b734af3')
+        link(rel='stylesheet', type='text/css', href='http://blog.ed-era.com/assets/css/screen.css?v=442b734af3')
+        link(href='https://getbootstrap.com/docs/4.0/scss/_custom-forms.scss')
+        link(rel='stylesheet', href='./public/css/radiobutton.css', type='text/css')
+        link(rel='stylesheet', href='./public/css/main.css', type='text/css')
+        link(rel='stylesheet', href='./public/css/animate.css', type='text/css')
 
     body.hide-horizontal-scrollbar
         include includes/gtm.jade

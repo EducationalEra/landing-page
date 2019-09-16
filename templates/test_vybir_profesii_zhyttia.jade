@@ -37,53 +37,6 @@ html
                                 div(style='text-align: center')
                                     button.button(v-on:click='loadQuizData')
                                         | Пройти ще раз
-                        link(href='/css/footer.css', rel='stylesheet')
-                        .row.footer
-                        .col-12
-                            #page_footer
-                            .mx-4
-                                .row
-                                .col-lg-1.col-md-0.col-sm-0
-                                .col-lg-3.col-md-3.col-sm-10
-                                    img.footer_logo.leftimg(src='/img/edera_logo_footer.png', alt='EdEra')
-                                    p
-                                    | EdEra — студія онлайн-освіти. Ми робимо онлайн-освіту в Україні якісною та доступною. Наша команда створює онлайн-курси, спецпроекти, інтерактивні підручники та освітні блоги.
-                                    p
-                                    | З питань реєстрації на сайті та курсу для вчителів початкової школи: 
-                                    a(href='mailto:info@ed-era.com', target='_blank') info@ed-era.com
-                                .col-lg-3.col-md-3.col-sm-10
-                                    p
-                                    | Щодо проекту, інших курсів та партнерства: 
-                                    a(href='mailto:connect@ed-era.com', target='_blank') connect@ed-era.com
-                                    p
-                                    | Нас можна знайти за адресою: 
-                                    a(href='https://goo.gl/maps/NLmeE3XE2Pp', target='_blank') м. Київ, вул. Шота Руставелі 34
-                                    p
-                                    | Ми працюємо 5 робочих днів з 10:00 до 18:00. Завітати до нас можна в будь-який зручний для вас час, попередивши про свій візит телефоном.
-                                .col-lg-3.col-md-3.col-sm-10
-                                    p Слідкуйте за новинами проекту та приєднуйтеся до наших спільнот:
-                                    .effect.varrius
-                                    .buttons
-                                        a.fb(href='https://www.facebook.com/EdEraUa/', title='Слідкуйте за нами на Facebook!', target='_blank')
-                                        i.fa.fa-facebook(aria-hidden='true')
-                                        a.tw(href='https://twitter.com/edera_ua', title='Слідкуйте за нами в Twitter!', target='_blank')
-                                        i.fa.fa-twitter(aria-hidden='true')
-                                        a.insta(href='https://www.instagram.com/edera_ua/', title='Слідкуйте за нами в Instagram!', target='_blank')
-                                        i.fa.fa-instagram(aria-hidden='true')
-                                        a.youtube(href='https://www.youtube.com/EderaEducation', title='Слідкуйте за нами на Youtube!', target='_blank')
-                                        i.fa.fa-youtube(aria-hidden='true')
-            script(src='/js/vendor/jquery.js')
-            script(src='/js/vendor/jquery.magnific-popup.min.js')
-            script(src='/js/vendor/jquery.cookie.js')
-            script(src='/js/vendor/likely.js')
-            script(src='/js/main.js')
-            script.
-            var $page = $('html, body');
-            $('#question a').click(function() {
-            $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-            }, 400);
-            return false;
-            });
+            include includes/footer.jade
+		    include includes/scripts.jade
             script(src='/js/test_vybir_profesii_zhyttia/app.js')
-</html>

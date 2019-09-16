@@ -45,11 +45,11 @@ html
                                 .col-xs-10.col-sm-10.col-md-8.col-lg-8
                                     h1(style='padding-top:35px')
                                         {{professionsDesc[profession].name}}
-                                p.quiz-description.margin
-                                    {{professionsDesc[profession].desc}}
-                                div(style='text-align: center')
-                                    button.button(v-on:click='loadQuizData')
-                                        | Пройти ще раз
+                                    p.quiz-description.margin
+                                        {{professionsDesc[profession].desc}}
+                                    div(style='text-align: center')
+                                        button.button(v-on:click='loadQuizData')
+                                            | Пройти ще раз
         include includes/footer.jade
         include includes/scripts.jade
         script(src='/js/test_vybir_profesii_zhyttia/app.js')

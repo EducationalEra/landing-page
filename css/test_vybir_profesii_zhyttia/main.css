@@ -8,6 +8,8 @@
     -moz-border-radius: 4px;
     border-radius: 4px;
     background-color: hsla(0, 0%, 100%, 0.966);
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 .main-block-wrap {
@@ -58,20 +60,20 @@ h1, .h1 {
     line-height: initial;
 }
 
-.button{
-    margin: 5px;
-    border: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 4px;
-    letter-spacing: .03em;
-    color: white;
-    font-weight: bold;
-    background-color:#EFA72D;
-    box-sizing: border-box;
-    line-height: initial;
-    padding: 0 18px;
-    transition: all 0.23s ease-in-out 0s;
+.button, .button:hover{
+    margin: 5px!important;
+    border: none!important;
+    -webkit-border-radius: 3px!important;
+    -moz-border-radius: 3px!important;
+    border-radius: 4px!important;
+    letter-spacing: .03em!important;
+    color: white!important;
+    font-weight: bold!important;
+    background-color:#EFA72D!important;
+    box-sizing: border-box!important;
+    line-height: initial!important;
+    padding: 0 18px!important;
+    transition: all 0.23s ease-in-out 0s!important;
 
 }
 
@@ -82,29 +84,29 @@ h1, .h1 {
     opacity: 0.8;
 }
 
-.disabled-button {
-    font-weight: bold;
-    margin-right: 5px;
-    border: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    letter-spacing: .03em;
-    color: #fff;
-    background-color: #aaa;
-    box-sizing: border-box;
-    height: 32px;
-    line-height: initial;
-    padding: 0 18px;
+.disabled-button, .button:hover {
+    font-weight: bold!important;
+    margin-right: 5px!important;
+    border: none!important;
+    -webkit-border-radius: 3px!important;
+    -moz-border-radius: 3px!important;
+    border-radius: 3px!important;
+    letter-spacing: .03em!important;
+    color: #fff!important;
+    background-color: #aaa!important;
+    box-sizing: border-box!important;
+    height: 32px!important;
+    line-height: initial!important;
+    padding: 0 18px!important;
     /* display: inline-block; */
-    transition: all 0.23s ease-in-out 0s;
+    transition: all 0.23s ease-in-out 0s!important;
 }
 
 @media (min-device-width: 0px) {
     h1, h2 {
-        font-weight: 600;
-        font-size: 72px;
-        line-height: initial;
+        font-weight: 600!important;
+        font-size: 72px!important;
+        line-height: initial!important;
       }
 
     .quiz-description{
@@ -113,10 +115,10 @@ h1, .h1 {
       line-height: initial;
     }
 
-    .button, .disabled-button {
-        height: 72px;
-        font-size: 48px;
-        line-height: initial;
+    .button, .disabled-button, .button:hover {
+        height: 72px!important;
+        font-size: 48px!important;
+        line-height: initial!important;
     }
 
     .questions-counter, label {
@@ -137,16 +139,16 @@ h1, .h1 {
         line-height: initial;
     }
 
-    .button, .disabled-button {
-        height: 36px;
-        font-size: 18px;
-        line-height: initial;
+    .button, .disabled-button, .button:hover {
+        height: 36px!important;
+        font-size: 18px!important;
+        line-height: initial!important;
     }
 
     h1, h2 {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: initial;
+        font-weight: 600!important;
+        font-size: 32px!important;
+        line-height: initial!important;
     }
 
     .questions-counter {

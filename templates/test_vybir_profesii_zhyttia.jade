@@ -11,32 +11,32 @@ html
             div.col-xs-12.col-sm-12.col-md-6.col-lg-6
                 div.main-block.clearfix
                     div(v-if='introFlag')
-                        | div.row
-                        .col-xs-12.col-sm-12.col-md-12.col-lg-12
-                            h1(style='padding-top:35px') {{intro.title}}
-                        |                         div.row
-                        .col-xs-0.col-sm-0  
-                        .col-xs-12.col-sm-12
-                            .thumbnail.quiz-description.margin
-                            img(src='/img/test_vybir_profesii_zhyttia/0.png')
+                        div.row
+                            .col-xs-12.col-sm-12.col-md-12.col-lg-12
+                                h1(style='padding-top:35px') {{intro.title}}
+                        div.row
+                            .col-xs-0.col-sm-0  
+                            .col-xs-12.col-sm-12
+                                .thumbnail.quiz-description.margin
+                                    img(src='/img/test_vybir_profesii_zhyttia/0.png')
                         span(v-html='intro.description')
                         div(style='text-align: center;')
                             button.button(@click='loadQuizData', name='start')
-                            | {{intro.startButton}}
-                        div(v-if='quizFlag')
+                                {{intro.startButton}}
+                    div(v-if='quizFlag')
                         question(:answers='answers[currentQuestion]', :question='quiz[currentQuestion]', :quiz-length='quizLength', :last-question='lastQuestion', :next-question='nextQuestion', v-on:user-answer='handleAnswer', v-on:end-quiz='endQuiz', :current-question='currentQuestion')
-                        div(v-if='resultFlag')
+                    div(v-if='resultFlag')
                         div
                             .row
-                            .col-xs-1.col-sm-1.col-md-2.col-lg-2  
-                            .col-xs-10.col-sm-10.col-md-8.col-lg-8
-                                h1(style='padding-top:35px')
-                                | {{professionsDesc[profession].name}}
-                            p.quiz-description.margin
-                            | {{professionsDesc[profession].desc}}
-                            div(style='text-align: center')
-                            button.button(v-on:click='loadQuizData')
-                                | Пройти ще раз
+                                .col-xs-1.col-sm-1.col-md-2.col-lg-2  
+                                .col-xs-10.col-sm-10.col-md-8.col-lg-8
+                                    h1(style='padding-top:35px')
+                                        {{professionsDesc[profession].name}}
+                                p.quiz-description.margin
+                                    {{professionsDesc[profession].desc}}
+                                div(style='text-align: center')
+                                    button.button(v-on:click='loadQuizData')
+                                        | Пройти ще раз
                         link(href='/css/footer.css', rel='stylesheet')
                         .row.footer
                         .col-12
@@ -72,18 +72,18 @@ html
                                         i.fa.fa-instagram(aria-hidden='true')
                                         a.youtube(href='https://www.youtube.com/EderaEducation', title='Слідкуйте за нами на Youtube!', target='_blank')
                                         i.fa.fa-youtube(aria-hidden='true')
-                        script(src='/js/vendor/jquery.js')
-                        script(src='/js/vendor/jquery.magnific-popup.min.js')
-                        script(src='/js/vendor/jquery.cookie.js')
-                        script(src='/js/vendor/likely.js')
-                        script(src='/js/main.js')
-                        script.
-                        var $page = $('html, body');
-                        $('#question a').click(function() {
-                        $page.animate({
-                        scrollTop: $($.attr(this, 'href')).offset().top
-                        }, 400);
-                        return false;
-                        });
-                        script(src='/js/test_vybir_profesii_zhyttia/app.js')
+            script(src='/js/vendor/jquery.js')
+            script(src='/js/vendor/jquery.magnific-popup.min.js')
+            script(src='/js/vendor/jquery.cookie.js')
+            script(src='/js/vendor/likely.js')
+            script(src='/js/main.js')
+            script.
+            var $page = $('html, body');
+            $('#question a').click(function() {
+            $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+            }, 400);
+            return false;
+            });
+            script(src='/js/test_vybir_profesii_zhyttia/app.js')
 </html>

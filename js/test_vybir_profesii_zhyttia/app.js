@@ -190,7 +190,7 @@ var app = new Vue({
 		resultFlag = false;
 	},
 	handleResults() {
-		this.profession = Math.max(...this.userAnswers);
+		this.profession = this.userAnswers.indexOf(Math.max(...this.userAnswers));
 	},
 	endQuiz(){
 		this.handleResults();

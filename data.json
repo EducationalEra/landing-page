@@ -13,7 +13,7 @@
       "access": true,
       "free": false
     },
-    "academic-integrity": {
+    "academic_integrity": {
       "className": "",
       "imgUrl": "/img/courses/ai.jpg",
       "altText": "",

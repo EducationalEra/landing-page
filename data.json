@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "academic-integrity": {
+      "className": "",
+      "imgUrl": "/img/courses/ai.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:AmericanCouncils+AcIn101+AcIn2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Академічна доброчесність",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі ми розглянемо поняття «академічна доброчесність» та зосередимо увагу на тому, як вчитель чи вчителька 8-11 класів може сприяти формуванню культури академічної доброчесності в учнів.",
+      "access": true,
+      "free": false
+    },
     "verified": {
       "className": "",
       "imgUrl": "/img/courses/verified.jpg",

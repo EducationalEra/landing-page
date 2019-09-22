@@ -36,4 +36,5 @@
 /web/ https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about
 /dvs-pv/ https://courses.ed-era.com/courses/course-v1:MINJUST_EDERA_OSCE+DVSPV101+2019/about
 /academic_integrity/ https://courses.ed-era.com/courses/course-v1:AmericanCouncils+AcIn101+AcIn2019/about
+/vykonavche-provadzhennia-pk/ https://courses.ed-era.com/courses/course-v1:MINJUST_EDERA_OSCE+dvs2+2019_T11/about
 # EOF - do not leave any line (even empty) after this line!!!

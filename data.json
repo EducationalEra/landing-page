@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "dvs2": {
+      "className": "",
+      "imgUrl": "/img/courses/dvs2.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:MINJUST_EDERA_OSCE+dvs2+2019_T11/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Виконавче провадження: поглиблений курс",
+      "courseSubtitle": "",
+      "courseDesc": "Цей курс ознайомить вас із особливостями процесуальних аспектів виконавчого провадження і пояснить, як здійснити звернення стягнення на майно боржника та застосувати заходи примусового виконання рішень.",
+      "access": true,
+      "free": false
+    },
     "academic_integrity": {
       "className": "",
       "imgUrl": "/img/courses/ai.jpg",

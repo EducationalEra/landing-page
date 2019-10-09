@@ -3,6 +3,14 @@ mixin head(title, description, image, url)
    - description = description || 'EdEra — студія онлайн-освіти. Ми робимо онлайн-освіту в Україні якісною та доступною. Наша команда створює онлайн-курси, спецпроекти, інтерактивні підручники та освітні блоги.'
    - image = image || 'https://www.ed-era.com/img/welcome_bg_laptop.jpg'
    - url = url || 'https://www.ed-era.com/'
+   // Global site tag (gtag.js) - Google Analytics
+   script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-149531111-1')
+   script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-149531111-1');
+
    meta(charset='utf-8')
    meta(http-equiv='X-UA-Compatible', content='IE=edge')
    title #{title}

@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "dvs": {
+      "className": "",
+      "imgUrl": "/img/courses/dvs.jpg",
+      "altText": "",
+      "href": "https://ed-era.com/dvs-pv",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи виконавчого провадження",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі ви опануєте основи виконавчого провадження: базові поняття про систему примусового виконання рішень, правовий статус, права та обов’язки органів та осіб, які здійснюють виконання рішень, процедуру здійснення виконавчого провадження.",
+      "access": true,
+      "free": false
+    },
     "dvs2": {
       "className": "",
       "imgUrl": "/img/courses/dvs2.jpg",

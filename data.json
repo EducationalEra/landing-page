@@ -13,6 +13,30 @@
       "access": true,
       "free": false
     },
+    "ndi": {
+      "className": "",
+      "imgUrl": "/img/courses/ndi.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:NACS_NDI_EDERA+PC101+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Публічні консультації",
+      "courseSubtitle": "",
+      "courseDesc": "У цьому курсі ви дізнаєтесь ключову інформацію про зміст, цілі та процес проведення публічних консультацій. Ви також отримаєте практичні поради та рекомендації щодо всіх етапів проведення —  від визначення цілей консультації до звітування та оприлюднення результатів!",
+      "access": true,
+      "free": false
+    },
+    "dvs": {
+      "className": "",
+      "imgUrl": "/img/courses/dvs.jpg",
+      "altText": "",
+      "href": "https://ed-era.com/dvs-pv",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи виконавчого провадження",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі ви опануєте основи виконавчого провадження: базові поняття про систему примусового виконання рішень, правовий статус, права та обов’язки органів та осіб, які здійснюють виконання рішень, процедуру здійснення виконавчого провадження.",
+      "access": true,
+      "free": false
+    },
     "dvs2": {
       "className": "",
       "imgUrl": "/img/courses/dvs2.jpg",

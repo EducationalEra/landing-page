@@ -10,7 +10,7 @@ var gulpSequence = require('gulp-sequence');
 var _ = require('underscore');
 var browserSync = require('browser-sync').create();
 
-var books = ["ukrainian", "physics", "maths", "biology", "english", "geography", "history", "law", "english2", "anticorruption-lesson"];
+var books = ["ukrainian", "physics", "maths", "biology", "english", "geography", "history", "law", "english2", "anticorruption-lesson", "vaccination"];
 
 var lessons = ["1", "2"];
 
@@ -71,6 +71,9 @@ gulp.task('copy', ['sass', 'templates'], function () {
   gulp.src("public/test_vybir_profesii_zhyttia.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/test_vybir_profesii_zhyttia"));
+  gulp.src("public/vaccination.html")
+      .pipe(rename("index.html"))
+      .pipe(gulp.dest("build/vaccination"));
   gulp.src("public/zno.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/zno"));

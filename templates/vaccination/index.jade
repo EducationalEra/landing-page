@@ -1,0 +1,138 @@
+include ../includes/head-vaccination.jade
+doctype html
+html
+	+head
+	body
+		include ../includes/gtm.jade
+		include ../includes/header.jade
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.vaccination.section.heading
+			.container
+				h1
+					span.exo Урок «Віруси. Бактерії. Мікроби. Захист від хвороб» 
+					small для вчителів початкових класів 
+				h2 «Як говорити з дітьми про вакцинацію?»
+
+		section.project_features
+			.container
+				.lead_block
+					p.lead
+						| Шановні вчителі початкових класів та усі охочі провести урок про вакцинацію з дітьми! 
+						br
+					p.lead
+						| Проєкт EdEra за підтримки USAID та UNICEF у партнерстві з ГО «ВакциНація» та Practicum підготували урок «Віруси. Бактерії. Мікроби. Захист від хвороб», який можна провести у вашій школі.
+						br
+					p.lead
+						| На цій сторінці ви знайдете сценарій, відеоматеріали, а також усе необхідне для глибшого вивчення теми захисту від хвороб. Приєднуйтеся до ініціативи та приємного навчання!
+
+				article
+					ul
+						li
+							| Сценарії та рекомендації педагогу
+						li
+							| Презентація
+						li
+							| Відеоматеріали
+						li
+							| Додатки для друку
+
+		#courses.section.four
+			.container
+				h2 МАТЕРІАЛИ
+				.container
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson1.jpg', alt='')
+							a.button.goto_course(href='https://drive.google.com/open?id=1ihFocwPK6L5ws1bERzlbg7CmYwDjjGBT', target='_blank') Перейти до уроку
+						h3.course_title Сценарій уроку
+						p
+							| Сценарій уроку — це покрокова інструкція для вчителів, у якій ми прописали весь зміст уроку та детальний план зі вказівками, що допоможуть вам.
+						p.access.granted Відкрито доступ
+
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson2.jpg', alt='')
+							a.button.goto_course(href='https://drive.google.com/open?id=14RgyfD6WYWXLw5K7p8TooR_sX72UBPos', target='_blank') Перейти до уроку
+						h3.course_title Презентація уроку
+						p
+							| Презентація уроку — це супровідний матеріал, який допоможе вам візуалізувати урок для дітей.
+						p.access.granted Відкрито доступ
+
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson3.jpg', alt='')
+							a.button.goto_course(href='https://drive.google.com/drive/folders/1LTbDdZ8IClbfUI2Lgo5792G_TcaJNZHn?usp=sharing', target='_blank') Перейти до уроку
+						h3.course_title Відеоматеріали
+						p
+							| Відеоматеріали, створені спеціально для цього уроку, стануть у пригоді кожному, хто захоче провести урок.
+						p.access.granted Відкрито доступ
+					// 
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson4.jpg', alt='')
+							a.button.goto_course(href='https://drive.google.com/open?id=1sJNMa2puDJqljnGnsUELfRWxpCbG3Ejo', target='_blank') Перейти до уроку
+						h3.course_title Додатки для проведення уроку 
+						p
+							| У цій вкладці ви знайдете всі необхідні матеріали для уроку. Їх можна роздрукувати.
+						p.access.granted Відкрито доступ
+
+		section#new-course
+			.container
+				.row
+					.col-lg-6.col-md-6.col-sm-12
+						iframe(width='560', height='315', src='https://www.youtube.com/embed/vhQc26FTsYE', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+					.col-lg-6.col-md-6.col-sm-12
+						iframe(width='560', height='315', src='https://www.youtube.com/embed/vhQc26FTsYE', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+
+				a.description (href="https://drive.google.com/open?id=1sJNMa2puDJqljnGnsUELfRWxpCbG3Ejo")
+					| Натисніть сюди, щоб завантажити всі матеріали, необхідні для проведення уроку з дітьми.
+
+		#partners.section
+			p.h2
+				| Партнери проекту
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.edcamp.org.ua/', target='_blank', title='EdCamp')
+							img(src='/img/anticorr/partners/EdCamp-logo.png', alt='EdCamp')
+					li
+						a(href='http://www.prosvitcenter.org/uk/', target='_blank', title='Про.Світ')
+							img(src='/img/anticorr/partners/ProSvit-logo.png', alt='Про.Світ')
+					li
+						a(href='https://www.facebook.com/Ed2Change/', target='_blank', title='Лабораторія Освітніх Змін')
+							img(src='/img/anticorr/partners/LOZ-logo.png', alt='Лабораторія Освітніх Змін')
+					li
+						a(href='http://osvitoria.org/', target='_blank', title='Громадська Спілка «ОСВІТОРІЯ»')
+							img(src='/img/anticorr/partners/Osvitoria-logo.png', alt='Громадська Спілка «ОСВІТОРІЯ»')
+					li
+						a(href='http://teachforukraine.org', target='_blank', title='Навчай для України')
+							img(src='/img/anticorr/partners/TeachforUkraine-logo.png', alt='Навчай для України')
+
+		section.materials_features.archive
+			.container
+				p.additional Проєкт реалізовано в межах програми UNICEF Україна «Створення попиту та розвиток потенціалу щодо інтегрованих соціальних послуг та вакцинації» за підтримки Агентства США з міжнародного розвитку (USAID).
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='USAID')
+							img(src='/img/vaccination/partners/USAID.png', alt='USAID')
+					li
+						a(href='https://www.unicef.org/', target='_blank', title='UNICEF')
+							img(src='/img/vaccination/partners/UNICEF_LOGO_CYAN.png', alt='UNICEF')
+
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.ed-era.com/', target='_blank', title='Ed-Era')
+							img(src='/img/vaccination/edera_logo.png', alt='Ed-Era')
+					li
+						a(href='http://practicum.space/', target='_blank')
+							img(src='/img/vaccination/partners/practicum-logo.png')
+					li
+						a(href='https://www.facebook.com/vaccination.ua/', target='_blank')
+							img(src='/img/vaccination/partners/ГО _ВакциНація_.png')
+
+
+		include ../includes/footer.jade
+		include ../includes/scripts.jade

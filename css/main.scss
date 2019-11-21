@@ -97,6 +97,21 @@ abbr {
 
 	}
 
+	&.vaccination {
+		//background-color: rgb(46, 47, 50);
+		background-image: url("../img/vaccination/vacc.jpg");
+		& > .container > h1 > span {
+			color: white;
+		}
+		& > .container > h1 > small {
+			color: white;
+		}
+		& > .container > h2 {
+			color: white;
+		}
+
+	}
+
 	&.blended {
 		background-image: url("../img/bg_blended.jpg");
 	}

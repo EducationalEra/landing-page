@@ -139,8 +139,6 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
     });
   }));
 
-
-
 gulp.task('less', function () {
   var less = require('gulp-less');
   return gulp.src('css/main.less')
@@ -148,10 +146,11 @@ gulp.task('less', function () {
       .pipe(gulp.dest('css'));
 });
 
-
 gulp.task('watch', function () {
   gulp.watch('js/**/*.js', 'templates/**/*.jade', 'css/*.css', 'css/*.less', 'css/*.scss', 'css/**/*.scss', gulp.series('copy'));
 });
+
+gulp.task('build', gulp.series('copy'));
 
 gulp.task('default', gulp.series('copy', function(done){
     browserSync.init({

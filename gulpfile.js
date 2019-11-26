@@ -133,9 +133,14 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
             .pipe(gulp.dest("build/books/" + book + ""));
   
     // FONT FOR ANTICORR GAME
-      return gulp.src("css/**/r-redstar_8.*")
-          .pipe(cachebust({type: 'timestamp'}))
-          .pipe(gulp.dest("build/css"));
+    gulp.src("css/**/r-redstar_8.*")
+        .pipe(cachebust({type: 'timestamp'}))
+        .pipe(gulp.dest("build/css"));
+    });
+
+    return new Promise(function(resolve, reject) {
+        console.log("Copy made");
+        resolve();
     });
   }));
 
@@ -153,7 +158,7 @@ gulp.task('watch', function () {
 gulp.task('build', gulp.series('copy'));
 
 gulp.task('default', gulp.series('copy', function(done){
-    browserSync.init({
+    return browserSync.init({
         server: {
             baseDir: "./build/"
         }

@@ -23,11 +23,11 @@ gulp.task("sass", function () {
 gulp.task('templates', function() {
     return gulp.src('templates/**/*.jade')
         .pipe(jade({
-          pretty: "\t",
-          locals: JSON.parse(fs.readFileSync("data.json", 'utf8'))
+            pretty: "\t",
+            locals: JSON.parse(fs.readFileSync("data.json", 'utf8'))
         }))
         .pipe(gulp.dest("public"));
-  });
+});
 
 gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
     gulp.src("css/**/*.css")
@@ -43,8 +43,6 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/anticorr-materials"));
     gulp.src("unicef/*.*")
         .pipe(gulp.dest("build/unicef"));
-    //gulp.src("cases/*.*")
-    //    .pipe(gulp.dest("build/cases"));
     gulp.src("js/**/*.js")
         .pipe(gulp.dest("build/js"));
     gulp.src("public/about.html")
@@ -68,9 +66,6 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
     gulp.src("public/zno.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build/zno"));
-    //gulp.src("public/mun.html")
-    //    .pipe(rename("mun/index.html"))
-    //    .pipe(gulp.dest("build"));
     gulp.src("public/children_ru.html")
         .pipe(rename("children-ru/index.html"))
         .pipe(gulp.dest("build"));
@@ -131,16 +126,16 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
         .pipe(gulp.dest("build/anticorr"));
+
+    _.each(books, function (book) {
+        gulp.src("public/books/" + book + ".html")
+            .pipe(rename("index.html"))
+            .pipe(gulp.dest("build/books/" + book + ""));
   
     // FONT FOR ANTICORR GAME
       return gulp.src("css/**/r-redstar_8.*")
           .pipe(cachebust({type: 'timestamp'}))
           .pipe(gulp.dest("build/css"));
-  
-    _.each(books, function (book) {
-      gulp.src("public/books/" + book + ".html")
-          .pipe(rename("index.html"))
-          .pipe(gulp.dest("build/books/" + book + ""));
     });
   }));
 
@@ -157,8 +152,6 @@ gulp.task('less', function () {
 gulp.task('watch', function () {
   gulp.watch('js/**/*.js', 'templates/**/*.jade', 'css/*.css', 'css/*.less', 'css/*.scss', 'css/**/*.scss', gulp.series('copy'));
 });
-
-// gulp.task('default', gulp.series('copy'));
 
 gulp.task('default', gulp.series('copy', function(done){
     browserSync.init({

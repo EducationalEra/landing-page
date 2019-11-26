@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "kgb": {
+      "className": "",
+      "imgUrl": "/img/courses/kgb.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Renaissance+KGB_4+2019_0512/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Розсекречені: онлайн-курс про роботу з архівами КҐБ",
+      "courseSubtitle": "",
+      "courseDesc": "Розкрий інсайти про українських підпільників та радянських спецагентів! Цей курс навчає працювати з архівними документами та розуміти їх.",
+      "access": true,
+      "free": false
+    },
     "dvs": {
       "className": "",
       "imgUrl": "/img/courses/dvs.jpg",

@@ -36,7 +36,7 @@
     position: absolute;
     top: 50%;
     margin-top: -24px;
-    left: 10px;
+    left: 11vw;
     text-indent: -999px;
     overflow: hidden;
     background-position: left top;
@@ -57,7 +57,7 @@
     }
 
     @include media($desktop) {
-      left: 10px;
+      left: 11vw;
     }
 
     a {
@@ -182,8 +182,8 @@
   }
 
   @include media($desktop) {
-    left: 80px;
-    right: 10px;
+    left: 15vw;
+    right: 11vw;
     top:5px;
 
     display: block !important;

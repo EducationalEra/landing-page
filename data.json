@@ -73,6 +73,18 @@
       "access": true,
       "free": false
     },
+    "ican": {
+      "className": "",
+      "imgUrl": "/img/courses/ican.jpg",
+      "altText": "",
+      "href": "http://ican.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "З місця в кар’єру. Курс на кар’єрні зміни",
+      "courseSubtitle": "",
+      "courseDesc": "Цей курс допоможе розпочати новий етап у кар’єрному житті. Вісім експерток підготували поради, які стануть твоїм інструментарієм для втілення кар'єрних мрій.",
+      "access": true,
+      "free": false
+    },
     "academic_integrity": {
       "className": "",
       "imgUrl": "/img/courses/ai.jpg",

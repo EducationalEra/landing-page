@@ -73,6 +73,18 @@
       "access": true,
       "free": false
     },
+    "pc": {
+      "className": "",
+      "imgUrl": "/img/courses/pc.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:NACS_NDI_EDERA+PC101+2019/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Публічні консультації",
+      "courseSubtitle": "",
+      "courseDesc": "У цьому курсі ви дізнаєтесь ключову інформацію про зміст, цілі та процес проведення публічних консультацій. Ви також отримаєте практичні поради щодо всіх етапів проведення консультацій—  від визначення цілей консультації до звітування та оприлюднення результатів!",
+      "access": true,
+      "free": false
+    },
     "ican": {
       "className": "",
       "imgUrl": "/img/courses/ican.jpg",

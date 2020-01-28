@@ -97,6 +97,18 @@
       "access": true,
       "free": false
     },
+    "izizno_eng": {
+      "className": "",
+      "imgUrl": "/img/courses/izizno_eng.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_OSVITORIA_GREENCOUNTRY+ENG101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ізі ЗНО. Англійська мова",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс «Ізі ЗНО. Англійська мова» — підготуйся до ЗНО з англійської з мемами, серіалами і фільмами.",
+      "access": true,
+      "free": false
+    },
     "academic_integrity": {
       "className": "",
       "imgUrl": "/img/courses/ai.jpg",

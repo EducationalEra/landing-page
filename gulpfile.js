@@ -45,9 +45,9 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/unicef"));
     gulp.src("js/**/*.js")
         .pipe(gulp.dest("build/js"));
-    gulp.src("public/about.html")
-        .pipe(rename("index.html"))
-        .pipe(gulp.dest("build/about"));
+    // gulp.src("public/about.html")
+    //     .pipe(rename("index.html"))
+    //     .pipe(gulp.dest("build/about"));
     gulp.src("public/courses.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build/courses"));
@@ -121,7 +121,7 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
     gulp.src("isef/img/*")
         .pipe(gulp.dest("build/isef/img"));
     gulp.src("public/lzv-rights/*.*")
-        .pipe(gulp.dest("build/lzv-rights"));      
+        .pipe(gulp.dest("build/lzv-rights"));
     gulp.src("public/25/*.*")
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
@@ -131,7 +131,7 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         gulp.src("public/books/" + book + ".html")
             .pipe(rename("index.html"))
             .pipe(gulp.dest("build/books/" + book + ""));
-  
+
     // FONT FOR ANTICORR GAME
     gulp.src("css/**/r-redstar_8.*")
         .pipe(cachebust({type: 'timestamp'}))

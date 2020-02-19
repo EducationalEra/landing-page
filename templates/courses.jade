@@ -16,7 +16,7 @@ html
 					|  Онлайн-курси
 
 		//- СПІЛЬНОКОШТ
-			a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті") 
+			a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті")
 				.banner_25
 					img.left_img(src="../img/25/left_banner.png" alt="")
 					p Підтримайте <span>EdEra</span>
@@ -25,13 +25,13 @@ html
 
 		// КУРСИ
 		#courses.section.four
-			.container   
+			.container
 				h2 Всі курси
 			.container
 				.row.cards-row
 					// Онлайн-курс для вчителів початкової школи
 					+course(locals.courses.nus)
-					// Verified 
+					// Verified
 					+course(locals.courses.verified)
 					// Права людини в освітньому просторі
 					+course(locals.courses.hre)
@@ -54,7 +54,9 @@ html
 					// Публічні консультації
 					//- +course(locals.courses.ndi)
 					// Основи виконавчого провадження
-					+course(locals.courses.dvs)
+					// +course(locals.courses.dvs)
+					// Mediation
+					+course(locals.courses.mediation)
 					// Виконавче провадження: поглиблений курс
 					+course(locals.courses.dvs2)
 					// Соціальне підприємництво та конкурентоспроможність

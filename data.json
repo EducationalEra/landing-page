@@ -109,6 +109,18 @@
       "access": true,
       "free": false
     },
+    "co2502": {
+      "className": "",
+      "imgUrl": "/img/courses/co2502/card.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EducationUSA+CO2502+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "З учнями про освіту та кар’єру",
+      "courseSubtitle": "",
+      "courseDesc": "Цей онлайн-курс створено для вчителів старших класів, шкільних психологів та батьків. Для того, щоб ви допомогли своїм учням та дітям свідомо обрати майбутню освіту та кар’єру.",
+      "access": true,
+      "free": false
+    },
     "mediation": {
       "className": "",
       "imgUrl": "/img/courses/mediation/mediation.jpg",

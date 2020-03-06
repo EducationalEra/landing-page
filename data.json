@@ -3,7 +3,7 @@
   "courses": {
     "demo": {
       "className": "demo",
-      "imgUrl": "/img/courses/demo.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/demo.jpg",
       "altText": "Демо-курс EdEra",
       "href": "https://courses.ed-era.com/courses/EdEra/DEMO1/2015_D1/about",
       "hrefText": "Перейти до курсу",
@@ -15,7 +15,7 @@
     },
     "ndi": {
       "className": "",
-      "imgUrl": "/img/courses/ndi.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ndi.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:NACS_NDI_EDERA+PC101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -27,7 +27,7 @@
     },
     "kgb": {
       "className": "",
-      "imgUrl": "/img/courses/kgb.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/kgb.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:Renaissance+KGB_4+2019_0512/about",
       "hrefText": "Перейти до курсу",
@@ -39,7 +39,7 @@
     },
     "dvs": {
       "className": "",
-      "imgUrl": "/img/courses/dvs.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/dvs.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:MINJUST_EDERA_OSCE+DVSPV101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -51,7 +51,7 @@
     },
     "dvs2": {
       "className": "",
-      "imgUrl": "/img/courses/dvs2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/dvs2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:MINJUST_EDERA_OSCE+dvs2+2019_T11/about",
       "hrefText": "Перейти до курсу",
@@ -63,7 +63,7 @@
     },
     "bery_i_roby": {
       "className": "",
-      "imgUrl": "/img/courses/bery_i_roby.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/bery_i_roby.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra_Osvitoria_Lenovo+BR101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -75,7 +75,7 @@
     },
     "pc": {
       "className": "",
-      "imgUrl": "/img/courses/pc.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/pc.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:NACS_NDI_EDERA+PC101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -87,7 +87,7 @@
     },
     "ican": {
       "className": "",
-      "imgUrl": "/img/courses/ican.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ican.jpg",
       "altText": "",
       "href": "http://ican.ed-era.com/",
       "hrefText": "Перейти до курсу",
@@ -99,7 +99,7 @@
     },
     "izizno_eng": {
       "className": "",
-      "imgUrl": "/img/courses/izizno_eng.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/izizno_eng.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA_OSVITORIA_GREENCOUNTRY+ENG101+2020/about",
       "hrefText": "Перейти до курсу",
@@ -111,7 +111,7 @@
     },
     "co2502": {
       "className": "",
-      "imgUrl": "/img/courses/co2502/card.png",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/co2502/card.png",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EducationUSA+CO2502+2020/about",
       "hrefText": "Перейти до курсу",
@@ -123,7 +123,7 @@
     },
     "mediation": {
       "className": "",
-      "imgUrl": "/img/courses/mediation/mediation.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/mediation/mediation.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:OSCE_EDERA+Med_101+2020/about",
       "hrefText": "Перейти до курсу",
@@ -135,7 +135,7 @@
     },
     "academic_integrity": {
       "className": "",
-      "imgUrl": "/img/courses/ai.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ai.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:AmericanCouncils+AcIn101+AcIn2019/about",
       "hrefText": "Перейти до курсу",
@@ -147,7 +147,7 @@
     },
     "verified": {
       "className": "",
-      "imgUrl": "/img/courses/verified.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/verified.jpg",
       "altText": "",
       "href": "https://verified.ed-era.com/ua",
       "hrefText": "Перейти до курсу",
@@ -159,7 +159,7 @@
     },
     "nonviolence": {
       "className": "",
-      "imgUrl": "/img/courses/nonviolence-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/nonviolence-cover.jpg",
       "altText": "",
       "href": "http://nonviolence.ed-era.com/",
       "hrefText": "Перейти до курсу",
@@ -171,7 +171,7 @@
     },
     "osn_web": {
       "className": "",
-      "imgUrl": "/img/courses/osn_web_cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/osn_web_cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about",
       "hrefText": "Перейти до курсу",
@@ -183,7 +183,7 @@
     },
     "budget_basics": {
       "className": "",
-      "imgUrl": "/img/courses/budget-basics-1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/budget-basics-1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA-IRF+BP101+bp101/about",
       "hrefText": "Перейти до курсу",
@@ -195,7 +195,7 @@
     },
     "eu_agreement": {
       "className": "",
-      "imgUrl": "/img/courses/eu-agreement_cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/eu-agreement_cover.jpg",
       "altText": "Угода про асоціацію Україна-ЄС",
       "href": "http://eu-agreement.ed-era.com/",
       "hrefText": "Перейти до курсу",
@@ -207,7 +207,7 @@
     },
     "znohistory": {
       "className": "",
-      "imgUrl": "/img/courses/history_cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/history_cover.jpg",
       "altText": "",
       "href": "http://znohistory.ed-era.com/",
       "hrefText": "Перейти до курсу",
@@ -219,7 +219,7 @@
     },
     "hre": {
       "className": "",
-      "imgUrl": "/img/courses/hre-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/hre-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA_OSCE+HRE101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -231,7 +231,7 @@
     },
     "inclusion_par": {
       "className": "",
-      "imgUrl": "/img/courses/cover_par.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/cover_par.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Par+1/about",
       "hrefText": "Перейти до курсу",
@@ -243,7 +243,7 @@
     },
     "math_simple": {
       "className": "",
-      "imgUrl": "/img/courses/cover_math.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/cover_math.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA-OSVITORIA+Math101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -255,7 +255,7 @@
     },
     "soc_ent": {
       "className": "",
-      "imgUrl": "/img/courses/cover_soc_ent.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/cover_soc_ent.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-PLEDDG+SE+2018/about",
       "hrefText": "Перейти до курсу",
@@ -267,7 +267,7 @@
     },
     "nus": {
       "className": "",
-      "imgUrl": "/img/courses/nus-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/nus-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:MON-EDERA-OSVITORIA+ST101+st101/about",
       "hrefText": "Перейти до курсу",
@@ -279,7 +279,7 @@
     },
     "energy": {
       "className": "",
-      "imgUrl": "/img/courses/energy-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/energy-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:VOXU-EdEra-DiXi+ENER101+2019/about",
       "hrefText": "Перейти до курсу",
@@ -291,7 +291,7 @@
     },
     "ehealth": {
       "className": "",
-      "imgUrl": "/img/courses/ehealth-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ehealth-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:ULEAD_EGA_eHealth_EdEra+EHealth101+2018/about",
       "hrefText": "Перейти до курсу",
@@ -303,7 +303,7 @@
     },
     "prosvit": {
       "className": "",
-      "imgUrl": "/img/courses/prosvit-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/prosvit-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA-PROSVITCENTER+SM101+sm101/about",
       "hrefText": "Перейти до курсу",
@@ -315,7 +315,7 @@
     },
     "factcheck": {
       "className": "",
-      "imgUrl": "/img/courses/factchek-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/factchek-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:VOXU-EdEra+FactCheck101+2018/about",
       "hrefText": "Перейти до курсу",
@@ -327,7 +327,7 @@
     },
     "effective_communication": {
       "className": "",
-      "imgUrl": "/img/courses/effective_communication_cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/effective_communication_cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EDERA-SMARTOSVITA+EC101+EC101/about",
       "hrefText": "Перейти до курсу",
@@ -339,7 +339,7 @@
     },
     "stop_trafficking": {
       "className": "",
-      "imgUrl": "/img/courses/stop_trafficking_cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/stop_trafficking_cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra_OSCE+ST101+ST101/about",
       "hrefText": "Перейти до курсу",
@@ -351,7 +351,7 @@
     },
     "modules": {
       "className": "",
-      "imgUrl": "/img/modules-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/modules-cover.jpg",
       "altText": "",
       "href": "./modules/",
       "hrefText": "Перейти до проекту",
@@ -363,7 +363,7 @@
     },
     "leader_dna": {
       "className": "",
-      "imgUrl": "/img/courses/leader-dna-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/leader-dna-cover.jpg",
       "altText": "",
       "href": "http://leader.ed-era.com/",
       "hrefText": "Перейти до курсу",
@@ -375,7 +375,7 @@
     },
     "non_discrimination": {
       "className": "",
-      "imgUrl": "/img/courses/non-discrimination-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/non-discrimination-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-Studena+Inc+1/about",
       "hrefText": "Перейти до курсу",
@@ -387,7 +387,7 @@
     },
     "inclusion_teacher": {
       "className": "",
-      "imgUrl": "/img/courses/inclusion-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/inclusion-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Inc+1/about",
       "hrefText": "Перейти до курсу",
@@ -399,7 +399,7 @@
     },
     "med": {
       "className": "",
-      "imgUrl": "/img/courses/med.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/med.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-SmartOsvita+Med+1/about",
       "hrefText": "Перейти до курсу",
@@ -411,7 +411,7 @@
     },
     "biology_zno": {
       "className": "",
-      "imgUrl": "/img/courses/biology-zno/biology-zno.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/biology-zno/biology-zno.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra-Osvitoria+BIO+1/about",
       "hrefText": "Перейти до курсу",
@@ -423,7 +423,7 @@
     },
     "royz": {
       "className": "",
-      "imgUrl": "/img/royz/royz-project.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/royz/royz-project.jpg",
       "altText": "",
       "href": "https://www.ed-era.com/children-ua/",
       "hrefText": "Перейти до курсу",
@@ -435,7 +435,7 @@
     },
     "hrights_live": {
       "className": "",
-      "imgUrl": "/img/courses/hrights-live.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/hrights-live.jpg",
       "altText": "",
       "href": "http://bit.ly/hrights-live",
       "hrefText": "Перейти до курсу",
@@ -447,7 +447,7 @@
     },
     "english2": {
       "className": "",
-      "imgUrl": "/img/courses/english2-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/english2-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/E202/e202/about",
       "hrefText": "Перейти до курсу",
@@ -459,7 +459,7 @@
     },
     "smartExport": {
       "className": "",
-      "imgUrl": "/img/courses/smartExport/export.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/smartExport/export.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra+ib103+IB103/about",
       "hrefText": "Перейти до курсу",
@@ -471,7 +471,7 @@
     },
     "essentialsModel": {
       "className": "",
-      "imgUrl": "/img/courses/essentialModel/3dcover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/essentialModel/3dcover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/model101/Model101/about",
       "hrefText": "Перейти до курсу",
@@ -483,7 +483,7 @@
     },
     "hrights1": {
       "className": "",
-      "imgUrl": "/img/courses/hr-course/hr-course.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/hr-course/hr-course.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra+HR101+hr101/about",
       "hrefText": "Перейти до курсу",
@@ -495,7 +495,7 @@
     },
     "hrights2": {
       "className": "",
-      "imgUrl": "/img/courses/hr-course/hr2-course.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/hr-course/hr2-course.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra+HR201+hr201/about",
       "hrefText": "Перейти до курсу",
@@ -507,7 +507,7 @@
     },
     "law": {
       "className": "",
-      "imgUrl": "/img/courses/law/cover-course.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/law/cover-course.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:EdEra+LAW101+law101/about",
       "hrefText": "Перейти до курсу",
@@ -519,7 +519,7 @@
     },
     "economics": {
       "className": "",
-      "imgUrl": "/img/courses/economics/economic-cover.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/economics/economic-cover.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:VOXU-KSE-EdEra+SEJ101+2017/about",
       "hrefText": "Перейти до курсу",
@@ -531,7 +531,7 @@
     },
     "ukr_lifehacks": {
       "className": "",
-      "imgUrl": "/img/courses/lifehacks/cover-lifehacks-promo.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/lifehacks/cover-lifehacks-promo.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+101/about",
       "hrefText": "Перейти до курсу",
@@ -543,7 +543,7 @@
     },
     "lit_lifehacks": {
       "className": "",
-      "imgUrl": "/img/courses/lifehacks/ukr-lit-promo.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/lifehacks/ukr-lit-promo.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks+201/about",
       "hrefText": "Перейти до курсу",
@@ -555,7 +555,7 @@
     },
     "export": {
       "className": "",
-      "imgUrl": "/img/courses/export/export-promo.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/export/export-promo.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/ib102/IB102/about",
       "hrefText": "Перейти до курсу",
@@ -567,7 +567,7 @@
     },
     "ukr1": {
       "className": "",
-      "imgUrl": "/img/courses/ukr/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ukr/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/u102/U102/about",
       "hrefText": "Перейти до курсу",
@@ -579,7 +579,7 @@
     },
     "history1": {
       "className": "",
-      "imgUrl": "/img/courses/history/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/history/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/hi102/Hi102/about",
       "hrefText": "Перейти до курсу",
@@ -591,7 +591,7 @@
     },
     "math1": {
       "className": "",
-      "imgUrl": "/img/courses/maths/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/maths/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/m102/M102/about",
       "hrefText": "Перейти до курсу",
@@ -603,7 +603,7 @@
     },
     "physics1": {
       "className": "",
-      "imgUrl": "/img/courses/physics/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/physics/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/p102/P102/about",
       "hrefText": "Перейти до курсу",
@@ -615,7 +615,7 @@
     },
     "english1": {
       "className": "",
-      "imgUrl": "/img/courses/eng/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/eng/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/e102/E102/about",
       "hrefText": "Перейти до курсу",
@@ -627,7 +627,7 @@
     },
     "biology1": {
       "className": "",
-      "imgUrl": "/img/courses/biology/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/biology/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/b102/B102/about",
       "hrefText": "Перейти до курсу",
@@ -639,7 +639,7 @@
     },
     "geography1": {
       "className": "",
-      "imgUrl": "/img/courses/geography/1.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/geography/1.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/g102/G102/about",
       "hrefText": "Перейти до курсу",
@@ -651,7 +651,7 @@
     },
     "ukr2": {
       "className": "",
-      "imgUrl": "/img/courses/ukr/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/ukr/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/U202/u202/about",
       "hrefText": "Перейти до курсу",
@@ -663,7 +663,7 @@
     },
     "history2": {
       "className": "",
-      "imgUrl": "/img/courses/history/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/history/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/H202/h202/about",
       "hrefText": "Перейти до курсу",
@@ -675,7 +675,7 @@
     },
     "math2": {
       "className": "",
-      "imgUrl": "/img/courses/maths/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/maths/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/M202/m202/about",
       "hrefText": "Перейти до курсу",
@@ -687,7 +687,7 @@
     },
     "physics2": {
       "className": "",
-      "imgUrl": "/img/courses/physics/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/physics/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/P202/p202/about",
       "hrefText": "Перейти до курсу",
@@ -699,7 +699,7 @@
     },
     "biology2": {
       "className": "",
-      "imgUrl": "/img/courses/biology/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/biology/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/B202/b202/about",
       "hrefText": "Перейти до курсу",
@@ -711,7 +711,7 @@
     },
     "geography2": {
       "className": "",
-      "imgUrl": "/img/courses/geography/2.jpg",
+      "imgUrl": "https://stage-ed-era-com.s3-eu-west-1.amazonaws.com/img/courses/geography/2.jpg",
       "altText": "",
       "href": "https://courses.ed-era.com/courses/EdEra/G202/g202/about",
       "hrefText": "Перейти до курсу",

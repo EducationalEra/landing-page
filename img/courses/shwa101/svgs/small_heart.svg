@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="814" height="720" rx="40"></rect>
+        <filter x="-10.4%" y="-9.0%" width="120.9%" height="123.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.478431373   0 0 0 0 0.407843137   0 0 0 0 0.674509804  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SHWA" transform="translate(-452.000000, -2914.000000)">
+            <g id="ICONS_BG" transform="translate(116.000000, 1404.000000)"></g>
+            <g id="BLOCK_5" transform="translate(-107.000000, 2414.000000)">
+                <g id="Group-14" fill="#7A68AC">
+                    <path d="M106,849 C354,780.333333 591.666667,746 819,746 C1046.33333,746 1288.66667,780.333333 1546,849 L1546,434 L106,434" id="Path-4"></path>
+                    <path d="M0,18.8823407 C200.333333,139.549007 443.333333,182.715674 729,148.382341 C1157.5,96.8823407 1426.5,-40.1176593 1670,11.3823407 C1832.33333,45.715674 1832.33333,227.215674 1670,555.882341 L0,562.882341 L0,18.8823407 Z" id="Path-2" transform="translate(895.875000, 281.441170) scale(-1, 1) translate(-895.875000, -281.441170) "></path>
+                </g>
+                <g id="Group-26" transform="translate(420.000000, 229.000000)">
+                    <g id="Group-24">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Group-7" transform="translate(140.000000, 265.000000)">
+                            <g id="Group-5-Copy-3" transform="translate(0.000000, 7.000000)">
+                                <path d="M9.3362,4.3872 L5.9632,2.3642 C2.1062,0.2642 -1.3148,4.7392 0.5002,9.5122 C1.7772,12.8722 9.1522,17.1562 12.0702,18.9582 C14.8662,14.5042 19.7392,11.5592 19.7892,6.5452 C19.8442,1.1472 14.7322,-3.9088 9.3362,4.3872" id="Fill-1" fill="#FACB0F"></path>
+                                <path d="M9.3362,4.3872 L5.9632,2.3642 C2.1062,0.2642 -1.3148,4.7392 0.5002,9.5122 C1.7772,12.8722 9.1522,17.1562 12.0702,18.9582 C14.8662,14.5042 19.7392,11.5592 19.7892,6.5452 C19.8442,1.1472 14.7322,-3.9088 9.3362,4.3872 Z" id="Stroke-3" stroke="#020303" stroke-width="2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

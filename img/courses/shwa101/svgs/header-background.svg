@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="780px" viewBox="0 0 1440 780" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="250" height="57" rx="28.5"></rect>
+        <filter x="-20.0%" y="-70.2%" width="140.0%" height="275.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SHWA">
+            <g id="HEADER" transform="translate(-1.000000, -1.000000)">
+                <g id="Group-17" fill="#7A68AC">
+                    <path d="M1400.99288,0.704513604 C1423.08427,0.704513604 1440.99288,18.6131236 1440.99288,40.7045136 L1441.01668,762.615766 C1105.92054,820.948247 544.093584,723.190579 269.993719,707.767631 C167.6121,702.006861 77.9435857,701.874216 0.988177136,707.369696 L0.99287517,40.7045136 C0.99287517,18.6131236 18.9014852,0.704513604 40.9928752,0.704513604 L1400.99288,0.704513604 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

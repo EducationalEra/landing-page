@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="25px" viewBox="0 0 27 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="814" height="720" rx="40"></rect>
+        <filter x="-10.4%" y="-9.0%" width="120.9%" height="123.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.478431373   0 0 0 0 0.407843137   0 0 0 0 0.674509804  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SHWA" transform="translate(-449.000000, -2991.000000)">
+            <g id="ICONS_BG" transform="translate(116.000000, 1404.000000)"></g>
+            <g id="BLOCK_5" transform="translate(-107.000000, 2414.000000)">
+                <g id="Group-14" fill="#7A68AC">
+                    <path d="M106,849 C354,780.333333 591.666667,746 819,746 C1046.33333,746 1288.66667,780.333333 1546,849 L1546,434 L106,434" id="Path-4"></path>
+                </g>
+                <g id="Group-26" transform="translate(420.000000, 229.000000)">
+                    <g id="Group-24">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Group-8" transform="translate(137.000000, 344.000000)">
+                            <g id="Group-5" transform="translate(0.000000, 5.000000)">
+                                <path d="M6.4301,13.4066 C5.3431,15.9896 4.8461,17.9806 3.4171,21.0336 C6.3571,20.4926 8.2851,19.3516 11.1851,18.2896 C12.3101,19.6486 13.4361,21.1766 14.5541,22.6246 C15.5831,20.2156 14.9271,17.9816 16.5471,16.0786 C18.2081,14.1276 22.7411,12.2216 25.0001,10.6386 C22.2801,10.6966 19.5151,10.7256 16.8131,10.6116 C16.6391,7.0806 16.7081,3.4296 17.1361,-0.0004 C14.5851,4.5716 10.7161,8.3666 10.7161,8.3666 C10.7161,8.3666 3.8471,8.9216 0.0001,8.4156 C3.4401,11.0956 6.4301,13.4066 6.4301,13.4066" id="Fill-1" fill="#FACB0F"></path>
+                                <path d="M6.4301,13.4066 C5.3431,15.9896 4.8461,17.9806 3.4171,21.0336 C6.3571,20.4926 8.2851,19.3516 11.1851,18.2896 C12.3101,19.6486 13.4361,21.1766 14.5541,22.6246 C15.5831,20.2156 14.9271,17.9816 16.5471,16.0786 C18.2081,14.1276 22.7411,12.2216 25.0001,10.6386 C22.2801,10.6966 19.5151,10.7256 16.8131,10.6116 C16.6391,7.0806 16.7081,3.4296 17.1361,-0.0004 C14.5851,4.5716 10.7161,8.3666 10.7161,8.3666 C10.7161,8.3666 3.8471,8.9216 0.0001,8.4156 C3.4401,11.0956 6.4301,13.4066 6.4301,13.4066 Z" id="Stroke-3" stroke="#020303" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

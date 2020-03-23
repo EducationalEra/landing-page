@@ -40,4 +40,5 @@
 /kgb/ https://courses.ed-era.com/courses/course-v1:Renaissance+KGB_4+2019_0512/about
 /courses/pc/ https://courses.ed-era.com/courses/course-v1:NACS_NDI_EDERA+PC101+2019/about
 /izizno_eng/ https://courses.ed-era.com/courses/course-v1:EDERA_OSVITORIA_GREENCOUNTRY+ENG101+2020/about
+/skills21/ https://courses.ed-era.com/courses/course-v1:British_Council+BC1+2020/about
 # EOF - do not leave any line (even empty) after this line!!!

@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "s21": {
+      "className": "",
+      "imgUrl": "/img/courses/s21.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:British_Council+BC1+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ключові уміння 21-го століття",
+      "courseSubtitle": "",
+      "courseDesc": "Змішаний курс, у якому навчання відбувається у двох формах — онлайн та офлайн. Онлайн-частина доступна всім, офлайн-програма розрахована на педагогічних працівників. ",
+      "access": true,
+      "free": false
+    },
     "demo": {
       "className": "demo",
       "imgUrl": "/img/courses/demo.jpg",

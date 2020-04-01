@@ -126,6 +126,9 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
         .pipe(gulp.dest("build/anticorr"));
+    // TEMPORARY PROJECT FOR NABU
+    gulp.src("nabu/**")
+      .pipe(gulp.dest("build/nabu"));
 
     _.each(books, function (book) {
         gulp.src("public/books/" + book + ".html")

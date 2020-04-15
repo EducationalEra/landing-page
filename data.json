@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "proschool": {
+      "className": "",
+      "imgUrl": "/img/courses/proschool.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_PROSCHOOL+PS101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "ПРО.Школу для вчителів",
+      "courseSubtitle": "",
+      "courseDesc": "Працювати вчителем непросто: іноді робота приносить багато задоволення, а інколи — стрес. Про те, як зберігати спокій та справлятися з різними ситуаціями шкільної рутини — дізнавайтесь у курсі. ",
+      "access": true,
+      "free": false
+    },
     "s21": {
       "className": "",
       "imgUrl": "/img/courses/s21.png",

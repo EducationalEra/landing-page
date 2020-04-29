@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "shwa": {
+      "className": "",
+      "imgUrl": "/img/courses/shwa.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Vidrodzhennia+SHWA101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Як навчати супергероїв?",
+      "courseSubtitle": "",
+      "courseDesc": "Курс для вчителів, які хочуть працювати в лікарні. Ви дізнаєтеся про особливості роботи з дітьми та отримаєте інструменти, які допоможуть подолати психологічні сумніви та бар’єри.",
+      "access": true,
+      "free": false
+    },
     "proschool": {
       "className": "",
       "imgUrl": "/img/courses/proschool.png",

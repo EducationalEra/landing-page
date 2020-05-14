@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "nabu": {
+      "className": "",
+      "imgUrl": "/img/courses/nabu.png",
+      "altText": "",
+      "href": "https://learn.nabu.gov.ua/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Слідство веде НАБУ: антикорупційна гра-розслідування",
+      "courseSubtitle": "",
+      "courseDesc": "Відчуй себе справжнім детективом: проведи допит найвищого посадовця, сплануй обшук державного підприємства, відвідай судове засідання. Перевіримо, чи вдасться тобі скерувати справу до суду!",
+      "access": true,
+      "free": false
+    },
     "shwa": {
       "className": "",
       "imgUrl": "/img/courses/shwa.png",

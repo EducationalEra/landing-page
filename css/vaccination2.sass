@@ -22,6 +22,14 @@ html
   font-family: 'Play'
   text-decoration: none
 
+.container
+  min-width: 0!important
+
+.container
+  .row
+    margin: 0  
+
+
 body
   position: relative
   font-family: Play, sans-serif
@@ -183,7 +191,7 @@ nav
     width: 60.9375%
     margin: 0 auto
     display: grid
-    grid-column-gap: 8vw
+    grid-column-gap: 4vw
     grid-template-columns: repeat(4, 1fr)
 
     li
@@ -385,6 +393,7 @@ article
         margin-bottom: 3.75em
 
         section
+          padding: 0!important
           -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1)
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1)
           display: grid
@@ -640,8 +649,8 @@ article
                   line-height: 1.5
 
             .image-box img
-              width: -webkit-calc(200em / 16)
-              width: calc(200em / 16)
+              width: 34em
+
 
     .buttons
       margin-top: 2em
@@ -712,6 +721,7 @@ article
 
     .container section
       grid-template-columns: 1fr
+      padding: 0
 
       .box
         &:first-child
@@ -879,7 +889,11 @@ article.partners
 
       &:last-child img
         width: 35%
-
+.slider
+    .buttons
+      height: 70px
+      div 
+        height: 70px
 @media all and (max-width: 1000px)
   article.partners .logos
     grid-template-columns: repeat(2, 1fr)
@@ -887,8 +901,26 @@ article.partners
 
     .logo img
       width: 50%
-
+ 
 @media all and (max-width: 900px)
   article.partners .logos
     grid-template-columns: repeat(1, 1fr)
     grid-row-gap: 3em
+@media all and (max-width: 320px) 
+  article.vac-material .block .container section .box:first-child    
+    padding: calc(36em / 16) calc(10em / 16)
+  .effect .buttons
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    align-content: stretch  
+
+  .effect
+    display: flex
+    justify-content: center
+  .buttons a 
+    margin-right: 0    
+ 
+
+            

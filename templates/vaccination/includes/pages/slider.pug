@@ -1,0 +1,78 @@
+article.slider(id="slider")
+    .title
+        h2 Відгуки
+    .slider
+        .container
+            ul.list
+                li.slide
+                    .text-box
+                        .box
+                            .text
+                                p.
+                                    Учням дуже сподобалось працювати<br>
+                                    з календарем щеплень, читати книгу про Лілі, моделювати ситуації<br>
+                                    з героями (наприклад розіграли діалоги з Аєю, Аєм, дідусем Оєм).<br>
+                                    Дякую за чудово підібраний матеріал до уроку. Відповіді он-лайн тесту свідчать,<br>
+                                    що більшість дітей усвідомила опрацьоване.
+                        .box
+                            .name
+                                h3 Єрьоменко Олена
+                            .description
+                                p.
+                                    вчитель НВО “СЗНЗ Іст.“Гармонія”-гімназія<br>
+                                    ім.Т.Шевченка-ЦПВ “Контакт”,<br>
+                                    м. Кропивницький
+                    .image-box
+                        img(src="../../assets/picture1_quote1.png")
+                li.slide
+                    .text-box
+                        .box
+                            .text
+                                p.
+                                    Інтерактивний тест викликав неабияке захоплення!
+                        .box
+                            .name
+                                h3 Початкова школа №26, Івано-Франківськ
+                            .description
+                                p.
+                    .image-box
+                        img(src="../../assets/picture1_quote2.png")
+    .buttons
+        .left#left
+            img(src="../../assets/left.svg")
+        .right#right
+            img(src="../../assets/right.svg")
+
+    script.
+            let wrapper = document.querySelector("#slider .container");
+            let sliderItems = wrapper.querySelectorAll('li');
+            let slide = wrapper.querySelector("ul.list");
+            let leftBtn = document.getElementById('left');
+            let rightBtn = document.getElementById('right');
+            let index = 0;
+            slide.style.transition = "all 1s ease-in-out";
+            function move(index) {
+                slide.style.transform = "translate(" + (-index * sliderItems[0].offsetWidth) + "px, 0)";
+            }
+            function moveRight() {
+                if(index < sliderItems.length - 1) {
+                    index++;
+                    move(index);
+                }
+                else {
+                    index = 0;
+                    move(index);
+                }
+            }
+            function moveLeft() {
+                if(index > 0) {
+                    index--;
+                    move(index)
+                }
+                else {
+                    index = sliderItems.length - 1;
+                    move(index);
+                }
+            }
+            leftBtn.addEventListener('click', moveLeft);
+            rightBtn.addEventListener('click', moveRight);

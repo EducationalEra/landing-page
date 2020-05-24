@@ -15,7 +15,7 @@ var books = ["ukrainian", "physics", "maths", "biology", "english", "geography",
 var lessons = ["1", "2"];
 
 gulp.task("sass", function () {
-    return gulp.src('css/**/*.sass')
+    return gulp.src('css/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('build/css'));
 });
@@ -126,8 +126,7 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
         .pipe(gulp.dest("build/anticorr"));
-    gulp.src("img/fonts/*.*")
-        .pipe(gulp.dest("build/img/fonts"))
+
     _.each(books, function (book) {
         gulp.src("public/books/" + book + ".html")
             .pipe(rename("index.html"))

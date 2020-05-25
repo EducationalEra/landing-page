@@ -30,8 +30,6 @@ document.querySelectorAll('.label').forEach(function(el){
 buttons.forEach(function(el){
     el.addEventListener('click', function(e) {
         e.preventDefault();
-        console.log(el);
-        console.log(this);
         const amount = this.getAttribute('value');
         var today = new Date();
         today.toISOString().substring(0, 10);
@@ -45,7 +43,7 @@ buttons.forEach(function(el){
         button.addField({
             label: 'Пожертва',
             name: 'Пожертва',
-            value: 'Пожертвовать ' + amount + ' деняк'
+            value: amount
         });
         button.addField({
             label: 'ФИО',
@@ -73,7 +71,6 @@ buttons.forEach(function(el){
             });
         }
         var url = button.getUrl();
-        console.log(url);
         window.location.href = url;
     });
 });

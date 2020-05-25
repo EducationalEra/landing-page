@@ -1,5 +1,7 @@
 const buttons = document.querySelectorAll('.donate-btn');
 
+//this is for beautiful switching between subscriptions
+
 document.querySelectorAll('.label').forEach(function(el){
     el.addEventListener('click', function() {
         if(this.getAttribute('for') === 'yearly'){
@@ -20,3 +22,114 @@ document.querySelectorAll('.label').forEach(function(el){
         }
     });
 });
+
+// Fondy API
+//
+//
+
+buttons.forEach(function(el){
+    el.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log(el);
+        console.log(this);
+        const amount = this.getAttribute('value');
+        var today = new Date();
+        today.toISOString().substring(0, 10);
+        var button = $ipsp.get('button');
+        button.setMerchantId(1445591);
+        button.setAmount(amount, 'UAH');
+        button.setResponseUrl('https://www.ed-era.com/');
+        button.setProtocol("https");
+        button.setHost('api.fondy.eu');
+
+        button.addField({
+            label: 'Пожертва',
+            name: 'Пожертва',
+            value: 'Пожертвовать ' + amount + ' деняк'
+        });
+        button.addField({
+            label: 'ФИО',
+            name: 'fio',
+            required: true
+        });
+        button.addParam("order_desc","Донат");
+        if(this.classList.contains('monthly')){
+            button.setRecurringState(true);
+            button.addRecurringData({
+                start_time: today,
+                end_time: '',
+                amount: amount,
+                period: 'month',
+                every: 1
+            });
+        } else if(this.classList.contains('yearly')) {
+            button.setRecurringState(true);
+            button.addRecurringData({
+                start_time: today,
+                end_time: '',
+                amount: amount,
+                period: 'month',
+                every: 12
+            });
+        }
+        var url = button.getUrl();
+        console.log(url);
+        window.location.href = url;
+    });
+});
+
+function createOrder(amount, order_desc) {
+    var button = $ipsp.get('button');
+    button.setMerchantId(1445591);
+    button.setAmount(amount, 'UAH');
+    button.setResponseUrl('https://www.ed-era.com/');
+    button.setProtocol("https");
+    button.setHost('api.fondy.eu');
+    button.addField({
+        label: 'Пожертва',
+        name: 'Пожертва',
+        value: order_desc
+    });
+    button.addField({
+        label: 'ФИО',
+        name: 'fio',
+        required: true
+    });
+    return button.getUrl();
+}
+
+function monthlySubscribe(amount, order_desc){
+    var button = $ipsp.get('button');
+    button.setMerchantId(1396424);
+    button.setAmount('200', 'USD', true);
+    button.setHost('api.fondy.eu');
+    button.setRecurringState(true);
+    button.addRecurringData({
+        start_time: '2016-10-09',
+        end_time: '2018-12-09',
+        amount: 200,
+        period: 'month',
+        every: 1
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

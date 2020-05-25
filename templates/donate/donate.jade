@@ -28,16 +28,16 @@ html
                         input(type='radio' name='donate-radio-btn' value='once')#once.radio
                         label(for='once').label.once Один раз
                     div.donate-buttons-row
-                        input(type='button' value='100' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='200' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='500' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='1000' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='2500' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='5000' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='10000' name='donate-btn').donate-btn.monthly
-                        input(type='button' value='25000' name='donate-btn').donate-btn.monthly
+                        button(value='100' name='donate-btn').donate-btn.monthly 100
+                        button(value='200' name='donate-btn').donate-btn.monthly 200
+                        button(value='500' name='donate-btn').donate-btn.monthly 500
+                        button(value='1000' name='donate-btn').donate-btn.monthly 1000
+                        button(value='2500' name='donate-btn').donate-btn.monthly 2500
+                        button(value='5000' name='donate-btn').donate-btn.monthly 5000
+                        button(value='10000' name='donate-btn').donate-btn.monthly 10000
+                        button(value='25000' name='donate-btn').donate-btn.monthly 25000
                     div.donate-buttons-row.center
-                        input(type='button' value='Інша сума' name='donate-btn').donate-btn.monthly
+                        button(value='10' name='donate-btn').donate-btn.monthly Інша сума
             section.requisites
                 article.requisites-block.custom-container
                     h3.title-secondary Реквізити для усіх українських банків
@@ -61,4 +61,5 @@ html
         include ../includes/footer.jade
         include ../includes/scripts.jade
         link(href='/css/donate/donate.css', rel='stylesheet')
+        script(src='/js/fondy.js')
         script(src='/js/donate.js')

@@ -19,6 +19,11 @@ gulp.task("sass", function () {
         .pipe(sass())
         .pipe(gulp.dest('build/css'));
 });
+gulp.task('scss', function() {
+    return gulp.src('css/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('build/css'));
+});
 
 gulp.task('templates', function() {
     return gulp.src('templates/**/*.jade')
@@ -29,7 +34,7 @@ gulp.task('templates', function() {
         .pipe(gulp.dest("public"));
 });
 
-gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
+gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("css/**/*.css")
         .pipe(cachebust({type: 'timestamp'}))
         .pipe(gulp.dest("build/css"));

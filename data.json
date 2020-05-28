@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "reprez": {
+      "className": "",
+      "imgUrl": "/img/courses/reprezent.png",
+      "altText": "",
+      "href": "https://propowerpoint.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "PRO POWER POINT",
+      "courseSubtitle": "",
+      "courseDesc": "Інтерактивний онлайн-курс із дизайну презентацій у PowerPoint. Курс створений EdEra у партнерстві з компанією Reprezent.",
+      "access": true,
+      "free": false
+    },
     "nabu": {
       "className": "",
       "imgUrl": "/img/courses/nabu.png",

@@ -857,6 +857,12 @@
         "title": "Антикорупційний урок (короткий навчальний посібник)",
         "image": "https://www.ed-era.com/img/share/small/anticorruption-lesson.jpg",
         "description": "Антикорупційний урок підготовлено програмою розвитку ООН в Україні та проектом EdEra. Для проведення уроку створено сценарій, додаткові відеоматеріали та презентації."
+      },
+      "ndi": {
+        "url": "https://www.ed-era.com/books/ndi",
+        "title": "Публічні консультації: крок за кроком",
+        "image": "https://www.ed-era.com/img/books/ndi.jpg",
+        "description": "Посібник для державних службовців"
       }
     }
   }

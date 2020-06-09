@@ -1,0 +1,47 @@
+//
+   Created by yaroslav on 09-06-2020.
+include ../includes/head.jade
+doctype html
+html
+    +head(locals.titles.books.ndi.title, locals.titles.books.ndi.description, locals.titles.books.ndi.image,
+        locals.titles.books.ndi.url)
+    body
+        include ../includes/gtm.jade
+        include ../includes/header.jade
+        .library.section.heading
+            .container
+                include ../includes/book_h1.jade
+        section.about_book
+            .container
+                .book__figure
+                    img(alt='', src='/img/books/ndi.jpg')
+                .book__caption
+                    article
+                        h2
+                            | Публічні консультації: крок за кроком
+                        p
+                            | Публічні консультації – це завжди про збір великої кількості даних у різних форматах та з різних джерел. І саме в цьому посібнику ми пропонуємо застосовувати підхід, орієнтований на дані. Він сприятиме ефективному аналізу результатів консультацій та отриманню корисної інформації, придатної для подальшого вироблення державної політики.
+
+                        p
+                            | Навчальний матеріал складається з:
+                            | • основних принципів публічних консультацій;
+                            | • практичних поради для розроблення та проведення успішної консультації;
+                            | • шаблонів, інструментів та чеклістів для проведення консультацій.
+                        p.
+                            Якщо вас цікавить опис усіх матеріалів, перейдіть за посиланням:
+                            <a href="https://cutt.ly/iyMxYaZ" target="_blank"> https://cutt.ly/iyMxYaZ</a>
+
+                    .actions
+                        a.button.button--big(href='https://edera.gitbook.io/publ-chn-konsultacz-krok-za-krokom/', target='_blank')
+                            | Читати онлайн
+                            sup ❐
+                        a.button.button--big(href='../../anticorr-materials/ndi-pdf.pdf', target='_blank')
+                            | Завантажити
+                            sup
+                                i.fa.fa-file-pdf-o
+                            //sup
+                               i.fa.fa-floppy-o
+
+        include ../includes/book_like.jade
+        include ../includes/footer.jade
+        include ../includes/scripts.jade

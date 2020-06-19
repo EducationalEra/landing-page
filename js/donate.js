@@ -31,12 +31,10 @@ buttons.forEach(function(el){
     el.addEventListener('click', function(e) {
         e.preventDefault();
         const amount = this.getAttribute('value');
-        var today = new Date();
-        today.toISOString().substring(0, 10);
+        var today = new Date().toISOString().substring(0, 10);
         var button = $ipsp.get('button');
-        button.setMerchantId(1445591);
+        button.setMerchantId(1444265);
         button.setAmount(amount, 'UAH');
-        button.setResponseUrl('https://www.ed-era.com/');
         button.setProtocol("https");
         button.setHost('api.fondy.eu');
 
@@ -74,41 +72,6 @@ buttons.forEach(function(el){
         window.location.href = url;
     });
 });
-
-function createOrder(amount, order_desc) {
-    var button = $ipsp.get('button');
-    button.setMerchantId(1445591);
-    button.setAmount(amount, 'UAH');
-    button.setResponseUrl('https://www.ed-era.com/');
-    button.setProtocol("https");
-    button.setHost('api.fondy.eu');
-    button.addField({
-        label: 'Пожертва',
-        name: 'Пожертва',
-        value: order_desc
-    });
-    button.addField({
-        label: 'ФИО',
-        name: 'fio',
-        required: true
-    });
-    return button.getUrl();
-}
-
-function monthlySubscribe(amount, order_desc){
-    var button = $ipsp.get('button');
-    button.setMerchantId(1396424);
-    button.setAmount('200', 'USD', true);
-    button.setHost('api.fondy.eu');
-    button.setRecurringState(true);
-    button.addRecurringData({
-        start_time: '2016-10-09',
-        end_time: '2018-12-09',
-        amount: 200,
-        period: 'month',
-        every: 1
-    });
-}
 
 
 

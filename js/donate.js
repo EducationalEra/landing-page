@@ -39,8 +39,8 @@ buttons.forEach(function(el){
         button.setHost('api.fondy.eu');
 
         button.addField({
-            label: 'Пожертва',
-            name: 'Пожертва',
+            label: 'Благодійний внесок на статутну діяльність',
+            name: 'Благодійний внесок на статутну діяльність',
             value: amount
         });
         button.addField({
@@ -48,7 +48,7 @@ buttons.forEach(function(el){
             name: 'fio',
             required: true
         });
-        button.addParam("order_desc","Донат");
+        button.addParam("order_desc","Благодійний внесок на статутну діяльність");
         if(this.classList.contains('monthly')){
             button.setRecurringState(true);
             button.addRecurringData({

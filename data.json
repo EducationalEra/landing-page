@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "hsc": {
+      "className": "",
+      "imgUrl": "/img/courses/hsc.jpg",
+      "altText": "",
+      "href": "https://stophate.theworkademy.com/courses/course/#!204",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Хейт під час пандемії",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс із протидії мові ворожнечі в інтернеті. Ти зрозумієш, як маніпулювали твоїми емоціями під час карантину. І зрозумієш, що можна зробити, щоб не опублікувати черговий злісний коментар чи пост.",
+      "access": true,
+      "free": false
+    },
     "reprez": {
       "className": "",
       "imgUrl": "/img/courses/reprezent.png",

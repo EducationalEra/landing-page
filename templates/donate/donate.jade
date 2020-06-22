@@ -1,0 +1,65 @@
+include ../mixins.jade
+include ../includes/head.jade
+doctype html
+html
+    +head
+    body.hide-horizontal-scrollbar
+        include ../includes/gtm.jade
+        include ../includes/header.jade
+        section.content
+            section.top-section
+                section.custom-container
+                    h2.title-primary Як ви можете допомогти EdEra
+                    article.text-primary
+                        p EdEra — студія онлайн-освіти з п’ятирічним досвідом. Ми створили для вас понад 70 навчальних проєктів, допомогли школярам підготуватися до ЗНО, а вчителям і державним службовцям — підвищити кваліфікацію. Наші курси стосуються різних сфер: від медіаграмотності та інклюзії — до протидії домашньому насильству й кар’єрного планування.
+                        p Нам вже довіряють майже пів мільйона користувачів, і будь-хто може доєднатися до безкоштовного навчання на платформі EdEra.
+                        p Ми будемо вдячні, якщо ви підтримаєте нас, щоб кожна людина мала доступ  до якісної онлайн-освіти.
+                        p.regards
+                            | З любовʼю
+                            br
+                            | команда EdEra
+            section.donate-buttons-form.custom-container
+                form#choose_donate.donate-form
+                    div.donate-buttons-row.control-btns
+                        input(type='radio' name='donate-radio-btn' value='monthly' checked)#monthly.radio
+                        label(for='monthly').label.monthly Щомісяця
+                        input(type='radio' name='donate-radio-btn' value='yearly')#yearly.radio
+                        label(for='yearly').label.yearly ЩОРІЧНО
+                        input(type='radio' name='donate-radio-btn' value='once')#once.radio
+                        label(for='once').label.once Один раз
+                    div.donate-buttons-row
+                        button(value='100' name='donate-btn').donate-btn.monthly 100
+                        button(value='200' name='donate-btn').donate-btn.monthly 200
+                        button(value='500' name='donate-btn').donate-btn.monthly 500
+                        button(value='1000' name='donate-btn').donate-btn.monthly 1000
+                        button(value='2500' name='donate-btn').donate-btn.monthly 2500
+                        button(value='5000' name='donate-btn').donate-btn.monthly 5000
+                        button(value='10000' name='donate-btn').donate-btn.monthly 10000
+                        button(value='25000' name='donate-btn').donate-btn.monthly 25000
+                    div.donate-buttons-row.center
+                        button(value='10' name='donate-btn').donate-btn.monthly Інша сума
+            section.requisites
+                article.requisites-block.custom-container
+                    h3.title-secondary Реквізити для усіх українських банків
+                    p.text-secondary Громадська організація “ЕДЮКЕЙШНАЛ ЕРА”
+                    p.text-secondary Місцезнаходження: 03056, м. Київ, просп. Перемоги, 37, буд. 2, кв.5
+                    p.text-secondary ЄДРПОУ: 40379160
+                    p.text-secondary АТ КБ «ПРИВАТБАНК»
+                    p.text-secondary IBAN: UA223206490000026001052668038
+                    p.text-secondary Неприбуткова організація, не є платником ПДВ
+                    p.text-secondary Призначення платежу: Благодійний внесок на розвиток ГО “ЕДЮКЕЙШНАЛ ЕРА”
+                article.requisites-block.custom-container
+                    h3.title-secondary Для переказів з-за кордону (USD):
+                    p.text-secondary Громадська організація “ЕДЮКЕЙШНАЛ ЕРА”
+                    p.text-secondary Місцезнаходження: 03056, м. Київ, просп. Перемоги, 37, буд. 2, кв.5
+                    p.text-secondary ЄДРПОУ: 40379160
+                    p.text-secondary АТ КБ «ПРИВАТБАНК»
+                    p.text-secondary IBAN: UA223206490000026001052668038
+                    p.text-secondary Неприбуткова організація, не є платником ПДВ
+                div.decorator-dots
+
+        include ../includes/footer.jade
+        include ../includes/scripts.jade
+        link(href='/css/donate/donate.css', rel='stylesheet')
+        script(src='/js/fondy.js')
+        script(src='/js/donate.js')

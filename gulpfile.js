@@ -10,14 +10,19 @@ var gulpSequence = require('gulp-sequence');
 var _ = require('underscore');
 var browserSync = require('browser-sync').create();
 
-var books = ["ukrainian", "physics", "maths", "biology", "english", "geography", "history", "law", "english2", "anticorruption-lesson", "vaccination"];
+var books = ["ndi","ukrainian", "physics", "maths", "biology", "english", "geography", "history", "law", "english2", "anticorruption-lesson", "vaccination"];
 
 var lessons = ["1", "2"];
 
 gulp.task("sass", function () {
-    return gulp.src('css/**/*.scss')
+    return gulp.src('css/**/*.sass')
         .pipe(sass())
         .pipe(gulp.dest('build/css'));
+});
+gulp.task('scss', function() {
+    return gulp.src('css/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('build/css'));
 });
 
 gulp.task('templates', function() {
@@ -29,7 +34,7 @@ gulp.task('templates', function() {
         .pipe(gulp.dest("public"));
 });
 
-gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
+gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("css/**/*.css")
         .pipe(cachebust({type: 'timestamp'}))
         .pipe(gulp.dest("build/css"));
@@ -129,7 +134,10 @@ gulp.task('copy', gulp.parallel('sass', 'templates', function (done) {
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
         .pipe(gulp.dest("build/anticorr"));
-
+    gulp.src("public/books/ndi/**/*")
+        .pipe(gulp.dest("build/ndi"));
+    gulp.src("img/fonts/*.*")
+        .pipe(gulp.dest("build/img/fonts"));
     _.each(books, function (book) {
         gulp.src("public/books/" + book + ".html")
             .pipe(rename("index.html"))

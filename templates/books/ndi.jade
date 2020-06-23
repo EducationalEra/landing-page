@@ -1,0 +1,47 @@
+//
+   Created by yaroslav on 09-06-2020.
+include ../includes/head.jade
+doctype html
+html
+    +head(locals.titles.books.ndi.title, locals.titles.books.ndi.description, locals.titles.books.ndi.image,
+        locals.titles.books.ndi.url)
+    body
+        include ../includes/gtm.jade
+        include ../includes/header.jade
+        .library.section.heading
+            .container
+                include ../includes/book_h1.jade
+        section.about_book
+            .container
+                .book__figure
+                    img(alt='', src='/img/books/ndi.jpg')
+                .book__caption
+                    article
+                        h2
+                            | Публічні консультації: крок за кроком
+                        p
+                            | Онлайн-посібник “Публічні консультації: крок за кроком” розроблений насамперед для державних службовців, представників центральних органів виконавчої влади та громадських організацій, які долучаються до публічних консультацій щодо державних політик. Зокрема, кожен відповідальний за організацію та проведення публічних консультацій знайде в ньому нові ідеї та корисні підказки.
+
+
+                        p
+                            | У навчальному матеріалі ви дізнаєтеся про основні принципи публічних консультацій, а також отримаєте практичні поради для розроблення та проведення успішної консультації. Серед допоміжних ресурсів посібника: шаблони, інструменти, чеклісти та додаткові онлайн-ресурси.
+                        p
+                            | Ви також можете ознайомитись з онлайн-курсом “Публічні консультації” за посиланням: <a href="https://cutt.ly/iyMxYaZ" target="_blank">https://cutt.ly/iyMxYaZ</a>
+                        p Приємного навчання!
+                        p.
+                            <i>Створення цього посібника стало можливим завдяки щедрій підтримці британського народу через Фонд розвитку ефективного врядування Сполученого Королівства (GGF). Висловлені тут думки належать авторкам та не обов’язково відображають погляди уряду Її Величності.</i>
+
+                    .actions
+                        a.button.button--big(href='https://edera.gitbook.io/publ-chn-konsultacz-krok-za-krokom/', target='_blank')
+                            | Читати онлайн
+                            sup ❐
+                        a.button.button--big(href='../../anticorr-materials/ndi-pdf.pdf', target='_blank')
+                            | Завантажити
+                            sup
+                                i.fa.fa-file-pdf-o
+                            //sup
+                               i.fa.fa-floppy-o
+
+        include ../includes/book_like.jade
+        include ../includes/footer.jade
+        include ../includes/scripts.jade

@@ -1,6 +1,78 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "hsc": {
+      "className": "",
+      "imgUrl": "/img/courses/hsc.JPG",
+      "altText": "",
+      "href": "https://stophate.theworkademy.com/courses/course/#!204",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Хейт під час пандемії",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс із протидії мові ворожнечі в інтернеті. Ти зрозумієш, як маніпулювали твоїми емоціями під час карантину. І зрозумієш, що можна зробити, щоб не опублікувати черговий злісний коментар чи пост.",
+      "access": true,
+      "free": false
+    },
+    "reprez": {
+      "className": "",
+      "imgUrl": "/img/courses/reprezent.png",
+      "altText": "",
+      "href": "https://propowerpoint.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "PRO POWER POINT",
+      "courseSubtitle": "",
+      "courseDesc": "Інтерактивний онлайн-курс із дизайну презентацій у PowerPoint. Курс створений EdEra у партнерстві з компанією Reprezent.",
+      "access": true,
+      "free": false
+    },
+    "nabu": {
+      "className": "",
+      "imgUrl": "/img/courses/nabu.png",
+      "altText": "",
+      "href": "https://learn.nabu.gov.ua/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Слідство веде НАБУ: антикорупційна гра-розслідування",
+      "courseSubtitle": "",
+      "courseDesc": "Відчуй себе справжнім детективом: проведи допит найвищого посадовця, сплануй обшук державного підприємства, відвідай судове засідання. Перевіримо, чи вдасться тобі скерувати справу до суду!",
+      "access": true,
+      "free": false
+    },
+    "shwa": {
+      "className": "",
+      "imgUrl": "/img/courses/shwa.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Vidrodzhennia+SHWA101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Як навчати супергероїв?",
+      "courseSubtitle": "",
+      "courseDesc": "Курс для вчителів, які хочуть працювати в лікарні. Ви дізнаєтеся про особливості роботи з дітьми та отримаєте інструменти, які допоможуть подолати психологічні сумніви та бар’єри.",
+      "access": true,
+      "free": false
+    },
+    "proschool": {
+      "className": "",
+      "imgUrl": "/img/courses/proschool.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_PROSCHOOL+PS101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "ПРО.Школу для вчителів",
+      "courseSubtitle": "",
+      "courseDesc": "Працювати вчителем непросто: іноді робота приносить багато задоволення, а інколи — стрес. Про те, як зберігати спокій та справлятися з різними ситуаціями шкільної рутини — дізнавайтесь у курсі. ",
+      "access": true,
+      "free": false
+    },
+    "s21": {
+      "className": "",
+      "imgUrl": "/img/courses/s21.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:British_Council+BC1+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ключові уміння 21-го століття",
+      "courseSubtitle": "",
+      "courseDesc": "Змішаний курс, у якому навчання відбувається у двох формах — онлайн та офлайн. Онлайн-частина доступна всім, офлайн-програма розрахована на педагогічних працівників. ",
+      "access": true,
+      "free": false
+    },
     "demo": {
       "className": "demo",
       "imgUrl": "/img/courses/demo.jpg",
@@ -797,6 +869,12 @@
         "title": "Антикорупційний урок (короткий навчальний посібник)",
         "image": "https://www.ed-era.com/img/share/small/anticorruption-lesson.jpg",
         "description": "Антикорупційний урок підготовлено програмою розвитку ООН в Україні та проектом EdEra. Для проведення уроку створено сценарій, додаткові відеоматеріали та презентації."
+      },
+      "ndi": {
+        "url": "https://www.ed-era.com/books/ndi",
+        "title": "Публічні консультації: крок за кроком",
+        "image": "https://www.ed-era.com/img/books/ndi.jpg",
+        "description": "Посібник для державних службовців"
       }
     }
   }

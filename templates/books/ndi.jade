@@ -45,3 +45,10 @@ html
         include ../includes/book_like.jade
         include ../includes/footer.jade
         include ../includes/scripts.jade
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        script (9async src="https://www.googletagmanager.com/gtag/js?id=UA-171314400-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-171314400-1');

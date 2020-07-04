@@ -92,6 +92,9 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("public/talents.html")
         .pipe(rename("talents.html"))
         .pipe(gulp.dest("build"));
+    gulp.src("data.json")
+        .pipe(gulp.dest("build"))
+        .pipe(gulp.dest("public"));
     gulp.src("public/partnership.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build/partnership"));

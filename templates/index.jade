@@ -38,96 +38,6 @@ html
         b Вступ у мейкерство
 
       #courses.section.four
-        .container
-          h2 Нові проекти
-        .container
-          .row.cards-row
-            // Онлайн-курс для вчителів початкової школи
-            +course(locals.courses.nus)
-            // З учнями про освіту та кар’єру
-            //+course(locals.courses.co2502)
-            // Як навчати супергероїв?
-            +course(locals.courses.shwa)
-            // Дім (не)безпеки
-            // +course(locals.courses.nonviolence)
-            //PRO.school
-            //+course(locals.courses.proschool)
-            // Рери й боби
-            //+course(locals.courses.bery_i_roby)
-            //Ключові уміння 21-го столітт
-            +course(locals.courses.s21)
-            //Reprezent
-            +course(locals.courses.reprez)
-            // Ізі ЗНО. Англійська мова
-            +course(locals.courses.izizno_eng)
-            // Історія України в історіях
-            +course(locals.courses.znohistory)
-            //- Математика. Просто
-            //- +course(locals.courses.math_simple)
-            // Verified
-            +course(locals.courses.verified)
-
-            //Слідство веде НАБУ: антикорупційна гра-розслідування
-            +course(locals.courses.nabu)
-            // ОСНОВИ ВЕБ-РОЗРОБКИ (HTML, CSS, JAVASCRIPT)
-            //+course(locals.courses.osn_web)
-            // Соціальне підприємництво та конкурентоспроможність
-            //+course(locals.courses.soc_ent)
-
-            //+course(locals.courses.mediation)
-            // Академічна дорочесність
-            // +course(locals.courses.academic_integrity)
-            // Бюджетний процес. Основи
-            // +course(locals.courses.budget_basics)
-            //- Основи реформи охорони здоров’я з допомогою eHealth
-            //-+course(locals.courses.ehealth)
-            // Фактчек: довіряй-перевіряй
-            // +course(locals.courses.factcheck)
-            // 3 місця в кар'єр. Курс на зміни
-            // +course(locals.courses.ican)
-            // Публічні комунікації
-            //+course(locals.courses.pc)
-            // Виконавче провадження: поглиблений курс
-            // +course(locals.courses.dvs2)
-            // КГБ
-            // +course(locals.courses.kgb)
-            // Права людини в освітньому просторі
-            // +course(locals.courses.hre)
-            //- Навчальні модулі для формування громадянської компетентності
-            //-+course(locals.courses.modules)
-            //-Ефективні комунікації для освітніх управлінців
-            //-+course(locals.courses.effective_communication)
-            // Публічні консультації
-            //-+course(locals.courses.ndi)
-            //- Угода про асоціацію Україна-ЄС
-            //-+course(locals.courses.eu_agreement)
-            //- Прозора енергетика
-            //-course(locals.courses.energy)
-            //- Управління школою. Практикум
-            //-+course(locals.courses.prosvit)
-            //- ДНК Лідерів
-            //-+course(locals.courses.leader_dna)
-            //- Інтерактивний журнал
-            //-+course(locals.courses.hrights_live)
-            //- Колошкільне дитинознавство
-            //-+course(locals.courses.royz)
-            //- Онлайн-курс «Автостопом по біології»
-            //- +course(locals.courses.biology_zno)
-            //- Домедична допомога
-            //- +course(locals.courses.med)
-            //- Людина та держава. Правила гри
-            //-+course(locals.courses.law)
-            //- Недискримінаційний підхід у навчанні
-            //-+course(locals.courses.non_discrimination)
-            //- Робота вчителя початкових класів із дітьми з особливими освітніми потребами
-            //- +course(locals.courses.inclusion_teacher)
-            //- Лайфхаки з української мови
-            //- +course(locals.courses.ukr_lifehacks)
-            //- Як писати про економіку без помилок?
-            //- +course(locals.courses.economics)
-            //- Експорт, ринки ЄС та інтернаціоналізація бізнесу II
-            //-+course(locals.courses.smartExport)
-
         #wrapper-button.container
           a.button(href="./courses/")
             | До всіх курсів
@@ -405,3 +315,6 @@ html
 
     include includes/footer.jade
     include includes/scripts.jade
+    script(src="https://cdn.jsdelivr.net/npm/vue")
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script(src="/js/filter/app.js" type="module")

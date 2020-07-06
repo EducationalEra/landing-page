@@ -11,14 +11,6 @@ export default {
       }
     },
     computed: {
-        buttons() {
-                let string = 'display: grid; grid-column-gap: 2rem; grid-template-columns: ';
-                for(let elem in this.topics) {
-                    string += "1fr "
-                }
-                string += ';';
-                return string;
-        },
         container() {
             return 'margin-top: 85px;'
         },
@@ -28,11 +20,9 @@ export default {
         }
     },
     methods: {
-      getCourses(obj) {
-          let id;
-          if(typeof  obj === "string") id = obj;
-          else id = obj.topicId;
-          this.id = id;
+      getCourses(newId = "all") {
+          this.id = newId;
+          let id = this.id;
           let array = [];
           for(let key in this.courses) {
               if (this.courses.hasOwnProperty(key)) {
@@ -45,6 +35,7 @@ export default {
       },
       changeId(event) {
           this.id = event;
+          console.log(this.id);
       }
     },
     components: {
@@ -57,19 +48,19 @@ export default {
             this.data = data.data;
             this.topics = this.data.topics;
             this.courses = this.data.courses;
-            this.getCourses({topicId: "all"});
+            this.getCourses();
             console.log(this.topics);
             console.log(this.courses);
         });
     },
 
     template: '<div id="courses" class="section four" >' +
-        '<div class="container" :style="container"><div class="row cards-row" :style="buttons"><TopicButton' +
+        '<div class="container" :style="container"><div class="row cards-row"><TopicButton' +
         ' @buttonClicked="changeId($event)"' +
         ' v-for="button in' +
         ' topics"' +
-        ' :active-button="this.id"' +
+        ' :active="id"' +
         ' v-key="button.topicId" :topicId="button.topicId" :topicName="button.topicName"/></div></div><CoursesCards' +
-        ' :courses="currentProps"/>' +
+        ' :courses="currentProps" :active="id"/>' +
         '</div>'
 }

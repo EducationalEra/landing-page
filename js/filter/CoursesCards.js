@@ -1,7 +1,8 @@
 export default {
     name: 'CoursesCards',
     props: {
-        courses: Array
+        courses: Array,
+        active: String
     },
     computed: {
 

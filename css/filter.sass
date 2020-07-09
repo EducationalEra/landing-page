@@ -1,18 +1,28 @@
-#courses .topicButton a
+
+#courses .topicButton
   padding: 8px 2em
+  border: 1px solid rgba(248, 168, 0, 0)
+  cursor: pointer
+  transition: 0.3s ease-out
+#courses .topicButton a
   display: inline-block
   font-size: calc(12rem / 16)
   color: black
-  cursor: pointer
   font-family: Roboto, sans-serif
   width: 100%
   text-align: center
+  position: relative
   border: 1px solid rgba(0, 0, 0, 0)
-  transition: 0.3s ease-out
   box-sizing: border-box
-#courses .topicButton:hover a
-  border-bottom: 1px solid #F8A800
-#courses .topicButton.active a
+#courses .topicButton:not(.active):hover a::before
+  position: absolute
+  width: 100%
+  background-color: #F8A800
+  height: 1px
+  content: ""
+  left: 0
+  bottom: 0
+#courses .topicButton.active
   border: 1px solid #F8A800
 
 #courses .container:first-child

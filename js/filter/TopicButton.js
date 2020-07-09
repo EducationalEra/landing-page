@@ -15,7 +15,7 @@ export default {
         return {
         }
     },
-    template: '<div :class="activeClass"><a @click="onButtonClick">{{topicName}}</a></div>',
+    template: '<div :class="activeClass" @click="onButtonClick"><a>{{topicName}}</a></div>',
     methods: {
         onButtonClick() {
             this.$emit('buttonClicked', this.topicId);

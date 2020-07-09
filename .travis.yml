@@ -13,7 +13,7 @@ deploy:
     skip_cleanup: true
     acl: public_read
     cache_control: "max-age=60"
-    on: preproduction
+    on: main-filter
 
   - provider: s3
     access_key_id: "$ACCESS_KEY_ID"

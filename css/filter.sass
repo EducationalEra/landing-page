@@ -6,8 +6,7 @@
   transition: 0.3s ease-out
   text-align: center
   flex-grow: 1
-#courses .topicButton + #courses .topicButton
-  margin-left: 0.5rem  
+
 #courses .topicButton a
   font-size: calc(14rem / 16)
   color: black
@@ -34,13 +33,12 @@
   display: flex
   align-items: center
   padding: 0 15px
-#courses .container:first-child .row.cards-row .topicButton
-  margin-bottom: 2em
-#courses .container:first-child .row.cards-row .topicButton:not(:last-child)
-  margin-right: auto
 #courses .container:last-child .row.cards-row .col-sm-6.col-md-4.col-lg-3
   animation: appearing 1s ease-out
   animation-play-state: running
+
+#courses .topicButton + #courses .topicButton
+  margin-left: 0.5rem  
 
 @keyframes appearing
   0%

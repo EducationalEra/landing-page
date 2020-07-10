@@ -47,3 +47,15 @@
   100%
     opacity: 1
     transform: scale(1)
+@media screen (max-width: 1100px)
+   #courses .container:first-child .row.cards-row
+     display: grid
+     grid-template-columns: 1fr 1fr 1fr
+     grid-column-gap: 1em
+     grid-row-gap: 1em
+  
+@media screen (max-width: 720px)
+  grid-template-columns: 1fr 1fr
+
+@media screen (max-width: 480px)
+  grid-template-columns: 1fr

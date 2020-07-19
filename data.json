@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "ei": {
+      "className": "",
+      "imgUrl": "/img/courses/ei.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EarlyIntervention+EI_101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Раннє втручання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для фахівців, які хочуть надавати послугу раннього втручання або вже її надають, для батьків дітей із порушеннями розвитку та для всіх зацікавлених у цій темі.",
+      "access": true,
+      "free": false
+    },
     "hsc": {
       "className": "",
       "imgUrl": "/img/courses/hsc.JPG",

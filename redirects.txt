@@ -42,4 +42,6 @@
 /izizno_eng/ https://courses.ed-era.com/courses/course-v1:EDERA_OSVITORIA_GREENCOUNTRY+ENG101+2020/about
 /skills21/ https://courses.ed-era.com/courses/course-v1:British_Council+BC1+2020/about
 /pro.school/ https://courses.ed-era.com/courses/course-v1:EDERA_PROSCHOOL+PS101+2020/about
+/hatespeech/ https://stophate.ed-era.com/uk/courses/course/#!204
+/stophate/ https://stophate.ed-era.com/uk/courses/course/#!204
 # EOF - do not leave any line (even empty) after this line!!!

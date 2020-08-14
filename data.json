@@ -1,6 +1,30 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "distance_pto": {
+      "className": "",
+      "imgUrl": "/img/courses/distance-pto.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:MON-DECIDE+2+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Онлайн-курс для викладачів та керівників закладів професійно-технічної освіти (ПТО) про дистанційне навчання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для викладачів та керівників закладів професійно-технічної освіти (ПТО) про дистанційне навчання та застосування технологій дистанційного навчання в умовах карантину.",
+      "access": true,
+      "free": false
+    },
+    "distance_school": {
+      "className": "",
+      "imgUrl": "/img/courses/distance-school.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:MON-DECIDE+1+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Онлайн-курс для вчителів та керівників шкіл про дистанційне навчання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для вчителів та керівників шкіл про дистанційне навчання та застосування технологій дистанційного навчання в умовах карантину.",
+      "access": true,
+      "free": false
+    },
     "ei": {
       "className": "",
       "imgUrl": "/img/courses/ei.jpg",

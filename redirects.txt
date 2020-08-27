@@ -45,4 +45,5 @@
 /hatespeech/ https://stophate.ed-era.com/uk/courses/course/#!204
 /stophate/ https://stophate.ed-era.com/uk/courses/course/#!204
 /distance-learning/ https://courses.ed-era.com/courses/course-v1:MON-DECIDE+0+2020/about
+/ethic_finance/ https://study.ed-era.com/ru/courses/course/#!253
 # EOF - do not leave any line (even empty) after this line!!!

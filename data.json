@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "exstr": {
+      "className": "",
+      "imgUrl": "/img/courses/exstr.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EDERA_BRITISH_COUNCIL+ExStr202+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Exam Strategies from A to Z",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс курс про ефективні стратегії підготовки учнів та учениць до різних іспитів з англійської мови.",
+      "access": true,
+      "free": false
+    },
     "distance_pto": {
       "className": "",
       "imgUrl": "/img/courses/distance-pto.png",

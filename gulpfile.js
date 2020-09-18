@@ -134,6 +134,8 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
         .pipe(gulp.dest("build/modules"));
     gulp.src("public/anticorr/**/*")
         .pipe(gulp.dest("build/anticorr"));
+    gulp.src("ubisoft/**/*")
+      .pipe(gulp.dest("build/ubisoft"));
     gulp.src("public/books/ndi/**/*")
         .pipe(gulp.dest("build/ndi"));
     gulp.src("img/fonts/*.*")

@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: 'UbisoftSans';
+  src: url('UbisoftSans-Regular.eot?#iefix') format('embedded-opentype'),  url('UbisoftSans-Regular.woff') format('woff'), url('UbisoftSans-Regular.ttf')  format('truetype'), url('UbisoftSans-Regular.svg#UbisoftSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'UbisoftSans';
+  src: url('UbisoftSans-Bold.eot?#iefix') format('embedded-opentype'),  url('UbisoftSans-Bold.woff') format('woff'), url('UbisoftSans-Bold.ttf')  format('truetype'), url('UbisoftSans-Bold.svg#UbisoftSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

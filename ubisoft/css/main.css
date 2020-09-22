@@ -1490,5 +1490,13 @@ html.preload::before {
     /*******/
 }
 
+.developer.developer--2 img {
+    width: 11em;
+}
+
+.lecturer-box img {
+    width: 100%;
+    height: 100%;
+}
 
 

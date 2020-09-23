@@ -1,6 +1,30 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "cfa": {
+      "className": "",
+      "imgUrl": "/img/courses/cfa.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!253",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "ЕТИКА ФАХІВЦЯ З ФІНАНСІВ ТА ІНВЕСТИЦІЙ",
+      "courseSubtitle": "",
+      "courseDesc": "У цьому онлайн-курсі — симуляторі ми розглянемо поняття професійної поведінки фахівця з фінансів та інвестицій і навчимося вирішувати етичні проблеми різної складності.",
+      "access": true,
+      "free": false
+    },
+    "ubisoft": {
+      "className": "",
+      "imgUrl": "/img/courses/ubisoft.jpg",
+      "altText": "",
+      "href": "https://www.ed-era.com/ubisoft/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Навчайся. Грай. Працюй",
+      "courseSubtitle": "",
+      "courseDesc": "Ми розкажемо й покажемо, як створюють компʼютерні ігри в Україні. Курс буде корисним  для вчителів, батьків, дітей і всіх, хто цікавиться ігровою індустрією.",
+      "access": true,
+      "free": false
+    },
     "exstr": {
       "className": "",
       "imgUrl": "/img/courses/exstr.png",

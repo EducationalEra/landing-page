@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "distance_uni": {
+      "className": "",
+      "imgUrl": "/img/courses/distance-uni.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:DECIDE+3+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "#blend_it: опануємо змішане навчання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для викладачів та працівників адміністрації закладів вищої освіти про дистанційне навчання та застосування технологій дистанційного навчання в умовах карантину.",
+      "access": true,
+      "free": false
+    },
     "dgk": {
       "className": "",
       "imgUrl": "/img/courses/dgk.jpg",

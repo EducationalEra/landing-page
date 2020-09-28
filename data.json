@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "dgk": {
+      "className": "",
+      "imgUrl": "/img/courses/dgk.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:AFEW+1+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Усе, що треба знати для забезпечення прав підлітків в Україні",
+      "courseSubtitle": "",
+      "courseDesc": "Ви дізнаєтеся про основні права та свободи людини на практичних прикладах, а також проаналізуєте, як законодавство регулює обіг психоактивних речовин та права підлітків у громадських місцях та кіберпросторі.",
+      "access": true,
+      "free": false
+    },
     "cfa": {
       "className": "",
       "imgUrl": "/img/courses/cfa.jpg",

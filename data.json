@@ -1,6 +1,30 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "cola": {
+      "className": "",
+      "imgUrl": "/img/courses/cola.jpg",
+      "altText": "",
+      "href": "http://edera.cocacola.tilda.ws/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Спецкурс HoReCa від Coca-Cola",
+      "courseSubtitle": "",
+      "courseDesc": "Безкоштовний онлайн-курс для тих, хто має або хоче відкрити бізнес після карантину. У 15 відео експерти з маркетингу, створення команди, контролю якості, фінансів та диджиталу діляться досвідом та практичними порадами.",
+      "access": true,
+      "free": false
+    },
+    "czechdoc": {
+      "className": "",
+      "imgUrl": "/img/courses/chechdoc.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:CzechCentres+1+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Медична допомога новонародженим та дітям зі спадковими хворобами обміну речовин",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для медиків від лекторів із Чехії та Польщі",
+      "access": true,
+      "free": false
+    },
     "distance_uni": {
       "className": "",
       "imgUrl": "/img/courses/distance-uni.png",

@@ -1,0 +1,113 @@
+include ../includes/head-lzv-rights.pug
+doctype html
+html
+	+head
+	body
+
+
+		include ../includes/gtm.pug
+		include ../includes/header.pug
+
+		.lzv-cover.social-image
+				.lzv-heading-container
+					.lzv-heading
+						.h1-lzv Social Rights
+
+
+		section
+			.container
+				p.lzv-main
+					| Are you interested to know how does the state help people living with HIV? In the video,
+					span.lzv-bold Olena Protsenko
+					| , a lawyer of the Ukrainian Helsinki Human Rights Union, will talk about unemployment benefits, social benefits for low-income families, special payments for HIV-positive children and their parents. She will also cover the rights of health workers.
+					br
+					br
+					| Watch the video and take the
+					a(href="#test") test!
+
+			.lzv-container
+				center
+					h2.h2-lzv VIDEO MATERIALS
+
+			.lzv-container
+				center
+					.lzv-video
+						iframe(src='https://www.youtube.com/embed/_inu5J9sywk', width='100%', height='100%', frameborder='0', allowfullscreen='')
+
+
+		.lzv-container.quiz_container_big#test
+			center
+				h2.h2-lzv Test
+			#en-social-quiz
+				br
+				br
+				div(v-if='!started')
+				div(v-else-if='progress')
+					.quiz_container.quiz
+						.quiz_progess
+							| Question:
+							span  {{index + 1}} / {{quiz.length}}
+						.quiz_question
+							h3 {{quiz[index].title}}
+							div(v-if='quiz[index].description !== false')
+								p {{quiz[index].description}}
+							div(v-if='quiz[index].img !== false')
+								img(v-bind:src='quiz[index].img')
+						.quiz_answers(v-for='(answer, key) in quiz[index].answers')
+							.quiz_answer
+								div(v-if='quiz[index].type == 0')
+									button.quiz_radiobutton(v-if='answers[index] !== key', @click='choose(key)')
+									button.quiz_radiobutton.chose(v-else='')
+								div(v-else='')
+									button.checkbox(v-if='answers[index][key] !== true ', @click='choose(key)')
+									button.checkbox(v-else='', @click='choose(key)')
+										svg(width='16', height='11', viewBox='0 0 16 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+											path(d='M6.04309 10.943L0.0608365 5.33851C-0.0202788 5.26252 -0.0202788 5.14853 0.0608365 5.07254L1.78454 3.45769C1.86565 3.38169 1.98733 3.38169 2.06844 3.45769L6.18504 7.31433L13.9316 0.0569948C14.0127 -0.0189983 14.1343 -0.0189983 14.2155 0.0569948L15.9392 1.67185C16.0203 1.74784 16.0203 1.86183 15.9392 1.93782L6.327 10.943C6.24588 11.019 6.12421 11.019 6.04309 10.943Z', fill='#65B2E1')
+								.quiz_margin_left
+									p(v-if='!answer.image') {{answer.body}}
+									img(v-else='', v-bind:src='answer.image')
+									p.quiz_hint.true(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === true') {{answer.hint}}
+									p.quiz_hint.true(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === true') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 0 && submit == true && answers[index] === key && answer.correct === false') {{answer.hint}}
+									p.quiz_hint.false(v-if='quiz[index].type == 1 && submit == true && answers[index][key] == true &&  answer.correct === false') {{answer.hint}}
+						button.quiz_button.disabled(v-if='chosen == 0 && submit === false') Answer
+						button.quiz_button(v-else-if='chosen != 0 && submit === false', @click='submitAnswer()') Answer
+						.quiz_main_hint(v-else-if='submit === true')
+							button.quiz_button(@click='goNext()') Continue
+							div
+								p(v-if='check == true', v-html='quiz[index].true_hint')
+								p
+								p(v-if='check == false', v-html='quiz[index].false_hint')
+								p
+				div(v-else='')
+					.quiz_container.result
+						h5 Result
+						h5
+						h2 {{score}}/{{answers.length}}
+						p {{resultText[score].description}}
+						button.quiz_button(@click='restart()') Try again
+
+
+		script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js')
+		script(src='/js/lzv/en-social.js')
+
+		.lzv-container
+			center
+				h2.h2-lzv LIVING WITH HIV
+		.container
+			p.lzv-main
+				span.lzv-bold Vera Varyha
+				| is a public activist, a member of the board of the charitable organization «Positive Women». She has been living with HIV for 16 years and has a beloved husband and two healthy children. Vira is currently helping women to defend their rights, as well as working to unite and to mobilize the community of HIV-positive women in the regions. She will share her own story in the video.
+			center
+				.lzv-video
+					iframe(src='https://www.youtube.com/embed/L3Wx2iuKvLE', width='100%', height='100%', frameborder='0', allowfullscreen='')
+
+		include ./en-lzv-footer.pug
+
+		section.mon-alarm.mon-main
+			.container
+				a.button.button--big(href='/lzv-rights/social' target="_blank")
+					| Українська версія
+
+		include ../includes/footer.pug
+		include ../includes/scripts.pug

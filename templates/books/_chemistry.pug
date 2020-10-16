@@ -1,0 +1,39 @@
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.biology.title, locals.titles.books.biology.description, locals.titles.books.biology.image, locals.titles.books.biology.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/chemistry.jpg')
+            .book__caption
+               article
+                  h2
+                     | Неорганічна хімія. Початок.
+                  p
+                     | Ця книга присвячена першому кроку на шляху до вивчення всього живого. Перед вами розкриються всі таємниці та тонкощі чарівного світу рослин. Приєднуйтеся!
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 95
+                     .td 70
+                     .td 80
+                     .td 10%
+               .actions
+                  a.button.button--big(href='http://chemistry.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_subscribe.pug
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug

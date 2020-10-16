@@ -1,0 +1,41 @@
+//
+   Created by olga on 17-08-2015.
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.english.title, locals.titles.books.english.description, locals.titles.books.english.image, locals.titles.books.english.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/eng.jpg')
+            .book__caption
+               article
+                  h2
+                     | Англійська мова: Морфологія
+                  p
+                     | Починайте вивчення англійської з найголовнішого – частин мови.  Від артиклів до складних конструкцій та модальних дієслів. Також у цій інтерактивній книзі ми з вами розкриємо всі особливості морфології в англійській мові.
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 100
+                     .td 100
+                     .td 100
+                     .td 100%
+               .actions
+                  a.button.button--big(href='http://english.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug
+

@@ -1,20 +1,24 @@
+include mixins.pug
+include includes/head.pug
 - let assetsPath = "assets/"
-include includes/head-making.jade
 <!DOCTYPE html>
+
 html(lang = 'X-UA-Compatible')
-    include includes/assets/head
+    include includes/head.pug
     +head
     body
-            main
-                include includes/gtm.jade
-                include includes/header.jade
-                include vaccination/includes/pages/header
-                include vaccination/includes/pages/nav
-                include vaccination/includes/pages/description
-                include vaccination/includes/pages/material
-                include vaccination/includes/pages/certificate
-                include vaccination/includes/pages/slider
-                include vaccination/includes/pages/partners
-                include vaccination/includes/pages/description-footer
-                include includes/footer.jade
-                include includes/scripts.jade
+        main
+            include includes/gtm.pug
+            include includes/header.pug
+            .wrapper
+                include vaccination/includes/pages/header.pug
+                include vaccination/includes/pages/nav.pug
+                include vaccination/includes/pages/description.pug
+                include vaccination/includes/pages/material.pug
+                include vaccination/includes/pages/certificate.pug
+                include vaccination/includes/pages/slider.pug
+                include vaccination/includes/pages/partners.pug
+                include vaccination/includes/pages/description-footer.pug
+            include includes/footer.pug
+    link(rel='stylesheet', href="/css/vaccination3.css")
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")

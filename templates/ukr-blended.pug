@@ -1,0 +1,76 @@
+//
+	 Created by artem on 05-02-2017.
+include includes/head-ukr-blended.pug
+doctype html
+html
+	+head
+	body
+		include includes/gtm.pug
+		include includes/header.pug
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.blended.section.heading
+			.container
+				h1
+					span.exo Експеримент із впровадження дистанційного і змішаного навчання (blended learning)
+					small на уроках української мови та літератури
+		section.project_features
+			.container
+				.lead_block
+					p.lead
+						| Запрошуємо вас до участі в експерименті зі змішаного навчання, використовуючи безкоштовні онлайн-курси з
+						a(href="https://courses.ed-era.com/courses/Osvitoria_and_EdEra/lifehacks101/lifehacks101/about", target='_blank')
+							| української мови
+						| та
+						a(href="https://courses.ed-era.com/courses/course-v1:Osvitoria_and_EdEra+lifehacks201+lifehacks201/about", target='_blank')
+							| літератури.
+						| Курси розроблені студією онлайн-освіти EdEra, громадською спілкою «Освіторія» та&nbsp;викладачем Новопечерської школи, к. ф. н. Ігорем Хворостяним. Курс з української мови рекомендовано Міністерством освіти і науки України до використання в загальноосвітніх навчальних закладах.
+				article
+					ul.features_list
+						li
+							| Персоналізоване навчання
+						li
+							| Онлайн + офлайн
+						li
+							| Практична діяльність
+						li
+							| Результативність
+						li
+							| Забезпечення методичною і організаціною підтримкою
+
+		section#blended-info
+			.container
+				.blended-info-wrapper
+					.blended-info-description
+						p.description Існують різні моделі змішаного навчання. Зокрема, одна з найдієвіших для шкіл, ротаційна модель за станціями. Ротаційна модель за станціями — це метод проведення уроку, за якого учні навчаються через різні формати/діяльності (станції).
+						br
+						p.description Одним із таких форматів є онлайн-навчання. Інші можливі формати: робота в невеликих проектних командах, короткий теоретичний виклад матеріалу вчителем (як&nbsp;для цілої групи, так і для проектних команд), групові проекти, індивідуальні консультації від вчителя, письмові завдання, вікторини тощо. Важливо: учні мають пройти через всі станції (формати навчання) впродовж уроку.
+
+					.blended-info-cover
+						figure
+							img(src="../img/ukr-blended.png")
+
+		section.anticorr-feedback
+			.container
+				h2.section_title
+					span  Всеукраїнський експеримент зі змішаного навчання «Українська мова та література»
+			.feedback
+				p.additional Усі охочі можуть долучитися. Для участі необхідно заповнити форму зворотнього зв'язку.
+			.container
+				.feedback
+					a.button.button--big(href='http://bit.ly/blended-lifehacks', target='_blank')
+						| ДОЛУЧИТИСЯ
+
+
+		section.support_us
+			.container
+				p
+					| Розповсюджуйте, будь ласка, інформацію про проект, щоб долучити якомога більше спеціалістів до обговорень:
+				.likely.likely-big
+					.facebook Поділитись
+					.gplus Плюсанути
+					.twitter(data-via='info_edera') Твітнути
+
+
+		include includes/footer.pug
+		include includes/scripts.pug

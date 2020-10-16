@@ -1,0 +1,41 @@
+//
+   Created by olga on 17-08-2015.
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.history.title, locals.titles.books.history.description, locals.titles.books.history.image, locals.titles.books.history.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/hist.jpg')
+            .book__caption
+               article
+                  h2
+                     | Історія України: зародження української нації
+                  p
+                     | Вирушайте у захопливу подорож минулим: від появи перших людей на території сучасної України до утворення Речі Посполитої, могутньої сили у Східній Європі. Діяльність князів та королів, війни та битви, а також соціальні процеси – все це стане відомим та зрозумілим.
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 115
+                     .td 80
+                     .td 100
+                     .td 75%
+               .actions
+                  a.button.button--big(href='http://history.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug
+

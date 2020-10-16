@@ -1,0 +1,19 @@
+//
+   Created by Danil Vdovenko on 06-12-2018.
+
+include ../../includes/head.pug
+doctype html
+html
+    +head
+
+    body
+        include ../../includes/gtm.pug
+        include ../../includes/header.pug
+
+        .section.heading.anticorruption-game
+            .container
+                #anticorr-game
+
+    include ../../includes/footer.pug
+    include ../../includes/scripts.pug
+    script(src='/js/anticorr/game/build.js')

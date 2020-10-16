@@ -1,0 +1,43 @@
+//
+    Created by Enzewon 09-10-2018
+
+include fundraising/head.pug
+doctype html
+html
+    +head
+    body
+        include includes/gtm.pug
+        include fundraising/header.pug
+
+        #fundraising_heading.section.heading
+            .container
+                h1
+                    strong Fundraising
+                h2
+                    a.button.orange.wfp(href='#')
+                        span I want to help!
+
+        #fundraising_project.section
+            .container
+                p.h2
+                    a.wfp.orange(href='#') Support EdEra&nbsp;
+                    | on creating the best Software Development online course!
+                .two_column
+                    .item
+                        p
+                        | We are in the process of creating a course based on&nbsp;
+                        a.orange(target='_blank' href='http://a.co/d/aPREIrN') this book.
+                        p
+                        | This course will explain the process of creation of software starting from the idea and finishing with the software running in production.
+                        p
+                        | This will be a funny course based on real experience of real software engineers.
+                        p
+                        a.button.orange.wfp(href='#') I want to help!
+                    .item
+                        p
+                        a(target='_blank' href='http://a.co/d/aPREIrN')
+                            img(src='/img/it_book_cover.png', alt='Book Cover')
+
+        include fundraising/footer.pug
+        include includes/scripts.pug
+        include includes/wfp-script.pug

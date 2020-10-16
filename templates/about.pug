@@ -1,0 +1,394 @@
+//
+	Created by olga on 03-02-2015.
+include includes/head.pug
+doctype html
+html
+	+head
+	body.hide-horizontal-scrollbar
+		include includes/gtm.pug
+		include includes/header.pug
+		link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
+		// ПЕРШИЙ ЕКРАН
+		.about.section.heading
+			.container
+				h1
+					| Про нас
+
+		// КОМАНДА
+		.container
+			.row
+				.col-2
+				.col-8
+					#about_project.section
+						.container#team
+							article
+								br
+								p
+									strong EdEra
+									| – студія онлайн-освіти. Ми створюємо онлайн-курси, інтерактивні підручники, освітні спецпроекти та моделі інтеграції сучасних освітніх рішень у традиційний навчальний процес.
+								p
+									| Ми створюємо продукти за власними методиками, базуючись на дослідженнях у сфері онлайн-освіти та когнітивістики. Кожен курс розробляється з унікальним підходом до інформації та студентів.
+								p
+									strong Наша мета:
+									| зробити освіту в Україні якісною, доступною та наявною у глобальному освітньому контексті.
+								p
+									strong Напрямки діяльності:
+									ul
+										li
+											u Шкільна освіта
+											| - для школярів та вчителів;
+										li
+											u Професійна освіта
+											| - для професіоналів соціального сектору (юристів, журналістів, підприємців тощо);
+										li
+											u Громадянська освіта
+											| - для кожного та кожної з нас;
+										li
+											u Корпоративна освіта
+											| - для бізнесу.
+
+		center
+			center
+				h2 Команда
+				h3 Засновники
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/28.jpg', border='0')
+								.info
+									h1.name Ілля Філіпов
+									p.job-descr Керівник, співзасновник
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/31.jpg', border='0')
+								.info
+									h1.name Артем Ільчук
+									p.job-descr Операційний директор, співзасновник
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/filipova.jpg', border='0')
+								.info
+									h1.name Оля Філіпова
+									p.job-descr Технічна директорка, співзасновниця
+
+			center
+				br
+				h3 Адміністративний відділ
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/20.jpg', border='0')
+								.info
+									h1.name Сергій Плашенко
+									p.job-descr Фінансовий менеджер
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/33.jpg', border='0')
+								.info
+									h1.name Інна Дзиндра
+									p.job-descr Проектна менеджерка, юристка
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/13.jpg', border='0')
+								.info
+									h1.name Ігор Конопка
+									p.job-descr Проектний менеджер, юрист
+			center
+				br
+				h3 Відділ партнерств
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/08.jpg', border='0')
+								.info
+									h1.name Діана Даюб
+									p.job-descr Менеджерка з партнерств
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/09.jpg', border='0')
+								.info
+									h1.name Влад Єленчін
+									p.job-descr Менеджер з партнерств
+			center
+				br
+				h3 Менеджери проектів
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/33.jpg', border='0')
+								.info
+									h1.name Інна Дзиндра
+									p.job-descr Проектна менеджерка, юристка
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/13.jpg', border='0')
+								.info
+									h1.name Ігор Конопка
+									p.job-descr Проектний менеджер, юрист
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/24.jpg', border='0')
+								.info
+									h1.name Настя Паращук
+									p.job-descr Проектна менеджерка
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/02.jpg', border='0')
+								.info
+									h1.name Юля Лисенко
+									p.job-descr Проектна менеджерка, редакторка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/12.jpg', border='0')
+								.info
+									h1.name Іра Кротова
+									p.job-descr Проектна менеджерка
+			center
+				br
+				h3 Відділ редакторів
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/06.jpg', border='0')
+								.info
+									h1.name Валерія Залєвська
+									p.job-descr Голова відділу редакторів
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/05.jpg', border='0')
+								.info
+									h1.name Марія Горбач
+									p.job-descr Редакторка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/19.jpg', border='0')
+								.info
+									h1.name Юля Цукор
+									p.job-descr Моушн-дизайнерка, редакторка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/18.jpg', border='0')
+								.info
+									h1.name Ярослава Бухта
+									p.job-descr Методологиня
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/02.jpg', border='0')
+								.info
+									h1.name Юля Лисенко
+									p.job-descr Проектна менеджерка, редакторка
+			center
+				br
+				h3 Відділ дизайнерів
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/15.jpg', border='0')
+								.info
+									h1.name Саша Сірик
+									p.job-descr Голова відділу дизайнерів
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/04.jpg', border='0')
+								.info
+									h1.name Мая Нгуєн
+									p.job-descr Ілюстраторка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/21.jpg', border='0')
+								.info
+									h1.name Света Нгуєн
+									p.job-descr Дизайнерка
+			center
+				br
+				h3 Відділ продакшену
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/03.jpg', border='0')
+								.info
+									h1.name Нікіта Барзашвілі
+									p.job-descr Голова відділу продакшену, звукорежисер
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/10.jpg', border='0')
+								.info
+									h1.name Вася Дубовий
+									p.job-descr Арт-директор
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/01.jpg', border='0')
+								.info
+									h1.name Володя Томащук
+									p.job-descr Моушн-дизайнер
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/27.jpg', border='0')
+								.info
+									h1.name Макс Герасименко
+									p.job-descr Продюсер, оператор
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/22.jpg', border='0')
+								.info
+									h1.name Паша Примаченко
+									p.job-descr Моушн-дизайнер
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/11.jpg', border='0')
+								.info
+									h1.name Ваня Супрун
+									p.job-descr Оператор
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/14.jpg', border='0')
+								.info
+									h1.name Катя Стаднік
+									p.job-descr Операторка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/07.jpg', border='0')
+								.info
+									h1.name Дмитро Романов
+									p.job-descr Моушн-дизайнер
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/19.jpg', border='0')
+								.info
+									h1.name Юля Цукор
+									p.job-descr Моушн-дизайнерка, редакторка
+
+			center
+				br
+				h3 Відділ комунікацій
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/17.jpg', border='0')
+								.info
+									h1.name Таня Теслюченко
+									p.job-descr Голова відділу комунікацій
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/25.jpg', border='0')
+								.info
+									h1.name Настя Тимофеєва
+									p.job-descr СММ-ниця та PR-менеджерка
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/babiak.jpg', border='0')
+								.info
+									h1.name Богдан Бабяк
+									p.job-descr SEO-спеціаліст
+			center
+				br
+				h3 Відділ досліджень
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/lyashenko.jpg', border='0')
+								.info
+									h1.name Аня Ляшенко
+									p.job-descr Спеціалістка відділу досліджень
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/16.jpg', border='0')
+								.info
+									h1.name Марія Наумовець
+									p.job-descr Спеціалістка відділу досліджень
+			center
+				br
+				h3 Технічний відділ
+				br
+			.row.mx-2.px-3
+				.col-12
+					.row.mymy
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/filipova.jpg', border='0')
+								.info
+									h1.name Оля Філіпова
+									p.job-descr Технічна директорка, співзасновниця
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/vilao.jpg', border='0')
+								.info
+									h1.name Руй Вілао
+									p.job-descr Віце-президент по технологіях
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/moroz.jpg', border='0')
+								.info
+									h1.name Женя Мороз
+									p.job-descr Розробник програмного забезпечення
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/23.jpg', border='0')
+								.info
+									h1.name Олег Мохнюк
+									p.job-descr UI-інженер
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/30.jpg', border='0')
+								.info
+									h1.name Даня Вдовенко
+									p.job-descr Front-end/Back-end-розробник
+
+						.col-sm-6.col-md-6.col-lg-4.col-xl-3.mb-4
+							.member-card
+								img.img(src='../img/team/new_photos/compressed/26.jpg', border='0')
+								.info
+									h1.name Макс Ільїн
+									p.job-descr Front-end/Back-end-розробник
+
+		include includes/footer.pug
+		include includes/scripts.pug

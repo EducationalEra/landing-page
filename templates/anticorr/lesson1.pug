@@ -1,0 +1,168 @@
+//
+	 Created by artem on 25-11-2017.
+
+include ../includes/head-anticorruption-lesson.pug
+doctype html
+html
+	+head
+	body
+		include ../includes/gtm.pug
+		include ../includes/header.pug
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+
+		.library.section.heading.header_cases(style="background-image: url(/img/anticorr/cover_lesson1.jpg)")
+			.container.cases_25
+				a.nav-return(href='/anticorr')
+					i.fa.fa-angle-left
+					| Антикорупційний урок
+				h1.anticorr
+					span.exo Розслідування корупції
+					p.text студія онлайн-освіти EdEra та Програма Розвитку ООН в Україні за підтримки Міністерства закордонних справ Данії
+
+		section.project_features
+			.container
+				.lead_block
+					p.lead
+						| Мабуть, кожному з нас хоч раз хотілося б спробувати себе у ролі детектива. Завдяки цьому уроку у вас нарешті буде така можливість! Ви дізнаєтесь про антикорупційні інструменти та спробуєте провести власне розслідування!
+						br
+
+				article
+					ul
+						li
+							| Сценарії та рекомендації педагогу
+						li
+							| Презентації та відеоматеріали
+						li
+							| Гейміфіковане навчання
+						li
+							| Командні завдання
+						li
+							| Робочі аркуші
+
+		section.materials_features.archive
+			.container
+				.description_block
+					p.lead
+						| Для проведення уроку у себе в школі вчителю потрібно завантажити файли за посиланням.
+
+				article
+					a.button.button--big(href='https://drive.google.com/drive/u/0/folders/1jWHrhjDNwTjXSY755yi5MFFhlIWkRIH5', target="_blank")
+						| Завантажити матеріали
+						sup
+							i.fa.fa-floppy-o
+
+		section.bookshelf
+			.container.cases_material
+				.book.about
+					a(href='https://drive.google.com/file/d/1nzF-iO4zKuaogy9orLXr9O2-RU0uOrW3/view', target='_blank')
+						figure
+							img.cases(alt='', src='/img/25/scenario.png')
+							figcaption
+								h3
+									| Сценарій уроку
+
+				.book.about
+					a(href='https://drive.google.com/file/d/1RvplCamL4ggk09Kvrl_86ovQ7NsHOU0D/view', target='_blank')
+						figure
+							img.cases(alt='', src='/img/25/picture.png')
+							figcaption
+								h3
+									| Презентація
+									small#anchor-timeline PDF
+
+				.book.about
+					a(href='https://drive.google.com/file/d/1NLVpnpJiwCxQatBcFQ2TXhnggBiIPIs3/view', target='_blank')
+						figure
+							img.cases(alt='', src='/img/25/notebook.png')
+							figcaption
+								h3
+									| Робочий аркуш
+									small#anchor-timeline PDF
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=mSd05gYwWVQ')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Бігус.інфо
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=SgppsfAUP5g')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Антикорупційний штаб
+
+				.book.about
+					a.popup-youtube(href='https://www.youtube.com/watch?v=Z388bJpAZuI')
+						figure
+							img.cases(alt='', src='/img/25/video-player.png')
+							figcaption
+								h3
+									| Центр протидії корупції
+
+		#courses.section.four
+			.container
+				h2 Уроки
+				.container
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson2.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson2', target='_blank') Перейти до уроку
+						h3.course_title Що таке корупція?
+						p
+							| Практика неможлива без теорії. Тому в цьому уроці ми зібрали інформацію про природу та шкоду корупції. А ще — створили декілька кейсів для кращого опанування матеріалу.
+						p.access.granted Відкрито доступ
+
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson3.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson3', target='_blank') Перейти до уроку
+						h3.course_title Освітній процес
+						p
+							| Студентські роки — надважливий етап. Саме в університеті ми часто стикаємося з корупцією вперше. Ви дізнаєтесь про права та обов’язки, студентське самоврядування та отримаєте дієві поради, щоб захиститися від корупції у ВНЗ.
+						p.access.granted Відкрито доступ
+
+					.course_card
+						.figure
+							img(src='/img/anticorr/lesson4.jpg', alt='')
+							a.button.goto_course(href='/anticorr/lesson4', target='_blank') Перейти до уроку
+						h3.course_title Викриття
+						p
+							| Мета діяльності будь-якого антикорупціонера — реальне покарання для корупціонерів. Проте це неможливо без викриття, тобто висвітлення факту корупції правоохоронним органам чи громадськості. У цьому уроці ви дізнаєтесь про викривачів та їхню діяльність.
+						p.access.granted Відкрито доступ
+
+		//-section.anticorr-feedback
+			.container
+				h2.section_title
+					span  Відгук про урок та конкурс презентацій
+				.feedback
+					p.additional Заповніть, будь ласка, форму зворотнього зв'язку після проведення уроку у Вашій школі (кнопка зліва). Візьміть участь у конкурсі соціальних презентацій від Вашої школи (кнопка справа).
+			.container
+				.feedback
+					a.button.button--big(href='https://edera1.typeform.com/to/EZ70Kg', target='_blank')
+						| Відгук про урок
+					a.button.button--big(href='https://edera1.typeform.com/to/OpMFxY', target='_blank')
+						| Участь у конкурсі
+
+		section.anticorruption-book
+			.container
+				.book-image
+					img(src='/img/books/anticorruption-lesson.jpg')
+				.book-description
+					p Короткий навчальний посібник «Антикорупційний урок» є збіркою матеріалів, які можуть бути корисні вчителям для проведення відповідного уроку у старших класах середньої школи до Міжнародного дня боротьби з корупцією. Цей день відзначається 9 грудня у всьому світі, згідно з рішенням Генеральної Асамблеї ООН.
+					.actions
+						a.button.button--big(href='http://anticorruption-lesson.ed-era.com/', target='_blank')
+							| Читати онлайн
+							sup ❐
+						a.button.button--big(href='https://drive.google.com/open?id=1zwhXpjAGKnqwQr9Im3qDgIoWFijX4HIe', target='_blank')
+							| Завантажити
+							sup
+								i.fa.fa-file-pdf-o
+
+
+		include ./anticorr-footer.pug
+		include ../includes/footer.pug
+		include ../includes/scripts.pug

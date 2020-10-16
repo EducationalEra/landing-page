@@ -1,12 +1,10 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var sass = require('gulp-sass');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var cachebust = require('gulp-cache-bust');
 var rename = require("gulp-rename");
-var watch = require('gulp-watch');
 var fs = require('fs');
-var gulpSequence = require('gulp-sequence');
 var _ = require('underscore');
 var browserSync = require('browser-sync').create();
 
@@ -26,8 +24,8 @@ gulp.task('scss', function() {
 });
 
 gulp.task('templates', function() {
-    return gulp.src('templates/**/*.jade')
-        .pipe(jade({
+    return gulp.src('templates/**/*.pug')
+        .pipe(pug({
             pretty: "\t",
             locals: JSON.parse(fs.readFileSync("data.json", 'utf8'))
         }))
@@ -59,9 +57,9 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("public/index.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build"));
-    gulp.src("public/donate/donate.html")
-        .pipe(rename("index.html"))
-        .pipe(gulp.dest("build/donate"));
+    // gulp.src("public/donate/donate.html")
+    //     .pipe(rename("index.html"))
+    //     .pipe(gulp.dest("build/donate"));
     gulp.src("public/mon.html")
         .pipe(rename("mon.html"))
         .pipe(gulp.dest("build"));
@@ -165,7 +163,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('js/**/*.js', 'templates/**/*.jade', 'css/*.css', 'css/*.less', 'css/*.scss', 'css/**/*.scss', gulp.series('copy'));
+  gulp.watch('js/**/*.js', 'templates/**/*.pug', 'css/*.css', 'css/*.less', 'css/*.scss', 'css/**/*.scss', gulp.series('copy'));
 });
 
 gulp.task('build', gulp.series('copy'));

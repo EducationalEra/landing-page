@@ -18,7 +18,7 @@ For watching files in runtime open the console in other tab and run:
   > node_modules/gulp/bin/gulp.js watch
 
 <!-- тут тоже непонятно: актуально или нет -->
-Now all .jade and .less files are being watched and compiled in realtime.
+Now all .pug and .less files are being watched and compiled in realtime.
 
 NOTE: do not edit HTML files, they will be overriden the next time you compile. All template assets are in the templates directory.
 

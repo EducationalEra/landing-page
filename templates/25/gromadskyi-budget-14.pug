@@ -1,0 +1,96 @@
+include ../includes/cases-head.pug
+doctype html
+html
+  +head
+  body
+    include ../includes/gtm.pug
+    include ../includes/header.pug
+    .library.section.heading.header_cases(style="background-image: url(../img/25/i/12.jpg)")
+      .container.cases_25
+        a(href='/modules')
+          i.fa.fa-angle-left
+          | До всіх модулів
+        h1
+          span.exo Громадський бюджет
+          p.text Змінювати життя власного міста — не так складно, як здається на перший погляд. І громада, і окремий громадянин можуть долучитися до позитивних змін завдяки бюджету участі. Учні дізнаються, що таке бюджет участі та як він працює. І найголовніше — зрозуміють, що їх голос та дії мають значення
+          small EdEra та ILID
+        //article.about.hyphenate
+
+    //- СПІЛЬНОКОШТ
+    a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті")
+      .banner_25
+        img.left_img(src="../img/25/left_banner.png" alt="")
+        p Підтримайте <span>EdEra</span>
+        img.right_img(src="../img/25/right_banner.png" alt="")
+
+
+    // Programs
+    section.bookshelf
+      .container.cases_material
+        h2
+          | Матеріали заняття
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1e98_x6mcrPCSSByYAonNNbByvNGRX8Ut')
+            figure
+              img.cases(alt='', src='../img/25/scenario.png')
+              figcaption
+                h3
+                  | Сценарій №1
+                  small
+                    | 45 хв
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1EDjROsplvyb3KEcI9lo4-Jfdq4vttLfb')
+            figure
+              img.cases(alt='', src='../img/25/picture.png')
+              figcaption
+                h3
+                  | Презентація
+                  small
+                    | PDF
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1el2Zo_lmCHRIBaqrj6LoHElnw7PX5Cbp')
+            figure
+              img.cases(alt='', src='../img/25/scenario.png')
+              figcaption
+                h3
+                  | Сценарій №2
+                  small
+                    | 45 хв
+
+        .book.about
+          a(href='https://drive.google.com/open?id=1jS54KR5YGgQK5HgcKGUj6PfJVyDz9-Sz')
+            figure
+              img.cases(alt='', src='../img/25/notebook.png')
+              figcaption
+                h3
+                  | Додаток
+
+    section.materials_features.archive
+      .container.cases_btn
+        .description_block
+          p.lead
+            | Щоб провести заняття у себе в школі вчителю потрібно завантажити архів з файлами та ознайомитись з додатковими матеріалами.
+
+        article
+          a.button.button--big(href='https://drive.google.com/open?id=1TpaSVlD1-7AnocmczxuU7jay0y7oZLtH')
+            | Завантажити матеріали
+            sup
+              i.fa.fa-floppy-o
+
+    #partners.section
+      .container
+        p.h2
+          | Організації-розробники
+        ul.partners_list
+          li
+            a(href='https://www.ed-era.com', target='_blank', title='EdEra')
+              img(src='../img/25/1/edera_logo.png', alt='EdEra')
+          li
+            a(href='https://ilid.org.ua/', target='_blank', title='ILID Ukraine')
+              img(src='../img/25/1/ILID_logo.png', alt='EdEra')
+
+    include ../includes/footer.pug
+    include ../includes/scripts.pug

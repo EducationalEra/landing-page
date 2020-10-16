@@ -1,0 +1,40 @@
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.english2.title, locals.titles.books.english2.description, locals.titles.books.english2
+           .image, locals.titles.books.english2.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/english2.jpg')
+            .book__caption
+               article
+                  h2
+                     | Англійська мова: Часові форми
+                  p
+                     | Покроковий та детальний розгляд усіх найчастіше вживаних часових форм англійської мови. Вивчаємо способи утворення часових форм та особливості їхнього вживання. Ласкаво просимо!
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 120
+                     .td 80
+                     .td 110
+                     .td 10%
+               .actions
+                  a.button.button--big(href='http://english2.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_subscribe.pug
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug

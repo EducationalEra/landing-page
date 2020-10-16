@@ -1,0 +1,163 @@
+//
+	Created by olga on 03-02-2015.
+include mixins.pug
+include includes/head.pug
+doctype html
+html
+	+head
+	body.hide-horizontal-scrollbar
+		include includes/gtm.pug
+		include includes/header.pug
+		link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
+		// ПЕРШИЙ ЕКРАН
+		.courses.section.heading
+			.container
+				h1
+					|  Онлайн-курси
+
+		//- СПІЛЬНОКОШТ
+			a.banner_a(href="https://biggggidea.com/project/edera-onlajn-osvita-z-lyubovyu/", target="_blank" title="EdEra на Спільнокошті")
+				.banner_25
+					img.left_img(src="../img/25/left_banner.png" alt="")
+					p Підтримайте <span>EdEra</span>
+					img.right_img(src="../img/25/right_banner.png" alt="")
+
+
+		// КУРСИ
+		#courses.section.four
+			.container
+				h2 Всі курси
+			.container
+				.row.cards-row
+					// Онлайн-курс для вчителів початкової школи
+					+course(locals.courses.nus)
+					// Verified
+					+course(locals.courses.dgk)
+					+course(locals.courses.distance_uni)
+					+course(locals.courses.distance_school)
+					+course(locals.courses.distance_pto)
+					//Ubisoft
+					+course(locals.courses.ubisoft)
+					//PRO.school
+					+course(locals.courses.cola)
+					+course(locals.courses.proschool)
+					// Права людини в освітньому просторі
+					//Exam Strategies
+					+course(locals.courses.exstr)
+					//CFA
+					+course(locals.courses.cfa)
+					+course(locals.courses.verified)
+					// Як навчати супергероїв?
+					+course(locals.courses.czechdoc)
+					+course(locals.courses.shwa)
+					//Reprezent
+
+					+course(locals.courses.reprez)
+					+course(locals.courses.hre)
+					// Дім (не)безпеки
+					+course(locals.courses.nonviolence)
+					//Ключові віміння 21-го століття
+					+course(locals.courses.hsc)
+					//Раннє втручання
+					+course(locals.courses.ei)
+					+course(locals.courses.s21)
+					// КГБ
+					+course(locals.courses.kgb)
+					//Слідство веде НАБУ: антикорупційна гра-розслідування
+					+course(locals.courses.nabu)
+					// Історія України в історіях
+					+course(locals.courses.znohistory)
+					// Академічна дорочесність
+					+course(locals.courses.academic_integrity)
+					// Рери й боби
+					+course(locals.courses.bery_i_roby)
+					// 3 місця в кар'єр. Курс на зміни
+					+course(locals.courses.ican)
+					// Ізі ЗНО. Англійська мова
+					+course(locals.courses.izizno_eng)
+					// З учнями про освіту та кар’єру
+					+course(locals.courses.co2502)
+					// Публічні комунікації
+					+course(locals.courses.pc)
+					// Публічні консультації
+					//- +course(locals.courses.ndi)
+					// Основи виконавчого провадження
+					// +course(locals.courses.dvs)
+					// Mediation
+					+course(locals.courses.mediation)
+					// Виконавче провадження: поглиблений курс
+					+course(locals.courses.dvs2)
+					// Соціальне підприємництво та конкурентоспроможність
+					+course(locals.courses.soc_ent)
+					// Математика. Просто
+					+course(locals.courses.math_simple)
+					// ОСНОВИ ВЕБ-РОЗРОБКИ (HTML, CSS, JAVASCRIPT)
+					+course(locals.courses.osn_web)
+					// Фактчек: довіряй-перевіряй
+					+course(locals.courses.factcheck)
+					// Бюджетний процес. Основи
+					+course(locals.courses.budget_basics)
+					// Основи реформи охорони здоров’я з допомогою eHealth
+					+course(locals.courses.ehealth)
+					// ДНК Лідерів
+					+course(locals.courses.leader_dna)
+					// Ефективні комунікації для освітніх управлінців
+					+course(locals.courses.effective_communication)
+					// Управління школою. Практикум
+					+course(locals.courses.prosvit)
+					// Угода про асоціацію Україна-ЄС
+					+course(locals.courses.eu_agreement)
+					// Прозора енергетика
+					+course(locals.courses.energy)
+					// Колошкільне дитинознавство
+					+course(locals.courses.royz)
+					// Домедична допомога
+					+course(locals.courses.med)
+					// Онлайн-курс «Автостопом по біології»
+					+course(locals.courses.biology_zno)
+					// Людина та держава. Правила гри
+					+course(locals.courses.law)
+					// Європейський механізм захисту прав людини. Частина 2
+					+course(locals.courses.hrights2)
+					// Робота вчителя початкових класів із дітьми з особливими освітніми потребами
+					+course(locals.courses.inclusion_teacher)
+					// Недискримінаційний підхід у навчанні
+					+course(locals.courses.non_discrimination)
+					// Європейський механізм захисту прав людини. Частина 1
+					+course(locals.courses.hrights1)
+					// Участь батьків у організації інклюзивного навчання
+					+course(locals.courses.inclusion_par)
+					//- English verb tences
+					//- +course(locals.courses.english2)
+					// Як писати про економіку без помилок?
+					+course(locals.courses.economics)
+					// Експорт, ринки ЄС та інтернаціоналізація бізнесу II
+					+course(locals.courses.smartExport)
+					//- 3D
+					//-+course(locals.courses.essentialsModel)
+					// Лайфхаки з української мови
+					+course(locals.courses.ukr_lifehacks)
+					// Лайфхаки з української літератури
+					+course(locals.courses.lit_lifehacks)
+					// Експорт, ринки ЄС та інтернаціоналізація бізнесу
+					+course(locals.courses.export)
+					// Протидія торгівлі людьми в Україні
+					+course(locals.courses.stop_trafficking)
+					// Українська мова
+					+course(locals.courses.ukr1)
+					// Історія
+					+course(locals.courses.history1)
+					// Математика
+					+course(locals.courses.math1)
+					// Фізика
+					+course(locals.courses.physics1)
+					// Англійська мова
+					+course(locals.courses.english1)
+					// Біологія
+					+course(locals.courses.biology1)
+					// Географія
+					+course(locals.courses.geography1)
+
+		include includes/footer.pug
+		include includes/scripts.pug
+

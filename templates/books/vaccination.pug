@@ -1,0 +1,149 @@
+include ../includes/head-vaccination.pug
+doctype html
+html
+	+head
+	body.hide-horizontal-scrollbar
+
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/application.css')
+		script(src='/js/vendor/modernizr-2.6.2.min.js')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/css/vendor/magnific-popup.css')
+		link(rel='stylesheet', href='/css/vendor/slick.css')
+		include ../includes/gtm.pug
+		include ../includes/header.pug
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+		link(href='/css/others_for_adapted_pages.css', rel='stylesheet')
+
+		.vaccination.section.heading
+			.container
+				.row
+					.col-sm-1.col-md-1.col-lg-1
+					.col-sm-10.col-md-10.col-lg-10
+						h1(style="width: 100%!important;")
+							span.exo Урок «Віруси. Бактерії. Мікроби. Захист від хвороб»
+							small для вчителів початкових класів
+						h2 «Як говорити з дітьми про вакцинацію?»
+
+		section.project_features
+			.container
+				.row
+					.col-sm-1.col-md-1.col-lg-1
+					.col-sm-10.col-md-10.col-lg-10
+						.lead_block
+							p.lead
+								| Шановні вчителі початкових класів та усі охочі провести урок про вакцинацію з дітьми!
+								br
+							p.lead
+								| Проєкт EdEra за підтримки USAID та UNICEF у партнерстві з ГО «ВакциНація» та Practicum підготували урок «Віруси. Бактерії. Мікроби. Захист від хвороб», який можна провести у вашій школі.
+								br
+							p.lead
+								| На цій сторінці ви знайдете сценарій, відеоматеріали, а також усе необхідне для глибшого вивчення теми захисту від хвороб. Приєднуйтеся до ініціативи та приємного навчання!
+
+						article
+							ul
+								li
+									| Сценарії та рекомендації педагогу
+								li
+									| Презентація
+								li
+									| Відеоматеріали
+								li
+									| Додатки для друку
+
+		#courses.section.four
+			.container
+				h2 МАТЕРІАЛИ
+				.container
+					.row.cards-row
+						.col-sm-6.col-md-4.col-lg-3
+							.course_card
+								.figure
+									img(src="/img/anticorr/lesson1.jpg")
+									a.button.goto_course(href="https://drive.google.com/open?id=1ihFocwPK6L5ws1bERzlbg7CmYwDjjGBT", target='_blank') = Перейти до уроку
+								h3.course_title
+									| Сценарій уроку
+								p
+									| Сценарій уроку — це покрокова інструкція для вчителів, у якій ми прописали весь зміст уроку та детальний план зі вказівками, що допоможуть вам.
+								p.access.granted
+									| Відкрито доступ
+						.col-sm-6.col-md-4.col-lg-3
+							.course_card
+								.figure
+									img(src="/img/anticorr/lesson2.jpg")
+									a.button.goto_course(href="https://drive.google.com/open?id=14RgyfD6WYWXLw5K7p8TooR_sX72UBPos", target='_blank') = Перейти до уроку
+								h3.course_title
+									| Презентація уроку
+								p
+									| Презентація уроку — це супровідний матеріал, який допоможе вам візуалізувати урок для дітей.
+								p.access.granted
+									| Відкрито доступ
+
+						.col-sm-6.col-md-4.col-lg-3
+							.course_card
+								.figure
+									img(src="/img/anticorr/lesson3.jpg")
+									a.button.goto_course(href="https://drive.google.com/drive/folders/1LTbDdZ8IClbfUI2Lgo5792G_TcaJNZHn?usp=sharing", target='_blank') = Перейти до уроку
+								h3.course_title
+									| Відеоматеріали
+								p
+									| Відеоматеріали, створені спеціально для цього уроку, стануть у пригоді кожному, хто захоче провести урок.
+								p.access.granted
+									| Відкрито доступ
+
+						.col-sm-6.col-md-4.col-lg-3
+							.course_card
+								.figure
+									img(src="/img/anticorr/lesson4.jpg")
+									a.button.goto_course(href="https://drive.google.com/open?id=1sJNMa2puDJqljnGnsUELfRWxpCbG3Ejo", target='_blank') = Перейти до уроку
+								h3.course_title
+									| Додатки для проведення уроку
+								p
+									| У цій вкладці ви знайдете всі необхідні матеріали для уроку. Їх можна роздрукувати.
+								p.access.granted
+									| Відкрито доступ
+
+		section#new-course
+			.container
+				.row
+					.col-sm-1.col-md-1.col-lg-1
+					.col-sm-10.col-md-10.col-lg-10
+						.row
+							.col-lg-6.col-md-6.col-sm-12
+								iframe(width='560', height='315', src='https://www.youtube.com/embed/mMosEjYjc4M', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+							.col-lg-6.col-md-6.col-sm-12
+								iframe(width='560', height='315', src='https://www.youtube.com/embed/mMosEjYjc4M', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+
+						a.description(href="https://drive.google.com/open?id=1sJNMa2puDJqljnGnsUELfRWxpCbG3Ejo")
+							| Натисніть сюди, щоб завантажити всі матеріали, необхідні для проведення уроку з дітьми.
+
+		section.materials_features.archive
+			p.h2
+				| Партнери проекту
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.usaid.gov/uk/ukraine', target='_blank', title='USAID')
+							img(src='/img/vaccination/partners/USAID.png', alt='USAID')
+					li
+						a(href='https://www.unicef.org/', target='_blank', title='UNICEF')
+							img(src='/img/vaccination/partners/UNICEF_LOGO_CYAN.png', alt='UNICEF')
+			br
+			.container
+				p.additional(style="font-size:15px;") Проєкт реалізовано в межах програми UNICEF Україна «Створення попиту та розвиток потенціалу щодо інтегрованих соціальних послуг та вакцинації» за підтримки Агентства США з міжнародного розвитку (USAID).
+			br
+			.container
+				ul.partners_list
+					li
+						a(href='https://www.ed-era.com/', target='_blank', title='Ed-Era')
+							img(src='/img/vaccination/edera_logo.png', alt='Ed-Era')
+					li
+						a(href='http://practicum.space/', target='_blank')
+							img(src='/img/vaccination/partners/practicum-logo.png')
+					li
+						a(href='https://www.facebook.com/vaccination.ua/', target='_blank')
+							img(src='/img/vaccination/partners/ГО _ВакциНація_.png')
+
+
+		include ../includes/footer.pug
+		include ../includes/scripts.pug

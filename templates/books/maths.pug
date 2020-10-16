@@ -1,0 +1,40 @@
+//
+   Created by olga on 17-08-2015.
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.math.title, locals.titles.books.math.description, locals.titles.books.math.image, locals.titles.books.math.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/math.jpg')
+            .book__caption
+               article
+                  h2
+                     | Математика: Арифметика, рівняння та нерівності
+                  p
+                     | Алгебра – серйозна наука, але ми впевнені, що вона може бути цікавою та захопливою, а найголовніше – зрозумілою. З нашими відеодемонстраціями, вбудованими завданнями та докладними поясненнями, у вас не виникне проблем з опануванням початків математики.
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 115
+                     .td 90
+                     .td 100
+                     .td 69%
+               .actions
+                  a.button.button--big(href='http://math.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug

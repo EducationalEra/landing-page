@@ -1,0 +1,40 @@
+include ../includes/head.pug
+doctype html
+html
+   +head(locals.titles.books.law.title, locals.titles.books.law.description, locals.titles.books.law.image,
+   locals.titles.books.law.url)
+   body
+      include ../includes/gtm.pug
+      include ../includes/header.pug
+      .library.section.heading
+         .container
+            include ../includes/book_h1.pug
+      section.about_book
+         .container
+            .book__figure
+               img(alt='', src='/img/books/law.jpg')
+            .book__caption
+               article
+                  h2
+                     | Правознавство: Основи вчення про державу та право
+                  p
+                     | Введення у теоретичну базу з правознавства та юриспруденції. Від теорії держави та політичних режимів до захисту прав у Європейському суді з прав людини.
+               .b-info
+                  .thead
+                     .td Сторінок
+                     .td Візуалізацій
+                     .td Запитань
+                     .td Наповнення
+                  .tbody
+                     .td 120
+                     .td 60
+                     .td 110
+                     .td 8%
+               .actions
+                  a.button.button--big(href='http://law.ed-era.com/', target='_blank')
+                     | Читати
+                     sup ❐
+      include ../includes/book_subscribe.pug
+      include ../includes/book_like.pug
+      include ../includes/footer.pug
+      include ../includes/scripts.pug

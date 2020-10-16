@@ -4,7 +4,7 @@
   "description": "NOTE: do not edit HTML files, they will be overriden the next time you compile.  All template assets are in the templates directory.",
   "main": "gulpfile.js",
   "dependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-cache-bust": "^1.4.1",

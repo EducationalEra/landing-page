@@ -1,6 +1,18 @@
 {
   "url": "https://www.ed-era.com/",
   "courses": {
+    "anxiety": {
+      "className": "",
+      "imgUrl": "/img/anxiety/flower-hart.svg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!265",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Діалоги без тривоги",
+      "courseSubtitle": "",
+      "courseDesc": "Чи часто ви тривожитеся? Чи заважає вам це повноцінно працювати та відпочивати? Як ви справляєтеся з тривожністю?\n\nКожен із нас відчуває тривожність, і кожен долає її по-різному. Під час курсу «Діалоги без тривоги» ви дізнаєтеся про різні способи подолання тривожності.",
+      "access": true,
+      "free": false
+    },
     "cola": {
       "className": "",
       "imgUrl": "/img/courses/cola.jpg",

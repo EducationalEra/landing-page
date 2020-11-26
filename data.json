@@ -61,6 +61,18 @@
       "access": true,
       "free": false
     },
+    "lenovo": {
+      "className": "",
+      "imgUrl": "/img/courses/card_lenovo.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra_Osvitoriya+BR102+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Бери й роби. Змішане та дистанційне навчання",
+      "courseSubtitle": "",
+      "courseDesc": "Курс, в основі якого — практичні інструменти для вчителів в умовах змішаного та дистанційного навчання.",
+      "access": true,
+      "free": false
+    },
     "dgk": {
       "className": "",
       "imgUrl": "/img/courses/dgk.jpg",

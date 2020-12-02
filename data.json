@@ -13,6 +13,18 @@
       "access": true,
       "free": false
     },
+    "canada": {
+      "className": "",
+      "imgUrl": "/img/courses/card_canada.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:PLEDDG+CANADA101+2020/about#",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Жіночий бізнес: шляхи розвитку та інструменти підтримки",
+      "courseSubtitle": "",
+      "courseDesc": "Чому важливо розвивати жіноче підприємництво та як жінки-підприємниці впливають на добробут громади та економіку загалом?",
+      "access": true,
+      "free": false
+    },
     "cola": {
       "className": "",
       "imgUrl": "/img/courses/cola.jpg",

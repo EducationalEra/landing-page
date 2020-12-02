@@ -61,6 +61,30 @@
       "access": true,
       "free": false
     },
+    "doktors": {
+      "className": "",
+      "imgUrl": "/img/courses/card_doktors.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:CzechCentres_EdEra+2+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Сучасний догляд за новонародженими",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для лікарів та медсестер від лекторів із Чехії та Польщі.",
+      "access": true,
+      "free": false
+    },
+    "lenovo": {
+      "className": "",
+      "imgUrl": "/img/courses/card_lenovo.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:EdEra_Osvitoriya+BR102+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Бери й роби. Змішане та дистанційне навчання",
+      "courseSubtitle": "",
+      "courseDesc": "Курс, в основі якого — практичні інструменти для вчителів в умовах змішаного та дистанційного навчання.",
+      "access": true,
+      "free": false
+    },
     "dgk": {
       "className": "",
       "imgUrl": "/img/courses/dgk.jpg",

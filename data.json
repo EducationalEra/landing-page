@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "finfin": {
+      "className": "",
+      "imgUrl": "/img/courses/card_finfin.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Learning_Together+1+2021/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Викладання української в класах із навчанням мовами національних меншин",
+      "courseSubtitle": "",
+      "courseDesc": "Викладання української мови для учнів закладів загальної середньої освіти з навчанням мовами національних меншин.",
+      "access": true,
+      "free": false
+    },
     "cola": {
       "className": "",
       "imgUrl": "/img/courses/cola.jpg",

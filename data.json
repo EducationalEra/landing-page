@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "uiip": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_uiip.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!283",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Місцевий економічний розвиток: виклики та інструменти",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для представників політичних партій, які прагнуть ефективних рішень у розвитку регіону.",
+      "access": true,
+      "free": false
+    },
     "cola": {
       "className": "",
       "imgUrl": "/img/courses/cola.jpg",
@@ -64,7 +76,7 @@
     "distance_uni": {
       "className": "",
       "imgUrl": "/img/courses/cover_blend_it_.png",
-      
+
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:DECIDE+3+2020/about",
       "hrefText": "Перейти до курсу",

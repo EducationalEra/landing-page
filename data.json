@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "ifes": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_ifes.jpg",
+      "altText": "",
+      "href": "https://demcourse.theworkademy.com/#intros",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Демократія від теорії до практики",
+      "courseSubtitle": "",
+      "courseDesc": "Інтерактивний курс із громадянської освіти для студентів партнерських закладів вищої освіти.",
+      "access": true,
+      "free": false
+    },
     "cola": {
       "className": "",
       "imgUrl": "/img/courses/cola.jpg",
@@ -64,7 +76,7 @@
     "distance_uni": {
       "className": "",
       "imgUrl": "/img/courses/cover_blend_it_.png",
-      
+
       "altText": "",
       "href": "https://courses.ed-era.com/courses/course-v1:DECIDE+3+2020/about",
       "hrefText": "Перейти до курсу",

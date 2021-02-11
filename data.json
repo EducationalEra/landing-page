@@ -46,6 +46,9 @@
       "courseTitle": "Демократія від теорії до практики",
       "courseSubtitle": "",
       "courseDesc": "Інтерактивний курс із громадянської освіти для студентів партнерських закладів вищої освіти.",
+      "access": true,
+      "free": false
+    },
     "uiip": {
       "className": "",
       "imgUrl": "/img/courses/cover_uiip.jpg",

@@ -46,6 +46,15 @@
       "courseTitle": "Демократія від теорії до практики",
       "courseSubtitle": "",
       "courseDesc": "Інтерактивний курс із громадянської освіти для студентів партнерських закладів вищої освіти.",
+    "uiip": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_uiip.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!283",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Місцевий економічний розвиток: виклики та інструменти",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для представників політичних партій, які прагнуть ефективних рішень у розвитку регіону.",
       "access": true,
       "free": false
     },

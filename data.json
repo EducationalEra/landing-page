@@ -37,6 +37,15 @@
       "access": true,
       "free": false
     },
+    "ifes": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_ifes.jpg",
+      "altText": "",
+      "href": "https://demcourse.theworkademy.com/#intros",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Демократія від теорії до практики",
+      "courseSubtitle": "",
+      "courseDesc": "Інтерактивний курс із громадянської освіти для студентів партнерських закладів вищої освіти.",
     "uiip": {
       "className": "",
       "imgUrl": "/img/courses/cover_uiip.jpg",

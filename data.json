@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "SocEntrepreneurship": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_SE.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!309",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Соціальне підприємництво та конкурентоспроможність",
+      "courseSubtitle": "",
+      "courseDesc": "У курсі ви дізнаєтеся, що таке соціальне підприємництво, його основні відмінності від традиційних видів бізнесу та конкурентні переваги соціальних підприємств. Також ви ознайомитеся з різними типами соціальних підприємств, їхніми формами та бізнес-моделями",
+      "access": true,
+      "free": false
+    },
     "finfin": {
       "className": "",
       "imgUrl": "/img/courses/card_finfin_new.jpg",

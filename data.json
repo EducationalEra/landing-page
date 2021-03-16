@@ -457,6 +457,18 @@
       "access": true,
       "free": false
     },
+    "budget": {
+      "className": "",
+      "imgUrl": "/img/courses/card_budget.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!384",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ґендерно орієнтований підхід у бюджетному процесі",
+      "courseSubtitle": "",
+      "courseDesc": "В онлайн-курсі ви дізнаєтесь про те, як забезпечити ґендерну рівність за допомогою бюджетних коштів на всіх рівнях.",
+      "access": true,
+      "free": false
+    },
     "nus": {
       "className": "",
       "imgUrl": "/img/courses/nus-cover.jpg",

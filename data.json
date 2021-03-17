@@ -37,6 +37,42 @@
       "access": true,
       "free": false
     },
+    "budget": {
+      "className": "",
+      "imgUrl": "/img/courses/card_budget.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!384",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ґендерно орієнтований підхід у бюджетному процесі",
+      "courseSubtitle": "",
+      "courseDesc": "В онлайн-курсі ви дізнаєтесь про те, як забезпечити ґендерну рівність за допомогою бюджетних коштів на всіх рівнях.",
+      "access": true,
+      "free": false
+    },
+    "data_security_1": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_ds1.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!371",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Захист персональних даних",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про захист персональних даних. Розкаже, що таке персональні дані, хто їх може використовувати та як їх захистити.",
+      "access": true,
+      "free": false
+    },
+    "study_joy": {
+      "className": "",
+      "imgUrl": "/img/courses/card_learning.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:DownSyndrome+DS101+2020/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Навчаємося з радістю",
+      "courseSubtitle": "",
+      "courseDesc": " Онлайн-курс для спеціалістів, які працюють з дітьми із синдромом Дауна і дітьми з інтелектуальними порушеннями.",
+      "access": true,
+      "free": false
+    },
     "finfin": {
       "className": "",
       "imgUrl": "/img/courses/card_finfin_new.jpg",
@@ -563,18 +599,6 @@
       "courseTitle": "Соціальне підприємництво та конкурентоспроможність",
       "courseSubtitle": "",
       "courseDesc": "У курсі ви дізнаєтеся, що таке соціальне підприємництво, його основні відмінності від традиційних видів бізнесу та конкурентні переваги соціальних підприємств. Також ви ознайомитеся з різними типами соціальних підприємств, їхніми формами та бізнес-моделями.",
-      "access": true,
-      "free": false
-    },
-    "budget": {
-      "className": "",
-      "imgUrl": "/img/courses/card_budget.jpg",
-      "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/#!384",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Ґендерно орієнтований підхід у бюджетному процесі",
-      "courseSubtitle": "",
-      "courseDesc": "В онлайн-курсі ви дізнаєтесь про те, як забезпечити ґендерну рівність за допомогою бюджетних коштів на всіх рівнях.",
       "access": true,
       "free": false
     },

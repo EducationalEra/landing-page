@@ -13,7 +13,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sequence": "^1.0.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.13.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

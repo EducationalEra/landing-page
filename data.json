@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "judjes": {
+      "className": "",
+      "imgUrl": "/img/courses/judjes_card.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!320",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи судових комунікацій",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для про те, як спілкуватися зі ЗМІ та вести соціальні мережі",
+      "access": true,
+      "free": false
+    },
     "budget": {
       "className": "",
       "imgUrl": "/img/courses/card_budget.jpg",

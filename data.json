@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "ecology": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_eco.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!426",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Зелене світло для Землі",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про відновлювану енергетику",
+      "access": true,
+      "free": false
+    },
     "budget": {
       "className": "",
       "imgUrl": "/img/courses/card_budget.jpg",

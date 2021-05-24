@@ -61,6 +61,18 @@
       "access": true,
       "free": false
     },
+    "fin_grading": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_grading.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!410",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Оцінювання без знецінювання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для вчителів про сучасні практики оцінювання",
+      "access": true,
+      "free": false
+    },
     "ecology": {
       "className": "",
       "imgUrl": "/img/courses/cover_eco.jpg",

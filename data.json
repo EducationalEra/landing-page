@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "fin_inclusion": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_inclusion.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!409",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Школа для всіх",
+      "courseSubtitle": "",
+      "courseDesc": "Курс для вчителів про організацію інклюзивного освітнього середовища",
+      "access": true,
+      "free": false
+    },
     "ecology": {
       "className": "",
       "imgUrl": "/img/courses/cover_eco.jpg",

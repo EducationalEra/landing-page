@@ -73,6 +73,18 @@
       "access": true,
       "free": false
     },
+    "nazk2": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_nazk2.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!427",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Впливай— викривай",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про те, як правильно повідомляти про корупцію і&nbsp;стати викривачами",
+      "access": true,
+      "free": false
+    },
     "ecology": {
       "className": "",
       "imgUrl": "/img/courses/cover_eco.jpg",

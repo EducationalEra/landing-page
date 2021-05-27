@@ -49,6 +49,42 @@
       "access": true,
       "free": false
     },
+    "fin_inclusion": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_inclusion.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!409",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Школа для всіх",
+      "courseSubtitle": "",
+      "courseDesc": "Курс для вчителів про організацію інклюзивного освітнього середовища",
+      "access": true,
+      "free": false
+    },
+    "fin_grading": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_grading.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!410",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Оцінювання без знецінювання",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для вчителів про сучасні практики оцінювання",
+      "access": true,
+      "free": false
+    },
+    "nazk2": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_nazk2.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!427",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Впливай— викривай",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про те, як правильно повідомляти про корупцію і&nbsp;стати викривачами",
+      "access": true,
+      "free": false
+    },
     "ecology": {
       "className": "",
       "imgUrl": "/img/courses/cover_eco.jpg",

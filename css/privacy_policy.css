@@ -1,0 +1,336 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700&subset=latin,cyrillic);
+
+
+.container_box{
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.inner{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container_box h1{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5181;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.container_box h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #323232;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.container_box h6{
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+  color: #323232;
+  text-align: left;
+}
+.container_box p{
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #323232;
+  text-align: left;
+}
+.container_box ul li{
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #323232;
+  text-align: left;
+}
+.container_box ol {
+   list-style: none;
+   counter-reset: li;
+}
+.container_box ol li{
+  font-weight: 400;
+  list-style-position: outside;
+  padding-top: 8px;
+}
+.container_box ol li:before {
+  font-weight: 600;
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+  margin-left: -46px;  /* this is to move the icon left */
+  padding-right: 10px;
+}
+.list li:before {
+  font-weight: 600;
+  list-style-type: circle;
+  counter-increment: none;
+  content: inherit;
+}
+.container_box a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #323232;
+  text-align: left;
+}
+.container_box a:hover{
+  font-weight: 600;
+}
+.tabl{
+  border-top: none;
+}
+.main_title{
+  margin-top: 120px;
+}
+.last_text{
+  margin-bottom: 60px;
+}
+.container_box table{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.container_box th{
+  border-right: 1px solid #000;
+  padding: 15px;
+}
+.container_box td{
+  padding: 15px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.td{
+  border-top: none !important;
+}
+
+/* HEADER START *
+*******************************************/
+.menu_inner{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+.menu_inner_left{
+    width: 100%;
+  }
+#menu{
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  background-color: #FFF;
+  height: 80px;
+  width: 100%;
+  margin: 0 auto;
+  background: #333333;
+}
+#menu ul,#menu li{
+  margin:0;
+  padding:0;
+  list-style:none
+}
+.menu li:first-child{
+  margin-left: 150px;
+}
+.menu li{
+  float:left;
+  display:inline;
+  position:relative;
+  width: 20%;
+}
+#menu a{
+  display:block;
+  text-decoration:none;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #EFE7E3;
+  transition: color .2s linear;
+}
+
+#menu input{
+  display:none;
+  margin:0 0;
+  padding:0 0;
+  width:80px;
+  height:35px;
+  opacity:0;
+  cursor:pointer
+}
+#menu label{
+  font: bold 30px Arial;
+  display:none;
+  width:35px;
+  height:36px;
+  line-height: 36px;
+  text-align:center;
+}
+#menu li:active > a,#menu li a:active, #menu li:hover > a,#menu li a:hover{
+  color: #EFA72D;;
+}
+/* menu icon */
+ .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.menu-icon .navicon {
+  border: solid 1px #EFA72D;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 50px;
+}
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  border: solid 1px #EFA72D;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.menu-icon .navicon:before {
+  top: 12px;
+}
+ .menu-icon .navicon:after {
+  top: -12px;
+}
+/* menu btn */
+.menu-btn {
+  display: none;
+}
+.menu-btn:checked ~ .menu li{
+  margin-top: -20px;
+  text-align: center;
+}
+.menu-btn:checked ~ .link_margin{
+  margin-right: 0px;
+}
+.menu-btn:checked ~ .menu-icon .navicon {
+  transform: rotate(-25deg);
+}
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    border: solid 1px #EFA72D;
+}
+ .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media (max-width:1200px){
+  .container_box{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media (max-width:991px){
+  .container_box #menu a{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width:700px){
+  .container_box #menu{
+    height: 60px;
+  }
+   .container_box #menu ul{
+    background: #333333;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:3;
+    height:auto;
+    display:none;
+  }
+  .container_box #menu li{
+    display:block;
+    float:none;
+    width:auto;
+    text-align: left;
+  }
+  .container_box #menu input,
+  .container_box #menu label{
+    position:absolute;
+    z-index: 15;
+    top:0;
+    left:0;
+    display:block
+  }
+  .container_box #menu input{
+    z-index:10;
+  }
+  .container_box #menu input:checked + label{
+    color:white;
+  }
+  .container_box #menu input:checked ~ ul{
+    display:block;
+    margin-top: -60px;
+  }
+  .container_box #menu li:hover > a,#menu li a:hover{
+    background-color: #333333;
+  }
+  .container_box #menu a{
+    width: 44%;
+    background: transparent;
+    margin-left: 28%;
+    margin-right: 28%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width:650px){
+  .container_box h1{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .container_box h3{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .container_box h6{
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .container_box p{
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .container_box ul li, .container_box a{
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .container_box ol li{
+    padding-top: 5px;
+  }
+  .main_title{
+    margin-top: 60px;
+  }
+  .container_box table{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}

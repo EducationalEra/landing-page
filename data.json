@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "nazk": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_nazk.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!419",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "POLITDATA: е-звітування політичних партій",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для представників політичних партій та тих, хто хоче дізнатися більше про звітування партій в Україні й роботу е-Реєстру POLITDATA",
+      "access": true,
+      "free": false
+    },
     "fin_inclusion": {
       "className": "",
       "imgUrl": "/img/courses/cover_inclusion.jpg",
@@ -81,7 +93,7 @@
       "hrefText": "Перейти до курсу",
       "courseTitle": "Впливай— викривай",
       "courseSubtitle": "",
-      "courseDesc": "Онлайн-курс про те, як правильно повідомляти про корупцію і&nbsp;стати викривачами",
+      "courseDesc": "Онлайн-курс про те, як правильно повідомляти про корупцію і стати викривачами",
       "access": true,
       "free": false
     },

@@ -45,6 +45,7 @@
   text-align: left;
 }
 .container_box ul li{
+  list-style: disc !important;
   margin-top: 5px;
   font-size: 16px;
   line-height: 150%;
@@ -101,6 +102,7 @@
   border-left: 1px solid #000;
 }
 .container_box th{
+  text-align: center;
   border-right: 1px solid #000;
   padding: 15px;
 }

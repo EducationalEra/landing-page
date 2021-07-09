@@ -49,18 +49,6 @@
       "access": true,
       "free": false
     },
-    "npm": {
-      "className": "",
-      "imgUrl": "/img/courses/cover_npm.jpg",
-      "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/#!296",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Основні принципи роботи Національного превентивного механізму",
-      "courseSubtitle": "",
-      "courseDesc": "Онлайн-курс для моніторів НПМ та всіх, хто прагне долучитися до захисту прав людини та запобігти їх порушенням у місцях несвободи",
-      "access": true,
-      "free": false
-    },
     "nazk": {
       "className": "",
       "imgUrl": "/img/courses/cover_nazk.jpg",

@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "Prosvit": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_prosvit.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!454",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Автономія школи",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для директорів про те, як реалізувати автономію в освітньому закладі",
+      "access": true,
+      "free": false
+    },
     "judjes": {
       "className": "",
       "imgUrl": "/img/courses/judjes_card.jpg",

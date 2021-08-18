@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "Kyivstar": {
+      "className": "",
+      "imgUrl": "/img/courses/kyivstar_course_card.jpg",
+      "altText": "",
+      "href": "https://entrepreneurship.ed-era.com/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Окей, ґуґл: як стати підприємцем?",
+      "courseSubtitle": "",
+      "courseDesc": "Усе про підприємництво — від першої ідеї до першої інвестиції. Курс формує навички та компетенції необхідні підприємцю 21 століття",
+      "access": true,
+      "free": false
+    },
     "Prosvit": {
       "className": "",
       "imgUrl": "/img/courses/cover_prosvit.jpg",

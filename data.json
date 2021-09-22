@@ -157,6 +157,18 @@
       "access": true,
       "free": false
     },
+    "data_security_2": {
+      "className": "",
+      "imgUrl": "/img/courses/DS2_cover.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!372",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Захист персональних даних",
+      "courseSubtitle": "",
+      "courseDesc": "Спеціалізований курс для державних службовців та осіб, які працюють з персональними даними",
+      "access": true,
+      "free": false
+    },
     "study_joy": {
       "className": "",
       "imgUrl": "/img/courses/card_learning.png",

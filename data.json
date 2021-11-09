@@ -25,6 +25,18 @@
       "access": true,
       "free": false
     },
+    "naukma": {
+      "className": "",
+      "imgUrl": "/img/courses/cover_naukma.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!636",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Безпечний простір",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про організацію безпечного психосоціального освітнього простору для вчителів і дітей, створений на основі матеріалів-посібників за рекомендаціями МОН.",
+      "access": true,
+      "free": false
+    },
     "SocEntrepreneurship": {
       "className": "",
       "imgUrl": "/img/courses/card_SE.jpg",

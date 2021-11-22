@@ -606,12 +606,12 @@ button.button-2 {
   transition: opacity linear .3s;
 }
 .owl-prev  {
-  background: url("../css/img/reviews/prev.svg") right center no-repeat !important;
+  background: url("../css/css_corporate/img/reviews/prev.svg") right center no-repeat !important;
   left: -4% !important;
   /* float: left; */
 }
 .owl-next  {
-  background: url("../css/img/reviews/next.svg") right center no-repeat !important;
+  background: url("../css/css_corporate/img/reviews/next.svg") right center no-repeat !important;
   right: -4% !important;
 }
 .owl-prev:hover,

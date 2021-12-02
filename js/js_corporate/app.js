@@ -1,5 +1,3 @@
-
-
 $(function(){
 
 // Fixed header start
@@ -21,7 +19,7 @@ $(function(){
     });
 
     function checkScroll(){
-        if (scrollPos>introH) {
+        if (scrollPos > introH) {
             header.addClass("fixed");
         } else {
                 header.removeClass("fixed");
@@ -29,24 +27,21 @@ $(function(){
     };
 // Fixed header end
 
-
-
 // Smoth scroll start
     $("[data-scroll]").on("click", function(event){
+        const Top_Offset = 80;
         event.preventDefault();
 
-        let elementId = $(this).data('scroll');
+        let elementId = $(this).data("scroll");
         let elementOffset = $(elementId).offset().top;
 
         nav.removeClass("show");
 
         $("html, body").animate({
-            scrollTop:elementOffset - 80
+            scrollTop:elementOffset - Top_Offset
         }, 700);
     });
 // Smoth scroll end
-
-
 
 // Nav Toggle start
     navToggle.on("click", function(event){
@@ -56,28 +51,25 @@ $(function(){
 
     })
 // Nav Toggle end
-
-
 });
 
 // Scroll for biigest element start
-let els = document.getElementsByClassName('element')
-document.addEventListener("scroll",elementPicker)
-document.addEventListener("DOMContentLoaded",elementPicker)
+let els = document.getElementsByClassName("ElementToIncrease")
+document.addEventListener("scroll", elementPicker)
+document.addEventListener("DOMContentLoaded", elementPicker)
 
 function elementPicker(e){
 
-  for (let i = 0; i<els.length; i++) {
-    if ((els[i].getBoundingClientRect().top>30) & (els[i].getBoundingClientRect().top<300)) {
-        els[i].classList.add('bigusElementus')
-    } else els[i].classList.remove('bigusElementus')
+  for (let i = 0; i < els.length; i++) {
+    if ((els[i].getBoundingClientRect().top > 30) & (els[i].getBoundingClientRect().top < 300)) {
+        els[i].classList.add("bigusElementus")
+    } else els[i].classList.remove("bigusElementus")
   }
 }
 // Scroll for biigest element end
 
-
 // Owl Carousel start
-var owl = $('.owl-carousel');
+var owl = $(".owl-carousel");
 owl.owlCarousel({
     items:1,
     loop:true,
@@ -90,44 +82,43 @@ owl.owlCarousel({
     autoplay:true,
     autoplayTimeout:6000,
     autoplayHoverPause:true,
-    slideBy: 'page',
+    slideBy: "page",
     lazyLoad: true
 });
 // Owl Carousel end
 
 function myFunction() {
 
-       var btn1= document.getElementById("btn1");
-       var btn2= document.getElementById("btn2");
+       var btnAll= document.getElementById("btnAll");
+       var btnBusines= document.getElementById("btnBusines");
 
-       var div1= document.getElementById("div1");
-       var div2= document.getElementById("div2");
+       var wrapInfoForAll= document.getElementById("wrapInfoForAll");
+       var wrapInfoForBusiness= document.getElementById("wrapInfoForBusiness");
 
-       btn1.onclick = function() {
-         div1.style.display = "block";
-         div2.style.display = "none";
+       btnAll.onclick = function() {
+         wrapInfoForAll.style.display = "block";
+         wrapInfoForBusiness.style.display = "none";
        };
 
-       btn2.onclick = function() {
-         div1.style.display = "none";
-         div2.style.display = "block";
+       btnBusines.onclick = function() {
+         wrapInfoForAll.style.display = "none";
+         wrapInfoForBusiness.style.display = "block";
        };
 }
 
-
-$('.button-1').click(function() {
-      $('.div-2').hide();
-      $('.div-1').show();
-      $(".button-1").css("background-color", "#F8A800");
-      $(".button-2").css("background-color", "#F8F8F8");
-      $(".button-2").css("border-bottom", "1px solid #212121");
-      $(".button-1").css("border-bottom", "1px solid #F8A800");
+$(".button-all").click(function() {
+      $(".products-box__busines").hide();
+      $(".products-box__all").show();
+      $(".button-all").css("background-color", "#F8A800");
+      $(".button-busines").css("background-color", "#F8F8F8");
+      $(".button-busines").css("border-bottom", "1px solid #212121");
+      $(".button-all").css("border-bottom", "1px solid #F8A800");
 });
-$('.button-2').click(function() {
-      $('.div-1').hide();
-      $('.div-2').show();
-      $(".button-2").css("background-color", "#F8A800");
-      $(".button-1").css("background-color", "#F8F8F8");
-      $(".button-1").css("border-bottom", "1px solid #212121");
-      $(".button-2").css("border-bottom", "1px solid #F8A800");
+$(".button-busines").click(function() {
+      $(".products-box__all").hide();
+      $(".products-box__busines").show();
+      $(".button-busines").css("background-color", "#F8A800");
+      $(".button-all").css("background-color", "#F8F8F8");
+      $(".button-all").css("border-bottom", "1px solid #212121");
+      $(".button-busines").css("border-bottom", "1px solid #F8A800");
 });

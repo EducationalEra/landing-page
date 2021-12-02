@@ -475,7 +475,7 @@ section {
 
   transition: background linear .4s;
 }
-.products .button-1 {
+.products .button-all {
   background: var(--v-orange);
   border: none;
 }
@@ -509,17 +509,17 @@ section {
   margin: auto;
   height: auto;
 }
-.div-1  {
+.products-box__all  {
   background-color: #fff;
   z-index: 2;
 }
-.div-2  {
+.products-box__busines  {
   display: none;
   background-color: #fff;
   z-index: 1;
 }
-button.button-1,
-button.button-2 {
+button.button-all,
+button.button-busines {
   position: relative;
 }
 .random_button .button_link {
@@ -718,8 +718,8 @@ button.button-2 {
   padding: 0;
 }
 
-/* biggest element on scroll */
-.element {
+/* biggest ElementToIncreaseon scroll */
+.ElementToIncrease{
   box-sizing: border-box;
   width: 200px;
   transition-duration: 0.9s;
@@ -1277,8 +1277,8 @@ button.button-2 {
   }
 
 
-  /* biggest element on scroll */
-  .element {
+  /* biggest Element on scroll */
+  .ElementToIncrease{
     width: 180px;
   }
   .bigusElementus {
@@ -1694,8 +1694,8 @@ button.button-2 {
   .process-mobile__left .process-mobile-box .hr__7{
     top: 1720px;
   }
-  /* biggest element on scroll */
-  .element {
+  /* biggest ElementToIncreaseon scroll */
+  .ElementToIncrease{
     width: 130px;
   }
   .bigusElementus {

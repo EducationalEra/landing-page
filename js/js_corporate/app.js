@@ -90,7 +90,7 @@ owl.owlCarousel({
 function myFunction() {
 
        var btnAll= document.getElementById("btnAll");
-       var btnBusines= document.getElementById("btnBusines");
+       var btnBusiness= document.getElementById("btnBusiness");
 
        var wrapInfoForAll= document.getElementById("wrapInfoForAll");
        var wrapInfoForBusiness= document.getElementById("wrapInfoForBusiness");
@@ -100,25 +100,25 @@ function myFunction() {
          wrapInfoForBusiness.style.display = "none";
        };
 
-       btnBusines.onclick = function() {
+       btnBusiness.onclick = function() {
          wrapInfoForAll.style.display = "none";
          wrapInfoForBusiness.style.display = "block";
        };
 }
 
 $(".button-all").click(function() {
-      $(".products-box__busines").hide();
+      $(".products-box__business").hide();
       $(".products-box__all").show();
       $(".button-all").css("background-color", "#F8A800");
-      $(".button-busines").css("background-color", "#F8F8F8");
-      $(".button-busines").css("border-bottom", "1px solid #212121");
+      $(".button-business").css("background-color", "#F8F8F8");
+      $(".button-business").css("border-bottom", "1px solid #212121");
       $(".button-all").css("border-bottom", "1px solid #F8A800");
 });
-$(".button-busines").click(function() {
+$(".button-business").click(function() {
       $(".products-box__all").hide();
-      $(".products-box__busines").show();
-      $(".button-busines").css("background-color", "#F8A800");
+      $(".products-box__business").show();
+      $(".button-business").css("background-color", "#F8A800");
       $(".button-all").css("background-color", "#F8F8F8");
       $(".button-all").css("border-bottom", "1px solid #212121");
-      $(".button-busines").css("border-bottom", "1px solid #F8A800");
+      $(".button-business").css("border-bottom", "1px solid #F8A800");
 });

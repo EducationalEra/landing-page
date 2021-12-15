@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "ndi-woman": {
+      "className": "",
+      "imgUrl": "/img/courses/ndi-woman_card.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:NDI_EdEra+1.1+2021/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Жіноче лідерство та політична участь жінок",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про те, як жінкам стати лідерками та активно долучатися до ухвалення рішень в громадах.",
+      "access": true,
+      "free": false
+    },
     "SocEntrepreneurship": {
       "className": "",
       "imgUrl": "/img/courses/card_SE.jpg",

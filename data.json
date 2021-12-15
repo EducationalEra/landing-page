@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "folk": {
+      "className": "",
+      "imgUrl": "/img/courses/folk_card.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!739",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Знай свою Україну",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про українську традиційну культуру.",
+      "access": true,
+      "free": false
+    },
     "SocEntrepreneurship": {
       "className": "",
       "imgUrl": "/img/courses/card_SE.jpg",

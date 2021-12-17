@@ -49,7 +49,7 @@
       "access": true,
       "free": false
     },
-    "ndi-woman": {
+    "NdiWoman": {
       "className": "",
       "imgUrl": "/img/courses/ndi-woman_card.jpg",
       "altText": "",

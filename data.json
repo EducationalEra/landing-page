@@ -61,6 +61,18 @@
       "access": true,
       "free": false
     },
+    "NdiGender": {
+      "className": "",
+      "imgUrl": "/img/courses/ndi-gender_card.jpg",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:NDI_EdEra+1.2+2022/about",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Гендерно орієнтоване врядування",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про те, як місцевим громадам впроваджувати гендерно орієнтований підхід у врядування.",
+      "access": true,
+      "free": false
+    },
     "SocEntrepreneurship": {
       "className": "",
       "imgUrl": "/img/courses/card_SE.jpg",

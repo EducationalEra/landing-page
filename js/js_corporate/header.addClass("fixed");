@@ -22,14 +22,14 @@ $(function(){
         if (scrollPos > introH) {
             header.addClass("fixed");
         } else {
-                header.removeClass("fixed");
+            header.removeClass("fixed");
         }
     };
 // Fixed header end
 
 // Smoth scroll start
     $("[data-scroll]").on("click", function(event){
-        const Top_Offset = 80;
+        const TOP_OFFSET = 80;
         event.preventDefault();
 
         let elementId = $(this).data("scroll");
@@ -38,7 +38,7 @@ $(function(){
         nav.removeClass("show");
 
         $("html, body").animate({
-            scrollTop:elementOffset - Top_Offset
+            scrollTop: elementOffset - TOP_OFFSET
         }, 700);
     });
 // Smoth scroll end
@@ -46,9 +46,7 @@ $(function(){
 // Nav Toggle start
     navToggle.on("click", function(event){
         event.preventDefault();
-
         nav.toggleClass("show");
-
     })
 // Nav Toggle end
 });

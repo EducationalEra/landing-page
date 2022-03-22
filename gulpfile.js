@@ -54,6 +54,9 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("public/courses.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build/courses"));
+    gulp.src("templates/corporate.html")
+        .pipe(rename("index.html"))
+        .pipe(gulp.dest("build/corporate"));
     gulp.src("public/index.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build"));

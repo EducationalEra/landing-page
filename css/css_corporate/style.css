@@ -1010,13 +1010,14 @@ button.button-business {
   position: absolute;
   z-index: 5;
   top: 0;
-  bottom: -690%;
+  bottom: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  height: 1000%;
 }
 .overlay:target  {
   visibility: visible;
@@ -1029,6 +1030,9 @@ button.button-business {
   width: 580px;
   position: relative;
   transition: all 5s ease-in-out;
+}
+.form-box .container {
+  min-width: 0 !important;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -1524,10 +1528,6 @@ button.button-business {
   /* benefits */
   .benefits {
     padding: 80px 30px;
-  }
-  /* form */
-  .overlay  {
-    bottom: -600%;
   }
 }
 @media (max-width:650px) {

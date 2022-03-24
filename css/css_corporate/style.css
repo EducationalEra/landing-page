@@ -1,26 +1,28 @@
 @font-face  {
-  font-family: "Gilroy-Extrabold";
+  font-family: 'Gilroy-Extrabold';
   font-weight: 800;
   font-style: normal;
-  src: url("fonts/Gilroy-Extrabold.ttf") format("opentype");
+  src: url('../../img/corporate-fonts/gilroy-bold-webfont.woff') format('woff');
+  src: url('../../img/corporate-fonts/gilroy-bold-webfont.woff2') format('woff2');
+  src: url('../../img/corporate-fonts/Gilroy-Extrabold.ttf') format('truetype');
 }
 @font-face  {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-weight: 700;
   font-style: normal;
-  src: url("fonts/Gilroy-Bold.ttf") format("opentype");
+  src: url('../../img/corporate-fonts/Gilroy-Bold.ttf') format('truetype');
 }
 @font-face  {
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-weight: 400;
   font-style: normal;
-  src: url("fonts/Gilroy-Regular.ttf") format("opentype");
+  src: url('../../img/corporate-fonts/Gilroy-Regular.ttf') format('truetype');
 }
 @font-face  {
-  font-family: "Gilroy-Light";
+  font-family: 'Gilroy-Light';
   font-weight: 300;
   font-style: normal;
-  src: url("fonts/Gilroy-Light.otf") format("opentype");
+  src: url('../../img/corporate-fonts/Gilroy-Light.otf') format('opentype');
 }
 :root  {
   --v-orange: #F8A800;
@@ -32,6 +34,7 @@
           box-sizing: border-box;
 }
 body {
+  font-family: 'Gilroy-Bold' !important;
   margin: 0;
   padding: 0;
   color: var(--v-black);
@@ -76,7 +79,7 @@ section {
 .corporate_website h4,
 .corporate_website h5,
 .corporate_website b {
-  font-family: "Gilroy-Extrabold";
+  font-family: 'Gilroy-Extrabold';
   text-decoration: none;
   text-transform: none;
 }
@@ -103,7 +106,7 @@ section {
   line-height: 120%;
 }
 .corporate_website p {
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-size: 1em;  /* 16px */
   line-height: 150%;
   text-align: left;
@@ -149,7 +152,7 @@ section {
   margin-top: 80px;
 }
 .box-button .button_link {
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-size: 1em;
   line-height: 120%;
   text-align: center;
@@ -166,7 +169,7 @@ section {
   transition: background linear .3s;
 }
 .box-button .button_link:hover {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   background: var(--v-orange);
   color: var(--v-black);
   -webkit-transform: scale(1.03);
@@ -188,58 +191,61 @@ section {
 
 /* HEADER *
 ***********************************/
-.header {
+.corporate_website .header {
     width: 100%;
     height: 100px;
     top: 0;
     left: 0;
     z-index: 4;
 }
-.header.fixed {
+.corporate_website .header.fixed {
     height: auto;
     position: fixed;
     background-color: var(--v-white);
 }
-.header_inner {
+.corporate_website header {
+    background: inherit !important;
+}
+.corporate_website .header_inner {
     display: flex;
     justify-content: space-between;
     padding: 35px;
     padding-top: 47px;
     align-items: center;
 }
-.header_logo img {
+.corporate_website .header_logo img {
     width: 44px;
 }
 
 /* NAV
 ***********************************/
-.nav {
+.corporate_website .nav {
   display: flex;
   font-size: 13px;
   font-weight: 700;
 }
-.nav_link {
+.corporate_website .nav_link {
   display: block;
   position: relative;
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-size: 1em;
   line-height: 120%;
   color: var(--v-black);
   margin-left: 50px;
   text-decoration: none;
 }
-.nav_link:first-child {
+.corporate_website .nav_link:first-child {
   margin-left: 0;
 }
-.nav .nav_link,
-.nav .nav_link:before,
-.nav .nav_link:after {
+.corporate_website .nav .nav_link,
+.corporate_website .nav .nav_link:before,
+.corporate_website .nav .nav_link:after {
   transition: all .5s;
 }
-.nav .nav_link:hover  {
+.corporate_website .nav .nav_link:hover  {
   color: var(--v-orange);
 }
-.nav .nav_link:after  {
+.corporate_website .nav .nav_link:after  {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -251,7 +257,7 @@ section {
   background: var(--v-orange);
   height: 1px;
 }
-.nav .nav_link:hover:after  {
+.corporate_website .nav .nav_link:hover:after  {
   width: 100%;
 }
 
@@ -322,7 +328,7 @@ section {
   display: block;
   padding-top: 8px;
 
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-size: 1em;
   line-height: 120%;
   text-align: left;
@@ -397,7 +403,7 @@ section {
 }
 .achievement-box .counter-style,
 .achievement-box span {
-  font-family: "Gilroy-Extrabold";
+  font-family: 'Gilroy-Extrabold';
 }
 .achievement-box .counter-style {
   line-height: 100px;
@@ -655,7 +661,7 @@ button.button-business {
   position: absolute;
   z-index: 2;
   text-align: center;
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   color: var(--v-black);
   font-size: 1.125em;
   background: #E5E5E5;
@@ -750,7 +756,7 @@ button.button-business {
 .process__button .button_link {
   margin: auto;
   margin-top: 80px;
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   background: var(--v-orange);
   color: var(--v-black);
 }
@@ -771,7 +777,7 @@ button.button-business {
 .footer-corporate h3,
 .form-box h3,
 .process h3 {
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
 }
 .question_box p {
   padding-left: 17px;
@@ -834,7 +840,7 @@ button.button-business {
   content: "\002B";
   display: block;
   float: right;
-  font-family: "Gilroy-Light";
+  font-family: 'Gilroy-Light';
   font-size: 44px;
   font-weight: normal;
   line-height: 16px;
@@ -947,7 +953,7 @@ button.button-business {
 }
 ::placeholder,
 ::-webkit-input-placeholder {
-  font-family: "Gilroy-Light";
+  font-family: 'Gilroy-Light';
   font-size: 13px;
   line-height: 100%;
   text-align: center;
@@ -961,7 +967,7 @@ button.button-business {
   font-size:0;
 }
 .form-box__button {
-  font-family: "Gilroy-Regular";
+  font-family: 'Gilroy-Regular';
   font-size: 1em;
   line-height: 120%;
   text-align: center;
@@ -983,7 +989,7 @@ button.button-business {
   transition: background linear .4s;
 }
 .form-box__button:hover {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   color: var(--v-black);
   background: var(--v-orange);
 }
@@ -1025,6 +1031,11 @@ button.button-business {
   transition: all 5s ease-in-out;
 }
 
+@media only screen and (min-width: 1170px) {
+  header {
+      line-height: inherit !important;
+  }
+}
 
 @media (max-width:1200px) {
   .corporate_website .container {
@@ -1040,12 +1051,10 @@ button.button-business {
     padding-left: 0;
     padding-right: 0;
   }
-
   /* nav */
   .nav_link {
     margin-left: 20px;
   }
-
   .corporate_website .intro h1 {
     padding-right: 50px;
   }
@@ -1379,10 +1388,6 @@ button.button-business {
     }
 
     /* whom */
-    /* .whom .container {
-      padding-left: 5%;
-      padding-right: 5%;
-    } */
     .whom {
       padding: 125px 50px;
     }

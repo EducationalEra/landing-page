@@ -38,7 +38,7 @@ jobs:
           aws-region: eu-west-1
       - uses: actions/setup-node@v2
         with:
-          node-version: '8.6.x'
+          node-version: '16.14.2'
       - run: |
           export BRANCH=${GITHUB_REF#refs/*/}
 

@@ -46,6 +46,11 @@
     <div class="corporate_website">
       <!-- INTRO START ---------->
         <section class="intro bg_grey" id="intro">
+          <div class="translation">
+            <input id="lang" type='checkbox' onclick="changeLagnuage()">
+            <label for="lang" class="ua">UA</label>
+            <label for="lang" class="eng">ENG</label>
+          </div>
           <div class="container bg_white">
       <!-- Header start -->
               <header class="header" id="header">
@@ -57,14 +62,14 @@
                             </a>
                           </div>
                           <nav class="nav" id="nav">
-                              <a class="nav_link" href="#" data-scroll="#main-page">Головна</a>
-                              <a class="nav_link" href="#" data-scroll="#about">Про нас</a>
-                              <a class="nav_link" href="#" data-scroll="#benefits">Переваги</a>
-                              <a class="nav_link" href="#" data-scroll="#products">Наші продукти</a>
-                              <a class="nav_link" href="#" data-scroll="#process">Процес</a>
-                              <a class="nav_link" href="#" data-scroll="#partners">Партнери</a>
-                              <a class="nav_link" href="#" data-scroll="#question">Питання</a>
-                              <a class="nav_link" href="#" data-scroll="#contacts">Контакти</a>
+                              <a class="nav_link" href="#" data-scroll="#main-page" text="home"></a>
+                              <a class="nav_link" href="#" data-scroll="#about" text="aboutUs"></a>
+                              <a class="nav_link" href="#" data-scroll="#benefits" text="benefits"></a>
+                              <a class="nav_link" href="#" data-scroll="#products" text="ourProducts"></a>
+                              <a class="nav_link" href="#" data-scroll="#process" text="Processes"></a>
+                              <a class="nav_link" href="#" data-scroll="#partners" text="Partners"></a>
+                              <a class="nav_link" href="#" data-scroll="#question" text="Question"></a>
+                              <a class="nav_link" href="#" data-scroll="#contacts" text="Contacts"></a>
                           </nav>
                           <button class="burger" type="button" id="navToggle">
                               <span class="burger_item">Menu</span>
@@ -77,11 +82,11 @@
               <div class="intro-left">
                 <div class="intro-left__content">
                   <img class="decor" src="../img/corporate/intro_decor.png" alt="decoration">
-                  <h1 class="intro-left__title">Студія онлайн&#x2060;-освіти ЕдЕра</h1>
-                  <p class="subtitle">Ми створюємо онлайн&#x2060;-курси та&nbsp;інтерактивні продукти. <br>Захопливі, гарні, ефективні.</p>
+                  <h1 class="intro-left__title" text="mainTitle"></h1>
+                  <p class="subtitle" text="mainTitleDescript"></p>
                   <div class="intro__button box-button">
                     <a class="button_link" href="#popup">
-                      <span>Замовити курс</span>
+                      <span text="buttonText"></span>
                     </a>
                   </div>
                 </div>
@@ -104,8 +109,8 @@
                     <img class="computer" src="../img/corporate/computer.png" alt="decoration">
                   </div>
                   <div class="whom-box__text">
-                    <h4>Продукти для&nbsp;широкого загалу</h4>
-                    <a href="#products">детальніше</a>
+                    <h4 text="ProductsGeneral"></h4>
+                    <a href="#products" text="LearnMore"></a>
                   </div>
                 </div>
               </div>
@@ -115,8 +120,8 @@
                     <img class="case" src="../img/corporate/case.png" alt="decoration">
                   </div>
                   <div class="whom-box__text">
-                    <h4>Продукти для&nbsp;бізнесу</h4>
-                    <a href="#products">детальніше</a>
+                    <h4 text="ProductsBusiness"></h4>
+                    <a href="#products" text="LearnMore"></a>
                   </div>
                 </div>
               </div>
@@ -129,24 +134,10 @@
           <div class="container">
             <div class="inner_flex">
               <div class="about-left">
-                <h2 class="title">Про нас</h2>
-                <p>Наша місія&nbsp;— надихати освітою.<br>
-                  Для цього ми більше 7&nbsp;років створюємо онлайн-курси,
-                  навчальні платформи, інтерактивні ігри та підручники.
-                  Наші курсипроходить кожен четвертий вчитель в&nbsp;Україні
-                  та&nbsp;співробітники найбільших корпоративних мереж.
-                  Ми перші в&nbsp;Україні почали масово підвищувати кваліфікацію онлайн.
-                </p>
-                <p class="paragraph_margin">Ми можемо втілити онлайн-курс будь-якої складності,
-                  інтерактивну гру, як&nbsp;для&nbsp;НАБУ або цілу платформу,
-                  як&nbsp;для&nbsp;ЦВК. Або освітній серіал, як&nbsp;для&nbsp;Мінцифри.
-                  Можемо створити онбординг для ваших співробітників,
-                  як&nbsp;для&nbsp;Смартес або розробити навчальну екосистему з&nbsp;нуля&nbsp;— як&nbsp;для&nbsp;Бекстейджу.
-                </p>
-                <p class="paragraph_margin">У нас є&nbsp;власний R&D&nbsp;юніт, продакшн повного циклу,
-                  та&nbsp;натхненна команда у&nbsp;Києві. А&nbsp;в&nbsp;Берліні&nbsp;— технологічний
-                  стартап та&nbsp;унікальна LMS.
-                </p>
+                <h2 class="title" text="aboutUs"></h2>
+                <p text="Mission"></p>
+                <p class="paragraph_margin" text="WeCreate"></p>
+                <p class="paragraph_margin" text="WeOffer"></p>
                 <img class="decor" src="../img/corporate/about/photo.png" alt="photo team">
               </div>
               <div class="about-right">
@@ -158,7 +149,7 @@
             </div>
             <div class="about__button box-button">
               <a class="button_link" href="#popup">
-                <span>Замовити курс</span>
+                <span text="buttonText"></span>
               </a>
             </div>
           </div>
@@ -170,19 +161,19 @@
           <div class="inner_flex">
             <div class="achievement-box">
               <span class="timer counter-style">100</span>
-              <p>проектів</p>
+              <p text="projects"></p>
             </div>
             <div class="achievement-box">
               <span class="timer_2 counter-style">999000</span>
-              <p>користувачів на платформі</p>
+              <p text="users"></p>
             </div>
             <div class="achievement-box">
               <span class="timer_3 counter-style">1</span>
-              <p>років досвіду</p>
+              <p text="experience"></p>
             </div>
             <div class="achievement-box">
               <span class="timer_4 counter-style">33</span>
-              <p>членів команди</p>
+              <p text="team"></p>
             </div>
           </div>
         </div>
@@ -191,88 +182,58 @@
       <!---  BENEFITS START ---------->
       <section class="benefits bg_white" id="benefits">
         <div class="container">
-          <h2 class="title title-align__center">Переваги</h2>
+          <h2 class="title title-align__center" text="benefits"></h2>
           <div class="benefit_desctop">
             <div class="inner_flex">
               <div class="benefit-box">
                 <img class="benefit-box__img" src="../img/corporate/benefits/decor_1.png" alt="team">
-                <h3>Методологічна <br>експертиза</h3>
-                <p>Кожен продукт EdEra&nbsp;— результат роботи R&D юніта:
-                  експертів з&nbsp;когнітивістики та&nbsp;освітнього дизайну.
-                  Повноцінне дослідження і&nbsp;аналіз&nbsp;— обов’язкова частина нашої роботи.
-                  Завдяки ним ми знаємо, яких цілей має досягти продукт і&nbsp;як це&nbsp;зробити.
-                </p>
+                <h3 text="Methodological"></h3>
+                <p text="EachEdEraProduct"></p>
               </div>
               <div class="benefit-box benefit-box__central">
                 <img class="benefit-box__img" src="../img/corporate/benefits/decor_3.png" alt="team">
-                <h3>Індивідуальний підхід&nbsp;— кастомна розробка</h3>
-                <p>Індивідуальна розробка, власний продакшн,
-                  R&D та&nbsp;технічна команда роблять нас
-                  гнучкими для роботи із будь-якими задачами.
-                  Власний продакшн, R&D та&nbsp;технічна команда
-                  дозволяють працювати із&nbsp;будь-якими завданнями.
-                  Ми можемо розробити інтерактивні курси або квести на&nbsp;всіх
-                  LMS з&nbsp;використанням будь-яких навчальних технологій.
-                </p>
+                <h3 text="Individual"></h3>
+                <p text="OwnProduction"></p>
               </div>
               <div class="benefit-box">
                 <img class="benefit-box__img" src="../img/corporate/benefits/decor_2.png" alt="team">
-                <h3>Технологічна розробка і&nbsp;власна&nbsp;LMS</h3>
-                <p>Ми маємо власну платформу для&nbsp;розміщення курсів.
-                  Це дозволяє нам підібрати оптимальний формат
-                  під&nbsp;кожний проєкт, аналізувати статистику та&nbsp;швидко
-                  додавати унікальні фічі.
-                </p>
+                <h3 text="Process"></h3>
+                <p text="HaveOwnPlatform"></p>
               </div>
             </div>
           </div>
           <div class="benefit_mobile">
             <div class="inner">
               <div class="benefit-box-mob">
-                <h3>Методологічна експертиза</h3>
+                <h3 text="Methodological"></h3>
                 <div class="inner_flex">
                   <div class="benefit-box-mob__left">
                     <img src="../img/corporate/benefits/decor_1.png" alt="team">
                   </div>
                   <div class="benefit-box-mob__right">
-                    <p>Кожен продукт EdEra&nbsp;— результат роботи R&D юніта:
-                      експертів з&nbsp;когнітивістики та&nbsp;освітнього дизайну.
-                      Повноцінне дослідження і&nbsp;аналіз&nbsp;— обов’язкова частина нашої роботи.
-                      Завдяки ним ми знаємо, яких цілей має досягти продукт і&nbsp;як це&nbsp;зробити.
-                    </p>
+                    <p text="EachEdEraProduct"></p>
                   </div>
                 </div>
               </div>
               <div class="benefit-box-mob">
-                <h3>Індивідуальний підхід&nbsp;— кастомна розробка</h3>
+                <h3 text="Individual"></h3>
                 <div class="inner_flex">
                   <div class="benefit-box-mob__left">
                     <img src="../img/corporate/benefits/decor_3.png" alt="team">
                   </div>
                   <div class="benefit-box-mob__right">
-                    <p>Індивідуальна розробка, власний продакшн,
-                      R&D та&nbsp;технічна команда роблять нас
-                      гнучкими для роботи із будь-якими задачами.
-                      Власний продакшн, R&D та&nbsp;технічна команда
-                      дозволяють працювати із&nbsp;будь-якими завданнями.
-                      Ми можемо розробити інтерактивні курси або квести на&nbsp;всіх
-                      LMS з&nbsp;використанням будь-яких навчальних технологій.
-                    </p>
+                    <p text="OwnProduction"></p>
                   </div>
                 </div>
               </div>
               <div class="benefit-box-mob">
-                <h3>Технологічна розробка і&nbsp;власна&nbsp;LMS</h3>
+                <h3 text="Process"></h3>
                 <div class="inner_flex">
                   <div class="benefit-box-mob__left">
                     <img src="../img/corporate/benefits/decor_2.png" alt="team">
                   </div>
                   <div class="benefit-box-mob__right">
-                    <p>Ми маємо власну платформу для&nbsp;розміщення курсів.
-                      Це дозволяє нам підібрати оптимальний формат
-                      під&nbsp;кожний проєкт, аналізувати статистику та&nbsp;швидко
-                      додавати унікальні фічі.
-                    </p>
+                    <p text="HaveOwnPlatform"></p>
                   </div>
                 </div>
               </div>
@@ -284,7 +245,7 @@
       <!---  PROMO START ---------->
       <section class="promo" id="products">
         <div class="container">
-          <h2 class="title title-align__center">Продукти</h2>
+          <h2 class="title title-align__center" text="OurProducts"></h2>
         </div>
         <iframe width="100%"  src="https://www.youtube.com/embed/POneJkj_rxs"
           frameborder="0"
@@ -301,12 +262,12 @@
               <div class="inner_flex products_wrap">
                 <div class="left">
                   <button class="button-products button-all">
-                    <h3>Для широкого загалу</h3>
+                    <h3 text="generalPublic"></h3>
                   </button>
                 </div>
                 <div class="right">
                   <button class="button-products button-business">
-                    <h3>Для бізнесу </h3>
+                    <h3 text="ForBusinesses"></h3>
                   </button>
                 </div>
               </div>
@@ -317,84 +278,49 @@
                     <div class="product-box">
                       <img class="monitor" src="../img/corporate/products/monitor.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Масові освітні <br>онлайн-курси</h5>
-                        <p id="products" class="light-text">Будь-яка аудиторія
-                          та тема, сертифікація, оцінювання.
-                        </p>
+                        <h5 text="Massive"></h5>
+                        <p id="products" class="light-text" text="AnyTargetAudience"></p>
                       </div>
                     </div>
                     <div class="product-box">
                       <img class="gamepad" src="../img/corporate/products/gamepad.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Навчальні ігри</h5>
-                        <p class="light-text">Articulate storyline, кастомний код.</p>
+                        <h5 text="EducationalGames"></h5>
+                        <p class="light-text" text="ArticulateStoryline"></p>
                       </div>
                     </div>
                     <div class="product-box">
                       <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Навчальні платформи</h5>
-                        <p class="light-text">Розробка платформи, алгоритмів та контенту.</p>
+                        <h5 text="LearningPlatforms"></h5>
+                        <p class="light-text" text="DevelopmentPlatform"></p>
                       </div>
                     </div>
                   </div>
                   <div class="slider__box">
-                    <h4 class="title-align__center">Приклади кейсів:</h4>
+                    <h4 class="title-align__center" text="Cases"></h4>
                     <div class="inner">
                       <div class="owl-carousel">
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/Y05vWnF_nFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name">Нова українська школа</h5>
-                              <p class="problem light-text">Задача: Навчити вчителів навчатись онлайн. Розробити перший в Україні обов’язковий онлайн-курс для всіх вчителів початкової школи в межах реформи НУШ.</p>
-                              <p class="explain_text light-text">Що зробили: Розробили простий та інформативний курс для навчання вчителів. Довели, що онлайн-освіта в Україні можлива у національних масштабах.</p>
-                              <p class="explain_text light-text">Результат: Навчили 265 000 вчителів навчатись в онлайн-форматі. З них 168 000 отримали сертифікат про успішне завершення курсу. </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/aUwhnZ-D3yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name">Айрекс</h5>
-                              <p class="problem light-text">Задача: Популяризувати медіаграмотність в Україні та надати українцям інструменти критичного мислення та ефективного аналізу інформації.</p>
-                              <p class="explain_text light-text">Що зробили: Розробили креативний онлайн-курс з анімаційними матеріалами, чатботами та тестами в сучасній айдентиці. Курс доступний для проходження трьом</p>
-                              <p class="explain_text light-text">Результат: 42 000 користувачів</p>
-                            </div>
-                          </div>
-                        </div>
                         <div class="slide">
                           <div class="inner_flex">
                             <div class="slide_left">
                               <iframe src="https://www.youtube.com/embed/vnBMTuBqbAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="slide_right">
-                              <h5 class="course_name">НAБУ</h5>
-                              <p class="problem light-text">Задача: Розробити освітню гру у форматі кейсів та інтерактивного розслідування для теперішніх та майбутніх детективів НАБУ</p>
-                              <p class="explain_text light-text">Що зробили: Розробили освітню гру з 9 етапів, відеопояснень, кейсових відео допиту, обшуку та судового засідання. Застосували підхід edutainment та кейсове навчання, а розмістили гру в ПО Articulate Storyline.</p>
-                              <p class="explain_text light-text">Результат: 902 користувачі за першу добу, 12 866 користувачів за пів року.</p>
-                              <h5 class="word_review light-text">Відгук:</h5>
+                              <h5 class="course_name" text="NABu"></h5>
+                              <p class="problem light-text" text="developEducationalGame"></p>
+                              <p class="explain_text light-text" text="developedAnEducationalGame"></p>
+                              <p class="explain_text light-text" text="usersInFirstDay"></p>
+                              <h5 class="word_review light-text" text="Feedback"></h5>
                               <div class="review-autor">
                                 <div class="inner_flex">
                                   <div class="review-autor__photo">
                                     <img src="../img/corporate/reviews/autors/nabu.JPG" alt="photo">
                                   </div>
                                   <div class="review-autor__information">
-                                    <p class="autor_name"><b>Вікторія Івашинют</b></p>
-                                    <p class="regalia light-text">керівниця Відкритого офісу НАБУ</p>
-                                    <p class="descript light-text">«Слідство веде НАБУ» став першим освітнім
-                                      онлайн проєктом для НАБУ, а ігровий формат курсу — першим
-                                      для «ЕдЕри». Втім ми чудово впоралися з цією
-                                      непростою та цікавою задачею. Креатив, відданість
-                                      справі та злагоджена командна робота були запорукою
-                                      нашого спільного успіху. І карантин в країні не зумів
-                                      поламати наші плани.
-                                    </p>
+                                    <p class="autor_name"><b text="Victoria"></b></p>
+                                    <p class="regalia light-text" text="VictoriaDescript"></p>
+                                    <p class="descript light-text" text="InvestigationIsConducted"></p>
                                   </div>
                                 </div>
                               </div>
@@ -404,27 +330,49 @@
                         <div class="slide">
                           <div class="inner_flex">
                             <div class="slide_left">
+                              <iframe src="https://www.youtube.com/embed/Y05vWnF_nFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slide_right">
+                              <h5 class="course_name" text="Nus"></h5>
+                              <p class="problem light-text" text="teachTeachers"></p>
+                              <p class="explain_text light-text" text="DevelopedSimpleInformative"></p>
+                              <p class="explain_text light-text" text="teachersHaveBeenTaught"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="inner_flex">
+                            <div class="slide_left">
+                              <iframe src="https://www.youtube.com/embed/aUwhnZ-D3yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="slide_right">
+                              <h5 class="course_name" text="IREx"></h5>
+                              <p class="problem light-text" text="promoteMediaLiteracy"></p>
+                              <p class="explain_text light-text" text="developedCreativeOnlineCourse"></p>
+                              <p class="explain_text light-text" text="usersIREX"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="inner_flex">
+                            <div class="slide_left">
                               <iframe src="https://www.youtube.com/embed/z0vmO-Cjodw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="slide_right">
-                              <h5 class="course_name">ЦВК: Просвіта</h5>
-                              <p class="problem light-text">Задача: Розробити креативну концепцію та створити імерсивну навчальну платформу про вибори для кожного мешканця України.</p>
-                              <p class="explain_text light-text">Що зробили: Ґейміфіковану освітню платформу, навчання на якій відбувається у форматі спілкування в месенджері, та серію відео, інтегрованих у діалоги.</p>
-                              <p class="explain_text light-text">Результат: Проста в навігації освітня платформа в оновленому візуальному стилі ЦВК. Перша в Україні сучасна навчальна платформа на базі державного органа.</p>
-                              <h5 class="word_review light-text">Відгук:</h5>
+                              <h5 class="course_name" text="Prosvita"></h5>
+                              <p class="problem light-text" text="creativeConcept"></p>
+                              <p class="explain_text light-text" text="educationalPlatformWhichOffersLearning"></p>
+                              <p class="explain_text light-text" text=""></p>
+                              <h5 class="word_review light-text" text="Feedback"></h5>
                               <div class="review-autor">
                                 <div class="inner_flex">
                                   <div class="review-autor__photo">
                                     <img src="../img/corporate/reviews/autors/cvk.PNG" alt="photo">
                                   </div>
                                   <div class="review-autor__information">
-                                    <p class="autor_name"><b>Владислав Єленчи</b></p>
-                                    <p class="regalia light-text">продакт-менеджер Ради Європи</p>
-                                    <p class="descript light-text">«Перед ЕдЕрою було амбітне
-                                      завдання — за 4 місяці кастомізувати свою платформу
-                                      й випустити 98 відео для 4 курсів. І в них вийшло!
-                                      А головне — вийшло якісно»
-                                    </p>
+                                    <p class="autor_name"><b text="Vladislav"></b></p>
+                                    <p class="regalia light-text" text="ProductManager"></p>
+                                    <p class="descript light-text" text="EdEraFaced"></p>
                                   </div>
                                 </div>
                               </div>
@@ -441,27 +389,27 @@
                     <div class="product-box">
                       <img class="monitor" src="../img/corporate/products/img_1.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Онбординг та офбординг</h5>
-                        <p class="light-text">Контент та технічна реалізація.</p>
+                        <h5 text="Onboarding"></h5>
+                        <p class="light-text" text="Content"></p>
                       </div>
                     </div>
                     <div class="product-box">
                       <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Навчальна екосистема</h5>
-                        <p class="light-text">Індивідуальні дослідження, навчальні алгоритми, контент.</p>
+                        <h5 text="EducationalEcosystem"></h5>
+                        <p class="light-text" text="IndividualResearch"></p>
                       </div>
                     </div>
                     <div class="product-box">
                       <img class="gamepad" src="../img/corporate/products/img_3.png" alt="decor">
                       <div class="product-box__text">
-                        <h5>Онлайн-курси</h5>
-                        <p class="light-text">Будь-яка тема та формат.</p>
+                        <h5 text="OnlineCourses"></h5>
+                        <p class="light-text" text="AnyTopic"></p>
                       </div>
                     </div>
                   </div>
                   <div class="slider__box">
-                    <h4 class="title-align__center">Приклади кейсів:</h4>
+                    <h4 class="title-align__center" text="Cases"></h4>
                     <div class="inner">
                       <div class="owl-carousel">
                         <div class="slide">
@@ -470,32 +418,20 @@
                               <iframe src="https://www.youtube.com/embed/xcebbTGD524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="slide_right">
-                              <h5 class="course_name">Бекстейдж</h5>
-                              <p class="problem light-text">Задача: Трансформувати офлайн-навчання в онлайн-формат. Зберегти корпоративну екосистему та створити нативний онбординг для нових співробітників мережі.</p>
-                              <p class="explain_text light-text">Що зробили: Повний онбординг нового працівника — від корпоративної культури до точних скриптів та протоколів роботи. Десятки проміжних тестувань та фінальний рейтинговий бал співробітника/-ці.</p>
-                              <p class="explain_text light-text">Результат:  Сотні майстрів мережі пройшли онлайн-онбординг та навчання, а директори салонів оцінили навички нових співробітників та ухвалили фінальне рішення щодо долучення їх до команди.</p>
-                              <h5 class="word_review light-text">Відгук:</h5>
+                              <h5 class="course_name" text="Backstage"></h5>
+                              <p class="problem light-text" text="BackstageTask"></p>
+                              <p class="explain_text light-text" text="BackstageSolution"></p>
+                              <p class="explain_text light-text" text="BackstageResult"></p>
+                              <h5 class="word_review light-text" text="Feedback"></h5>
                               <div class="review-autor">
                                 <div class="inner_flex">
                                   <div class="review-autor__photo">
                                     <img src="../img/corporate/reviews/autors/dubinina.png" alt="photo">
                                   </div>
                                   <div class="review-autor__information">
-                                    <p class="autor_name"><b>Карина Дубініна</b></p>
-                                    <p class="regalia light-text">засновниця мережі салонів краси Backstage</p>
-                                    <p class="descript light-text">
-                                      До нас весь час приходять нові майстри,
-                                      тому навчання — це нагальна потреба. Разом із командою
-                                      EdEra ми знайшли рішення, створивши платформу
-                                      з онлайн-курсами для майстрів. Тепер онбординг автоматизований.
-                                      Майстри мають цілодобовий доступ до навчальних матеріалів
-                                      та можуть проходити автоматизовані тести, а адміністрації легше
-                                      відстежувати ефективність процесу. Вже три курси для майстрів
-                                      забезпечують регулярне навчання доступною мовою.
-                                      Відеоуроки відтворюють весь процес роботи майстра у цікавому форматі.
-                                      Слухач ніби «присутній» безпосередньо в кабінеті майстра,
-                                      а сама платформа зручна та гнучка.
-                                    </p>
+                                    <p class="autor_name"><b text="Karina"></b></p>
+                                    <p class="regalia light-text" text="KarinaDescript"></p>
+                                    <p class="descript light-text" text="KarinaFeedback"></p>
                                   </div>
                                 </div>
                               </div>
@@ -508,31 +444,20 @@
                               <iframe src="https://www.youtube.com/embed/JMJ_6gJmiIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="slide_right">
-                              <h5 class="course_name">Укртелеком</h5>
-                              <p class="problem light-text">Задача: Створити два курси для підвищення кваліфікації співробітників «Укртелекому» — з цифрової грамотності та ділової української мови.</p>
-                              <p class="explain_text light-text">Що зробили: Зробили корпоративне навчання динамічним та корисним для сотень працівників із різним рівнем навичок та досвіду. </p>
-                              <p class="explain_text light-text">Результат: Розробили 2 екосистеми корпоративних курсів — з відеопоясненнями та кейсовими ситуаціями, додатковими матеріалами та тестуванням. Обидва курси у відкритому доступі для усіх співробітників «Укртелекому».</p>
-                              <h5 class="word_review light-text">Відгук:</h5>
+                              <h5 class="course_name" text="Ukrtelecom"></h5>
+                              <p class="problem light-text" text="UkrtelecomTask"></p>
+                              <p class="explain_text light-text" text="UkrtelecomSolution"></p>
+                              <p class="explain_text light-text" text="UkrtelecomResult"></p>
+                              <h5 class="word_review light-text" text="Feedback"></h5>
                               <div class="review-autor">
                                 <div class="inner_flex">
                                   <div class="review-autor__photo">
                                     <img src="../img/corporate/reviews/autors/expert_3.jpg" alt="photo">
                                   </div>
                                   <div class="review-autor__information">
-                                    <p class="autor_name"><b>Олеся Піцик</b></p>
-                                    <p class="regalia light-text">менеджерка з розвитку управлінських компетенцій</p>
-                                    <p class="descript light-text">З командою EdEra ми реалізували 2 відео-курси:
-                                      «Ділова Українська Мова» та «Цифрова Грамотність» «під ключ».
-                                      <br>Зараз навчальні модулі доступні всім працівникам
-                                      нашої компанії на корпоративній платформі дистанційного навчання.
-                                      <br>Саме через широку цільову аудиторію (курси проходять і новачки,
-                                      і просунуті користувачі та впевнені мовці), нам важливо було знайти партнера,
-                                      який би зробив навчання цікавим та наповненим універсальною
-                                      й актуальною інформацією саме для бізнес-середовища.
-                                      <br>Завдяки злагодженій роботі методологів,
-                                      авторів та команді продакшену EdEra вийшов якісний
-                                      продукт, яким ми задоволені.
-                                    </p>
+                                    <p class="autor_name"><b text="Olesya"></b></p>
+                                    <p class="regalia light-text" text="OlesyaDescript"></p>
+                                    <p class="descript light-text" text="OlesyaFeedback"></p>
                                   </div>
                                 </div>
                               </div>
@@ -554,12 +479,8 @@
       <section class="process bg_white" id="process">
         <div class="container">
           <div class="inner">
-            <h2 class="title title-align__center">Процес створення продуктів</h2>
-            <h3>Створення продукту відбувається впродовж 7&nbsp;кроків:
-              від дослідження&nbsp;— до&nbsp;аналітики даних. Ми&nbsp;можемо
-              розробити комплексний продукт або, наприклад, здійснити
-              лише аналітику ринку та&nbsp;розробити концепцію вашого проєкту.
-            </h3>
+            <h2 class="title title-align__center" text="ProductCreation"></h2>
+            <h3 text="ProductDevelopmentInvolves"></h3>
             <div class="process-desctop">
               <div class="inner_flex">
                 <div class="process-left process-box__border">
@@ -569,8 +490,8 @@
                       <div class="number line_status">1</div>
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__search.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Дослідження ринку та&nbsp;ЦА</h5>
-                        <p>R&D&nbsp;команда аналізує потреби аудиторії та&nbsp;продукту.</p>
+                        <h5 text="research"></h5>
+                        <p text="teamAnalyzes"></p>
                       </div>
                     </div>
                   </div>
@@ -580,11 +501,8 @@
                       <div class="number line_status">3</div>
                       <img class="ElementToIncrease process_decor__blank" src="../img/corporate/process/process_decor__blank.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Розробка навчальної методології та&nbsp;створення контенту&nbsp;R&D.</h5>
-                        <p>Команда розроблює освітню концепцію:
-                          структуру та&nbsp;оптимальну навчальну
-                          методологію продукту і&nbsp;сам контент.
-                        </p>
+                        <h5 text="EducationalMethodology"></h5>
+                        <p text="TeamDevelops"></p>
                       </div>
                     </div>
                   </div>
@@ -594,12 +512,8 @@
                       <div class="number">5</div>
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Комунікація</h5>
-                        <p>Комунікаційна та&nbsp;креативна команда
-                          розробляють та&nbsp;реалізують комунікаційну
-                          кампанію продукту: партнерства з&nbsp;медіа,
-                          контент для&nbsp;соцмереж, e-mail&nbsp;розсилки тощо.
-                        </p>
+                        <h5 text="CommunicationPromotion"></h5>
+                        <p text="CreativeCommunication"></p>
                       </div>
                     </div>
                   </div>
@@ -611,11 +525,8 @@
                       <div class="number">2</div>
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__picture.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Формування концепту та&nbsp;айдентики проєкту</h5>
-                        <p>Креативна команда розробляє концепцію проєкту&nbsp;—
-                          меседжі та&nbsp;унікальні прояви. А&nbsp;також&nbsp;— візуальне
-                          оформлення кожного складника продукту.
-                        </p>
+                        <h5 text="ProjectConcept"></h5>
+                        <p text="designEachComponent"></p>
                       </div>
                     </div>
                   </div>
@@ -625,12 +536,8 @@
                       <div class="number">4</div>
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__photo.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Продакшн</h5>
-                        <p>Проєктна команда здійснює контентний та&nbsp;технічний продакшн.
-                          Контентний продакшн охоплює розробку відео, аудіо, тестів&nbsp;—
-                          від&nbsp;тестового зйомки до&nbsp;фінального постпродакшну.
-                          <br>Технічний продакшн&nbsp;— це розробка, дизайн та&nbsp;верстка сайту.
-                        </p>
+                        <h5 text="Production"></h5>
+                        <p text="teamEnsures"></p>
                       </div>
                     </div>
                   </div>
@@ -640,10 +547,8 @@
                       <div class="number">6</div>
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__rocket.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Запуск та&nbsp;підтримка продукту</h5>
-                        <p>Проєктна команда здійснює публічний запуск продукту,
-                          технічний та&nbsp;інформаційний супровід користувачів.
-                        </p>
+                        <h5 text="ProductLaunch"></h5>
+                        <p text="projectTeamLaunches"></p>
                       </div>
                     </div>
                   </div>
@@ -658,10 +563,8 @@
                   <div class="process-box__inner">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__analitic.png" alt="decoration">
                       <div class="process-box__text">
-                        <h5>Аналітика даних</h5>
-                        <p>R&D&nbsp;команда аналізує кількісні
-                          та&nbsp;якісні дані проходження курсу
-                          та&nbsp;користувацькі відгуки.</p>
+                        <h5 text="DataAnalysis"></h5>
+                        <p text="teamAnalyzesQuantitative"></p>
                       </div>
                   </div>
                 </div>
@@ -680,8 +583,8 @@
                   <div class="process-mobile-box process-mobile-box__1">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__search.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Дослідження ринку та&nbsp;ЦА</h5>
-                      <p>R&D&nbsp;команда аналізує потреби аудиторії та&nbsp;продукту.</p>
+                      <h5 text="research"></h5>
+                      <p text="teamAnalyzes"></p>
                     </div>
                   </div>
                 </div>
@@ -696,11 +599,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__picture.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Формування концепту та&nbsp;айдентики проєкту</h5>
-                      <p>Креативна команда розробляє концепцію проєкту&nbsp;—
-                        меседжі та&nbsp;унікальні прояви. А&nbsp;також&nbsp;— візуальне
-                        оформлення кожного складника продукту.
-                      </p>
+                      <h5 text="ProjectConcept"></h5>
+                      <p text="designEachComponent"></p>
                     </div>
                   </div>
                 </div>
@@ -715,11 +615,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__blank.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Розробка навчальної методології та&nbsp;створення контенту&nbsp;R&D.</h5>
-                      <p>Команда розроблює освітню концепцію:
-                        структуру та&nbsp;оптимальну навчальну
-                        методологію продукту і&nbsp;сам контент.
-                      </p>
+                      <h5 text="EducationalMethodology"></h5>
+                      <p text="TeamDevelops"></p>
                     </div>
                   </div>
                 </div>
@@ -734,12 +631,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__photo.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Продакшн</h5>
-                      <p>Проєктна команда здійснює контентний та&nbsp;технічний продакшн.
-                        Контентний продакшн охоплює розробку відео, аудіо, тестів&nbsp;—
-                        від&nbsp;тестового зйомки до&nbsp;фінального постпродакшну.
-                        <br>Технічний продакшн&nbsp;— це розробка, дизайн та&nbsp;верстка сайту.
-                      </p>
+                      <h5 text="Production"></h5>
+                      <p text="teamEnsures"></p>
                     </div>
                   </div>
                 </div>
@@ -754,12 +647,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Комунікація</h5>
-                      <p>Комунікаційна та&nbsp;креативна команда
-                        розробляють та&nbsp;реалізують комунікаційну
-                        кампанію продукту: партнерства з&nbsp;медіа,
-                        контент для&nbsp;соцмереж, e-mail&nbsp;розсилки тощо.
-                      </p>
+                      <h5 text="CommunicationPromotion"></h5>
+                      <p text="CreativeCommunication"></p>
                     </div>
                   </div>
                 </div>
@@ -774,10 +663,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__rocket.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Запуск та&nbsp;підтримка продукту</h5>
-                      <p>Проєктна команда здійснює публічний запуск продукту,
-                        технічний та&nbsp;інформаційний супровід користувачів.
-                      </p>
+                      <h5 text="ProductLaunch"></h5>
+                      <p text="projectTeamLaunches"></p>
                     </div>
                   </div>
                 </div>
@@ -792,10 +679,8 @@
                   <div class="process-mobile-box">
                     <img class="ElementToIncrease" src="../img/corporate/process/process_decor__analitic.png" alt="decoration">
                     <div class="process-box__text">
-                      <h5>Аналітика даних</h5>
-                      <p>R&D&nbsp;команда аналізує кількісні
-                        та&nbsp;якісні дані проходження курсу
-                        та&nbsp;користувацькі відгуки.</p>
+                      <h5 text="DataAnalysis"></h5>
+                      <p text="teamAnalyzesQuantitative"></p>
                     </div>
                   </div>
                 </div>
@@ -804,7 +689,7 @@
             </div>
             <div class="process__button box-button">
               <a class="button_link" href="#popup">
-                <span>Замовити курс</span>
+                <span text="buttonText"></span>
               </a>
             </div>
           </div>
@@ -814,59 +699,59 @@
       <!---  QUESTION_START ---------->
       <section class="question bg_white" id="question">
         <div class="container">
-          <h2 class="title title-align__center">Лишились питання?</h2>
+          <h2 class="title title-align__center" text="Question"></h2>
           <div class="question_box">
             <input class="hide" id="hd-1" type="checkbox">
             <label for="hd-1">
-              <h3>Маю готовий курс. Чи можна розмістити?</h3>
+              <h3 text="question1"></h3>
             </label>
             <div class="question_box_answer">
-              <p>На платформі EdEra ми розміщуємо лише ті освітні продукти, які розроблені у партнерстві з нами. Проте, якщо ви маєте готовий курс і шукаєте лише платформу для розміщення, можете звернутися до нашого партнера Workademy.</p>
+              <p text="answer1"></p>
             </div>
           </div>
           <div class="question_box">
             <input class="hide" id="hd-2" type="checkbox">
             <label for="hd-2">
-              <h3>Хто матиме доступ до продукту?</h3>
+              <h3 text="question2"></h3>
             </label>
             <div class="question_box_answer">
-              <p>До курсів для широкого загалу доступ матимуть усі користувачі платформи EdEra. До корпоративних курсів - безпосередньо ваша цільова аудиторія. Такий курс може бути закритим.</p>
+              <p text="answer2"></p>
             </div>
           </div>
           <div class="question_box">
             <input class="hide" id="hd-3" type="checkbox">
             <label for="hd-3">
-              <h3>Чи можна використовувати свій дизайн?</h3>
+              <h3 text="question3"></h3>
             </label>
             <div class="question_box_answer">
-              <p>Так! Якщо ви маєте свій брендинг та гайдлайни до нього, ми адаптуємо дизайн під формат онлайн-продукту та зробимо айдентику на основі вашого брендбуку.</p>
+              <p text="answer3"></p>
             </div>
           </div>
           <div class="question_box">
             <input class="hide" id="hd-4" type="checkbox">
             <label for="hd-4">
-              <h3>Чи можете ви лише зняти курс — без промо та розміщення?</h3>
+              <h3 text="question4"></h3>
             </label>
             <div class="question_box_answer">
-              <p>Так, ми можемо зробити курс «під ключ» та передати усі готові матеріали для розміщення вам.</p>
+              <p text="answer4"></p>
             </div>
           </div>
           <div class="question_box">
             <input class="hide" id="hd-5" type="checkbox">
             <label for="hd-5">
-              <h3>Які комунікаційні активності ви робите?</h3>
+              <h3 text="question5"></h3>
             </label>
             <div class="question_box_answer">
-              <p>Ми розробляємо і втілюємо повноцінні комунікаційні стратегії і кампанії: від просування продукту в соціальних мережах до спецпроєктів та колаборацій з медіа.</p>
+              <p text="question5"></p>
             </div>
           </div>
           <div class="question_box question_box__last">
             <input class="hide" id="hd-6" type="checkbox">
             <label for="hd-6">
-              <h3>Чи можуть користувачі отримувати сертифікати?</h3>
+              <h3 text="question6"></h3>
             </label>
             <div class="question_box_answer">
-              <p>Так, генерація сертифікатів передбачена усіма LMS (Learning System Management) платформами на яких ми розміщуємо онлайн-продукти.</p>
+              <p text="question6"></p>
             </div>
           </div>
         </div>
@@ -875,7 +760,7 @@
       <!---  PARTNERS START ---------->
       <section class="partners title-align__center" id="partners">
         <div class="container">
-          <h2 class="title">Партнери</h2>
+          <h2 class="title" text="Partners"></h2>
           <div class="logo__desctop">
             <img src="../img/corporate/logo.png" alt="logo">
           </div>
@@ -889,13 +774,9 @@
       <section class="footer-corporate bg_grey" id="contacts">
         <div class="container">
           <div class="inner">
-            <h3>Ціну кожного проєкту ми&nbsp;розраховуємо індивідуально
-              після детального брифу. Напишіть&nbsp;нам на
-              &nbsp;<a href="partnerships@ed-era.com">partnerships@ed-era.com</a>,
-              і&nbsp;ми відповімо&nbsp;вам на&nbsp;всі запитання.
-            </h3>
+            <h3 text="calculatePrice"></h3>
             <div class="footer-corporate__link">
-              <h3>Поділитись в соціальних мережах</h3>
+              <h3 text="Share"></h3>
               <div class="footer-corporate__link-wrap">
                 <a href="https://www.facebook.com/EdEraUa" target="_blank">
                   <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -928,28 +809,25 @@
               }">
             </iframe>
               <a class="close" href="#">&times;</a>
-              <h3 class="form-box__title title-align__center">Розкажіть нам ідею проєкту — а наші менеджери партнерств зв’яжуться з вами.</h3>
+              <h3 class="form-box__title title-align__center" text="TellUs"></h3>
               <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_y3jNOQCefITYH_Ra0AU-TzfjODIxgp_NkXybtcMI_NdHjA/formResponse"
                 method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                <label><p>Ім’я</p></label>
+                <label><p text="name"></p></label>
                 <input name="entry.2011607017" type="text" required />
 
-                <label><p>Назва компанії</p></label>
+                <label><p text="Company"></p></label>
                 <input name="entry.1164568700" type="text" required />
 
-                <label><p>Телефон</p></label>
+                <label><p text="Phone"></p></label>
                 <input name="entry.1069580" type="tel" placeholder="+380" required />
 
                 <label><p>E-mail</p></label>
                 <input name="entry.652701123" type="email" placeholder="Email" required />
 
-                <label><p>Яку задачу ви б хотіли вирішити разом з нами?</p></label>
-                <input name="entry.1299504674" type="text"
-                  placeholder="Будь ласка, опишіть детально ідею проекту" required
-                  title="Будь ласка, опишіть детально ідею проекту, яку ціль ви хочете досягти спільно з ЕдЕра та яку проблему хочете вирішити."
-                />
-                <input class="form-box__button" type="submit" value="Надіслати заяву" />
-
+                <label><p text="WhatProblem"></p></label>
+                <input name="entry.1299504674" type="text" required/>
+                <button class="form-box__button" type="submit" name="button" text="Submit"></button>
+                <!-- <input class="form-box__button" type="submit" value="Submit"></input> -->
               </form>
             </div>
           </div>
@@ -965,5 +843,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="../js/js_corporate/app.js" ></script>
       <script src="../js/js_corporate/counter.js" ></script>
+      <script src="../js/js_corporate/translate.js" ></script>
     </body>
 </html>

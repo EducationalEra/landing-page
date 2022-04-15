@@ -77,9 +77,9 @@ owl.owlCarousel({
     touchDrag: true,
     pullDrag: true,
     freeDrag: false,
-    autoplay:true,
-    autoplayTimeout:6000,
-    autoplayHoverPause:true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
     slideBy: "page",
     lazyLoad: true
 });

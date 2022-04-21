@@ -131,23 +131,35 @@ section {
 /* TRANSLATION *
 *******************************************/
 .translation {
-  padding: 7px;
+  position: fixed;
+  z-index: 7;
+  padding-top: 7px;
+  right: 40px;
+}
+.ua,
+.eng {
+  width: 30px;
+  height: 30px;
+  padding-top: 9px;
   border-radius: 90px;
   border: 1px solid #000;
   text-align: center;
   float: right;
-  margin-right: 1%;
+}
+.ua {
+  margin-left: 10px;
 }
 .translation label{
   font-family: "Gilroy-Regular";
-  font-size: .8em;
+  font-size: .6em;
 }
 #lang {
   display: none;
 }
 #lang:checked ~ .ua,
 #lang:not(:checked) ~ .eng {
-  display:none;
+  background: #000;
+  color: #fff !important;
 }
 .translation label[for="lang"] {
   user-select: none;
@@ -160,15 +172,9 @@ button.form-box__button {
 }
 /* INTRO *
 *******************************************/
-.intro {
-  padding: 10px 40px 50px 40px;
-}
 .intro .container {
-  margin-top: 40px;
+  margin-top: 45px;
 }
-/* .intro {
-  padding: 50px 40px;
-} */
 .intro-left,
 .intro-right {
   width: 50%;
@@ -241,8 +247,12 @@ button.form-box__button {
     display: flex;
     justify-content: space-between;
     padding: 35px;
-    padding-top: 47px;
+    /* padding-top: 47px; */
     align-items: center;
+}
+.header.fixed .header_inner{
+    padding-top: 5px !important;
+    padding-bottom: 15px;
 }
 .header_logo img {
     width: 44px;
@@ -1098,18 +1108,9 @@ button.button-2 {
   .corporate_website .title {
     margin-bottom: 41px;
   }
-
+/* translation */
   .translation {
-    position: fixed;
-    right: 0;
-    margin-right: 15px;
-    z-index: 10;
-  }
-  .translation label{
-    font-size: .7em;
-  }
-  .intro .container {
-    margin-top: 30px;
+    right: 20px;
   }
 
   /* nav */
@@ -1119,7 +1120,7 @@ button.button-2 {
 
   /* intro */
   .intro {
-    padding: 45px 20px;
+    padding: 5px 20px;
   }
   .intro-left__content {
     padding: 70px 15px 70px 28px;
@@ -1399,7 +1400,7 @@ button.button-2 {
       padding-top: 30px;
     }
     .nav.show {
-      margin-top: 45px;
+      margin-top: 25px;
       background: #fff;
       padding-right: 10px;
       display:flex;
@@ -1442,6 +1443,21 @@ button.button-2 {
   .corporate_website .title {
     margin-bottom: 35px;
   }
+
+  /* translation */
+  .ua,
+  .eng {
+    width: 25px;
+    height: 25px;
+    padding-top: 9px;
+  }
+  .ua {
+    margin-left: 5px;
+  }
+  .intro .container {
+    margin-top: 25px;
+  }
+
   /* intro */
   .intro {
     padding: 5px 30px 30px 30px;

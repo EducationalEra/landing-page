@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProbaPro";
+  src: url("fonts/ProbaPro-Bold.ttf") format("opentype");
+}
+:root {
+  --main-violet:  #2D2471;
+  --v-green: #5CBDB1;
+  --v-pink: #ef7f7a;
+  --v-yellow: #ffd854;;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: var(--main-violet);
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a{
+  margin: 0 !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+section{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+
+/* CONTAINER *
+*******************************************/
+.container_landing{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.inner{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* TEXT *
+*******************************************/
+.OpportunitiesForStudents .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.OpportunitiesForStudents h2 {
+  font-family: "ProbaPro";
+  font-size: 28px;
+}
+
+.title-landing {
+  padding-top: 70px;
+  padding-bottom: 25px;
+}
+
+.decor-title {
+  width: 200px;
+  height: 2px;
+  outline: none;
+  border: none;
+  display: block;
+  margin-left: 0;
+  background: var(--main-violet);
+}
+
+.decor-title-short {
+  width: 100px;
+}
+
+.OpportunitiesForStudents h3 {
+  font-family: "ProbaPro";
+  font-size: 22px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.OpportunitiesForStudents ul {
+  padding-inline-start: 22px;
+}
+
+.OpportunitiesForStudents ul li {
+  padding-bottom: 12px;
+  list-style: url('../../img/OpportunitiesForStudents/content_list-small.svg');
+}
+
+.list-without-decor {
+  padding-inline-start: 0 !important;
+}
+
+.list-without-decor li{
+  list-style: none !important;
+}
+
+.OpportunitiesForStudents p {
+  font-family: "OpenSans";
+  font-size: 18px;
+}
+
+.OpportunitiesForStudents a {
+  color: var(--main-violet);
+  transition: color linear .3s;
+}
+
+.OpportunitiesForStudents a:hover{
+  color: var(--v-green);
+  text-decoration: none;
+}
+
+.OpportunitiesForStudents .p {
+  padding-top: 15px;
+}
+
+.OpportunitiesForStudents b {
+  font-family: "OpenSans-SemiBold";
+  font-weight: bold !important;
+}
+
+.first-position::before {
+  content: "\01F947";
+}
+
+.second-position::before {
+  content: "\01F948";
+}
+
+.third-position::before {
+  content: "\01F949";
+}
+
+.last-position::before {
+  content: "\01F31F";
+}
+@media (max-width: 1024px) {
+  .container_landing{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+@media (max-width:768px) {
+  .OpportunitiesForStudents .content {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  .OpportunitiesForStudents h2 {
+    font-size: 24px;
+  }
+  .title-landing {
+    padding-top: 50px;
+    padding-bottom: 18px;
+  }
+  .decor-title {
+    width: 130px;
+  }
+  .decor-title-short {
+    width: 50px;
+  }
+  .OpportunitiesForStudents h3 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+  }
+  .OpportunitiesForStudents ul {
+    padding-inline-start: 15px;
+  }
+  .OpportunitiesForStudents ul li {
+    padding-bottom: 8px;
+  }
+  .OpportunitiesForStudents p {
+    font-size: 16px;
+  }
+  .OpportunitiesForStudents .p {
+    padding-top: 10px;
+  }
+}

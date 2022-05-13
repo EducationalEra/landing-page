@@ -51,20 +51,6 @@ $(function(){
 // Nav Toggle end
 });
 
-// Scroll for biigest element start
-let els = document.getElementsByClassName("ElementToIncrease")
-document.addEventListener("scroll", elementPicker)
-document.addEventListener("DOMContentLoaded", elementPicker)
-
-function elementPicker(e){
-
-  for (let i = 0; i < els.length; i++) {
-    if ((els[i].getBoundingClientRect().top > 30) & (els[i].getBoundingClientRect().top < 300)) {
-        els[i].classList.add("bigusElementus")
-    } else els[i].classList.remove("bigusElementus")
-  }
-}
-// Scroll for biigest element end
 
 // Owl Carousel start
 var owl = $(".owl-carousel");
@@ -120,3 +106,4 @@ $(".button-business").click(function() {
       $(".button-all").css("border-bottom", "1px solid #212121");
       $(".button-business").css("border-bottom", "1px solid #F8A800");
 });
+

@@ -43,7 +43,7 @@
 jQuery(function($) {
         $('.timer').countTo({
             from: 100,
-            to: 107,
+            to: 130,
             speed: 1000,
             refreshInterval: 50
         });

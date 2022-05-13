@@ -244,3 +244,11 @@ function changeLagnuage() {
     el.innerHTML = language[el.getAttribute('text')];
   })
 }
+$(".ua").click(function() {
+  $(".ua").css("color", "#F8A800");
+  $(".eng").css("color", "#212121");
+});
+$(".eng").click(function() {
+  $(".eng").css("color", "#F8A800");
+  $(".ua").css("color", "#212121");
+});

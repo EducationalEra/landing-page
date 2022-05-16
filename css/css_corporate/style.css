@@ -133,6 +133,7 @@ section {
 *******************************************/
 .intro .container {
   margin-top: 45px;
+  margin-bottom: 45px;
 }
 .intro-left,
 .intro-right {
@@ -636,24 +637,25 @@ button.button-2 {
 }
 .owl-prev,
 .owl-next {
+  top: 17%;
   height: 54px;
-  position: absolute;
-  top: 45%;
   width: 27px;
   z-index: 6;
   cursor: pointer;
-  color: transparent;
-  margin-top: -27px;
   transition: opacity linear .3s;
 }
 .owl-prev  {
-  background: url("../css/img/reviews/prev.svg") right center no-repeat !important;
+  background: url("../../img/corporate/reviews/prev.svg") !important;
   left: -4% !important;
-  /* float: left; */
 }
 .owl-next  {
-  background: url("../css/img/reviews/next.svg") right center no-repeat !important;
+  background: url("../../img/corporate/reviews/next.svg") !important;
   right: -4% !important;
+}
+.owl-nav button {
+  position: absolute;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 .owl-prev:hover,
 .owl-next:hover  {
@@ -1423,8 +1425,8 @@ button.button-2 {
   #langMob:not(:checked) ~ .eng {
     color: var(--v-orange);
   }
-  
-  
+
+
   .translation label[for="langMob"] {
     user-select: none;
     cursor: pointer;
@@ -1474,9 +1476,10 @@ button.button-2 {
   }
   .corporate_website .title {
     margin-bottom: 35px;
-  }  
+  }
   .intro .container {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   /* intro */

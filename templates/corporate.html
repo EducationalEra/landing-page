@@ -39,18 +39,12 @@
       <meta property="og:site_name" content="EdEra">
       <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-N86M5F"></script>
       <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-
     </head>
     <body>
 
     <div class="corporate_website">
       <!-- INTRO START ---------->
         <section class="intro bg_grey" id="intro">
-          <div class="translation">
-            <input id="lang" type='checkbox' onclick="changeLagnuage()">
-            <label for="lang" class="ua">UA</label>
-            <label for="lang" class="eng">ENG</label>
-          </div>
           <div class="container bg_white">
       <!-- Header start -->
               <header class="header" id="header">
@@ -70,7 +64,17 @@
                               <a class="nav_link" href="#" data-scroll="#partners" text="Partners"></a>
                               <a class="nav_link" href="#" data-scroll="#question" text="Question"></a>
                               <a class="nav_link" href="#" data-scroll="#contacts" text="Contacts"></a>
+                              <input id="lang" type='checkbox' onclick="changeLagnuage()">
+                              <label for="lang" class="ua translation-button translation-button_desctop">UA</label>
+                              <label for="lang" class="mark translation-button_desctop">&nbsp;/&nbsp;</label>
+                              <label for="lang" class="eng translation-button translation-button_desctop">EN</label>
                           </nav>
+                          <div class="translation">
+                            <input id="langMob" class="lang" type='checkbox' onclick="changeLagnuage()">
+                            <label for="lang" class="ua translation-button">UA</label>
+                            <label for="lang" class="mark translation-button">&nbsp;/&nbsp;</label>
+                            <label for="lang" class="eng translation-button">EN</label>
+                          </div>
                           <button class="burger" type="button" id="navToggle">
                               <span class="burger_item">Menu</span>
                           </button>
@@ -742,7 +746,7 @@
               <h3 text="question5"></h3>
             </label>
             <div class="question_box_answer">
-              <p text="question5"></p>
+              <p text="answer5"></p>
             </div>
           </div>
           <div class="question_box question_box__last">
@@ -751,7 +755,7 @@
               <h3 text="question6"></h3>
             </label>
             <div class="question_box_answer">
-              <p text="question6"></p>
+              <p text="answer6"></p>
             </div>
           </div>
         </div>
@@ -792,9 +796,15 @@
                 </a>
               </div>
             </div>
+            <div class="box-button">
+              <a class="button_link" href="#popup">
+                <span text="buttonText"></span>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
+      
+      
       <div id="popup" class="overlay">
         <div class="popup">
           <div class="form-box">
@@ -827,7 +837,6 @@
                 <label><p text="WhatProblem"></p></label>
                 <input name="entry.1299504674" type="text" required/>
                 <button class="form-box__button" type="submit" name="button" text="Submit"></button>
-                <!-- <input class="form-box__button" type="submit" value="Submit"></input> -->
               </form>
             </div>
           </div>

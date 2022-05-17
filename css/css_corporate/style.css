@@ -128,52 +128,12 @@ section {
 .light-text {
   color: var(--v-light-grey);
 }
-/* TRANSLATION *
-*******************************************/
-.translation {
-  position: fixed;
-  z-index: 7;
-  padding-top: 7px;
-  right: 40px;
-}
-.ua,
-.eng {
-  width: 30px;
-  height: 30px;
-  padding-top: 9px;
-  border-radius: 90px;
-  border: 1px solid #000;
-  text-align: center;
-  float: right;
-}
-.ua {
-  margin-left: 10px;
-}
-.translation label{
-  font-family: "Gilroy-Regular";
-  font-size: .6em;
-}
-#lang {
-  display: none;
-}
-#lang:checked ~ .ua,
-#lang:not(:checked) ~ .eng {
-  background: #000;
-  color: #fff !important;
-}
-.translation label[for="lang"] {
-  user-select: none;
-  cursor: pointer;
-}
-button.form-box__button {
-  display: block;
-  margin: auto;
-  margin-top: 60px;
-}
+
 /* INTRO *
 *******************************************/
 .intro .container {
   margin-top: 45px;
+  margin-bottom: 45px;
 }
 .intro-left,
 .intro-right {
@@ -265,28 +225,38 @@ button.form-box__button {
   font-size: 13px;
   font-weight: 700;
 }
-.nav_link {
+.nav_link,
+.translation-button,
+.mark {
   display: block;
   position: relative;
   font-family: "Gilroy-Regular";
   font-size: 1em;
   line-height: 120%;
   color: var(--v-black);
-  margin-left: 50px;
   text-decoration: none;
+}
+.nav_link,
+.ua {
+  margin-left: 24px;
 }
 .nav_link:first-child {
   margin-left: 0;
 }
 .nav .nav_link,
 .nav .nav_link:before,
-.nav .nav_link:after {
+.nav .nav_link:after,
+.translation-button,
+.translation-button:after,
+.translation-button:before {
   transition: all .5s;
 }
-.nav .nav_link:hover  {
+.nav .nav_link:hover,
+.translation-button:hover {
   color: var(--v-orange);
 }
-.nav .nav_link:after  {
+.nav .nav_link:after,
+.translation-button:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -298,8 +268,35 @@ button.form-box__button {
   background: var(--v-orange);
   height: 1px;
 }
-.nav .nav_link:hover:after  {
+.nav .nav_link:hover:after,
+.translation-button:hover:after {
   width: 100%;
+}
+
+/* TRANSLATION *
+*******************************************/
+.translation {
+  display: none;
+}
+.translation-button,
+.mark {
+  float: right;
+}
+#lang {
+  display: none;
+}
+#lang:checked ~ .ua,
+#lang:not(:checked) ~ .eng {
+  color: var(--v-orange) !important;
+}
+label[for="lang"] {
+  user-select: none;
+  cursor: pointer;
+}
+button.form-box__button {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
 }
 
 /* BURGER
@@ -520,7 +517,7 @@ button.form-box__button {
 
   transition: background linear .4s;
 }
-.products .button-1 {
+.products .button-business  {
   background: var(--v-orange);
   border: none;
 }
@@ -554,11 +551,11 @@ button.form-box__button {
   margin: auto;
   height: auto;
 }
-.div-1  {
+.products-box__business  {
   background-color: #fff;
   z-index: 2;
 }
-.div-2  {
+.products-box__all  {
   display: none;
   background-color: #fff;
   z-index: 1;
@@ -640,24 +637,25 @@ button.button-2 {
 }
 .owl-prev,
 .owl-next {
+  top: 17%;
   height: 54px;
-  position: absolute;
-  top: 45%;
   width: 27px;
   z-index: 6;
   cursor: pointer;
-  color: transparent;
-  margin-top: -27px;
   transition: opacity linear .3s;
 }
 .owl-prev  {
-  background: url("../css/img/reviews/prev.svg") right center no-repeat !important;
+  background: url("../../img/corporate/reviews/prev.svg") !important;
   left: -4% !important;
-  /* float: left; */
 }
 .owl-next  {
-  background: url("../css/img/reviews/next.svg") right center no-repeat !important;
+  background: url("../../img/corporate/reviews/next.svg") !important;
   right: -4% !important;
+}
+.owl-nav button {
+  position: absolute;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 .owl-prev:hover,
 .owl-next:hover  {
@@ -936,7 +934,7 @@ button.button-2 {
 .footer-corporate__link-wrap {
   display: block;
   margin: auto;
-  width: 150px;
+  width: 105px;
   margin-top: 14px;
 }
 .footer-corporate__link {
@@ -946,6 +944,9 @@ button.button-2 {
   margin-right: 20px;
   text-decoration: none;
 }
+.footer-corporate__link a:last-child {
+  margin-right: 0;
+}
 .footer-corporate__link a svg {
   width: 40px;
   height: 40px;
@@ -954,6 +955,12 @@ button.button-2 {
 }
 .footer-corporate__link a:hover svg {
   fill: var(--v-orange);
+}
+
+.footer-corporate .button_link{
+  display: block;
+  margin: auto;
+  margin-top: 72px;
 }
 
 /* FORM *
@@ -1108,19 +1115,16 @@ button.button-2 {
   .corporate_website .title {
     margin-bottom: 41px;
   }
-/* translation */
-  .translation {
-    right: 20px;
-  }
 
   /* nav */
-  .nav_link {
-    margin-left: 10px;
+  .nav_link,
+  .ua {
+    margin-left: 15px;
   }
 
   /* intro */
   .intro {
-    padding: 5px 20px;
+    padding: 0 20px;
   }
   .intro-left__content {
     padding: 70px 15px 70px 28px;
@@ -1325,7 +1329,6 @@ button.button-2 {
     margin-top: 146px;
   }
 
-
   /* biggest element on scroll */
   .element {
     width: 180px;
@@ -1376,91 +1379,112 @@ button.button-2 {
     height: 32px;
   }
   .footer-corporate__link-wrap {
-    width: 120px;
+    width: 88px;
     margin-top: 16px;
+  }
+  .footer-corporate .button_link{
+    margin-top: 52px;
   }
 }
 @media (max-width:991px) {
-    /* Nav */
-    .nav {
-      display: none;
-      width: 100%;
-      flex-direction: column;
-      text-align: right;
-      position: absolute;
-      z-index: 3;
-      right: 0;
-      top: 13%;
-      background: var(--v-grey);
-    }
-    .nav .nav_link:last-child {
-      padding-bottom: 40px;
-    }
-    .nav .nav_link:first-child {
-      padding-top: 30px;
-    }
-    .nav.show {
-      margin-top: 25px;
-      background: #fff;
-      padding-right: 10px;
-      display:flex;
-    }
-    .nav_link {
-      padding: 10px 15px;
-    }
-    .header_logo img{
-      margin: 15px;
-    }
-    /* Burger */
-    .burger {
-      margin-right: 15px;
-      display: block;
-    }
-    .intro  {
-      padding: 20px 20px 48px 20px;
+    .intro {
+      padding: 0 20px 48px 20px;
     }
     .header {
       height: 60px;
-      background: var(--v-grey);
     }
-    .header_inner {
-      padding: 0;
+
+    .nav_link,
+    .ua {
+      margin-left: 10px;
     }
 
     /* whom */
-    /* .whom .container {
-      padding-left: 5%;
-      padding-right: 5%;
-    } */
     .whom {
       padding: 125px 50px;
     }
 }
+
 @media (max-width:768px) {
+  .translation {
+    display: inherit;
+    position: absolute;
+    right: 140px;
+  }
+  .translation-button {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  .ua {
+    margin-left: 0;
+  }
+  #langMob,
+  .translation-button_desctop {
+    display: none;
+  }
+  #langMob:not(:checked) ~ .eng {
+    color: var(--v-orange);
+  }
+
+
+  .translation label[for="langMob"] {
+    user-select: none;
+    cursor: pointer;
+  }
+  /* Nav */
+  .header_inner {
+    padding-top: 0;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: right;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 13%;
+    background: var(--v-grey);
+  }
+  .nav .nav_link:last-child {
+    padding-bottom: 40px;
+  }
+  .nav .nav_link:first-child {
+    padding-top: 30px;
+  }
+  .nav.show {
+    width: 90%;
+    margin: 0 30px;
+    background: #fff;
+    padding-right: 40px;
+    display:flex;
+  }
+  .nav_link {
+    padding: 10px 15px;
+  }
+  .header_logo img{
+    margin: 15px;
+  }
+  /* Burger */
+  .burger {
+    margin-right: 15px;
+    display: block;
+  }
+
   body {
     font-size: 12px;
   }
   .corporate_website .title {
     margin-bottom: 35px;
   }
-
-  /* translation */
-  .ua,
-  .eng {
-    width: 25px;
-    height: 25px;
-    padding-top: 9px;
-  }
-  .ua {
-    margin-left: 5px;
-  }
   .intro .container {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   /* intro */
   .intro {
-    padding: 5px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
   }
   .intro-left,
   .intro-right {
@@ -1806,6 +1830,9 @@ button.button-2 {
     padding-left: 12px;
     padding-right: 12px;
   }
+  .footer-corporate .button_link{
+    margin-top: 45px;
+  }
   .popup  {
     width: 400px;
   }
@@ -1905,6 +1932,9 @@ button.button-2 {
   /* footer */
   .footer-corporate {
     padding: 30px;
+  }
+  .footer-corporate .button_link{
+    margin-top: 35px;
   }
 
   /* form */

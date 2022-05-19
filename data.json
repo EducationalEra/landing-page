@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "halseyEating": {
+      "className": "",
+      "imgUrl": "/img/courses/halseyEating.png",
+      "altText": "",
+      "href": "https://courses.ed-era.com/courses/course-v1:Law+U1.4+2023/about#",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Основи здорового харчування для учнів 1-4 класів ",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс для вчителів початкових класів",
+      "access": true,
+      "free": false
+    },
     "folk": {
       "className": "",
       "imgUrl": "/img/courses/folk_card.jpg",

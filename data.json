@@ -37,6 +37,18 @@
       "access": true,
       "free": false
     },
+    "lbs": {
+      "className": "",
+      "imgUrl": "/img/courses/LBSCard.png",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!974",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Жінки в бізнесі: бустер-ефект",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс з підприємництва допоможе вам масштабувати та вивести на новий рівень ваш бізнес.",
+      "access": true,
+      "free": false
+    },
     "internews": {
       "className": "",
       "imgUrl": "/img/courses/internews_card.png",

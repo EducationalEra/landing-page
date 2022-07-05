@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 const sass = require('gulp-sass')(require('sass'));
-// var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var cachebust = require('gulp-cache-bust');
 var rename = require("gulp-rename");
@@ -55,6 +54,9 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
     gulp.src("public/courses.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build/courses"));
+    gulp.src("templates/corporate.html")
+        .pipe(rename("index.html"))
+        .pipe(gulp.dest("build/corporate"));
     gulp.src("public/index.html")
         .pipe(rename("index.html"))
         .pipe(gulp.dest("build"));

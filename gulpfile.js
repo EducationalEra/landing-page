@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
+// var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var cachebust = require('gulp-cache-bust');
 var rename = require("gulp-rename");

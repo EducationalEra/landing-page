@@ -49,6 +49,18 @@
       "access": true,
       "free": false
     },
+    "Crimea": {
+      "className": "",
+      "imgUrl": "/img/courses/Crimea-course-card.png",
+      "altText": "",
+      "href": "https://www.udemy.com/course/crimea-history-and-people/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Crimea: History and People",
+      "courseSubtitle": "",
+      "courseDesc": "An online course on the past and present of Crimea and Crimean Tatars— indigenous people of Ukraine.",
+      "access": true,
+      "free": false
+    },
     "NdiWoman": {
       "className": "",
       "imgUrl": "/img/courses/ndi-woman_card.jpg",

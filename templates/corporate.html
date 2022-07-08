@@ -39,49 +39,55 @@
       <meta property="og:site_name" content="EdEra">
       <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-N86M5F"></script>
       <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/popper.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     </head>
     <body>
 
-    <div class="corporate_website">
-      <!-- INTRO START ---------->
+      <div class="corporate_website">
+        <!-- INTRO START ---------->
         <section class="intro bg_grey" id="intro">
           <div class="container bg_white">
-      <!-- Header start -->
-              <header class="header" id="header">
-                  <div class="container">
-                      <div class="header_inner">
-                          <div class="header_logo">
-                            <a href="https://www.ed-era.com">
-                              <img src="../img/corporate/logo/logo_edera.svg">
-                            </a>
-                          </div>
-                          <nav class="nav" id="nav">
-                              <a class="nav_link" href="#" data-scroll="#main-page" text="home"></a>
-                              <a class="nav_link" href="#" data-scroll="#about" text="aboutUs"></a>
-                              <a class="nav_link" href="#" data-scroll="#benefits" text="benefits"></a>
-                              <a class="nav_link" href="#" data-scroll="#products" text="ourProducts"></a>
-                              <a class="nav_link" href="#" data-scroll="#process" text="Processes"></a>
-                              <a class="nav_link" href="#" data-scroll="#partners" text="Partners"></a>
-                              <a class="nav_link" href="#" data-scroll="#question" text="Question"></a>
-                              <a class="nav_link" href="#" data-scroll="#contacts" text="Contacts"></a>
-                              <input id="lang" type='checkbox' onclick="changeLagnuage()">
-                              <label for="lang" class="ua translation-button translation-button_desctop">UA</label>
-                              <label for="lang" class="mark translation-button_desctop">&nbsp;/&nbsp;</label>
-                              <label for="lang" class="eng translation-button translation-button_desctop">EN</label>
-                          </nav>
-                          <div class="translation">
-                            <input id="langMob" class="lang" type='checkbox' onclick="changeLagnuage()">
-                            <label for="lang" class="ua translation-button">UA</label>
-                            <label for="lang" class="mark translation-button">&nbsp;/&nbsp;</label>
-                            <label for="lang" class="eng translation-button">EN</label>
-                          </div>
-                          <button class="burger" type="button" id="navToggle">
-                              <span class="burger_item">Menu</span>
-                          </button>
-                      </div>
+            <!-- Header start -->
+            <header class="header" id="header">
+              <div class="container">
+                <div class="header_inner">
+                  <div class="header_logo">
+                    <a href="https://www.ed-era.com">
+                      <img src="../img/corporate/logo/logo_edera.svg">
+                    </a>
                   </div>
-              </header>
-        <!-- Header end -->
+                  <nav class="nav" id="nav">
+                    <a class="nav_link" href="#" data-scroll="#main-page" text="home"></a>
+                    <a class="nav_link" href="#" data-scroll="#about" text="aboutUs"></a>
+                    <a class="nav_link" href="#" data-scroll="#benefits" text="benefits"></a>
+                    <a class="nav_link" href="#" data-scroll="#products" text="ourProducts"></a>
+                    <a class="nav_link" href="#" data-scroll="#process" text="Processes"></a>
+                    <a class="nav_link" href="#" data-scroll="#partners" text="Partners"></a>
+                    <a class="nav_link" href="#" data-scroll="#question" text="Question"></a>
+                    <a class="nav_link" href="#" data-scroll="#contacts" text="Contacts"></a>
+                    <input id="lang" type='checkbox' onclick="changeLagnuage()">
+                    <label for="lang" class="ua translation-button translation-button_desctop">UA</label>
+                    <label for="lang" class="mark translation-button_desctop">&nbsp;/&nbsp;</label>
+                    <label for="lang" class="eng translation-button translation-button_desctop">EN</label>
+                  </nav>
+                  <div class="translation">
+                    <input id="langMob" class="lang" type='checkbox' onclick="changeLagnuage()">
+                    <label for="lang" class="eng translation-button">EN</label>
+                    <label for="lang" class="mark translation-button">&nbsp;/&nbsp;</label>
+                    <label for="lang" class="ua translation-button">UA</label>
+                  </div>
+                  <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                  </button>
+                </div>
+              </div>
+            </header>
+            <!-- Header end -->
             <div class="inner_flex" id="main-page">
               <div class="intro-left">
                 <div class="intro-left__content">
@@ -89,9 +95,10 @@
                   <h1 class="intro-left__title" text="mainTitle"></h1>
                   <p class="subtitle" text="mainTitleDescript"></p>
                   <div class="intro__button box-button">
-                    <a class="button_link" href="#popup">
-                      <span text="buttonText"></span>
-                    </a>
+                    <div class="col text-center">
+                      <a href="#" text="buttonText" class="button_link btn" data-toggle="modal"
+                        data-target="#basicModal">button</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -102,8 +109,7 @@
           </div>
         </section>
 
-
-      <!-- WHOM START ---------->
+        <!-- WHOM START ---------->
         <section class="whom bg_white" id="whom">
           <div class="container">
             <div class="inner_flex">
@@ -114,7 +120,7 @@
                   </div>
                   <div class="whom-box__text">
                     <h4 text="ProductsGeneral"></h4>
-                    <a href="#products" text="LearnMore"></a>
+                    <a href="#" text="LearnMore"></a>
                   </div>
                 </div>
               </div>
@@ -133,7 +139,7 @@
           </div>
         </section>
 
-      <!---  ABOUT START ---------->
+        <!---  ABOUT START ---------->
         <section class="about bg_white" id="about">
           <div class="container">
             <div class="inner_flex">
@@ -152,346 +158,457 @@
               </div>
             </div>
             <div class="about__button box-button">
-              <a class="button_link" href="#popup">
-                <span text="buttonText"></span>
-              </a>
+              <div class="col text-center">
+                <a href="#" text="buttonText" class="button_link btn" data-toggle="modal"
+                  data-target="#basicModal">button</a>
+              </div>
             </div>
           </div>
         </section>
 
-      <!---  ACHIEVEMENT START ---------->
-      <section class="achievement bg_grey">
-        <div class="container">
-          <div class="inner_flex">
-            <div class="achievement-box">
-              <span class="timer counter-style">100</span>
-              <p text="projects"></p>
-            </div>
-            <div class="achievement-box">
-              <span class="timer_2 counter-style">999000</span>
-              <p text="users"></p>
-            </div>
-            <div class="achievement-box">
-              <span class="timer_3 counter-style">1</span>
-              <p text="experience"></p>
-            </div>
-            <div class="achievement-box">
-              <span class="timer_4 counter-style">33</span>
-              <p text="team"></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!---  BENEFITS START ---------->
-      <section class="benefits bg_white" id="benefits">
-        <div class="container">
-          <h2 class="title title-align__center" text="benefits"></h2>
-          <div class="benefit_desctop">
+        <!---  ACHIEVEMENT START ---------->
+        <section class="achievement bg_grey">
+          <div class="container">
             <div class="inner_flex">
-              <div class="benefit-box">
-                <img class="benefit-box__img" src="../img/corporate/benefits/decor_1.png" alt="team">
-                <h3 text="Methodological"></h3>
-                <p text="EachEdEraProduct"></p>
+              <div class="achievement-box">
+                <span class="timer counter-style">100</span>
+                <p text="projects"></p>
               </div>
-              <div class="benefit-box benefit-box__central">
-                <img class="benefit-box__img" src="../img/corporate/benefits/decor_3.png" alt="team">
-                <h3 text="Individual"></h3>
-                <p text="OwnProduction"></p>
+              <div class="achievement-box">
+                <span class="timer_2 counter-style">999000</span>
+                <p text="users"></p>
               </div>
-              <div class="benefit-box">
-                <img class="benefit-box__img" src="../img/corporate/benefits/decor_2.png" alt="team">
-                <h3 text="Process"></h3>
-                <p text="HaveOwnPlatform"></p>
+              <div class="achievement-box">
+                <span class="timer_3 counter-style">1</span>
+                <p text="experience"></p>
               </div>
-            </div>
-          </div>
-          <div class="benefit_mobile">
-            <div class="inner">
-              <div class="benefit-box-mob">
-                <h3 text="Methodological"></h3>
-                <div class="inner_flex">
-                  <div class="benefit-box-mob__left">
-                    <img src="../img/corporate/benefits/decor_1.png" alt="team">
-                  </div>
-                  <div class="benefit-box-mob__right">
-                    <p text="EachEdEraProduct"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="benefit-box-mob">
-                <h3 text="Individual"></h3>
-                <div class="inner_flex">
-                  <div class="benefit-box-mob__left">
-                    <img src="../img/corporate/benefits/decor_3.png" alt="team">
-                  </div>
-                  <div class="benefit-box-mob__right">
-                    <p text="OwnProduction"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="benefit-box-mob">
-                <h3 text="Process"></h3>
-                <div class="inner_flex">
-                  <div class="benefit-box-mob__left">
-                    <img src="../img/corporate/benefits/decor_2.png" alt="team">
-                  </div>
-                  <div class="benefit-box-mob__right">
-                    <p text="HaveOwnPlatform"></p>
-                  </div>
-                </div>
+              <div class="achievement-box">
+                <span class="timer_4 counter-style">33</span>
+                <p text="team"></p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!---  PROMO START ---------->
-      <section class="promo" id="products">
-        <div class="container">
-          <h2 class="title title-align__center" text="OurProducts"></h2>
-        </div>
-        <iframe width="100%"  src="https://www.youtube.com/embed/POneJkj_rxs"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </section>
-
-      <!---   PRODUCTS START ---------->
-      <section class="products">
-        <div class="container">
-          <div class="inner">
-            <div class="slider-wrapper">
-              <div class="inner_flex products_wrap">
-                <div class="left">
-                  <button class="button-products button-all">
-                    <h3 text="generalPublic"></h3>
-                  </button>
-                </div>
-                <div class="right">
-                  <button class="button-products button-business">
-                    <h3 text="ForBusinesses"></h3>
-                  </button>
-                </div>
-              </div>
-
-              <div class="boxes">
-                <div class="products-box__all text__all">
-                  <div class="inner_flex products_wrap">
-                    <div class="product-box">
-                      <img class="monitor" src="../img/corporate/products/monitor.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="Massive"></h5>
-                        <p id="products" class="light-text" text="AnyTargetAudience"></p>
-                      </div>
-                    </div>
-                    <div class="product-box">
-                      <img class="gamepad" src="../img/corporate/products/gamepad.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="EducationalGames"></h5>
-                        <p class="light-text" text="ArticulateStoryline"></p>
-                      </div>
-                    </div>
-                    <div class="product-box">
-                      <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="LearningPlatforms"></h5>
-                        <p class="light-text" text="DevelopmentPlatform"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__box">
-                    <h4 class="title-align__center" text="Cases"></h4>
-                    <div class="inner">
-                      <div class="owl-carousel">
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/vnBMTuBqbAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="NABu"></h5>
-                              <p class="problem light-text" text="developEducationalGame"></p>
-                              <p class="explain_text light-text" text="developedAnEducationalGame"></p>
-                              <p class="explain_text light-text" text="usersInFirstDay"></p>
-                              <h5 class="word_review light-text" text="Feedback"></h5>
-                              <div class="review-autor">
-                                <div class="inner_flex">
-                                  <div class="review-autor__photo">
-                                    <img src="../img/corporate/reviews/autors/nabu.JPG" alt="photo">
-                                  </div>
-                                  <div class="review-autor__information">
-                                    <p class="autor_name"><b text="Victoria"></b></p>
-                                    <p class="regalia light-text" text="VictoriaDescript"></p>
-                                    <p class="descript light-text" text="InvestigationIsConducted"></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/Y05vWnF_nFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="Nus"></h5>
-                              <p class="problem light-text" text="teachTeachers"></p>
-                              <p class="explain_text light-text" text="DevelopedSimpleInformative"></p>
-                              <p class="explain_text light-text" text="teachersHaveBeenTaught"></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/aUwhnZ-D3yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="IREx"></h5>
-                              <p class="problem light-text" text="promoteMediaLiteracy"></p>
-                              <p class="explain_text light-text" text="developedCreativeOnlineCourse"></p>
-                              <p class="explain_text light-text" text="usersIREX"></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/z0vmO-Cjodw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="Prosvita"></h5>
-                              <p class="problem light-text" text="creativeConcept"></p>
-                              <p class="explain_text light-text" text="educationalPlatformWhichOffersLearning"></p>
-                              <p class="explain_text light-text" text=""></p>
-                              <h5 class="word_review light-text" text="Feedback"></h5>
-                              <div class="review-autor">
-                                <div class="inner_flex">
-                                  <div class="review-autor__photo">
-                                    <img src="../img/corporate/reviews/autors/cvk.PNG" alt="photo">
-                                  </div>
-                                  <div class="review-autor__information">
-                                    <p class="autor_name"><b text="Vladislav"></b></p>
-                                    <p class="regalia light-text" text="ProductManager"></p>
-                                    <p class="descript light-text" text="EdEraFaced"></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="products-box__business text__business">
-                  <div class="inner_flex products_wrap">
-                    <div class="product-box">
-                      <img class="monitor" src="../img/corporate/products/img_1.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="Onboarding"></h5>
-                        <p class="light-text" text="Content"></p>
-                      </div>
-                    </div>
-                    <div class="product-box">
-                      <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="EducationalEcosystem"></h5>
-                        <p class="light-text" text="IndividualResearch"></p>
-                      </div>
-                    </div>
-                    <div class="product-box">
-                      <img class="gamepad" src="../img/corporate/products/img_3.png" alt="decor">
-                      <div class="product-box__text">
-                        <h5 text="OnlineCourses"></h5>
-                        <p class="light-text" text="AnyTopic"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider__box">
-                    <h4 class="title-align__center" text="Cases"></h4>
-                    <div class="inner">
-                      <div class="owl-carousel">
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/xcebbTGD524" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="Backstage"></h5>
-                              <p class="problem light-text" text="BackstageTask"></p>
-                              <p class="explain_text light-text" text="BackstageSolution"></p>
-                              <p class="explain_text light-text" text="BackstageResult"></p>
-                              <h5 class="word_review light-text" text="Feedback"></h5>
-                              <div class="review-autor">
-                                <div class="inner_flex">
-                                  <div class="review-autor__photo">
-                                    <img src="../img/corporate/reviews/autors/dubinina.png" alt="photo">
-                                  </div>
-                                  <div class="review-autor__information">
-                                    <p class="autor_name"><b text="Karina"></b></p>
-                                    <p class="regalia light-text" text="KarinaDescript"></p>
-                                    <p class="descript light-text" text="KarinaFeedback"></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="slide">
-                          <div class="inner_flex">
-                            <div class="slide_left">
-                              <iframe src="https://www.youtube.com/embed/JMJ_6gJmiIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="slide_right">
-                              <h5 class="course_name" text="Ukrtelecom"></h5>
-                              <p class="problem light-text" text="UkrtelecomTask"></p>
-                              <p class="explain_text light-text" text="UkrtelecomSolution"></p>
-                              <p class="explain_text light-text" text="UkrtelecomResult"></p>
-                              <h5 class="word_review light-text" text="Feedback"></h5>
-                              <div class="review-autor">
-                                <div class="inner_flex">
-                                  <div class="review-autor__photo">
-                                    <img src="../img/corporate/reviews/autors/expert_3.jpg" alt="photo">
-                                  </div>
-                                  <div class="review-autor__information">
-                                    <p class="autor_name"><b text="Olesya"></b></p>
-                                    <p class="regalia light-text" text="OlesyaDescript"></p>
-                                    <p class="descript light-text" text="OlesyaFeedback"></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!---  PROCESS START ---------->
-      <section class="process bg_white" id="process">
-        <div class="container">
-          <div class="inner">
-            <h2 class="title title-align__center" text="ProductCreation"></h2>
-            <h3 text="ProductDevelopmentInvolves"></h3>
-            <div class="process-desctop">
+        <!---  BENEFITS START ---------->
+        <section class="benefits bg_white" id="benefits">
+          <div class="container">
+            <h2 class="title title-align__center" text="benefits"></h2>
+            <div class="benefit_desctop">
               <div class="inner_flex">
-                <div class="process-left process-box__border">
-                  <div class="process-box process-box__1">
+                <div class="benefit-box">
+                  <img class="benefit-box__img" src="../img/corporate/benefits/decor_1.png" alt="team">
+                  <h3 text="Methodological"></h3>
+                  <p text="EachEdEraProduct"></p>
+                </div>
+                <div class="benefit-box benefit-box__central">
+                  <img class="benefit-box__img" src="../img/corporate/benefits/decor_3.png" alt="team">
+                  <h3 text="Individual"></h3>
+                  <p text="OwnProduction"></p>
+                </div>
+                <div class="benefit-box">
+                  <img class="benefit-box__img" src="../img/corporate/benefits/decor_2.png" alt="team">
+                  <h3 text="Process"></h3>
+                  <p text="HaveOwnPlatform"></p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit_mobile">
+              <div class="inner">
+                <div class="benefit-box-mob">
+                  <h3 text="Methodological"></h3>
+                  <div class="inner_flex">
+                    <div class="benefit-box-mob__left">
+                      <img src="../img/corporate/benefits/decor_1.png" alt="team">
+                    </div>
+                    <div class="benefit-box-mob__right">
+                      <p text="EachEdEraProduct"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefit-box-mob">
+                  <h3 text="Individual"></h3>
+                  <div class="inner_flex">
+                    <div class="benefit-box-mob__left">
+                      <img src="../img/corporate/benefits/decor_3.png" alt="team">
+                    </div>
+                    <div class="benefit-box-mob__right">
+                      <p text="OwnProduction"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefit-box-mob">
+                  <h3 text="Process"></h3>
+                  <div class="inner_flex">
+                    <div class="benefit-box-mob__left">
+                      <img src="../img/corporate/benefits/decor_2.png" alt="team">
+                    </div>
+                    <div class="benefit-box-mob__right">
+                      <p text="HaveOwnPlatform"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---  PROMO START ---------->
+        <section class="promo" id="products">
+          <div class="container">
+            <h2 class="title title-align__center" text="OurProducts"></h2>
+          </div>
+          <iframe width="100%" src="https://www.youtube.com/embed/POneJkj_rxs" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </section>
+
+        <!---   PRODUCTS START ---------->
+        <section class="products">
+          <div class="container">
+            <div class="inner">
+              <div class="slider-wrapper">
+                <div class="inner_flex products_wrap">
+                  <div class="left">
+                    <button class="button-products button-all">
+                      <h3 text="generalPublic"></h3>
+                    </button>
+                  </div>
+                  <div class="right">
+                    <button class="button-products button-business">
+                      <h3 text="ForBusinesses"></h3>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="boxes">
+                  <div class="products-box__all text__all">
+                    <div class="inner_flex products_wrap">
+                      <div class="product-box">
+                        <img class="monitor" src="../img/corporate/products/monitor.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="Massive"></h5>
+                          <p id="products" class="light-text" text="AnyTargetAudience"></p>
+                        </div>
+                      </div>
+                      <div class="product-box">
+                        <img class="gamepad" src="../img/corporate/products/gamepad.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="EducationalGames"></h5>
+                          <p class="light-text" text="ArticulateStoryline"></p>
+                        </div>
+                      </div>
+                      <div class="product-box">
+                        <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="LearningPlatforms"></h5>
+                          <p class="light-text" text="DevelopmentPlatform"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider__box">
+                      <h4 class="title-align__center" text="Cases"></h4>
+                      <div class="inner">
+                        <div class="owl-carousel">
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/vnBMTuBqbAM" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="NABu"></h5>
+                                <p class="problem light-text" text="developEducationalGame"></p>
+                                <p class="explain_text light-text" text="developedAnEducationalGame"></p>
+                                <p class="explain_text light-text" text="usersInFirstDay"></p>
+                                <h5 class="word_review light-text" text="Feedback"></h5>
+                                <div class="review-autor">
+                                  <div class="inner_flex">
+                                    <div class="review-autor__photo">
+                                      <img src="../img/corporate/reviews/autors/nabu.JPG" alt="photo">
+                                    </div>
+                                    <div class="review-autor__information">
+                                      <p class="autor_name"><b text="Victoria"></b></p>
+                                      <p class="regalia light-text" text="VictoriaDescript"></p>
+                                      <p class="descript light-text" text="InvestigationIsConducted"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/Y05vWnF_nFI" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="Nus"></h5>
+                                <p class="problem light-text" text="teachTeachers"></p>
+                                <p class="explain_text light-text" text="DevelopedSimpleInformative"></p>
+                                <p class="explain_text light-text" text="teachersHaveBeenTaught"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/aUwhnZ-D3yw" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="IREx"></h5>
+                                <p class="problem light-text" text="promoteMediaLiteracy"></p>
+                                <p class="explain_text light-text" text="developedCreativeOnlineCourse"></p>
+                                <p class="explain_text light-text" text="usersIREX"></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/z0vmO-Cjodw" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="Prosvita"></h5>
+                                <p class="problem light-text" text="creativeConcept"></p>
+                                <p class="explain_text light-text" text="educationalPlatformWhichOffersLearning"></p>
+                                <p class="explain_text light-text" text=""></p>
+                                <h5 class="word_review light-text" text="Feedback"></h5>
+                                <div class="review-autor">
+                                  <div class="inner_flex">
+                                    <div class="review-autor__photo">
+                                      <img src="../img/corporate/reviews/autors/cvk.PNG" alt="photo">
+                                    </div>
+                                    <div class="review-autor__information">
+                                      <p class="autor_name"><b text="Vladislav"></b></p>
+                                      <p class="regalia light-text" text="ProductManager"></p>
+                                      <p class="descript light-text" text="EdEraFaced"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="products-box__business text__business">
+                    <div class="inner_flex products_wrap">
+                      <div class="product-box">
+                        <img class="monitor" src="../img/corporate/products/img_1.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="Onboarding"></h5>
+                          <p class="light-text" text="Content"></p>
+                        </div>
+                      </div>
+                      <div class="product-box">
+                        <img class="gamepad" src="../img/corporate/products/blank.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="EducationalEcosystem"></h5>
+                          <p class="light-text" text="IndividualResearch"></p>
+                        </div>
+                      </div>
+                      <div class="product-box">
+                        <img class="gamepad" src="../img/corporate/products/img_3.png" alt="decor">
+                        <div class="product-box__text">
+                          <h5 text="OnlineCourses"></h5>
+                          <p class="light-text" text="AnyTopic"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider__box">
+                      <h4 class="title-align__center" text="Cases"></h4>
+                      <div class="inner">
+                        <div class="owl-carousel">
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/xcebbTGD524" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="Backstage"></h5>
+                                <p class="problem light-text" text="BackstageTask"></p>
+                                <p class="explain_text light-text" text="BackstageSolution"></p>
+                                <p class="explain_text light-text" text="BackstageResult"></p>
+                                <h5 class="word_review light-text" text="Feedback"></h5>
+                                <div class="review-autor">
+                                  <div class="inner_flex">
+                                    <div class="review-autor__photo">
+                                      <img src="../img/corporate/reviews/autors/dubinina.png" alt="photo">
+                                    </div>
+                                    <div class="review-autor__information">
+                                      <p class="autor_name"><b text="Karina"></b></p>
+                                      <p class="regalia light-text" text="KarinaDescript"></p>
+                                      <p class="descript light-text" text="KarinaFeedback"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="inner_flex">
+                              <div class="slide_left">
+                                <iframe src="https://www.youtube.com/embed/JMJ_6gJmiIk" title="YouTube video player"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                              <div class="slide_right">
+                                <h5 class="course_name" text="Ukrtelecom"></h5>
+                                <p class="problem light-text" text="UkrtelecomTask"></p>
+                                <p class="explain_text light-text" text="UkrtelecomSolution"></p>
+                                <p class="explain_text light-text" text="UkrtelecomResult"></p>
+                                <h5 class="word_review light-text" text="Feedback"></h5>
+                                <div class="review-autor">
+                                  <div class="inner_flex">
+                                    <div class="review-autor__photo">
+                                      <img src="../img/corporate/reviews/autors/expert_3.jpg" alt="photo">
+                                    </div>
+                                    <div class="review-autor__information">
+                                      <p class="autor_name"><b text="Olesya"></b></p>
+                                      <p class="regalia light-text" text="OlesyaDescript"></p>
+                                      <p class="descript light-text" text="OlesyaFeedback"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---  PROCESS START ---------->
+        <section class="process bg_white" id="process">
+          <div class="container">
+            <div class="inner">
+              <h2 class="title title-align__center" text="ProductCreation"></h2>
+              <h3 text="ProductDevelopmentInvolves"></h3>
+              <div class="process-desctop">
+                <div class="inner_flex">
+                  <div class="process-left process-box__border">
+                    <div class="process-box process-box__1">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number line_status">1</div>
+                        <img class="ElementToIncrease" src="../img/corporate/process/process_decor__search.png" alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="research"></h5>
+                          <p text="teamAnalyzes"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-box">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number line_status">3</div>
+                        <img class="ElementToIncrease process_decor__blank" src="../img/corporate/process/process_decor__blank.png"
+                          alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="EducationalMethodology"></h5>
+                          <p text="TeamDevelops"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-box">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number">5</div>
+                        <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="CommunicationPromotion"></h5>
+                          <p text="CreativeCommunication"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="process-right">
+                    <div class="process-box process-box__1">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number">2</div>
+                        <img class="ElementToIncrease" src="../img/corporate/process/process_decor__picture.png" alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="ProjectConcept"></h5>
+                          <p text="designEachComponent"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-box">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number">4</div>
+                        <img class="ElementToIncrease" src="../img/corporate/process/process_decor__photo.png" alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="Production"></h5>
+                          <p text="teamEnsures"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-box">
+                      <div class="process-box__inner">
+                        <hr>
+                        <div class="number">6</div>
+                        <img class="ElementToIncrease" src="../img/corporate/process/process_decor__rocket.png" alt="decoration">
+                        <div class="process-box__text">
+                          <h5 text="ProductLaunch"></h5>
+                          <p text="projectTeamLaunches"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-box process-box__empty">
+                      <div class="process-box__inner">
+                        <div class="number">7</div>
+                        <div class="process-box__text"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="process-box process-box__last">
                     <div class="process-box__inner">
-                      <hr>
-                      <div class="number line_status">1</div>
+                      <img class="ElementToIncrease" src="../img/corporate/process/process_decor__analitic.png" alt="decoration">
+                      <div class="process-box__text">
+                        <h5 text="DataAnalysis"></h5>
+                        <p text="teamAnalyzesQuantitative"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process-mobile">
+                <div class="inner_flex">
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob number-mob__1">1</div>
+                      <hr class="hr__1">
+                    </div>
+                  </div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box process-mobile-box__1">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__search.png" alt="decoration">
                       <div class="process-box__text">
                         <h5 text="research"></h5>
@@ -499,34 +616,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="process-box">
-                    <div class="process-box__inner">
-                      <hr>
-                      <div class="number line_status">3</div>
-                      <img class="ElementToIncrease process_decor__blank" src="../img/corporate/process/process_decor__blank.png" alt="decoration">
-                      <div class="process-box__text">
-                        <h5 text="EducationalMethodology"></h5>
-                        <p text="TeamDevelops"></p>
-                      </div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">2</div>
+                      <hr class="hr__2">
                     </div>
                   </div>
-                  <div class="process-box">
-                    <div class="process-box__inner">
-                      <hr>
-                      <div class="number">5</div>
-                      <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
-                      <div class="process-box__text">
-                        <h5 text="CommunicationPromotion"></h5>
-                        <p text="CreativeCommunication"></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="process-right">
-                  <div class="process-box process-box__1">
-                    <div class="process-box__inner">
-                      <hr>
-                      <div class="number">2</div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__picture.png" alt="decoration">
                       <div class="process-box__text">
                         <h5 text="ProjectConcept"></h5>
@@ -534,10 +632,31 @@
                       </div>
                     </div>
                   </div>
-                  <div class="process-box">
-                    <div class="process-box__inner">
-                      <hr>
-                      <div class="number">4</div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">3</div>
+                      <hr class="hr__3">
+                    </div>
+                  </div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
+                      <img class="ElementToIncrease" src="../img/corporate/process/process_decor__blank.png" alt="decoration">
+                      <div class="process-box__text">
+                        <h5 text="EducationalMethodology"></h5>
+                        <p text="TeamDevelops"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">4</div>
+                      <hr class="hr__4">
+                    </div>
+                  </div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__photo.png" alt="decoration">
                       <div class="process-box__text">
                         <h5 text="Production"></h5>
@@ -545,10 +664,31 @@
                       </div>
                     </div>
                   </div>
-                  <div class="process-box">
-                    <div class="process-box__inner">
-                      <hr>
-                      <div class="number">6</div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">5</div>
+                      <hr class="hr__5">
+                    </div>
+                  </div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
+                      <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
+                      <div class="process-box__text">
+                        <h5 text="CommunicationPromotion"></h5>
+                        <p text="CreativeCommunication"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">6</div>
+                      <hr class="hr__6">
+                    </div>
+                  </div>
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__rocket.png" alt="decoration">
                       <div class="process-box__text">
                         <h5 text="ProductLaunch"></h5>
@@ -556,296 +696,199 @@
                       </div>
                     </div>
                   </div>
-                  <div class="process-box process-box__empty">
-                    <div class="process-box__inner">
-                      <div class="number">7</div>
-                        <div class="process-box__text"></div>
+
+                  <div class="process-mobile__left">
+                    <div class="process-mobile-box">
+                      <div class="number-mob">7</div>
+                      <hr class="hr__7">
                     </div>
                   </div>
-                </div>
-                <div class="process-box process-box__last">
-                  <div class="process-box__inner">
+                  <div class="process-mobile__right">
+                    <div class="process-mobile-box">
                       <img class="ElementToIncrease" src="../img/corporate/process/process_decor__analitic.png" alt="decoration">
                       <div class="process-box__text">
                         <h5 text="DataAnalysis"></h5>
                         <p text="teamAnalyzesQuantitative"></p>
                       </div>
+                    </div>
                   </div>
+
+                </div>
+              </div>
+              <div class="process__button box-button">
+                <div class="col text-center">
+                  <a href="#" text="buttonText" class="button_link btn" data-toggle="modal"
+                    data-target="#basicModal">button</a>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="process-mobile">
-              <div class="inner_flex">
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob number-mob__1">1</div>
-                    <hr class="hr__1">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box process-mobile-box__1">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__search.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="research"></h5>
-                      <p text="teamAnalyzes"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">2</div>
-                    <hr class="hr__2">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__picture.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="ProjectConcept"></h5>
-                      <p text="designEachComponent"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">3</div>
-                    <hr class="hr__3">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__blank.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="EducationalMethodology"></h5>
-                      <p text="TeamDevelops"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">4</div>
-                    <hr class="hr__4">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__photo.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="Production"></h5>
-                      <p text="teamEnsures"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">5</div>
-                    <hr class="hr__5">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__heart.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="CommunicationPromotion"></h5>
-                      <p text="CreativeCommunication"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">6</div>
-                    <hr class="hr__6">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__rocket.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="ProductLaunch"></h5>
-                      <p text="projectTeamLaunches"></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="process-mobile__left">
-                  <div class="process-mobile-box">
-                    <div class="number-mob">7</div>
-                    <hr class="hr__7">
-                  </div>
-                </div>
-                <div class="process-mobile__right">
-                  <div class="process-mobile-box">
-                    <img class="ElementToIncrease" src="../img/corporate/process/process_decor__analitic.png" alt="decoration">
-                    <div class="process-box__text">
-                      <h5 text="DataAnalysis"></h5>
-                      <p text="teamAnalyzesQuantitative"></p>
-                    </div>
-                  </div>
-                </div>
-
+        <!---  QUESTION_START ---------->
+        <section class="question bg_white" id="question">
+          <div class="container">
+            <h2 class="title title-align__center" text="Question"></h2>
+            <div class="question_box">
+              <input class="hide" id="hd-1" type="checkbox">
+              <label for="hd-1">
+                <h3 text="question1"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer1"></p>
               </div>
             </div>
-            <div class="process__button box-button">
-              <a class="button_link" href="#popup">
-                <span text="buttonText"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!---  QUESTION_START ---------->
-      <section class="question bg_white" id="question">
-        <div class="container">
-          <h2 class="title title-align__center" text="Question"></h2>
-          <div class="question_box">
-            <input class="hide" id="hd-1" type="checkbox">
-            <label for="hd-1">
-              <h3 text="question1"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer1"></p>
-            </div>
-          </div>
-          <div class="question_box">
-            <input class="hide" id="hd-2" type="checkbox">
-            <label for="hd-2">
-              <h3 text="question2"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer2"></p>
-            </div>
-          </div>
-          <div class="question_box">
-            <input class="hide" id="hd-3" type="checkbox">
-            <label for="hd-3">
-              <h3 text="question3"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer3"></p>
-            </div>
-          </div>
-          <div class="question_box">
-            <input class="hide" id="hd-4" type="checkbox">
-            <label for="hd-4">
-              <h3 text="question4"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer4"></p>
-            </div>
-          </div>
-          <div class="question_box">
-            <input class="hide" id="hd-5" type="checkbox">
-            <label for="hd-5">
-              <h3 text="question5"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer5"></p>
-            </div>
-          </div>
-          <div class="question_box question_box__last">
-            <input class="hide" id="hd-6" type="checkbox">
-            <label for="hd-6">
-              <h3 text="question6"></h3>
-            </label>
-            <div class="question_box_answer">
-              <p text="answer6"></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!---  PARTNERS START ---------->
-      <section class="partners title-align__center" id="partners">
-        <div class="container">
-          <h2 class="title" text="Partners"></h2>
-          <div class="logo__desctop">
-            <img src="../img/corporate/logo.png" alt="logo">
-          </div>
-          <div class="logo__mobile">
-            <img src="../img/corporate/logos-mob.png" alt="logo">
-          </div>
-        </div>
-      </section>
-
-      <!---  FOOTER START ---------->
-      <section class="footer-corporate bg_grey" id="contacts">
-        <div class="container">
-          <div class="inner">
-            <h3 text="calculatePrice"></h3>
-            <div class="footer-corporate__link">
-              <h3 text="Share"></h3>
-              <div class="footer-corporate__link-wrap">
-                <a href="https://www.facebook.com/EdEraUa" target="_blank">
-                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M40 20C40 8.95312 31.0469 0 20 0C8.95312 0 0 8.95312 0 20C0 31.0469 8.95312 40 20 40C20.1172 40 20.2344 40 20.3516 39.9922V24.4297H16.0547V19.4219H20.3516V15.7344C20.3516 11.4609 22.9609 9.13281 26.7734 9.13281C28.6016 9.13281 30.1719 9.26562 30.625 9.32812V13.7969H28C25.9297 13.7969 25.5234 14.7812 25.5234 16.2266V19.4141H30.4844L29.8359 24.4219H25.5234V39.2266C33.8828 36.8281 40 29.1328 40 20Z"/>
-                  </svg>
-                </a>
-                <a href="https://www.instagram.com/edera_ua" target="_blank">
-                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z"/>
-                    <path d="M28.9519 13.2269C28.7679 12.7282 28.4743 12.2769 28.0928 11.9064C27.7224 11.5249 27.2713 11.2313 26.7723 11.0473C26.3677 10.8901 25.7598 10.7031 24.6401 10.6521C23.4288 10.5969 23.0657 10.585 19.9993 10.585C16.9326 10.585 16.5694 10.5966 15.3585 10.6518C14.2388 10.7031 13.6306 10.8901 13.2262 11.0473C12.7272 11.2313 12.2759 11.5249 11.9057 11.9064C11.5242 12.2769 11.2307 12.7279 11.0463 13.2269C10.8892 13.6315 10.7021 14.2397 10.6511 15.3594C10.5959 16.5704 10.584 16.9335 10.584 20.0002C10.584 23.0667 10.5959 23.4298 10.6511 24.6411C10.7021 25.7607 10.8892 26.3687 11.0463 26.7733C11.2307 27.2723 11.5239 27.7233 11.9054 28.0938C12.2759 28.4753 12.7269 28.7689 13.2259 28.9529C13.6306 29.1104 14.2388 29.2974 15.3585 29.3484C16.5694 29.4036 16.9323 29.4152 19.999 29.4152C23.066 29.4152 23.4291 29.4036 24.6398 29.3484C25.7595 29.2974 26.3677 29.1104 26.7723 28.9529C27.7739 28.5665 28.5656 27.7749 28.9519 26.7733C29.1091 26.3687 29.2961 25.7607 29.3474 24.6411C29.4026 23.4298 29.4142 23.0667 29.4142 20.0002C29.4142 16.9335 29.4026 16.5704 29.3474 15.3594C29.2964 14.2397 29.1094 13.6315 28.9519 13.2269ZM19.9993 25.8972C16.7421 25.8972 14.1017 23.2571 14.1017 19.9999C14.1017 16.7428 16.7421 14.1027 19.9993 14.1027C23.2561 14.1027 25.8965 16.7428 25.8965 19.9999C25.8965 23.2571 23.2561 25.8972 19.9993 25.8972ZM26.1296 15.2477C25.3685 15.2477 24.7515 14.6307 24.7515 13.8696C24.7515 13.1085 25.3685 12.4914 26.1296 12.4914C26.8907 12.4914 27.5078 13.1085 27.5078 13.8696C27.5075 14.6307 26.8907 15.2477 26.1296 15.2477Z"/>
-                    <path d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM31.4151 24.7348C31.3596 25.9573 31.1652 26.792 30.8813 27.5226C30.2847 29.0652 29.0652 30.2847 27.5226 30.8813C26.7923 31.1652 25.9573 31.3593 24.7351 31.4151C23.5104 31.4709 23.1192 31.4844 20.0003 31.4844C16.8811 31.4844 16.4902 31.4709 15.2652 31.4151C14.043 31.3593 13.208 31.1652 12.4777 30.8813C11.7111 30.593 11.0172 30.141 10.4434 29.5566C9.85931 28.9832 9.40735 28.2889 9.11896 27.5226C8.83514 26.7923 8.64075 25.9573 8.58521 24.7351C8.52875 23.5101 8.51562 23.1189 8.51562 20C8.51562 16.8811 8.52875 16.4899 8.5849 15.2652C8.64044 14.0427 8.83453 13.208 9.11835 12.4774C9.40674 11.7111 9.85901 11.0168 10.4434 10.4434C11.0168 9.85901 11.7111 9.40704 12.4774 9.11865C13.208 8.83484 14.0427 8.64075 15.2652 8.5849C16.4899 8.52905 16.8811 8.51562 20 8.51562C23.1189 8.51562 23.5101 8.52905 24.7348 8.58521C25.9573 8.64075 26.792 8.83484 27.5226 9.11835C28.2889 9.40674 28.9832 9.85901 29.5569 10.4434C30.141 11.0172 30.5933 11.7111 30.8813 12.4774C31.1655 13.208 31.3596 14.0427 31.4154 15.2652C31.4713 16.4899 31.4844 16.8811 31.4844 20C31.4844 23.1189 31.4713 23.5101 31.4151 24.7348Z"/>
-                  </svg>
-                </a>
+            <div class="question_box">
+              <input class="hide" id="hd-2" type="checkbox">
+              <label for="hd-2">
+                <h3 text="question2"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer2"></p>
               </div>
             </div>
-            <div class="box-button">
-              <a class="button_link" href="#popup">
-                <span text="buttonText"></span>
-              </a>
+            <div class="question_box">
+              <input class="hide" id="hd-3" type="checkbox">
+              <label for="hd-3">
+                <h3 text="question3"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer3"></p>
+              </div>
+            </div>
+            <div class="question_box">
+              <input class="hide" id="hd-4" type="checkbox">
+              <label for="hd-4">
+                <h3 text="question4"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer4"></p>
+              </div>
+            </div>
+            <div class="question_box">
+              <input class="hide" id="hd-5" type="checkbox">
+              <label for="hd-5">
+                <h3 text="question5"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer5"></p>
+              </div>
+            </div>
+            <div class="question_box question_box__last">
+              <input class="hide" id="hd-6" type="checkbox">
+              <label for="hd-6">
+                <h3 text="question6"></h3>
+              </label>
+              <div class="question_box_answer">
+                <p text="answer6"></p>
+              </div>
             </div>
           </div>
-        </div>
-      
-      
-      <div id="popup" class="overlay">
-        <div class="popup">
-          <div class="form-box">
-            <div class="container">
-              <script type="text/javascript">
-                var submitted=false;
-              </script>
-              <iframe name="hidden_iframe" id="hidden_iframe"
-                style="display:none;"
-                onload="if(submitted)  {
-                window.location='file:///Users/a/Documents/EdEra/%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%B8%CC%86%20/template/template.html#';
-              }">
-            </iframe>
-              <a class="close" href="#">&times;</a>
-              <h3 class="form-box__title title-align__center" text="TellUs"></h3>
-              <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_y3jNOQCefITYH_Ra0AU-TzfjODIxgp_NkXybtcMI_NdHjA/formResponse"
-                method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                <label><p text="name"></p></label>
-                <input name="entry.2011607017" type="text" required />
+        </section>
 
-                <label><p text="Company"></p></label>
-                <input name="entry.1164568700" type="text" required />
+        <!---  PARTNERS START ---------->
+        <section class="partners title-align__center" id="partners">
+          <div class="container">
+            <h2 class="title" text="Partners"></h2>
+            <div class="logo__desctop">
+              <img src="../img/corporate/logo.png" alt="logo">
+            </div>
+            <div class="logo__mobile">
+              <img src="../img/corporate/logos-mob.png" alt="logo">
+            </div>
+          </div>
+        </section>
 
-                <label><p text="Phone"></p></label>
-                <input name="entry.1069580" type="tel" placeholder="+380" required />
+        <!---  FOOTER START ---------->
+        <section class="footer-corporate bg_grey" id="contacts">
+          <div class="container">
+            <div class="inner">
+              <h3 text="calculatePrice"></h3>
+              <div class="footer-corporate__link">
+                <h3 text="Share"></h3>
+                <div class="footer-corporate__link-wrap">
+                  <a href="https://www.facebook.com/EdEraUa" target="_blank">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M40 20C40 8.95312 31.0469 0 20 0C8.95312 0 0 8.95312 0 20C0 31.0469 8.95312 40 20 40C20.1172 40 20.2344 40 20.3516 39.9922V24.4297H16.0547V19.4219H20.3516V15.7344C20.3516 11.4609 22.9609 9.13281 26.7734 9.13281C28.6016 9.13281 30.1719 9.26562 30.625 9.32812V13.7969H28C25.9297 13.7969 25.5234 14.7812 25.5234 16.2266V19.4141H30.4844L29.8359 24.4219H25.5234V39.2266C33.8828 36.8281 40 29.1328 40 20Z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/edera_ua" target="_blank">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z" />
+                      <path
+                        d="M28.9519 13.2269C28.7679 12.7282 28.4743 12.2769 28.0928 11.9064C27.7224 11.5249 27.2713 11.2313 26.7723 11.0473C26.3677 10.8901 25.7598 10.7031 24.6401 10.6521C23.4288 10.5969 23.0657 10.585 19.9993 10.585C16.9326 10.585 16.5694 10.5966 15.3585 10.6518C14.2388 10.7031 13.6306 10.8901 13.2262 11.0473C12.7272 11.2313 12.2759 11.5249 11.9057 11.9064C11.5242 12.2769 11.2307 12.7279 11.0463 13.2269C10.8892 13.6315 10.7021 14.2397 10.6511 15.3594C10.5959 16.5704 10.584 16.9335 10.584 20.0002C10.584 23.0667 10.5959 23.4298 10.6511 24.6411C10.7021 25.7607 10.8892 26.3687 11.0463 26.7733C11.2307 27.2723 11.5239 27.7233 11.9054 28.0938C12.2759 28.4753 12.7269 28.7689 13.2259 28.9529C13.6306 29.1104 14.2388 29.2974 15.3585 29.3484C16.5694 29.4036 16.9323 29.4152 19.999 29.4152C23.066 29.4152 23.4291 29.4036 24.6398 29.3484C25.7595 29.2974 26.3677 29.1104 26.7723 28.9529C27.7739 28.5665 28.5656 27.7749 28.9519 26.7733C29.1091 26.3687 29.2961 25.7607 29.3474 24.6411C29.4026 23.4298 29.4142 23.0667 29.4142 20.0002C29.4142 16.9335 29.4026 16.5704 29.3474 15.3594C29.2964 14.2397 29.1094 13.6315 28.9519 13.2269ZM19.9993 25.8972C16.7421 25.8972 14.1017 23.2571 14.1017 19.9999C14.1017 16.7428 16.7421 14.1027 19.9993 14.1027C23.2561 14.1027 25.8965 16.7428 25.8965 19.9999C25.8965 23.2571 23.2561 25.8972 19.9993 25.8972ZM26.1296 15.2477C25.3685 15.2477 24.7515 14.6307 24.7515 13.8696C24.7515 13.1085 25.3685 12.4914 26.1296 12.4914C26.8907 12.4914 27.5078 13.1085 27.5078 13.8696C27.5075 14.6307 26.8907 15.2477 26.1296 15.2477Z" />
+                      <path
+                        d="M20 0C8.95599 0 0 8.95599 0 20C0 31.044 8.95599 40 20 40C31.044 40 40 31.044 40 20C40 8.95599 31.044 0 20 0ZM31.4151 24.7348C31.3596 25.9573 31.1652 26.792 30.8813 27.5226C30.2847 29.0652 29.0652 30.2847 27.5226 30.8813C26.7923 31.1652 25.9573 31.3593 24.7351 31.4151C23.5104 31.4709 23.1192 31.4844 20.0003 31.4844C16.8811 31.4844 16.4902 31.4709 15.2652 31.4151C14.043 31.3593 13.208 31.1652 12.4777 30.8813C11.7111 30.593 11.0172 30.141 10.4434 29.5566C9.85931 28.9832 9.40735 28.2889 9.11896 27.5226C8.83514 26.7923 8.64075 25.9573 8.58521 24.7351C8.52875 23.5101 8.51562 23.1189 8.51562 20C8.51562 16.8811 8.52875 16.4899 8.5849 15.2652C8.64044 14.0427 8.83453 13.208 9.11835 12.4774C9.40674 11.7111 9.85901 11.0168 10.4434 10.4434C11.0168 9.85901 11.7111 9.40704 12.4774 9.11865C13.208 8.83484 14.0427 8.64075 15.2652 8.5849C16.4899 8.52905 16.8811 8.51562 20 8.51562C23.1189 8.51562 23.5101 8.52905 24.7348 8.58521C25.9573 8.64075 26.792 8.83484 27.5226 9.11835C28.2889 9.40674 28.9832 9.85901 29.5569 10.4434C30.141 11.0172 30.5933 11.7111 30.8813 12.4774C31.1655 13.208 31.3596 14.0427 31.4154 15.2652C31.4713 16.4899 31.4844 16.8811 31.4844 20C31.4844 23.1189 31.4713 23.5101 31.4151 24.7348Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="box-button">
+                <div class="col text-center">
+                  <a href="#" text="buttonText" class="button_link btn" data-toggle="modal"
+                    data-target="#basicModal"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-                <label><p>E-mail</p></label>
-                <input name="entry.652701123" type="email" placeholder="Email" required />
+      <!-- basic modal -->
+      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="form-box">
+              <div class="container">
+                <script type="text/javascript">
+                  var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {
+                    window.location='file:///Users/a/Documents/EdEra/%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%B8%CC%86%20/template/template.html#';
+                  }">
+                </iframe>
+                <h3 class="form-box__title title-align__center" text="TellUs"></h3>
+                <form class="form"
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_y3jNOQCefITYH_Ra0AU-TzfjODIxgp_NkXybtcMI_NdHjA/formResponse"
+                  method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                  <label>
+                    <p text="name"></p>
+                  </label>
+                  <input name="entry.2011607017" type="text" required />
 
-                <label><p text="WhatProblem"></p></label>
-                <input name="entry.1299504674" type="text" required/>
-                <button class="form-box__button" type="submit" name="button" text="Submit"></button>
-              </form>
+                  <label>
+                    <p text="Company"></p>
+                  </label>
+                  <input name="entry.1164568700" type="text" required />
+
+                  <label>
+                    <p text="Phone"></p>
+                  </label>
+                  <input name="entry.1069580" type="tel" placeholder="+380" required />
+
+                  <label>
+                    <p>E-mail</p>
+                  </label>
+                  <input name="entry.652701123" type="email" placeholder="Email" required />
+
+                  <label>
+                    <p text="WhatProblem"></p>
+                  </label>
+                  <input name="entry.1299504674" type="text" required />
+                  <button class="form-box__button" type="submit" name="button" text="Submit"></button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-
 
       <!-- Javascript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

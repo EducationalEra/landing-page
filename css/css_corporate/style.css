@@ -135,7 +135,7 @@ section {
 /* INTRO *
 *******************************************/
 .intro .container {
-  margin-top: 25px;  /* HERE CHANGES !!!! *//* HERE CHANGES !!!! *//* HERE CHANGES !!!! *//* HERE CHANGES !!!! */
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 .intro-left,
@@ -233,7 +233,7 @@ mark, .mark {
 }
 .header.fixed .header_inner{
     padding-top: 5px !important;
-    padding-bottom: 5px;/* HERE CHANGES !!!!!! */
+    padding-bottom: 5px;
 }
 .header_logo img {
     width: 44px;

@@ -1165,8 +1165,6 @@ button.button-2 {
   margin-bottom: 0 !important;
 }
 
-
-
 @media (max-width:1200px) {
   .corporate_website .container {
     padding-left: 5%;
@@ -1461,7 +1459,6 @@ button.button-2 {
     padding-right: 15px;
   }
 
-
   /* footer */
   .footer-corporate {
     margin-top: 130px;
@@ -1500,7 +1497,6 @@ button.button-2 {
       padding: 125px 50px;
     }
 }
-
 @media (max-width:768px) {
   .container {
     max-width: none !important;
@@ -1759,7 +1755,6 @@ button.button-2 {
     left: 47.5%;
     top: 49%;
   }
-
 
   /* benefit */
   .benefit_mobile{

@@ -37,6 +37,30 @@
       "access": true,
       "free": false
     },
+    "folk": {
+      "className": "",
+      "imgUrl": "/img/courses/folk_card.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/#!739",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Знай свою Україну",
+      "courseSubtitle": "",
+      "courseDesc": "Онлайн-курс про українську традиційну культуру.",
+      "access": true,
+      "free": false
+    },
+    "Crimea": {
+      "className": "",
+      "imgUrl": "/img/courses/Crimea-course-card.png",
+      "altText": "",
+      "href": "https://www.udemy.com/course/crimea-history-and-people/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Crimea: History and People",
+      "courseSubtitle": "",
+      "courseDesc": "An online course on the past and present of Crimea and Crimean Tatars— indigenous people of Ukraine.",
+      "access": true,
+      "free": false
+    },
     "lbs": {
       "className": "",
       "imgUrl": "/img/courses/LBSCard.png",

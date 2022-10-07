@@ -109,6 +109,18 @@
       "access": true,
       "free": false
     },
+    "criticalThinking": {
+      "className": "criticalThinking",
+      "imgUrl": "/img/courses/critical-thinking.jpg",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/1700",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Подумай двічі!",
+      "courseSubtitle": "",
+      "courseDesc": "Платформа критичного мислення",
+      "access": true,
+      "free": false
+    },
     "NdiWoman": {
       "className": "",
       "imgUrl": "/img/courses/ndi-woman_card.jpg",
@@ -121,6 +133,7 @@
       "access": true,
       "free": false
     },
+
     "NdiGender": {
       "className": "",
       "imgUrl": "/img/courses/ndi-gender_card.jpg",

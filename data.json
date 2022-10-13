@@ -867,6 +867,18 @@
       "access": true,
       "free": false
     },
+    "daringToTeach": {
+      "className": "",
+      "imgUrl": "/img/courses/daring-to-teach.png",
+      "altText": "",
+      "href": "https://study.ed-era.com/uk/courses/course/1762",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Сміливі навчати. Онлайн-курс про вчителювання у час кризи",
+      "courseSubtitle": "",
+      "courseDesc": "В онлайн-курсі «Сміливі навчати» ви отримаєте інформацію та практичні поради про психологічну саморегуляцію, комунікацію з учнями, батьками та колегами в час стресу та дізнайтеся, як побудувати безпечний простір у школі під час воєнного стану.",
+      "access": true,
+      "free": false
+    },
     "energy": {
       "className": "",
       "imgUrl": "/img/courses/energy-cover.jpg",

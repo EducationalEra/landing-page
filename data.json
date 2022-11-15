@@ -867,6 +867,18 @@
       "access": true,
       "free": false
     },
+    "UkrainianCulture": {
+      "className": "",
+      "imgUrl": "/img/courses/ukrainian-culture.png",
+      "altText": "",
+      "href": "https://www.udemy.com/course/ukrainian-culture-understanding-the-country-and-its-people/learn/lecture/34256282#overview",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "Ukrainian Culture: Understanding the Country and Its People",
+      "courseSubtitle": "",
+      "courseDesc": "Why should you learn about Ukrainian culture? What are the main characters of Ukrainian society? In what historical settings was the Ukrainian culture formed? What are the legacies of former imperial powers on the way Ukrainian culture and society is narrated?",
+      "access": true,
+      "free": false
+    },
     "daringToTeach": {
       "className": "",
       "imgUrl": "/img/courses/daring-to-teach.png",

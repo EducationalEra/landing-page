@@ -121,19 +121,6 @@
       "access": true,
       "free": false
     },
-    "SaveDontRisk": {
-      "className": "SaveDontRisk",
-      "imgUrl": "/img/courses/saveDontRisk.jpg",
-      "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/2360",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Рятуй, не ризикуй",
-      "courseSubtitle": "",
-      "courseDesc": "Онлайн-курс про безпеку волонтерів в умовах повномасштабної війни. Під час навчання ви дізнаєтеся, як піклуватися про особисту та психологічну безпеку, чому важливо захищати свої персональні дані та як поводитися на прифронтових і тимчасово окупованих територіях.",
-      "access": true,
-      "free": false
-    },
-    
     "NdiWoman": {
       "className": "",
       "imgUrl": "/img/courses/ndi-woman_card.jpg",

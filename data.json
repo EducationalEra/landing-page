@@ -121,18 +121,19 @@
       "access": true,
       "free": false
     },
-    "KnowHowToHelp": {
-      "className": "know-how-to-help",
-      "imgUrl": "/img/courses/know-how-to-help.jpg",
+    "SaveDontRisk": {
+      "className": "SaveDontRisk",
+      "imgUrl": "/img/courses/saveDontRisk.jpg",
       "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/1785",
+      "href": "https://study.ed-era.com/uk/courses/course/2360",
       "hrefText": "Перейти до курсу",
-      "courseTitle": "Знати, як допомогти",
+      "courseTitle": "Рятуй, не ризикуй",
       "courseSubtitle": "",
-      "courseDesc": "Ознайомчий онлайн-курс про базові принципи психології для роботи з травмами дітей та дорослих",
+      "courseDesc": "Онлайн-курс про безпеку волонтерів в умовах повномасштабної війни. Під час навчання ви дізнаєтеся, як піклуватися про особисту та психологічну безпеку, чому важливо захищати свої персональні дані та як поводитися на прифронтових і тимчасово окупованих територіях.",
       "access": true,
       "free": false
     },
+    
     "NdiWoman": {
       "className": "",
       "imgUrl": "/img/courses/ndi-woman_card.jpg",
@@ -852,42 +853,6 @@
       "courseTitle": "Онлайн-курс для вчителів початкової школи",
       "courseSubtitle": "",
       "courseDesc": "Один із обов’язкових етапів підвищення кваліфікації вчителів, які набиратимуть перший клас у 2018 році. Зокрема, ви ознайомитесь із новим Державним стандартом початкової освіти та методиками компетентністного навчання.",
-      "access": true,
-      "free": false
-    },
-    "speakUA": {
-      "className": "",
-      "imgUrl": "/img/courses/speak-ua-cover.jpg",
-      "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/1696",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "МОВИТИ: ОНЛАЙН-КУРС ПРО ТЕ, ЯК ЗАЛЮБИТИСЬ В УКРАЇНСЬКУ",
-      "courseSubtitle": "",
-      "courseDesc": "Ми віримо, що цей курс допоможе вам пізнати українську мову такою, як вона є, — із суржиком, афоризмами, варіативною вимовою і навіть лайкою. За 5 модулів ми спробуємо зробити так, щоб українська стала вашою колежанкою.",
-      "access": true,
-      "free": false
-    },
-    "UkrainianCulture": {
-      "className": "",
-      "imgUrl": "/img/courses/ukrainian-culture.png",
-      "altText": "",
-      "href": "https://www.udemy.com/course/ukrainian-culture-understanding-the-country-and-its-people/",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Ukrainian Culture: Understanding the Country and Its People",
-      "courseSubtitle": "",
-      "courseDesc": "Discover the “culture of freedom.” Learn about the milestones of Ukrainian culture and its contribution to the world.",
-      "access": true,
-      "free": false
-    },
-    "daringToTeach": {
-      "className": "",
-      "imgUrl": "/img/courses/daring-to-teach.png",
-      "altText": "",
-      "href": "https://study.ed-era.com/uk/courses/course/1762",
-      "hrefText": "Перейти до курсу",
-      "courseTitle": "Сміливі навчати. Онлайн-курс про вчителювання у час кризи",
-      "courseSubtitle": "",
-      "courseDesc": "В онлайн-курсі «Сміливі навчати» ви отримаєте інформацію та практичні поради про психологічну саморегуляцію, комунікацію з учнями, батьками та колегами в час стресу та дізнайтеся, як побудувати безпечний простір у школі під час воєнного стану.",
       "access": true,
       "free": false
     },

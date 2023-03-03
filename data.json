@@ -121,6 +121,18 @@
       "access": true,
       "free": false
     },
+    "teacherProtect": {
+      "className": "teacherProtect",
+      "imgUrl": "/img/courses/teacherProtect.jpg",
+      "altText": "",
+      "href": "https://study.nazk.gov.ua/courses/course-v1:NAZK+up002+2023-02/about/",
+      "hrefText": "Перейти до курсу",
+      "courseTitle": "На захисті прав викривачів",
+      "courseSubtitle": "",
+      "courseDesc": "В онлайн-курсі «На захисті прав викривачів» ви дізнаєтеся, як кожна громадянка та громадянин можуть боротися з корупцією. Також ми розповімо, чому в цьому процесі дуже важлива взаємодія антикорупційних уповноважених і викривачів корупції.",
+      "access": true,
+      "free": false
+    },
     "criticalThinking": {
       "className": "criticalThinking",
       "imgUrl": "/img/courses/critical-thinking.jpg",

@@ -1441,6 +1441,18 @@
         "title": "Публічні консультації: крок за кроком",
         "image": "https://www.ed-era.com/img/books/ndi.jpg",
         "description": "Посібник для державних службовців"
+      },
+      "vizuy": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_vizuy_profesiyno.png",
+        "altText": "",
+        "href": "https://study.nazk.gov.ua/courses/course-v1:NAZK+up004+2023-04/about/",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Візуй професійно!",
+        "courseSubtitle": "",
+        "courseDesc": "В онлайн-курсі ви дізнаєтеся, як корупція ховається у словах та формулюваннях. Ми навчимо вас шукати та визначати фактори корупції в документах на всіх рівнях: від місцевих наказів до законів.",
+        "access": false,
+        "free": false
       }
     }
   }

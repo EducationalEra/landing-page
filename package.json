@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/EducationalEra/landing-page#readme",
   "dependencies": {
-    "browser-sync": "^2.27.9",
+    "browser-sync": "^2.29.1",
     "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-cache-bust": "^1.4.1",

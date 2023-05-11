@@ -13,6 +13,18 @@
         "access": true,
         "free": false
       },
+      "womanlidership": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_woman_lidership.jpg",
+        "altText": "",
+        "href": "https://courses.ed-era.com/courses/course-v1:NDI_EdEra+1.1+2021/about",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Жіноче лідерство та політична участь жінок",
+        "courseSubtitle": "",
+        "courseDesc": "Онлайн-курс про те, як жінкам стати лідерками та активно долучатися до ухвалення рішень в громадах.",
+        "access": true,
+        "free": false
+      },
     "anxiety": {
       "className": "",
       "imgUrl": "/img/courses/cover_dialog_anxiety.png",
@@ -763,7 +775,7 @@
       "className": "",
       "imgUrl": "/img/courses/verified.jpg",
       "altText": "",
-      "href": "https://verified.ed-era.com/ua",
+      "href": "https://study.ed-era.com/uk/courses/course/2118",
       "hrefText": "Перейти до курсу",
       "courseTitle": "Very Verified: онлайн-курс з медіаграмотності",
       "courseSubtitle": "",

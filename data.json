@@ -13,6 +13,18 @@
         "access": true,
         "free": false
       },
+      "resilienceSchool": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_resilience_school.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/uk/courses/course/#!2863",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Школа стійкості",
+        "courseSubtitle": "",
+        "courseDesc": "Онлайн-курс про психосоціальну підтримку педагогів та дітей. Як сформувати безпечний простір у кризовий час, яка роль спільнот в освітньому процесі — про все це ви дізнаєтеся в курсі.",
+        "access": true,
+        "free": false
+      },
       "womanlidership": {
         "className": "",
         "imgUrl": "/img/courses/cover_woman_lidership.jpg",
@@ -1397,50 +1409,50 @@
     },
     "books": {
       "url": "https://www.ed-era.com/books",
-      "title": "EdEra Books – інтерактивна освітня бібліотека ",
-      "description": "Авторська інтерактивна освітня література, ілюстрації, візуалізації, автоматичний тестер та повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   ",
+      "title": "EdEra Books – інтерактивна освітня бібліотека",
+      "description": "Авторська інтерактивна освітня література, ілюстрації, візуалізації, автоматичний тестер та повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!",
       "image": "https://www.ed-era.com/img/share/bg_books.jpg",
       "law": {
         "url": "https://www.ed-era.com/books/law",
-        "title": "EdEra Book - Правознавство: Основи вчення про державу та право  ",
+        "title": "EdEra Book - Правознавство: Основи вчення про державу та право",
         "image": "https://www.ed-era.com/img/share/small/law.jpg",
         "description": "Інтерактивний підручник «Правознавство: Основи вчення про державу та право»"
       },
       "english2": {
         "url": "https://www.ed-era.com/books/english2",
-        "title": "EdEra Book - Англійська мова: Часові форми  ",
+        "title": "EdEra Book - Англійська мова: Часові форми",
         "image": "https://www.ed-era.com/img/share/small/english2.jpg",
         "description": "Інтерактивний підручник «Англійська мова: Часові форми» Покроковий та детальний розгляд усіх найчастіше вживаних часових форм англійської мови"
       },
       "ukr": {
         "url": "https://www.ed-era.com/books/ukrainian",
-        "title": "EdEra Book – Українська мова. Від фонетики та морфології  ",
+        "title": "EdEra Book – Українська мова. Від фонетики та морфології",
         "image": "https://www.ed-era.com/img/share/small/ukr.jpg",
-        "description": "Інтерактивний підручник «Українська мова. Від фонетики до морфології». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra! "
+        "description": "Інтерактивний підручник «Українська мова. Від фонетики до морфології». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },
       "physics": {
         "url": "https://www.ed-era.com/books/physics",
-        "title": " EdEra Book – Фізика. Механіка  ",
+        "title": "EdEra Book – Фізика. Механіка",
         "image": "https://www.ed-era.com/img/share/small/phys.jpg",
-        "description": "Інтерактивний підручник «Фізика. Механіка». Цікавий виклад матеріалу, візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra! "
+        "description": "Інтерактивний підручник «Фізика. Механіка». Цікавий виклад матеріалу, візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },
       "history": {
         "url": "https://www.ed-era.com/books/history",
-        "title": " EdEra Book – Історія України. Зародження української нації  ",
+        "title": "EdEra Book – Історія України. Зародження української нації",
         "image": "https://www.ed-era.com/img/share/small/hist.jpg",
         "description": "Інтерактивний підручник « Історія України. Зародження української нації». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },
       "english": {
         "url": "https://www.ed-era.com/books/english",
-        "title": "   EdEra Book – Англійська мова. Морфологія  ",
+        "title": "EdEra Book – Англійська мова. Морфологія",
         "image": "https://www.ed-era.com/img/share/small/eng.jpg",
-        "description": "  Інтерактивний підручник « Англійська мова. Морфологія». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   "
+        "description": "Інтерактивний підручник « Англійська мова. Морфологія». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },
       "math": {
         "url": "https://www.ed-era.com/books/maths",
-        "title": "EdEra Book – Математика. Арифметика, рівняння та нерівності  ",
+        "title": "EdEra Book – Математика. Арифметика, рівняння та нерівності",
         "image": "https://www.ed-era.com/img/share/small/math.jpg",
-        "description": "Інтерактивний підручник «Математика. Арифметика, рівняння та нерівності». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!   "
+        "description": "Інтерактивний підручник «Математика. Арифметика, рівняння та нерівності». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },
       "geography": {
         "url": "https://www.ed-era.com/books/geography",
@@ -1450,7 +1462,7 @@
       },
       "biology": {
         "url": "https://www.ed-era.com/books/biology",
-        "title": "   EdEra Book – Біологія. Рослини, гриби та лишайники  ",
+        "title": "EdEra Book – Біологія. Рослини, гриби та лишайники",
         "image": "https://www.ed-era.com/img/share/small/biol.jpg",
         "description": "Інтерактивний підручник «Біологія. Рослини, гриби та лишайники». Візуалізації, тести, повна адаптивність. Приєднуйтесь до освіти майбутнього з EdEra!"
       },

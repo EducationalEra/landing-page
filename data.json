@@ -25,6 +25,18 @@
         "access": true,
         "free": false
       },
+      "gptOsvitiany": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_chatgpt_osvitianam.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/uk/courses/course/#!2925",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "ChatGPT для освітян: як перетворити ШІ на ефективного асистента",
+        "courseSubtitle": "",
+        "courseDesc": "Ви навчитеся генерувати ідеї, прописувати структури занять / воркшопів / курсів, планувати активності, ставити цілі та навіть вивчати мови.",
+        "access": true,
+        "free": false
+      },
       "womanlidership": {
         "className": "",
         "imgUrl": "/img/courses/cover_woman_lidership.jpg",

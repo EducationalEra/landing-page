@@ -25,6 +25,18 @@
         "access": true,
         "free": false
       },
+      "digitalTeacher": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_degital_teacher.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/uk/courses/course/#!2915",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Учителі в курсі",
+        "courseSubtitle": "",
+        "courseDesc": "Цей курс розповідає про цифрові навички, які необхідні для роботи сучасних учителів. У ньому ми зібрали всю основну інформацію з цієї теми: цифрові інструменти, інструкції зі створення освітнього контенту, принципи авторського права, правила кібербезпеки тощо.",
+        "access": true,
+        "free": false
+      },
       "gptOsvitiany": {
         "className": "",
         "imgUrl": "/img/courses/cover_chatgpt_osvitianam.png",

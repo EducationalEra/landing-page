@@ -25,6 +25,18 @@
         "access": true,
         "free": false
       },
+      "udemyFran": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_udemy_franch.jpg",
+        "altText": "",
+        "href": "https://www.udemy.com/course/ukraine-histoire-culture-et-identites/",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Ukraine: Histoire, Culture et Identités",
+        "courseSubtitle": "",
+        "courseDesc": "Перший онлайн-курс про історію України французькою! Найвидатніші події української історії — від заснування Київської Русі до проголошення незалежності.",
+        "access": true,
+        "free": false
+      },
       "digitalTeacher": {
         "className": "",
         "imgUrl": "/img/courses/cover_degital_teacher.png",

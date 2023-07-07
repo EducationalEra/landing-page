@@ -13,6 +13,18 @@
         "access": true,
         "free": false
       },
+      "opanuvatyChatGPT": {
+        "className": "",
+        "imgUrl": "https://assets.theworkademy.com/workspace-assets/10/files/c50fac1b-846e-4152-b792-b38a1256a5c4.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/uk/courses/course/#!2988",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Опанувати ChatGPT: з нуля до спеціаліста",
+        "courseSubtitle": "",
+        "courseDesc": "Ви навчитеся писати запити ChatGPT так, щоб отримувати класний результат і не витрачати на це зайвий час.",
+        "access": true,
+        "free": false
+      },
       "resilienceSchool": {
         "className": "",
         "imgUrl": "/img/courses/cover_resilience_school.png",

@@ -25,6 +25,18 @@
         "access": true,
         "free": false
       },
+      "downSyndrome": {
+        "className": "",
+        "imgUrl": "https://assets.theworkademy.com/workspace-assets/10/files/c4e1db72-d0d6-488c-9d81-0e91f51b04f3.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/uk/courses/course/#!2968",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "Навчаємося з радістю. Практична математика",
+        "courseSubtitle": "",
+        "courseDesc": "Онлайн-курс про компенсаторне навчання практичної математики дітей з інтелектуальними порушеннями.",
+        "access": true,
+        "free": false
+      },
       "resilienceSchool": {
         "className": "",
         "imgUrl": "/img/courses/cover_resilience_school.png",

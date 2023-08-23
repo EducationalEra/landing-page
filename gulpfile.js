@@ -120,6 +120,8 @@ gulp.task('copy', gulp.parallel('scss','sass', 'templates', function (done) {
         .pipe(gulp.dest("build/books"));
     gulp.src("templates/tos.html")
         .pipe(gulp.dest("build"));
+    gulp.src("templates/payment.html")
+        .pipe(gulp.dest("build"));
     gulp.src("public/fundraising.html")
       .pipe(rename("index.html"))
       .pipe(gulp.dest("build/fundraising"));

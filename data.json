@@ -13,6 +13,18 @@
         "access": true,
         "free": false
       },
+      "auroral": {
+        "className": "",
+        "imgUrl": "/img/courses/cover_auroral.png",
+        "altText": "",
+        "href": "https://study.ed-era.com/courses/course/2908",
+        "hrefText": "Перейти до курсу",
+        "courseTitle": "AURORAL Academy",
+        "courseSubtitle": "",
+        "courseDesc": "A 6-hour course designed within the H2020 AURORAL project to explain how to work with the AURORAL software.",
+        "access": true,
+        "free": false
+      },
       "opanuvatyChatGPT": {
         "className": "",
         "imgUrl": "https://assets.theworkademy.com/workspace-assets/10/files/c50fac1b-846e-4152-b792-b38a1256a5c4.png",
